@@ -6,6 +6,7 @@ const weatherNames={raindance:'Rain',sunnyday:'Sun',sandstorm:'Sandstorm',snow:'
 export async function mountShowdown(host,{collection,signal,onAward,onShelf,initialOpponent=null}){
  const loaded=await Promise.all(['battle-roster.json','battle-editor.json','battle-ai-sets.json'].map(async path=>{const r=await fetch('./'+path);if(!r.ok)throw new Error('Could not load '+path);return r.json();}));
  const [data,editor,aiData]=loaded;if(signal.aborted)return;
+ const diagnose=(kind,message)=>window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{kind,message}}));
  const records=data.records,byId=id=>records.find(p=>p.id===id);
  let selected=null,worker=null,pending=new Map(),sequence=0,busy=false,state=null,matchup=null,choices=[],mega=[],playerForm=collection.tatsugiriForm?.()||0,awarded=false,frameReady=false;
  let opponentId=initialOpponent,enemyForm=0;const custom={},storageKey='yuqi-battle-sets-v1';let saved={};try{saved=JSON.parse(localStorage.getItem(storageKey)||'{}')||{};}catch{}
@@ -17,16 +18,16 @@ export async function mountShowdown(host,{collection,signal,onAward,onShelf,init
  function onFrame(event){const frame=host.querySelector('#ps-window');if(!frame||event.source!==frame.contentWindow||event.origin!==location.origin)return;
   if(event.data.type==='ps-window-ready'){frameReady=true;sendFrame();}
   if(event.data.type==='ps-window-size')frame.style.height=event.data.height+'px';
-  if(event.data.type==='ps-window-error'){const status=host.querySelector('#ps-render-status');status.textContent='Battle display could not load. Return to partners to retry.';console.error(event.data.message);}
+  if(event.data.type==='ps-window-error'){window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{message:event.data.message}}));const status=host.querySelector('#ps-render-status');status.textContent='Battle display could not load. Return to partners to retry.';console.error(event.data.message);}
  }
  window.addEventListener('message',onFrame);signal.addEventListener('abort',()=>window.removeEventListener('message',onFrame),{once:true});
 
  function call(type,payload){
   if(!worker){worker=new Worker(new URL('./vendor/showdown-worker.js',import.meta.url),{type:'module'});
-   worker.onmessage=({data})=>{if(data.ready)return;const entry=pending.get(data.id);if(!entry)return;pending.delete(data.id);clearTimeout(entry.timer);data.error?entry.reject(new Error(data.error)):entry.resolve(data.state);};
-   worker.onerror=()=>{for(const entry of pending.values()){clearTimeout(entry.timer);entry.reject(new Error('The battle engine could not load. Please retry.'));}pending.clear();stopWorker();};
+   worker.onmessage=({data})=>{if(data.ready)return;const entry=pending.get(data.id);if(!entry)return;pending.delete(data.id);clearTimeout(entry.timer);if(data.error){window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{message:data.error}}));entry.reject(new Error(data.error));}else entry.resolve(data.state);};
+   worker.onerror=()=>{window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{message:'The battle engine could not load.'}}));for(const entry of pending.values()){clearTimeout(entry.timer);entry.reject(new Error('The battle engine could not load. Please retry.'));}pending.clear();stopWorker();};
   }
-  return new Promise((resolve,reject)=>{const id=++sequence;const timer=setTimeout(()=>{pending.delete(id);reject(new Error('The battle took too long. Start a new challenge to retry.'));stopWorker();},30000);pending.set(id,{resolve,reject,timer});worker.postMessage({id,type,payload});});
+  return new Promise((resolve,reject)=>{const id=++sequence;const timer=setTimeout(()=>{pending.delete(id);window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{message:'Battle engine request timed out: '+type}}));reject(new Error('The battle took too long. Start a new challenge to retry.'));stopWorker();},30000);pending.set(id,{resolve,reject,timer});worker.postMessage({id,type,payload});});
  }
  function heading(){return '<header class="game-heading"><h3>Pokémon battle</h3><p>Choose a silhouette first, then pick an available Pokémon from your shelf.</p></header>';}
  const available=()=>availablePartners(records,opponentId,owned().map(p=>p.id),custom);
@@ -101,12 +102,13 @@ export async function mountShowdown(host,{collection,signal,onAward,onShelf,init
   host.querySelector('#ps-lobby-status').textContent='Checking your current build…';
   host.querySelectorAll('button,select,input').forEach(el=>el.disabled=true);
   try{
-   const checked=await call('validate',{record:byId(selected),set});if(signal.aborted)return;
+   const checked=await call('validate',{record:byId(selected),set});if(signal.aborted)return;diagnose('battle-build',JSON.stringify({pokemon:selected,tier:checked.tier,set:checked.set}));
    const builds={...custom,[selected]:checked};
    matchup=makeMatchup(records,selected,owned().map(p=>p.id),Math.random,playerForm,{opponentId,enemyForm,playerRecord:checked,playerRecords:builds});
    custom[selected]=checked;saved[selected]=checked.set;try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{}
    matchup.playerSets=Object.fromEntries(matchup.player.filter(id=>custom[id]).map(id=>[id,custom[id].set]));
    matchup.enemySets=matchup.enemy.map(id=>{const variants=aiData.records[id]||[];return (variants[Math.floor(Math.random()*variants.length)]||byId(id)).set;});
+   diagnose('battle-start',JSON.stringify({player:matchup.player,opponentSlot:records.findIndex(p=>p.id===opponentId)+1,doubles:matchup.doubles,playerForm,enemyForm}));
    host.innerHTML=heading()+'<div class="ps-loading" role="status">Preparing your challenge…<small>Loading the local Pokémon Showdown engine.</small></div>';
    state=await call('start',{records,matchup});if(signal.aborted)return;busy=false;resetChoices();renderBattle();host.closest('dialog').scrollTop=0;
   }catch(error){
@@ -156,6 +158,7 @@ export async function mountShowdown(host,{collection,signal,onAward,onShelf,init
  }
  function renderBattle(){
   const logs=state.log.map(logText).filter(Boolean);
+  diagnose('battle-state',JSON.stringify({turn:state.turn,ended:state.ended,won:state.won,player:state.player.map(p=>({name:p.name,hp:p.hp,maxhp:p.maxhp,status:p.status,commanding:p.commanding})),events:logs.slice(-8)}));
   if(!host.querySelector('#ps-window')){frameReady=false;host.innerHTML=`<div class="ps-battle-top"></div><div class="ps-embedded-window"><div class="ps-window-title"><span>Pokémon Showdown</span><small>LOCAL BATTLE</small></div><iframe id="ps-window" title="Pokémon Showdown battle window" src="ps-window/index.html" loading="eager"></iframe><div id="ps-controls"></div></div><p id="ps-render-status" class="ps-render-status" role="status"></p><details class="ps-full-log"><summary>Battle log</summary><div></div></details>`;}
   host.querySelector('.ps-battle-top').innerHTML=`<button type="button" class="ps-back" id="ps-back">← Partners</button><span>${state.doubles?'Doubles · Commander encounter':'Singles · 1v1'} <b>${state.ended?'Finished':'Turn '+state.turn}</b></span>`;
   host.querySelector('.ps-full-log>div').innerHTML=logs.map(l=>`<p>${esc(l)}</p>`).join('');
@@ -202,7 +205,7 @@ export async function mountShowdown(host,{collection,signal,onAward,onShelf,init
   });
  }
  async function submit(){
-  if(busy||choices.some(c=>!c))return;busy=true;
+  if(busy||choices.some(c=>!c))return;busy=true;diagnose('battle-choice',JSON.stringify({turn:state.turn,commands:choices}));
   host.querySelectorAll('button,select,input').forEach(b=>b.disabled=true);
   host.querySelector('#ps-action-status').textContent='Resolving the turn…';
   try{const next=await call('choose',{commands:choices});if(signal.aborted)return;state=next;busy=false;resetChoices();renderBattle();}

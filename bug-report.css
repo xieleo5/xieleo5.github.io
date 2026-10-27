@@ -1,0 +1,7 @@
+.bug-report-trigger{border:0;background:none;color:#6e776b;text-decoration:underline;text-underline-offset:3px;padding:6px 0;font:inherit;font-size:12px;cursor:pointer}
+.bug-report-trigger:hover{color:#253128}.bug-report-trigger:focus-visible{outline:2px solid #70846a;outline-offset:4px}
+#bug-report-dialog{width:min(640px,calc(100% - 32px));box-sizing:border-box;max-height:90dvh;overflow:auto;padding:24px;border:1px solid #d8ddd1;border-radius:10px;background:#fcfcf9;color:#253128;font:14px/1.5 Lato,Arial,sans-serif;box-shadow:0 20px 90px #0003}
+#bug-report-dialog::backdrop{background:#1c261d80}.bug-report-heading{display:flex;align-items:center;justify-content:space-between;gap:15px}.bug-report-heading h2{font-size:20px;font-weight:500;margin:0}.bug-report-heading button{border:0;background:none;font-size:26px;color:#697263;cursor:pointer}
+#bug-report-dialog p{margin:12px 0;color:#65705e}#bug-report-text{box-sizing:border-box;display:block;width:100%;height:260px;resize:vertical;padding:12px;border:1px solid #d5dccb;border-radius:5px;background:white;font:12px/1.5 ui-monospace,monospace;color:#364132;margin:7px 0 16px}
+#bug-report-dialog label{font-size:12px}#bug-report-dialog a{color:#506f48}#bug-report-status{font-size:12px;min-height:18px}.bug-report-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}#bug-report-dialog .game-primary{font-size:13px}
+@media(max-width:480px){#bug-report-dialog{padding:18px}.arcade-header-actions{gap:10px}.arcade-header{gap:6px}#arcade-count{font-size:10px}}
