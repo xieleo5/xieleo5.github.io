@@ -343,3 +343,5 @@
 @media(hover:hover){.ps-embedded-window .ps-moves button:not(:disabled):hover{filter:brightness(1.06);border-color:#537c9f;box-shadow:0 2px 6px #243c5b30;transform:translateY(-1px)}.ps-mega-option:hover{border-color:#70609c;background:#ece7f7}}
 .ps-embedded-window .ps-moves button:not(:disabled):active{transform:translateY(0);filter:brightness(.97)}
 .ps-embedded-window .ps-moves button:disabled{cursor:wait;opacity:.65}
+
+.shelf-story,.game-collection-intro{font:400 13px/1.65 Lato,Arial,sans-serif;color:#727b6c;margin:0 0 18px}.shelf-story{max-width:690px}

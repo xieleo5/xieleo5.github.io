@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yuqi Xie | 谢雨齐</title>
   <meta name="description" content="Yuqi Xie, Member of Technical Staff at OpenAI. Research in robot learning, dexterous manipulation, and embodied agents.">
+  <meta name="homepage-build" content="2026-10-27-battle-feedback">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Yuqi Xie | 谢雨齐">
   <meta property="og:description" content="Research in robot learning and embodied AI.">
+  <script src="bug-report.js?v=20261027-feedback"></script>
+  <link rel="stylesheet" href="bug-report.css?v=20261027-feedback">
   <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style.css?v=20261027-shelf-challenge">
-  <script defer src="pokemon.js?v=20261027-shelf-challenge"></script>
-  <link rel="stylesheet" href="arcade.css?v=20261027-shelf-challenge">
-  <script type="module" src="arcade.js?v=20261027-shelf-challenge"></script>
+  <link rel="stylesheet" href="style.css?v=20261027-battle-feedback">
+  <script defer src="pokemon.js?v=20261027-battle-feedback"></script>
+  <link rel="stylesheet" href="arcade.css?v=20261027-battle-feedback">
+  <script type="module" src="arcade.js?v=20261027-battle-feedback"></script>
 </head>
 <body>
   <a class="skip-link" href="#research">Skip to publications</a>
@@ -24,6 +27,7 @@
         <p>I am a Member of Technical Staff at <a href="https://openai.com/">OpenAI</a>. My research focuses on robot learning, dexterous manipulation, and embodied agents.</p>
         <p>Previously, I was a Research Engineer at <a href="https://research.nvidia.com/labs/gear/">NVIDIA GEAR Lab</a>, working with <a href="https://jimfan.me/">Jim Fan</a> and <a href="https://yukezhu.me/">Yuke Zhu</a>.</p>
         <p>I received my M.S. in Computer Science from <a href="https://www.cs.utexas.edu/">UT Austin</a>, advised by Yuke Zhu in the <a href="https://rpl.cs.utexas.edu/">Robot Perception and Learning Lab</a>. I hold bachelor’s degrees in Computer Science from the University of Michigan and Electrical and Computer Engineering from Shanghai Jiao Tong University.</p>
+        <p>Fun fact: I’m a die-hard Pokémon fan. You can play a few <a href="#arcade-divider">Pokémon mini games</a> right here on my website!</p>
       </div>
       <aside class="profile-side" aria-label="Photo and contact links">
         <div class="portrait-frame">
@@ -43,6 +47,7 @@
     </nav>
     <section id="inline-shelf" class="inline-shelf" aria-labelledby="inline-shelf-title" hidden>
       <div class="inline-shelf-heading"><h2 id="inline-shelf-title">My Pokémon shelf <span id="inline-count">0 / 60</span></h2><button type="button" id="inline-shelf-open">View collection ↗</button></div>
+      <p class="shelf-story">Every Pokémon here is part of my collection at home. Play the games to fill your own virtual shelf. Want me to add a new Pokémon? Gift me one in real life XD</p>
       <div class="inline-cabinet"><div id="inline-collection" aria-label="Collected Pokémon and undiscovered silhouettes"></div><div class="cabinet-plinth"></div></div>
     </section>
     <section id="research" aria-labelledby="publications-title">
@@ -55,11 +60,12 @@
   </main>
   <footer class="page">
     <span>© 2026 Yuqi Xie</span>
+    <button type="button" class="bug-report-trigger" data-report-bug>Report a bug</button>
 
   </footer>
   <dialog id="field-notes" aria-labelledby="dex-title">
     <div class="dex-header"><h2 id="dex-title">My Pokémon shelf</h2><button type="button" id="close-dex" aria-label="Close collection cabinet" autofocus>×</button></div>
-    <p class="dex-intro">Win Pokémon in the arcade to fill your collection.</p>
+    <p class="dex-intro">Every Pokémon here is part of my collection at home. Play the games to fill your own virtual shelf. Want me to add a new Pokémon? Gift me one in real life XD</p>
     <div class="cabinet-layout">
       <div class="cabinet-frame"><div id="pokemon-collection" aria-label="Pokémon collection cabinet"></div><div class="cabinet-plinth"></div></div>
       <div class="cabinet-info">
@@ -69,13 +75,20 @@
       </div>
     </div>
     <p id="dex-hint" role="status"></p>
-    <div class="dex-bottom"><span id="collection-count">0 / 60 on the shelf</span><button type="button" id="next-hint">How to collect</button><button type="button" id="cabinet-play" class="game-primary">Play a game →</button></div>
+    <div class="dex-bottom"><button type="button" class="bug-report-trigger" data-report-bug>Report a bug</button><span id="collection-count">0 / 60 on the shelf</span><button type="button" id="next-hint">How to collect</button><button type="button" id="cabinet-play" class="game-primary">Play a game →</button></div>
     <p class="pokemon-credits">Sprites via <a href="https://github.com/PokeAPI/sprites">PokéAPI</a>. Pokémon © Nintendo / Creatures / GAME FREAK.</p>
   </dialog>
   <dialog id="arcade-dialog" aria-label="Pokémon games">
-    <div class="arcade-header"><div><span id="arcade-count">0 / 60 collected</span></div><div class="arcade-header-actions"><button type="button" id="arcade-shelf">My shelf ↗</button><button type="button" id="close-arcade" aria-label="Close arcade" autofocus>×</button></div></div>
+    <div class="arcade-header"><div><span id="arcade-count">0 / 60 collected</span></div><div class="arcade-header-actions"><button type="button" class="bug-report-trigger" data-report-bug>Report a bug</button><button type="button" id="arcade-shelf">My shelf ↗</button><button type="button" id="close-arcade" aria-label="Close arcade" autofocus>×</button></div></div>
     <nav class="arcade-nav" aria-label="Choose a game"><button type="button" data-game="menu" aria-pressed="true">All games</button><button type="button" data-game="guess" aria-pressed="false">Guess who?</button><button type="button" data-game="arm" aria-pressed="false">Pick &amp; place</button><button type="button" data-game="battle" aria-pressed="false">Pokémon battle</button></nav>
     <div id="arcade-content"></div>
+  </dialog>
+  <dialog id="bug-report-dialog" aria-labelledby="bug-report-title">
+    <div class="bug-report-heading"><h2 id="bug-report-title">Report a bug</h2><button type="button" id="close-bug-report" aria-label="Close bug report">×</button></div>
+    <p>The report already includes recent actions, game state and errors. Copy it into a GitHub issue and submit; descriptions and reproduction steps are optional. You can review or edit it below. A GitHub account is required to submit.</p>
+    <label for="bug-report-text">Issue template &amp; session log</label><textarea id="bug-report-text" spellcheck="false"></textarea>
+    <div class="bug-report-actions"><button type="button" class="game-primary" id="copy-bug-report">Copy report &amp; open GitHub ↗</button><a id="bug-report-link" href="https://github.com/xieleo5/xieleo5.github.io/issues/new?template=bug_report.md" target="_blank" rel="noopener noreferrer">Open GitHub separately ↗</a></div>
+    <p id="bug-report-status" role="status"></p>
   </dialog>
   <div id="pokemon-toast" hidden>
     <img src="assets/menu-icons/eevee.png" width="64" height="64" alt="">
