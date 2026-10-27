@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---gatsby-theme-academic-src-templates-tags-index-jsx",
-    "path": "/tags/pokemon",
-    "result": {"data":{"allTag":{"edges":[{"node":{"color":"magenta","name":"python","description":null,"path":"/tags/python"}},{"node":{"color":"red","name":"pokemon","description":null,"path":"/tags/pokemon"}}]},"allMdx":{"edges":[]},"allFile":{"edges":[]}},"pageContext":{"fileAbsolutePath":"/home/runner/work/xieleo5.github.io/xieleo5.github.io/example/content/tags/pokemon/index.md","tag":"pokemon"}},
-    "staticQueryHashes": ["1022836128","4097791827"]}

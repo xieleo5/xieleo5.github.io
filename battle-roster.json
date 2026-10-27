@@ -1,0 +1,5592 @@
+{
+  "engine": "@pkmn/sim",
+  "version": "0.10.11",
+  "tierSource": "https://github.com/smogon/pokemon-showdown/blob/cbdc8519ef95661201aff116d6b6e4c338e086cd/data/formats-data.ts",
+  "tierRevision": "cbdc8519ef95661201aff116d6b6e4c338e086cd",
+  "tierDate": "2026-10-27T00:55:22Z",
+  "records": [
+    {
+      "id": "eevee",
+      "name": "Eevee",
+      "number": "133",
+      "zh": "伊布",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Eevee",
+        "name": "Eevee",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Adaptability",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Curse",
+          "Return",
+          "Quick Attack",
+          "Wish"
+        ]
+      },
+      "plan": "Curse boosts bulk and Adaptability-powered Return; Wish sustains longer duels.",
+      "tierMap": {
+        "Eevee": "LC"
+      },
+      "types": [
+        "Normal"
+      ],
+      "form": "Eevee",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Curse",
+          "id": "curse",
+          "type": "Ghost",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Curses if Ghost, else -1 Spe, +1 Atk, +1 Def."
+        },
+        {
+          "name": "Return",
+          "id": "return",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "Max 102 power at maximum Happiness."
+        },
+        {
+          "name": "Quick Attack",
+          "id": "quickattack",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "description": "Usually goes first."
+        },
+        {
+          "name": "Wish",
+          "id": "wish",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Next turn, 50% of the user's max HP is restored."
+        }
+      ]
+    },
+    {
+      "id": "rowlet",
+      "name": "Rowlet",
+      "number": "722",
+      "zh": "木木枭",
+      "aliases": [
+        "木木梟"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Rowlet",
+        "name": "Rowlet",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Long Reach",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Swords Dance",
+          "Leaf Blade",
+          "Brave Bird",
+          "Synthesis"
+        ]
+      },
+      "plan": "Set up Swords Dance, then use dual STAB; Synthesis offsets Brave Bird recoil.",
+      "tierMap": {
+        "Rowlet": "LC"
+      },
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "form": "Rowlet",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "id": "swordsdance",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack by 2."
+        },
+        {
+          "name": "Leaf Blade",
+          "id": "leafblade",
+          "type": "Grass",
+          "category": "Physical",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "High critical hit ratio."
+        },
+        {
+          "name": "Brave Bird",
+          "id": "bravebird",
+          "type": "Flying",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Has 33% recoil."
+        },
+        {
+          "name": "Synthesis",
+          "id": "synthesis",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by a weather-dependent amount."
+        }
+      ]
+    },
+    {
+      "id": "spheal",
+      "name": "Spheal",
+      "number": "363",
+      "zh": "海豹球",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Spheal",
+        "name": "Spheal",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Thick Fat",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Surf",
+          "Ice Beam",
+          "Rest",
+          "Sleep Talk"
+        ]
+      },
+      "plan": "A physically bulky RestTalk set with two reliable STAB attacks.",
+      "tierMap": {
+        "Spheal": "LC"
+      },
+      "types": [
+        "Ice",
+        "Water"
+      ],
+      "form": "Spheal",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Surf",
+          "id": "surf",
+          "type": "Water",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Hits adjacent Pokemon. Double damage on Dive."
+        },
+        {
+          "name": "Ice Beam",
+          "id": "icebeam",
+          "type": "Ice",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to freeze the target."
+        },
+        {
+          "name": "Rest",
+          "id": "rest",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "User sleeps 2 turns and restores HP and status."
+        },
+        {
+          "name": "Sleep Talk",
+          "id": "sleeptalk",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "User must be asleep. Uses another known move."
+        }
+      ]
+    },
+    {
+      "id": "fuecoco",
+      "name": "Fuecoco",
+      "number": "909",
+      "zh": "呆火鳄",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Fuecoco",
+        "name": "Fuecoco",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Unaware",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Flamethrower",
+          "Will-O-Wisp",
+          "Slack Off",
+          "Snarl"
+        ]
+      },
+      "plan": "Unaware ignores opposing boosts; burn physical attackers and recover.",
+      "tierMap": {
+        "Fuecoco": "LC"
+      },
+      "types": [
+        "Fire"
+      ],
+      "form": "Fuecoco",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Flamethrower",
+          "id": "flamethrower",
+          "type": "Fire",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to burn the target."
+        },
+        {
+          "name": "Will-O-Wisp",
+          "id": "willowisp",
+          "type": "Fire",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 85,
+          "pp": 15,
+          "description": "Burns the target."
+        },
+        {
+          "name": "Slack Off",
+          "id": "slackoff",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by 50% of its max HP."
+        },
+        {
+          "name": "Snarl",
+          "id": "snarl",
+          "type": "Dark",
+          "category": "Special",
+          "power": 55,
+          "accuracy": 95,
+          "pp": 15,
+          "description": "100% chance to lower the foe(s) Sp. Atk by 1."
+        }
+      ]
+    },
+    {
+      "id": "ditto",
+      "name": "Ditto",
+      "number": "132",
+      "zh": "百变怪",
+      "aliases": [
+        "百變怪"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Ditto",
+        "name": "Ditto",
+        "level": 50,
+        "item": "Choice Scarf",
+        "ability": "Imposter",
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Transform"
+        ]
+      },
+      "plan": "Imposter copies the opponent on entry; Choice Scarf supplies the speed advantage.",
+      "tierMap": {
+        "Ditto": "RU"
+      },
+      "types": [
+        "Normal"
+      ],
+      "form": "Ditto",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Transform",
+          "id": "transform",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Copies target's stats, moves, types, and Ability."
+        }
+      ]
+    },
+    {
+      "id": "snorlax",
+      "name": "Snorlax",
+      "number": "143",
+      "zh": "卡比兽",
+      "aliases": [
+        "卡比獸"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Snorlax",
+        "name": "Snorlax",
+        "level": 50,
+        "item": "Chesto Berry",
+        "ability": "Thick Fat",
+        "nature": "Careful",
+        "evs": {
+          "hp": 188,
+          "atk": 68,
+          "def": 0,
+          "spa": 0,
+          "spd": 252,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Curse",
+          "Body Slam",
+          "Crunch",
+          "Rest"
+        ]
+      },
+      "plan": "Curse improves physical bulk and damage; Chesto Berry gives one immediate Rest recovery.",
+      "tierMap": {
+        "Snorlax": "RU"
+      },
+      "types": [
+        "Normal"
+      ],
+      "form": "Snorlax",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Curse",
+          "id": "curse",
+          "type": "Ghost",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Curses if Ghost, else -1 Spe, +1 Atk, +1 Def."
+        },
+        {
+          "name": "Body Slam",
+          "id": "bodyslam",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "30% chance to paralyze the target."
+        },
+        {
+          "name": "Crunch",
+          "id": "crunch",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to lower the target's Defense by 1."
+        },
+        {
+          "name": "Rest",
+          "id": "rest",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "User sleeps 2 turns and restores HP and status."
+        }
+      ]
+    },
+    {
+      "id": "fennekin",
+      "name": "Fennekin",
+      "number": "653",
+      "zh": "火狐狸",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Fennekin",
+        "name": "Fennekin",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Blaze",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Flamethrower",
+          "Psychic",
+          "Grass Knot",
+          "Will-O-Wisp"
+        ]
+      },
+      "plan": "Coverage for Water and Rock foes; Will-O-Wisp weakens physical attackers.",
+      "tierMap": {
+        "Fennekin": "LC"
+      },
+      "types": [
+        "Fire"
+      ],
+      "form": "Fennekin",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Flamethrower",
+          "id": "flamethrower",
+          "type": "Fire",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to burn the target."
+        },
+        {
+          "name": "Psychic",
+          "id": "psychic",
+          "type": "Psychic",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Grass Knot",
+          "id": "grassknot",
+          "type": "Grass",
+          "category": "Special",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "More power the heavier the target."
+        },
+        {
+          "name": "Will-O-Wisp",
+          "id": "willowisp",
+          "type": "Fire",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 85,
+          "pp": 15,
+          "description": "Burns the target."
+        }
+      ]
+    },
+    {
+      "id": "pikachu",
+      "name": "Pikachu",
+      "number": "025",
+      "zh": "皮卡丘",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Pikachu",
+        "name": "Pikachu",
+        "level": 50,
+        "item": "Light Ball",
+        "ability": "Lightning Rod",
+        "nature": "Hasty",
+        "evs": {
+          "hp": 0,
+          "atk": 4,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Thunderbolt",
+          "Grass Knot",
+          "Surf",
+          "Fake Out"
+        ]
+      },
+      "plan": "Light Ball doubles both attacking stats; Fake Out gives useful opening chip.",
+      "tierMap": {
+        "Pikachu": "RU",
+        "Pikachu-Original": "RU",
+        "Pikachu-Hoenn": "RU",
+        "Pikachu-Sinnoh": "RU",
+        "Pikachu-Unova": "RU",
+        "Pikachu-Kalos": "RU",
+        "Pikachu-Alola": "RU",
+        "Pikachu-Partner": "RU",
+        "Pikachu-World": "RU"
+      },
+      "types": [
+        "Electric"
+      ],
+      "form": "Pikachu",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Thunderbolt",
+          "id": "thunderbolt",
+          "type": "Electric",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to paralyze the target."
+        },
+        {
+          "name": "Grass Knot",
+          "id": "grassknot",
+          "type": "Grass",
+          "category": "Special",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "More power the heavier the target."
+        },
+        {
+          "name": "Surf",
+          "id": "surf",
+          "type": "Water",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Hits adjacent Pokemon. Double damage on Dive."
+        },
+        {
+          "name": "Fake Out",
+          "id": "fakeout",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Hits first. First turn out only. 100% flinch chance."
+        }
+      ]
+    },
+    {
+      "id": "furret",
+      "name": "Furret",
+      "number": "162",
+      "zh": "大尾立",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Furret",
+        "name": "Furret",
+        "level": 50,
+        "item": "Silk Scarf",
+        "ability": "Keen Eye",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Coil",
+          "Double-Edge",
+          "Knock Off",
+          "Sucker Punch"
+        ]
+      },
+      "plan": "Coil boosts damage and defense; Sucker Punch covers faster attackers.",
+      "tierMap": {
+        "Furret": "RU"
+      },
+      "types": [
+        "Normal"
+      ],
+      "form": "Furret",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Coil",
+          "id": "coil",
+          "type": "Poison",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises user's Attack, Defense, accuracy by 1."
+        },
+        {
+          "name": "Double-Edge",
+          "id": "doubleedge",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Has 33% recoil."
+        },
+        {
+          "name": "Knock Off",
+          "id": "knockoff",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 65,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "1.5x damage if foe holds an item. Removes item."
+        },
+        {
+          "name": "Sucker Punch",
+          "id": "suckerpunch",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 70,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "Usually goes first. Fails if target is not attacking."
+        }
+      ]
+    },
+    {
+      "id": "mimikyu",
+      "name": "Mimikyu",
+      "number": "778",
+      "zh": "谜拟丘",
+      "aliases": [
+        "謎擬丘",
+        "谜拟Q",
+        "mimiq"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Mimikyu",
+        "name": "Mimikyu",
+        "level": 50,
+        "item": "Life Orb",
+        "ability": "Disguise",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Swords Dance",
+          "Play Rough",
+          "Shadow Claw",
+          "Shadow Sneak"
+        ]
+      },
+      "plan": "Use Disguise to set up, then finish with priority Shadow Sneak.",
+      "tierMap": {
+        "Mimikyu": "RU",
+        "Mimikyu-Busted": "RU"
+      },
+      "types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "form": "Mimikyu",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "id": "swordsdance",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack by 2."
+        },
+        {
+          "name": "Play Rough",
+          "id": "playrough",
+          "type": "Fairy",
+          "category": "Physical",
+          "power": 90,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "10% chance to lower the target's Attack by 1."
+        },
+        {
+          "name": "Shadow Claw",
+          "id": "shadowclaw",
+          "type": "Ghost",
+          "category": "Physical",
+          "power": 70,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "High critical hit ratio."
+        },
+        {
+          "name": "Shadow Sneak",
+          "id": "shadowsneak",
+          "type": "Ghost",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "description": "Usually goes first."
+        }
+      ]
+    },
+    {
+      "id": "dondozo",
+      "name": "Dondozo",
+      "number": "977",
+      "zh": "吃吼霸",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Dondozo",
+        "name": "Dondozo",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Unaware",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Order Up",
+          "Wave Crash",
+          "Rest",
+          "Sleep Talk"
+        ]
+      },
+      "plan": "Commander grants +2 to all five stats; Curly Tatsugiri makes Order Up raise Attack.",
+      "tierMap": {
+        "Dondozo": "UUBL"
+      },
+      "types": [
+        "Water"
+      ],
+      "form": "Dondozo",
+      "tier": "OU",
+      "sourceTier": "UUBL",
+      "tierOverride": true,
+      "moves": [
+        {
+          "name": "Order Up",
+          "id": "orderup",
+          "type": "Dragon",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Curly|Droopy|Stretchy eaten: +1 Atk|Def|Spe."
+        },
+        {
+          "name": "Wave Crash",
+          "id": "wavecrash",
+          "type": "Water",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Has 33% recoil."
+        },
+        {
+          "name": "Rest",
+          "id": "rest",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "User sleeps 2 turns and restores HP and status."
+        },
+        {
+          "name": "Sleep Talk",
+          "id": "sleeptalk",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "User must be asleep. Uses another known move."
+        }
+      ]
+    },
+    {
+      "id": "tatsugiri",
+      "name": "Tatsugiri",
+      "number": "978",
+      "zh": "米立龙",
+      "aliases": [
+        "米粒龙",
+        "米立龍"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Tatsugiri",
+        "name": "Tatsugiri",
+        "level": 50,
+        "item": "Choice Scarf",
+        "ability": "Commander",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Draco Meteor",
+          "Muddy Water",
+          "Dragon Pulse",
+          "Icy Wind"
+        ]
+      },
+      "plan": "Commander enters Dondozo in doubles; Curly form strengthens Order Up.",
+      "battleGroup": "commander",
+      "tierMap": {
+        "Tatsugiri": "RU",
+        "Tatsugiri-Droopy": "RU",
+        "Tatsugiri-Stretchy": "RU"
+      },
+      "types": [
+        "Dragon",
+        "Water"
+      ],
+      "form": "Tatsugiri",
+      "tier": "OU",
+      "sourceTier": "RU",
+      "tierOverride": true,
+      "moves": [
+        {
+          "name": "Draco Meteor",
+          "id": "dracometeor",
+          "type": "Dragon",
+          "category": "Special",
+          "power": 130,
+          "accuracy": 90,
+          "pp": 5,
+          "description": "Lowers the user's Sp. Atk by 2."
+        },
+        {
+          "name": "Muddy Water",
+          "id": "muddywater",
+          "type": "Water",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 85,
+          "pp": 10,
+          "description": "30% chance to lower the foe(s) accuracy by 1."
+        },
+        {
+          "name": "Dragon Pulse",
+          "id": "dragonpulse",
+          "type": "Dragon",
+          "category": "Special",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "No additional effect."
+        },
+        {
+          "name": "Icy Wind",
+          "id": "icywind",
+          "type": "Ice",
+          "category": "Special",
+          "power": 55,
+          "accuracy": 95,
+          "pp": 15,
+          "description": "100% chance to lower the foe(s) Speed by 1."
+        }
+      ]
+    },
+    {
+      "id": "koraidon",
+      "name": "Koraidon",
+      "number": "1007",
+      "zh": "故勒顿",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Koraidon",
+        "name": "Koraidon",
+        "level": 50,
+        "item": "Loaded Dice",
+        "ability": "Orichalcum Pulse",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Swords Dance",
+          "Scale Shot",
+          "Collision Course",
+          "Flare Blitz"
+        ]
+      },
+      "plan": "Sun-boosted physical offense with Loaded Dice Scale Shot for speed control.",
+      "tierMap": {
+        "Koraidon": "AG"
+      },
+      "types": [
+        "Fighting",
+        "Dragon"
+      ],
+      "form": "Koraidon",
+      "tier": "AG",
+      "sourceTier": "AG",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "id": "swordsdance",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack by 2."
+        },
+        {
+          "name": "Scale Shot",
+          "id": "scaleshot",
+          "type": "Dragon",
+          "category": "Physical",
+          "power": 25,
+          "accuracy": 90,
+          "pp": 20,
+          "description": "Hits 2-5 times. User: -1 Def, +1 Spe after last hit."
+        },
+        {
+          "name": "Collision Course",
+          "id": "collisioncourse",
+          "type": "Fighting",
+          "category": "Physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "Deals 1.3333x damage with supereffective hits."
+        },
+        {
+          "name": "Flare Blitz",
+          "id": "flareblitz",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Has 33% recoil. 10% chance to burn. Thaws user."
+        }
+      ]
+    },
+    {
+      "id": "serperior",
+      "name": "Serperior",
+      "number": "497",
+      "zh": "君主蛇",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Serperior",
+        "name": "Serperior",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Contrary",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Leaf Storm",
+          "Dragon Pulse",
+          "Glare",
+          "Synthesis"
+        ]
+      },
+      "plan": "Contrary turns Leaf Storm into a Special Attack boost; Glare slows faster foes.",
+      "tierMap": {
+        "Serperior": "UU"
+      },
+      "types": [
+        "Grass"
+      ],
+      "form": "Serperior",
+      "tier": "UU",
+      "sourceTier": "UU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Leaf Storm",
+          "id": "leafstorm",
+          "type": "Grass",
+          "category": "Special",
+          "power": 130,
+          "accuracy": 90,
+          "pp": 5,
+          "description": "Lowers the user's Sp. Atk by 2."
+        },
+        {
+          "name": "Dragon Pulse",
+          "id": "dragonpulse",
+          "type": "Dragon",
+          "category": "Special",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "No additional effect."
+        },
+        {
+          "name": "Glare",
+          "id": "glare",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 30,
+          "description": "Paralyzes the target."
+        },
+        {
+          "name": "Synthesis",
+          "id": "synthesis",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by a weather-dependent amount."
+        }
+      ]
+    },
+    {
+      "id": "charizard",
+      "name": "Charizard",
+      "number": "006",
+      "zh": "喷火龙",
+      "aliases": [
+        "噴火龍"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Charizard",
+        "name": "Charizard",
+        "level": 50,
+        "item": "Charizardite Y",
+        "ability": "Blaze",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Flamethrower",
+          "Solar Beam",
+          "Air Slash",
+          "Roost"
+        ]
+      },
+      "plan": "Mega Evolve for Drought, then use sun-powered Fire STAB and instant Solar Beam.",
+      "form": "Charizard-Mega-Y",
+      "mega": true,
+      "tierMap": {
+        "Charizard": "RU",
+        "Charizard-Mega-X": "UUBL",
+        "Charizard-Mega-Y": "OU"
+      },
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "tier": "OU",
+      "sourceTier": "OU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Flamethrower",
+          "id": "flamethrower",
+          "type": "Fire",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to burn the target."
+        },
+        {
+          "name": "Solar Beam",
+          "id": "solarbeam",
+          "type": "Grass",
+          "category": "Special",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Charges turn 1. Hits turn 2. No charge in sunlight."
+        },
+        {
+          "name": "Air Slash",
+          "id": "airslash",
+          "type": "Flying",
+          "category": "Special",
+          "power": 75,
+          "accuracy": 95,
+          "pp": 15,
+          "description": "30% chance to make the target flinch."
+        },
+        {
+          "name": "Roost",
+          "id": "roost",
+          "type": "Flying",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals 50% HP. Flying-type removed 'til turn ends."
+        }
+      ]
+    },
+    {
+      "id": "comfey",
+      "name": "Comfey",
+      "number": "764",
+      "zh": "花疗环环",
+      "aliases": [
+        "花療環環"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Comfey",
+        "name": "Comfey",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Triage",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Calm Mind",
+          "Draining Kiss",
+          "Giga Drain",
+          "Synthesis"
+        ]
+      },
+      "plan": "Triage gives healing moves priority; Calm Mind makes Draining Kiss threatening.",
+      "tierMap": {
+        "Comfey": "RU"
+      },
+      "types": [
+        "Fairy"
+      ],
+      "form": "Comfey",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "id": "calmmind",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk and Sp. Def by 1."
+        },
+        {
+          "name": "Draining Kiss",
+          "id": "drainingkiss",
+          "type": "Fairy",
+          "category": "Special",
+          "power": 50,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User recovers 75% of the damage dealt."
+        },
+        {
+          "name": "Giga Drain",
+          "id": "gigadrain",
+          "type": "Grass",
+          "category": "Special",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User recovers 50% of the damage dealt."
+        },
+        {
+          "name": "Synthesis",
+          "id": "synthesis",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by a weather-dependent amount."
+        }
+      ]
+    },
+    {
+      "id": "swablu",
+      "name": "Swablu",
+      "number": "333",
+      "zh": "青绵鸟",
+      "aliases": [
+        "青綿鳥"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Swablu",
+        "name": "Swablu",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Natural Cure",
+        "nature": "Careful",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 4,
+          "spa": 0,
+          "spd": 252,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Cotton Guard",
+          "Toxic",
+          "Roost",
+          "Return"
+        ]
+      },
+      "plan": "Cotton Guard and Roost buy time for Toxic; Return avoids complete passivity.",
+      "tierMap": {
+        "Swablu": "LC"
+      },
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "form": "Swablu",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Cotton Guard",
+          "id": "cottonguard",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Raises the user's Defense by 3."
+        },
+        {
+          "name": "Toxic",
+          "id": "toxic",
+          "type": "Poison",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "Badly poisons the target. Poison types can't miss."
+        },
+        {
+          "name": "Roost",
+          "id": "roost",
+          "type": "Flying",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals 50% HP. Flying-type removed 'til turn ends."
+        },
+        {
+          "name": "Return",
+          "id": "return",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "Max 102 power at maximum Happiness."
+        }
+      ]
+    },
+    {
+      "id": "shiny-rayquaza",
+      "name": "Shiny Rayquaza",
+      "number": "384",
+      "zh": "闪光裂空座",
+      "aliases": [
+        "Rayquaza",
+        "裂空座",
+        "闪光烈空坐",
+        "烈空坐",
+        "閃光裂空座"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Rayquaza",
+        "name": "Rayquaza",
+        "level": 50,
+        "item": "Life Orb",
+        "ability": "Air Lock",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Dragon Dance",
+          "Dragon Ascent",
+          "Extreme Speed",
+          "Earthquake"
+        ],
+        "shiny": true
+      },
+      "plan": "Mega Evolve, use Dragon Dance, then attack with Dragon Ascent or priority.",
+      "form": "Rayquaza-Mega",
+      "mega": true,
+      "tierMap": {
+        "Rayquaza": "Uber",
+        "Rayquaza-Mega": "AG"
+      },
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "tier": "AG",
+      "sourceTier": "AG",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Dragon Dance",
+          "id": "dragondance",
+          "type": "Dragon",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack and Speed by 1."
+        },
+        {
+          "name": "Dragon Ascent",
+          "id": "dragonascent",
+          "type": "Flying",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "Lowers the user's Defense and Sp. Def by 1."
+        },
+        {
+          "name": "Extreme Speed",
+          "id": "extremespeed",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "Nearly always goes first."
+        },
+        {
+          "name": "Earthquake",
+          "id": "earthquake",
+          "type": "Ground",
+          "category": "Physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Hits adjacent Pokemon. Double damage on Dig."
+        }
+      ]
+    },
+    {
+      "id": "mareep",
+      "name": "Mareep",
+      "number": "179",
+      "zh": "咩利羊",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Mareep",
+        "name": "Mareep",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Static",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Thunderbolt",
+          "Dazzling Gleam",
+          "Thunder Wave",
+          "Cotton Guard"
+        ]
+      },
+      "plan": "Paralyze foes and use Cotton Guard to compensate for low physical defense.",
+      "tierMap": {
+        "Mareep": "LC"
+      },
+      "types": [
+        "Electric"
+      ],
+      "form": "Mareep",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Thunderbolt",
+          "id": "thunderbolt",
+          "type": "Electric",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to paralyze the target."
+        },
+        {
+          "name": "Dazzling Gleam",
+          "id": "dazzlinggleam",
+          "type": "Fairy",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "No additional effect. Hits adjacent foes."
+        },
+        {
+          "name": "Thunder Wave",
+          "id": "thunderwave",
+          "type": "Electric",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 20,
+          "description": "Paralyzes the target."
+        },
+        {
+          "name": "Cotton Guard",
+          "id": "cottonguard",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Raises the user's Defense by 3."
+        }
+      ]
+    },
+    {
+      "id": "teddiursa",
+      "name": "Teddiursa",
+      "number": "216",
+      "zh": "熊宝宝",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Teddiursa",
+        "name": "Teddiursa",
+        "level": 50,
+        "item": "Toxic Orb",
+        "ability": "Quick Feet",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Protect",
+          "Facade",
+          "Close Combat",
+          "Crunch"
+        ]
+      },
+      "plan": "Protect activates Toxic Orb; Quick Feet supplies speed and Facade doubles in power.",
+      "tierMap": {
+        "Teddiursa": "LC"
+      },
+      "types": [
+        "Normal"
+      ],
+      "form": "Teddiursa",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Protect",
+          "id": "protect",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Prevents moves from affecting the user this turn."
+        },
+        {
+          "name": "Facade",
+          "id": "facade",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 70,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "Power doubles if user is burn/poison/paralyzed."
+        },
+        {
+          "name": "Close Combat",
+          "id": "closecombat",
+          "type": "Fighting",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "Lowers the user's Defense and Sp. Def by 1."
+        },
+        {
+          "name": "Crunch",
+          "id": "crunch",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to lower the target's Defense by 1."
+        }
+      ]
+    },
+    {
+      "id": "kirlia",
+      "name": "Kirlia",
+      "number": "281",
+      "zh": "奇鲁莉安",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Kirlia",
+        "name": "Kirlia",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Trace",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Calm Mind",
+          "Psychic",
+          "Draining Kiss",
+          "Thunderbolt"
+        ]
+      },
+      "plan": "Calm Mind boosts both sides of a special duel, with Draining Kiss recovery.",
+      "tierMap": {
+        "Kirlia": "NFE"
+      },
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "form": "Kirlia",
+      "tier": "NFE",
+      "sourceTier": "NFE",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "id": "calmmind",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk and Sp. Def by 1."
+        },
+        {
+          "name": "Psychic",
+          "id": "psychic",
+          "type": "Psychic",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Draining Kiss",
+          "id": "drainingkiss",
+          "type": "Fairy",
+          "category": "Special",
+          "power": 50,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User recovers 75% of the damage dealt."
+        },
+        {
+          "name": "Thunderbolt",
+          "id": "thunderbolt",
+          "type": "Electric",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to paralyze the target."
+        }
+      ]
+    },
+    {
+      "id": "pachirisu",
+      "name": "Pachirisu",
+      "number": "417",
+      "zh": "帕奇利兹",
+      "aliases": [],
+      "acquisition": "starter",
+      "set": {
+        "species": "Pachirisu",
+        "name": "Pachirisu",
+        "level": 50,
+        "item": "Sitrus Berry",
+        "ability": "Volt Absorb",
+        "nature": "Impish",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Super Fang",
+          "Nuzzle",
+          "Toxic",
+          "Protect"
+        ]
+      },
+      "plan": "Super Fang halves current HP; Nuzzle and Toxic offer alternative status plans.",
+      "tierMap": {
+        "Pachirisu": "RU"
+      },
+      "types": [
+        "Electric"
+      ],
+      "form": "Pachirisu",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Super Fang",
+          "id": "superfang",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "Does damage equal to 1/2 target's current HP."
+        },
+        {
+          "name": "Nuzzle",
+          "id": "nuzzle",
+          "type": "Electric",
+          "category": "Physical",
+          "power": 20,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "100% chance to paralyze the target."
+        },
+        {
+          "name": "Toxic",
+          "id": "toxic",
+          "type": "Poison",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "Badly poisons the target. Poison types can't miss."
+        },
+        {
+          "name": "Protect",
+          "id": "protect",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Prevents moves from affecting the user this turn."
+        }
+      ]
+    },
+    {
+      "id": "azumarill",
+      "name": "Azumarill",
+      "number": "184",
+      "zh": "玛力露丽",
+      "aliases": [
+        "瑪力露麗"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Azumarill",
+        "name": "Azumarill",
+        "level": 50,
+        "item": "Sitrus Berry",
+        "ability": "Huge Power",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 244,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 12
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Belly Drum",
+          "Aqua Jet",
+          "Play Rough",
+          "Knock Off"
+        ]
+      },
+      "plan": "Belly Drum plus Sitrus Berry prepares a powerful priority Aqua Jet.",
+      "tierMap": {
+        "Azumarill": "RUBL"
+      },
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "form": "Azumarill",
+      "tier": "RUBL",
+      "sourceTier": "RUBL",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Belly Drum",
+          "id": "bellydrum",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "User loses 50% max HP. Maximizes Attack."
+        },
+        {
+          "name": "Aqua Jet",
+          "id": "aquajet",
+          "type": "Water",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "Usually goes first."
+        },
+        {
+          "name": "Play Rough",
+          "id": "playrough",
+          "type": "Fairy",
+          "category": "Physical",
+          "power": 90,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "10% chance to lower the target's Attack by 1."
+        },
+        {
+          "name": "Knock Off",
+          "id": "knockoff",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 65,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "1.5x damage if foe holds an item. Removes item."
+        }
+      ]
+    },
+    {
+      "id": "scizor",
+      "name": "Scizor",
+      "number": "212",
+      "zh": "巨钳螳螂",
+      "aliases": [
+        "巨鉗螳螂"
+      ],
+      "acquisition": "starter",
+      "set": {
+        "species": "Scizor",
+        "name": "Scizor",
+        "level": 50,
+        "item": "Scizorite",
+        "ability": "Technician",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Swords Dance",
+          "Bullet Punch",
+          "Close Combat",
+          "Roost"
+        ]
+      },
+      "plan": "Mega bulk supports Swords Dance, then Technician-boosted Bullet Punch.",
+      "form": "Scizor-Mega",
+      "mega": true,
+      "tierMap": {
+        "Scizor": "UU",
+        "Scizor-Mega": "OU"
+      },
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "tier": "OU",
+      "sourceTier": "OU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "id": "swordsdance",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack by 2."
+        },
+        {
+          "name": "Bullet Punch",
+          "id": "bulletpunch",
+          "type": "Steel",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "description": "Usually goes first."
+        },
+        {
+          "name": "Close Combat",
+          "id": "closecombat",
+          "type": "Fighting",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "Lowers the user's Defense and Sp. Def by 1."
+        },
+        {
+          "name": "Roost",
+          "id": "roost",
+          "type": "Flying",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals 50% HP. Flying-type removed 'til turn ends."
+        }
+      ]
+    },
+    {
+      "id": "whimsicott",
+      "name": "Whimsicott",
+      "number": "547",
+      "zh": "风妖精",
+      "aliases": [
+        "風妖精"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Whimsicott",
+        "name": "Whimsicott",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Prankster",
+        "nature": "Timid",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Leech Seed",
+          "Substitute",
+          "Encore",
+          "Moonblast"
+        ]
+      },
+      "plan": "Prankster Encore punishes setup; Leech Seed and Substitute sustain the duel.",
+      "tierMap": {
+        "Whimsicott": "RU"
+      },
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "form": "Whimsicott",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Leech Seed",
+          "id": "leechseed",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "1/8 of target's HP is restored to user every turn."
+        },
+        {
+          "name": "Substitute",
+          "id": "substitute",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "User takes 1/4 its max HP to put in a substitute."
+        },
+        {
+          "name": "Encore",
+          "id": "encore",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "Target repeats its last move for its next 3 turns."
+        },
+        {
+          "name": "Moonblast",
+          "id": "moonblast",
+          "type": "Fairy",
+          "category": "Special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "30% chance to lower the target's Sp. Atk by 1."
+        }
+      ]
+    },
+    {
+      "id": "zacian",
+      "name": "Zacian",
+      "number": "888",
+      "zh": "苍响",
+      "aliases": [
+        "蒼響"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Zacian",
+        "name": "Zacian",
+        "level": 50,
+        "item": "Rusted Sword",
+        "ability": "Intrepid Sword",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Swords Dance",
+          "Iron Head",
+          "Play Rough",
+          "Close Combat"
+        ]
+      },
+      "plan": "Rusted Sword activates Crowned form and turns Iron Head into Behemoth Blade.",
+      "form": "Zacian-Crowned",
+      "tierMap": {
+        "Zacian": "Uber",
+        "Zacian-Crowned": "Uber"
+      },
+      "types": [
+        "Fairy",
+        "Steel"
+      ],
+      "tier": "Uber",
+      "sourceTier": "Uber",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "id": "swordsdance",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack by 2."
+        },
+        {
+          "name": "Iron Head",
+          "id": "ironhead",
+          "type": "Steel",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "30% chance to make the target flinch."
+        },
+        {
+          "name": "Play Rough",
+          "id": "playrough",
+          "type": "Fairy",
+          "category": "Physical",
+          "power": 90,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "10% chance to lower the target's Attack by 1."
+        },
+        {
+          "name": "Close Combat",
+          "id": "closecombat",
+          "type": "Fighting",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "Lowers the user's Defense and Sp. Def by 1."
+        }
+      ]
+    },
+    {
+      "id": "ponyta",
+      "name": "Ponyta",
+      "number": "077",
+      "zh": "小火马",
+      "aliases": [
+        "小火馬"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Ponyta",
+        "name": "Ponyta",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Flame Body",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Flare Blitz",
+          "Wild Charge",
+          "High Horsepower",
+          "Morning Sun"
+        ]
+      },
+      "plan": "Fast physical coverage with Morning Sun to recover recoil damage.",
+      "tierMap": {
+        "Ponyta": "LC",
+        "Ponyta-Galar": "LC"
+      },
+      "types": [
+        "Fire"
+      ],
+      "form": "Ponyta",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Flare Blitz",
+          "id": "flareblitz",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Has 33% recoil. 10% chance to burn. Thaws user."
+        },
+        {
+          "name": "Wild Charge",
+          "id": "wildcharge",
+          "type": "Electric",
+          "category": "Physical",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Has 1/4 recoil."
+        },
+        {
+          "name": "High Horsepower",
+          "id": "highhorsepower",
+          "type": "Ground",
+          "category": "Physical",
+          "power": 95,
+          "accuracy": 95,
+          "pp": 10,
+          "description": "No additional effect."
+        },
+        {
+          "name": "Morning Sun",
+          "id": "morningsun",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by a weather-dependent amount."
+        }
+      ]
+    },
+    {
+      "id": "jigglypuff",
+      "name": "Jigglypuff",
+      "number": "039",
+      "zh": "胖丁",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Jigglypuff",
+        "name": "Jigglypuff",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Competitive",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Hyper Voice",
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Thunder Wave"
+        ]
+      },
+      "plan": "Eviolite supports broad special coverage; Thunder Wave offsets low speed.",
+      "tierMap": {
+        "Jigglypuff": "NFE"
+      },
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "form": "Jigglypuff",
+      "tier": "NFE",
+      "sourceTier": "NFE",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Hyper Voice",
+          "id": "hypervoice",
+          "type": "Normal",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "No additional effect. Hits adjacent foes."
+        },
+        {
+          "name": "Dazzling Gleam",
+          "id": "dazzlinggleam",
+          "type": "Fairy",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "No additional effect. Hits adjacent foes."
+        },
+        {
+          "name": "Flamethrower",
+          "id": "flamethrower",
+          "type": "Fire",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to burn the target."
+        },
+        {
+          "name": "Thunder Wave",
+          "id": "thunderwave",
+          "type": "Electric",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 20,
+          "description": "Paralyzes the target."
+        }
+      ]
+    },
+    {
+      "id": "machamp",
+      "name": "Machamp",
+      "number": "068",
+      "zh": "怪力",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Machamp",
+        "name": "Machamp",
+        "level": 50,
+        "item": "Assault Vest",
+        "ability": "No Guard",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Dynamic Punch",
+          "Knock Off",
+          "Stone Edge",
+          "Bullet Punch"
+        ]
+      },
+      "plan": "No Guard makes Dynamic Punch and Stone Edge reliable; Assault Vest covers special hits.",
+      "tierMap": {
+        "Machamp": "RU"
+      },
+      "types": [
+        "Fighting"
+      ],
+      "form": "Machamp",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Dynamic Punch",
+          "id": "dynamicpunch",
+          "type": "Fighting",
+          "category": "Physical",
+          "power": 100,
+          "accuracy": 50,
+          "pp": 5,
+          "description": "100% chance to confuse the target."
+        },
+        {
+          "name": "Knock Off",
+          "id": "knockoff",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 65,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "1.5x damage if foe holds an item. Removes item."
+        },
+        {
+          "name": "Stone Edge",
+          "id": "stoneedge",
+          "type": "Rock",
+          "category": "Physical",
+          "power": 100,
+          "accuracy": 80,
+          "pp": 5,
+          "description": "High critical hit ratio."
+        },
+        {
+          "name": "Bullet Punch",
+          "id": "bulletpunch",
+          "type": "Steel",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "description": "Usually goes first."
+        }
+      ]
+    },
+    {
+      "id": "umbreon",
+      "name": "Umbreon",
+      "number": "197",
+      "zh": "月亮伊布",
+      "aliases": [
+        "月伊布"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Umbreon",
+        "name": "Umbreon",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Synchronize",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Foul Play",
+          "Toxic",
+          "Wish",
+          "Protect"
+        ]
+      },
+      "plan": "Foul Play punishes high Attack while Wish and Protect sustain Toxic damage.",
+      "tierMap": {
+        "Umbreon": "RU"
+      },
+      "types": [
+        "Dark"
+      ],
+      "form": "Umbreon",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Foul Play",
+          "id": "foulplay",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Uses target's Attack stat in damage calculation."
+        },
+        {
+          "name": "Toxic",
+          "id": "toxic",
+          "type": "Poison",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "Badly poisons the target. Poison types can't miss."
+        },
+        {
+          "name": "Wish",
+          "id": "wish",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Next turn, 50% of the user's max HP is restored."
+        },
+        {
+          "name": "Protect",
+          "id": "protect",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Prevents moves from affecting the user this turn."
+        }
+      ]
+    },
+    {
+      "id": "squirtle",
+      "name": "Squirtle",
+      "number": "007",
+      "zh": "杰尼龟",
+      "aliases": [
+        "傑尼龜"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Squirtle",
+        "name": "Squirtle",
+        "level": 50,
+        "item": "White Herb",
+        "ability": "Torrent",
+        "nature": "Modest",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Shell Smash",
+          "Surf",
+          "Ice Beam",
+          "Aura Sphere"
+        ]
+      },
+      "plan": "Shell Smash boosts offense and speed; White Herb restores its lowered defenses.",
+      "tierMap": {
+        "Squirtle": "LC"
+      },
+      "types": [
+        "Water"
+      ],
+      "form": "Squirtle",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Shell Smash",
+          "id": "shellsmash",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 15,
+          "description": "Lowers Def, SpD by 1; raises Atk, SpA, Spe by 2."
+        },
+        {
+          "name": "Surf",
+          "id": "surf",
+          "type": "Water",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Hits adjacent Pokemon. Double damage on Dive."
+        },
+        {
+          "name": "Ice Beam",
+          "id": "icebeam",
+          "type": "Ice",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to freeze the target."
+        },
+        {
+          "name": "Aura Sphere",
+          "id": "aurasphere",
+          "type": "Fighting",
+          "category": "Special",
+          "power": 80,
+          "accuracy": true,
+          "pp": 20,
+          "description": "This move does not check accuracy."
+        }
+      ]
+    },
+    {
+      "id": "cosmog",
+      "name": "Cosmog",
+      "number": "789",
+      "zh": "科斯莫古",
+      "aliases": [
+        "小星云",
+        "小星雲",
+        "Nebby"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Cosmog",
+        "name": "Cosmog",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Unaware",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Splash",
+          "Teleport"
+        ]
+      },
+      "plan": "Cosmog only legally learns Splash and Teleport. It cannot deal direct damage; this is a novelty challenge.",
+      "tierMap": {
+        "Cosmog": "LC"
+      },
+      "types": [
+        "Psychic"
+      ],
+      "form": "Cosmog",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Splash",
+          "id": "splash",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 40,
+          "description": "No competitive use."
+        },
+        {
+          "name": "Teleport",
+          "id": "teleport",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "User switches out."
+        }
+      ]
+    },
+    {
+      "id": "froakie",
+      "name": "Froakie",
+      "number": "656",
+      "zh": "呱呱泡蛙",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Froakie",
+        "name": "Froakie",
+        "level": 50,
+        "item": "Life Orb",
+        "ability": "Protean",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Hydro Pump",
+          "Ice Beam",
+          "Grass Knot",
+          "Substitute"
+        ]
+      },
+      "plan": "Protean and Life Orb boost offensive coverage against higher-tier opponents.",
+      "tierMap": {
+        "Froakie": "LC"
+      },
+      "types": [
+        "Water"
+      ],
+      "form": "Froakie",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Hydro Pump",
+          "id": "hydropump",
+          "type": "Water",
+          "category": "Special",
+          "power": 110,
+          "accuracy": 80,
+          "pp": 5,
+          "description": "No additional effect."
+        },
+        {
+          "name": "Ice Beam",
+          "id": "icebeam",
+          "type": "Ice",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to freeze the target."
+        },
+        {
+          "name": "Grass Knot",
+          "id": "grassknot",
+          "type": "Grass",
+          "category": "Special",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "More power the heavier the target."
+        },
+        {
+          "name": "Substitute",
+          "id": "substitute",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "User takes 1/4 its max HP to put in a substitute."
+        }
+      ]
+    },
+    {
+      "id": "tornadus",
+      "name": "Tornadus",
+      "number": "641",
+      "zh": "龙卷云",
+      "aliases": [
+        "龍捲雲"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Tornadus",
+        "name": "Tornadus",
+        "level": 50,
+        "item": "Life Orb",
+        "ability": "Prankster",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Rain Dance",
+          "Hurricane",
+          "Focus Blast",
+          "Taunt"
+        ]
+      },
+      "plan": "Prankster Rain Dance makes Hurricane accurate; Taunt blocks defensive setup.",
+      "tierMap": {
+        "Tornadus": "RU",
+        "Tornadus-Therian": "OU"
+      },
+      "types": [
+        "Flying"
+      ],
+      "form": "Tornadus",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Rain Dance",
+          "id": "raindance",
+          "type": "Water",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "For 5 turns, heavy rain powers Water moves."
+        },
+        {
+          "name": "Hurricane",
+          "id": "hurricane",
+          "type": "Flying",
+          "category": "Special",
+          "power": 110,
+          "accuracy": 70,
+          "pp": 10,
+          "description": "30% chance to confuse target. Can't miss in rain."
+        },
+        {
+          "name": "Focus Blast",
+          "id": "focusblast",
+          "type": "Fighting",
+          "category": "Special",
+          "power": 120,
+          "accuracy": 70,
+          "pp": 5,
+          "description": "10% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Taunt",
+          "id": "taunt",
+          "type": "Dark",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "Target can't use status moves its next 3 turns."
+        }
+      ]
+    },
+    {
+      "id": "amoonguss",
+      "name": "Amoonguss",
+      "number": "591",
+      "zh": "败露球菇",
+      "aliases": [
+        "敗露球菇"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Amoonguss",
+        "name": "Amoonguss",
+        "level": 50,
+        "item": "Black Sludge",
+        "ability": "Effect Spore",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Spore",
+          "Giga Drain",
+          "Sludge Bomb",
+          "Synthesis"
+        ]
+      },
+      "plan": "Spore creates recovery turns; Giga Drain and Synthesis sustain a bulky duel.",
+      "tierMap": {
+        "Amoonguss": "UU"
+      },
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "form": "Amoonguss",
+      "tier": "UU",
+      "sourceTier": "UU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Spore",
+          "id": "spore",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Causes the target to fall asleep."
+        },
+        {
+          "name": "Giga Drain",
+          "id": "gigadrain",
+          "type": "Grass",
+          "category": "Special",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User recovers 50% of the damage dealt."
+        },
+        {
+          "name": "Sludge Bomb",
+          "id": "sludgebomb",
+          "type": "Poison",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "30% chance to poison the target."
+        },
+        {
+          "name": "Synthesis",
+          "id": "synthesis",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by a weather-dependent amount."
+        }
+      ]
+    },
+    {
+      "id": "hydreigon",
+      "name": "Hydreigon",
+      "number": "635",
+      "zh": "三首恶龙",
+      "aliases": [
+        "三首惡龍"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Hydreigon",
+        "name": "Hydreigon",
+        "level": 50,
+        "item": "Life Orb",
+        "ability": "Levitate",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Nasty Plot",
+          "Dark Pulse",
+          "Draco Meteor",
+          "Flash Cannon"
+        ]
+      },
+      "plan": "Nasty Plot boosts special offense; Flash Cannon covers Fairy types.",
+      "tierMap": {
+        "Hydreigon": "UU"
+      },
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "form": "Hydreigon",
+      "tier": "UU",
+      "sourceTier": "UU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Nasty Plot",
+          "id": "nastyplot",
+          "type": "Dark",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk by 2."
+        },
+        {
+          "name": "Dark Pulse",
+          "id": "darkpulse",
+          "type": "Dark",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to make the target flinch."
+        },
+        {
+          "name": "Draco Meteor",
+          "id": "dracometeor",
+          "type": "Dragon",
+          "category": "Special",
+          "power": 130,
+          "accuracy": 90,
+          "pp": 5,
+          "description": "Lowers the user's Sp. Atk by 2."
+        },
+        {
+          "name": "Flash Cannon",
+          "id": "flashcannon",
+          "type": "Steel",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to lower the target's Sp. Def by 1."
+        }
+      ]
+    },
+    {
+      "id": "flutter-mane",
+      "name": "Flutter Mane",
+      "number": "987",
+      "zh": "振翼发",
+      "aliases": [
+        "震翼发",
+        "振翼髮"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Flutter Mane",
+        "name": "Flutter Mane",
+        "level": 50,
+        "item": "Booster Energy",
+        "ability": "Protosynthesis",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Calm Mind",
+          "Moonblast",
+          "Shadow Ball",
+          "Mystical Fire"
+        ]
+      },
+      "plan": "Booster Energy activates Protosynthesis; Calm Mind boosts strong dual STAB.",
+      "tierMap": {
+        "Flutter Mane": "Uber"
+      },
+      "types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "form": "Flutter Mane",
+      "tier": "Uber",
+      "sourceTier": "Uber",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "id": "calmmind",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk and Sp. Def by 1."
+        },
+        {
+          "name": "Moonblast",
+          "id": "moonblast",
+          "type": "Fairy",
+          "category": "Special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "30% chance to lower the target's Sp. Atk by 1."
+        },
+        {
+          "name": "Shadow Ball",
+          "id": "shadowball",
+          "type": "Ghost",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Mystical Fire",
+          "id": "mysticalfire",
+          "type": "Fire",
+          "category": "Special",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "100% chance to lower the target's Sp. Atk by 1."
+        }
+      ]
+    },
+    {
+      "id": "oddish",
+      "name": "Oddish",
+      "number": "043",
+      "zh": "走路草",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Oddish",
+        "name": "Oddish",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Chlorophyll",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Sleep Powder",
+          "Giga Drain",
+          "Sludge Bomb",
+          "Moonlight"
+        ]
+      },
+      "plan": "Sleep Powder buys time for recovery and attacks; Giga Drain adds sustain.",
+      "tierMap": {
+        "Oddish": "LC"
+      },
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "form": "Oddish",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Sleep Powder",
+          "id": "sleeppowder",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 75,
+          "pp": 15,
+          "description": "Causes the target to fall asleep."
+        },
+        {
+          "name": "Giga Drain",
+          "id": "gigadrain",
+          "type": "Grass",
+          "category": "Special",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User recovers 50% of the damage dealt."
+        },
+        {
+          "name": "Sludge Bomb",
+          "id": "sludgebomb",
+          "type": "Poison",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "30% chance to poison the target."
+        },
+        {
+          "name": "Moonlight",
+          "id": "moonlight",
+          "type": "Fairy",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by a weather-dependent amount."
+        }
+      ]
+    },
+    {
+      "id": "xatu",
+      "name": "Xatu",
+      "number": "178",
+      "zh": "天然鸟",
+      "aliases": [
+        "天然鳥"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Xatu",
+        "name": "Xatu",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Magic Bounce",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Calm Mind",
+          "Stored Power",
+          "Dazzling Gleam",
+          "Roost"
+        ]
+      },
+      "plan": "Magic Bounce reflects status; Calm Mind raises Stored Power damage.",
+      "tierMap": {
+        "Xatu": "RU"
+      },
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "form": "Xatu",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "id": "calmmind",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk and Sp. Def by 1."
+        },
+        {
+          "name": "Stored Power",
+          "id": "storedpower",
+          "type": "Psychic",
+          "category": "Special",
+          "power": 20,
+          "accuracy": 100,
+          "pp": 10,
+          "description": " + 20 power for each of the user's stat boosts."
+        },
+        {
+          "name": "Dazzling Gleam",
+          "id": "dazzlinggleam",
+          "type": "Fairy",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "No additional effect. Hits adjacent foes."
+        },
+        {
+          "name": "Roost",
+          "id": "roost",
+          "type": "Flying",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals 50% HP. Flying-type removed 'til turn ends."
+        }
+      ]
+    },
+    {
+      "id": "vanillite",
+      "name": "Vanillite",
+      "number": "582",
+      "zh": "迷你冰",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Vanillite",
+        "name": "Vanillite",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Ice Body",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Ice Beam",
+          "Flash Cannon",
+          "Water Pulse",
+          "Protect"
+        ]
+      },
+      "plan": "Ice STAB with coverage for opposing Ice, Rock and Fire types.",
+      "tierMap": {
+        "Vanillite": "LC"
+      },
+      "types": [
+        "Ice"
+      ],
+      "form": "Vanillite",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Ice Beam",
+          "id": "icebeam",
+          "type": "Ice",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to freeze the target."
+        },
+        {
+          "name": "Flash Cannon",
+          "id": "flashcannon",
+          "type": "Steel",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Water Pulse",
+          "id": "waterpulse",
+          "type": "Water",
+          "category": "Special",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "20% chance to confuse the target."
+        },
+        {
+          "name": "Protect",
+          "id": "protect",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Prevents moves from affecting the user this turn."
+        }
+      ]
+    },
+    {
+      "id": "ferrothorn",
+      "name": "Ferrothorn",
+      "number": "598",
+      "zh": "坚果哑铃",
+      "aliases": [
+        "堅果啞鈴"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Ferrothorn",
+        "name": "Ferrothorn",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Iron Barbs",
+        "nature": "Relaxed",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 0,
+          "spd": 31,
+          "spe": 0
+        },
+        "moves": [
+          "Leech Seed",
+          "Protect",
+          "Gyro Ball",
+          "Power Whip"
+        ]
+      },
+      "plan": "Leech Seed and Iron Barbs wear down attackers; minimum speed strengthens Gyro Ball.",
+      "tierMap": {
+        "Ferrothorn": "OU"
+      },
+      "types": [
+        "Grass",
+        "Steel"
+      ],
+      "form": "Ferrothorn",
+      "tier": "OU",
+      "sourceTier": "OU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Leech Seed",
+          "id": "leechseed",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "1/8 of target's HP is restored to user every turn."
+        },
+        {
+          "name": "Protect",
+          "id": "protect",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Prevents moves from affecting the user this turn."
+        },
+        {
+          "name": "Gyro Ball",
+          "id": "gyroball",
+          "type": "Steel",
+          "category": "Physical",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 5,
+          "description": "More power the slower the user than the target."
+        },
+        {
+          "name": "Power Whip",
+          "id": "powerwhip",
+          "type": "Grass",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 85,
+          "pp": 10,
+          "description": "No additional effect."
+        }
+      ]
+    },
+    {
+      "id": "litwick",
+      "name": "Litwick",
+      "number": "607",
+      "zh": "烛光灵",
+      "aliases": [
+        "燭光靈"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Litwick",
+        "name": "Litwick",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Flash Fire",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Calm Mind",
+          "Flamethrower",
+          "Shadow Ball",
+          "Energy Ball"
+        ]
+      },
+      "plan": "Flash Fire gives a Fire immunity; Calm Mind and coverage support slow special offense.",
+      "tierMap": {
+        "Litwick": "LC"
+      },
+      "types": [
+        "Ghost",
+        "Fire"
+      ],
+      "form": "Litwick",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "id": "calmmind",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk and Sp. Def by 1."
+        },
+        {
+          "name": "Flamethrower",
+          "id": "flamethrower",
+          "type": "Fire",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to burn the target."
+        },
+        {
+          "name": "Shadow Ball",
+          "id": "shadowball",
+          "type": "Ghost",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Energy Ball",
+          "id": "energyball",
+          "type": "Grass",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to lower the target's Sp. Def by 1."
+        }
+      ]
+    },
+    {
+      "id": "gastly",
+      "name": "Gastly",
+      "number": "092",
+      "zh": "鬼斯",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Gastly",
+        "name": "Gastly",
+        "level": 50,
+        "item": "Focus Sash",
+        "ability": "Levitate",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Shadow Ball",
+          "Sludge Bomb",
+          "Thunderbolt",
+          "Destiny Bond"
+        ]
+      },
+      "plan": "Focus Sash preserves one action against strong opponents; Destiny Bond can force a trade.",
+      "tierMap": {
+        "Gastly": "NFE"
+      },
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "form": "Gastly",
+      "tier": "NFE",
+      "sourceTier": "NFE",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Shadow Ball",
+          "id": "shadowball",
+          "type": "Ghost",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Sludge Bomb",
+          "id": "sludgebomb",
+          "type": "Poison",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "30% chance to poison the target."
+        },
+        {
+          "name": "Thunderbolt",
+          "id": "thunderbolt",
+          "type": "Electric",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to paralyze the target."
+        },
+        {
+          "name": "Destiny Bond",
+          "id": "destinybond",
+          "type": "Ghost",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "If an opponent knocks out the user, it also faints."
+        }
+      ]
+    },
+    {
+      "id": "elekid",
+      "name": "Elekid",
+      "number": "239",
+      "zh": "电击怪",
+      "aliases": [
+        "電擊怪",
+        "电击小子",
+        "電擊小子"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Elekid",
+        "name": "Elekid",
+        "level": 50,
+        "item": "Life Orb",
+        "ability": "Vital Spirit",
+        "nature": "Timid",
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 30,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Thunderbolt",
+          "Volt Switch",
+          "Psychic",
+          "Hidden Power Ice"
+        ]
+      },
+      "plan": "Fast special coverage; Hidden Power Ice handles Ground and Dragon targets.",
+      "tierMap": {
+        "Elekid": "LC"
+      },
+      "types": [
+        "Electric"
+      ],
+      "form": "Elekid",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Thunderbolt",
+          "id": "thunderbolt",
+          "type": "Electric",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to paralyze the target."
+        },
+        {
+          "name": "Volt Switch",
+          "id": "voltswitch",
+          "type": "Electric",
+          "category": "Special",
+          "power": 70,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "User switches out after damaging the target."
+        },
+        {
+          "name": "Psychic",
+          "id": "psychic",
+          "type": "Psychic",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Hidden Power Ice",
+          "id": "hiddenpower",
+          "type": "Ice",
+          "category": "Special",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 15,
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "jirachi",
+      "name": "Jirachi",
+      "number": "385",
+      "zh": "基拉祈",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Jirachi",
+        "name": "Jirachi",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Serene Grace",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Iron Head",
+          "Body Slam",
+          "Fire Punch",
+          "Wish"
+        ]
+      },
+      "plan": "Body Slam spreads paralysis; Serene Grace boosts Iron Head’s flinch chance.",
+      "tierMap": {
+        "Jirachi": "RUBL"
+      },
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "form": "Jirachi",
+      "tier": "RUBL",
+      "sourceTier": "RUBL",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Iron Head",
+          "id": "ironhead",
+          "type": "Steel",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "30% chance to make the target flinch."
+        },
+        {
+          "name": "Body Slam",
+          "id": "bodyslam",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "30% chance to paralyze the target."
+        },
+        {
+          "name": "Fire Punch",
+          "id": "firepunch",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to burn the target."
+        },
+        {
+          "name": "Wish",
+          "id": "wish",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 10,
+          "description": "Next turn, 50% of the user's max HP is restored."
+        }
+      ]
+    },
+    {
+      "id": "incineroar",
+      "name": "Incineroar",
+      "number": "727",
+      "zh": "炽焰咆哮虎",
+      "aliases": [
+        "熾焰咆哮虎"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Incineroar",
+        "name": "Incineroar",
+        "level": 50,
+        "item": "Assault Vest",
+        "ability": "Intimidate",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Fake Out",
+          "Flare Blitz",
+          "Knock Off",
+          "Drain Punch"
+        ]
+      },
+      "plan": "Intimidate and Assault Vest provide bulk, while Drain Punch restores HP.",
+      "tierMap": {
+        "Incineroar": "RU"
+      },
+      "types": [
+        "Fire",
+        "Dark"
+      ],
+      "form": "Incineroar",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Fake Out",
+          "id": "fakeout",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Hits first. First turn out only. 100% flinch chance."
+        },
+        {
+          "name": "Flare Blitz",
+          "id": "flareblitz",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Has 33% recoil. 10% chance to burn. Thaws user."
+        },
+        {
+          "name": "Knock Off",
+          "id": "knockoff",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 65,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "1.5x damage if foe holds an item. Removes item."
+        },
+        {
+          "name": "Drain Punch",
+          "id": "drainpunch",
+          "type": "Fighting",
+          "category": "Physical",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User recovers 50% of the damage dealt."
+        }
+      ]
+    },
+    {
+      "id": "chikorita",
+      "name": "Chikorita",
+      "number": "152",
+      "zh": "菊草叶",
+      "aliases": [
+        "菊草葉"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Chikorita",
+        "name": "Chikorita",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Overgrow",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Giga Drain",
+          "Leech Seed",
+          "Toxic",
+          "Synthesis"
+        ]
+      },
+      "plan": "A defensive set using Leech Seed and Synthesis to outlast vulnerable opponents.",
+      "tierMap": {
+        "Chikorita": "LC"
+      },
+      "types": [
+        "Grass"
+      ],
+      "form": "Chikorita",
+      "tier": "LC",
+      "sourceTier": "LC",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Giga Drain",
+          "id": "gigadrain",
+          "type": "Grass",
+          "category": "Special",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User recovers 50% of the damage dealt."
+        },
+        {
+          "name": "Leech Seed",
+          "id": "leechseed",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "1/8 of target's HP is restored to user every turn."
+        },
+        {
+          "name": "Toxic",
+          "id": "toxic",
+          "type": "Poison",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "Badly poisons the target. Poison types can't miss."
+        },
+        {
+          "name": "Synthesis",
+          "id": "synthesis",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by a weather-dependent amount."
+        }
+      ]
+    },
+    {
+      "id": "morpeko",
+      "name": "Morpeko",
+      "number": "877",
+      "zh": "莫鲁贝可",
+      "aliases": [
+        "莫魯貝可"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Morpeko",
+        "name": "Morpeko",
+        "level": 50,
+        "item": "Focus Sash",
+        "ability": "Hunger Switch",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Aura Wheel",
+          "Crunch",
+          "Seed Bomb",
+          "Fake Out"
+        ]
+      },
+      "plan": "Aura Wheel boosts speed and alternates type; Focus Sash helps it get started.",
+      "tierMap": {
+        "Morpeko": "RU",
+        "Morpeko-Hangry": "RU"
+      },
+      "types": [
+        "Electric",
+        "Dark"
+      ],
+      "form": "Morpeko",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Aura Wheel",
+          "id": "aurawheel",
+          "type": "Electric",
+          "category": "Physical",
+          "power": 110,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Morpeko: Electric; Hangry: Dark; 100% +1 Spe."
+        },
+        {
+          "name": "Crunch",
+          "id": "crunch",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to lower the target's Defense by 1."
+        },
+        {
+          "name": "Seed Bomb",
+          "id": "seedbomb",
+          "type": "Grass",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "No additional effect."
+        },
+        {
+          "name": "Fake Out",
+          "id": "fakeout",
+          "type": "Normal",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Hits first. First turn out only. 100% flinch chance."
+        }
+      ]
+    },
+    {
+      "id": "ogerpon-teal",
+      "name": "Ogerpon (Teal Mask)",
+      "number": "1017",
+      "zh": "厄诡椪（青草面具）",
+      "aliases": [
+        "Ogerpon",
+        "Teal Mask Ogerpon",
+        "Ogerpon Teal Mask",
+        "厄诡椪",
+        "厄诡椪青草面具",
+        "青草面具厄诡椪",
+        "厄鬼椪"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Ogerpon",
+        "name": "Ogerpon",
+        "level": 50,
+        "item": "Life Orb",
+        "ability": "Defiant",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Swords Dance",
+          "Ivy Cudgel",
+          "Knock Off",
+          "Play Rough"
+        ]
+      },
+      "plan": "Teal Mask Ogerpon keeps its Grass form; Swords Dance boosts Ivy Cudgel and coverage.",
+      "tierMap": {
+        "Ogerpon": "RU",
+        "Ogerpon-Wellspring": "OU",
+        "Ogerpon-Hearthflame": "Uber",
+        "Ogerpon-Cornerstone": "UUBL",
+        "Ogerpon-Teal-Tera": "RU",
+        "Ogerpon-Wellspring-Tera": "OU",
+        "Ogerpon-Hearthflame-Tera": "Uber",
+        "Ogerpon-Cornerstone-Tera": "UUBL"
+      },
+      "types": [
+        "Grass"
+      ],
+      "form": "Ogerpon",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "id": "swordsdance",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack by 2."
+        },
+        {
+          "name": "Ivy Cudgel",
+          "id": "ivycudgel",
+          "type": "Grass",
+          "category": "Physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "High critical hit ratio. Type depends on user's form."
+        },
+        {
+          "name": "Knock Off",
+          "id": "knockoff",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 65,
+          "accuracy": 100,
+          "pp": 20,
+          "description": "1.5x damage if foe holds an item. Removes item."
+        },
+        {
+          "name": "Play Rough",
+          "id": "playrough",
+          "type": "Fairy",
+          "category": "Physical",
+          "power": 90,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "10% chance to lower the target's Attack by 1."
+        }
+      ]
+    },
+    {
+      "id": "dragonair",
+      "name": "Dragonair",
+      "number": "148",
+      "zh": "哈克龙",
+      "aliases": [
+        "哈克龍"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Dragonair",
+        "name": "Dragonair",
+        "level": 50,
+        "item": "Eviolite",
+        "ability": "Shed Skin",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Dragon Dance",
+          "Outrage",
+          "Waterfall",
+          "Rest"
+        ]
+      },
+      "plan": "Eviolite supports Dragon Dance; Shed Skin can wake it early from Rest.",
+      "tierMap": {
+        "Dragonair": "NFE"
+      },
+      "types": [
+        "Dragon"
+      ],
+      "form": "Dragonair",
+      "tier": "NFE",
+      "sourceTier": "NFE",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Dragon Dance",
+          "id": "dragondance",
+          "type": "Dragon",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack and Speed by 1."
+        },
+        {
+          "name": "Outrage",
+          "id": "outrage",
+          "type": "Dragon",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Lasts 2-3 turns. Confuses the user afterwards."
+        },
+        {
+          "name": "Waterfall",
+          "id": "waterfall",
+          "type": "Water",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to make the target flinch."
+        },
+        {
+          "name": "Rest",
+          "id": "rest",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "User sleeps 2 turns and restores HP and status."
+        }
+      ]
+    },
+    {
+      "id": "exeggutor-alola",
+      "name": "Alolan Exeggutor",
+      "number": "103",
+      "zh": "阿罗拉椰蛋树",
+      "aliases": [
+        "Exeggutor Alola",
+        "Exeggutor",
+        "椰蛋树阿罗拉",
+        "椰蛋树",
+        "阿羅拉椰蛋樹",
+        "椰蛋樹"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Exeggutor-Alola",
+        "name": "Exeggutor-Alola",
+        "level": 50,
+        "item": "Sitrus Berry",
+        "ability": "Frisk",
+        "nature": "Quiet",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 0
+        },
+        "moves": [
+          "Trick Room",
+          "Draco Meteor",
+          "Giga Drain",
+          "Flamethrower"
+        ]
+      },
+      "plan": "Trick Room turns its low speed into an advantage; Giga Drain restores HP.",
+      "tierMap": {
+        "Exeggutor": "RU",
+        "Exeggutor-Alola": "RU"
+      },
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "form": "Exeggutor-Alola",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Trick Room",
+          "id": "trickroom",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Goes last. For 5 turns, turn order is reversed."
+        },
+        {
+          "name": "Draco Meteor",
+          "id": "dracometeor",
+          "type": "Dragon",
+          "category": "Special",
+          "power": 130,
+          "accuracy": 90,
+          "pp": 5,
+          "description": "Lowers the user's Sp. Atk by 2."
+        },
+        {
+          "name": "Giga Drain",
+          "id": "gigadrain",
+          "type": "Grass",
+          "category": "Special",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User recovers 50% of the damage dealt."
+        },
+        {
+          "name": "Flamethrower",
+          "id": "flamethrower",
+          "type": "Fire",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to burn the target."
+        }
+      ]
+    },
+    {
+      "id": "pelipper",
+      "name": "Pelipper",
+      "number": "279",
+      "zh": "大嘴鸥",
+      "aliases": [
+        "大嘴鷗"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Pelipper",
+        "name": "Pelipper",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Drizzle",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Hurricane",
+          "Surf",
+          "Ice Beam",
+          "Roost"
+        ]
+      },
+      "plan": "Drizzle powers Surf and makes Hurricane accurate, with Roost for longevity.",
+      "tierMap": {
+        "Pelipper": "RU"
+      },
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "form": "Pelipper",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Hurricane",
+          "id": "hurricane",
+          "type": "Flying",
+          "category": "Special",
+          "power": 110,
+          "accuracy": 70,
+          "pp": 10,
+          "description": "30% chance to confuse target. Can't miss in rain."
+        },
+        {
+          "name": "Surf",
+          "id": "surf",
+          "type": "Water",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Hits adjacent Pokemon. Double damage on Dive."
+        },
+        {
+          "name": "Ice Beam",
+          "id": "icebeam",
+          "type": "Ice",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to freeze the target."
+        },
+        {
+          "name": "Roost",
+          "id": "roost",
+          "type": "Flying",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals 50% HP. Flying-type removed 'til turn ends."
+        }
+      ]
+    },
+    {
+      "id": "rotom-wash",
+      "name": "Wash Rotom",
+      "number": "479",
+      "zh": "冲洗洛托姆",
+      "aliases": [
+        "Rotom Wash",
+        "Rotom",
+        "洛托姆冲洗",
+        "洛托姆",
+        "清洗洛托姆"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Rotom-Wash",
+        "name": "Rotom-Wash",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Levitate",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Hydro Pump",
+          "Thunderbolt",
+          "Will-O-Wisp",
+          "Pain Split"
+        ]
+      },
+      "plan": "Burn physical attackers; Pain Split and dual STAB handle longer duels.",
+      "tierMap": {
+        "Rotom": "RU",
+        "Rotom-Heat": "RU",
+        "Rotom-Wash": "UU",
+        "Rotom-Frost": "RU",
+        "Rotom-Fan": "RU",
+        "Rotom-Mow": "RU"
+      },
+      "types": [
+        "Electric",
+        "Water"
+      ],
+      "form": "Rotom-Wash",
+      "tier": "UU",
+      "sourceTier": "UU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Hydro Pump",
+          "id": "hydropump",
+          "type": "Water",
+          "category": "Special",
+          "power": 110,
+          "accuracy": 80,
+          "pp": 5,
+          "description": "No additional effect."
+        },
+        {
+          "name": "Thunderbolt",
+          "id": "thunderbolt",
+          "type": "Electric",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to paralyze the target."
+        },
+        {
+          "name": "Will-O-Wisp",
+          "id": "willowisp",
+          "type": "Fire",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 85,
+          "pp": 15,
+          "description": "Burns the target."
+        },
+        {
+          "name": "Pain Split",
+          "id": "painsplit",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Shares HP of user and target equally."
+        }
+      ]
+    },
+    {
+      "id": "groudon",
+      "name": "Groudon",
+      "number": "383",
+      "zh": "固拉多",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Groudon",
+        "name": "Groudon",
+        "level": 50,
+        "item": "Red Orb",
+        "ability": "Drought",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 252,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Swords Dance",
+          "Precipice Blades",
+          "Fire Punch",
+          "Stone Edge"
+        ]
+      },
+      "plan": "Primal Reversion provides Desolate Land and strong Ground/Fire offense.",
+      "form": "Groudon-Primal",
+      "tierMap": {
+        "Groudon": "Uber",
+        "Groudon-Primal": "Uber"
+      },
+      "types": [
+        "Ground",
+        "Fire"
+      ],
+      "tier": "Uber",
+      "sourceTier": "Uber",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Swords Dance",
+          "id": "swordsdance",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Attack by 2."
+        },
+        {
+          "name": "Precipice Blades",
+          "id": "precipiceblades",
+          "type": "Ground",
+          "category": "Physical",
+          "power": 120,
+          "accuracy": 85,
+          "pp": 10,
+          "description": "No additional effect. Hits adjacent foes."
+        },
+        {
+          "name": "Fire Punch",
+          "id": "firepunch",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "10% chance to burn the target."
+        },
+        {
+          "name": "Stone Edge",
+          "id": "stoneedge",
+          "type": "Rock",
+          "category": "Physical",
+          "power": 100,
+          "accuracy": 80,
+          "pp": 5,
+          "description": "High critical hit ratio."
+        }
+      ]
+    },
+    {
+      "id": "kyogre",
+      "name": "Kyogre",
+      "number": "382",
+      "zh": "盖欧卡",
+      "aliases": [
+        "蓋歐卡"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Kyogre",
+        "name": "Kyogre",
+        "level": 50,
+        "item": "Blue Orb",
+        "ability": "Drizzle",
+        "nature": "Modest",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Calm Mind",
+          "Origin Pulse",
+          "Thunder",
+          "Ice Beam"
+        ]
+      },
+      "plan": "Primal rain boosts Origin Pulse and makes Thunder accurate.",
+      "form": "Kyogre-Primal",
+      "tierMap": {
+        "Kyogre": "Uber",
+        "Kyogre-Primal": "Uber"
+      },
+      "types": [
+        "Water"
+      ],
+      "tier": "Uber",
+      "sourceTier": "Uber",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "id": "calmmind",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk and Sp. Def by 1."
+        },
+        {
+          "name": "Origin Pulse",
+          "id": "originpulse",
+          "type": "Water",
+          "category": "Special",
+          "power": 110,
+          "accuracy": 85,
+          "pp": 10,
+          "description": "No additional effect. Hits adjacent foes."
+        },
+        {
+          "name": "Thunder",
+          "id": "thunder",
+          "type": "Electric",
+          "category": "Special",
+          "power": 110,
+          "accuracy": 70,
+          "pp": 10,
+          "description": "30% chance to paralyze. Can't miss in rain."
+        },
+        {
+          "name": "Ice Beam",
+          "id": "icebeam",
+          "type": "Ice",
+          "category": "Special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "10% chance to freeze the target."
+        }
+      ]
+    },
+    {
+      "id": "zapdos",
+      "name": "Zapdos",
+      "number": "145",
+      "zh": "闪电鸟",
+      "aliases": [
+        "閃電鳥"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Zapdos",
+        "name": "Zapdos",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Static",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Discharge",
+          "Hurricane",
+          "Heat Wave",
+          "Roost"
+        ]
+      },
+      "plan": "Static and Discharge can punish fast physical attackers; Roost sustains its bulk.",
+      "tierMap": {
+        "Zapdos": "OU",
+        "Zapdos-Galar": "UUBL"
+      },
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "form": "Zapdos",
+      "tier": "OU",
+      "sourceTier": "OU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Discharge",
+          "id": "discharge",
+          "type": "Electric",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "30% chance to paralyze adjacent Pokemon."
+        },
+        {
+          "name": "Hurricane",
+          "id": "hurricane",
+          "type": "Flying",
+          "category": "Special",
+          "power": 110,
+          "accuracy": 70,
+          "pp": 10,
+          "description": "30% chance to confuse target. Can't miss in rain."
+        },
+        {
+          "name": "Heat Wave",
+          "id": "heatwave",
+          "type": "Fire",
+          "category": "Special",
+          "power": 95,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "10% chance to burn the foe(s)."
+        },
+        {
+          "name": "Roost",
+          "id": "roost",
+          "type": "Flying",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals 50% HP. Flying-type removed 'til turn ends."
+        }
+      ]
+    },
+    {
+      "id": "sinistcha",
+      "name": "Sinistcha",
+      "number": "1013",
+      "zh": "来悲粗茶",
+      "aliases": [
+        "来杯粗茶",
+        "來悲粗茶"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Sinistcha",
+        "name": "Sinistcha",
+        "level": 50,
+        "item": "Leftovers",
+        "ability": "Heatproof",
+        "nature": "Bold",
+        "evs": {
+          "hp": 252,
+          "atk": 0,
+          "def": 252,
+          "spa": 0,
+          "spd": 4,
+          "spe": 0
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Calm Mind",
+          "Matcha Gotcha",
+          "Shadow Ball",
+          "Strength Sap"
+        ]
+      },
+      "plan": "Calm Mind boosts offense; Matcha Gotcha drains HP and can burn, while Strength Sap checks physical threats.",
+      "tierMap": {
+        "Sinistcha": "RU",
+        "Sinistcha-Masterpiece": "RU"
+      },
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "form": "Sinistcha",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "id": "calmmind",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk and Sp. Def by 1."
+        },
+        {
+          "name": "Matcha Gotcha",
+          "id": "matchagotcha",
+          "type": "Grass",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 90,
+          "pp": 15,
+          "description": "20% burn. Recovers 50% dmg dealt. Thaws foe(s)."
+        },
+        {
+          "name": "Shadow Ball",
+          "id": "shadowball",
+          "type": "Ghost",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "20% chance to lower the target's Sp. Def by 1."
+        },
+        {
+          "name": "Strength Sap",
+          "id": "strengthsap",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "User heals HP=target's Atk stat. Lowers Atk by 1."
+        }
+      ]
+    },
+    {
+      "id": "breloom",
+      "name": "Breloom",
+      "number": "286",
+      "zh": "斗笠菇",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Breloom",
+        "name": "Breloom",
+        "level": 50,
+        "item": "Focus Sash",
+        "ability": "Technician",
+        "nature": "Adamant",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Spore",
+          "Bullet Seed",
+          "Mach Punch",
+          "Rock Tomb"
+        ]
+      },
+      "plan": "Focus Sash creates a Spore opportunity; Technician powers multi-hit STAB and priority.",
+      "tierMap": {
+        "Breloom": "RU"
+      },
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "form": "Breloom",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Spore",
+          "id": "spore",
+          "type": "Grass",
+          "category": "Status",
+          "power": 0,
+          "accuracy": 100,
+          "pp": 15,
+          "description": "Causes the target to fall asleep."
+        },
+        {
+          "name": "Bullet Seed",
+          "id": "bulletseed",
+          "type": "Grass",
+          "category": "Physical",
+          "power": 25,
+          "accuracy": 100,
+          "pp": 30,
+          "description": "Hits 2-5 times in one turn."
+        },
+        {
+          "name": "Mach Punch",
+          "id": "machpunch",
+          "type": "Fighting",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "description": "Usually goes first."
+        },
+        {
+          "name": "Rock Tomb",
+          "id": "rocktomb",
+          "type": "Rock",
+          "category": "Physical",
+          "power": 60,
+          "accuracy": 95,
+          "pp": 15,
+          "description": "100% chance to lower the target's Speed by 1."
+        }
+      ]
+    },
+    {
+      "id": "metagross",
+      "name": "Metagross",
+      "number": "376",
+      "zh": "巨金怪",
+      "aliases": [],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Metagross",
+        "name": "Metagross",
+        "level": 50,
+        "item": "Metagrossite",
+        "ability": "Clear Body",
+        "nature": "Jolly",
+        "evs": {
+          "hp": 4,
+          "atk": 252,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Meteor Mash",
+          "Zen Headbutt",
+          "Earthquake",
+          "Bullet Punch"
+        ]
+      },
+      "plan": "Mega Evolve for Tough Claws, then use strong STAB and priority Bullet Punch.",
+      "form": "Metagross-Mega",
+      "mega": true,
+      "tierMap": {
+        "Metagross": "RU",
+        "Metagross-Mega": "Uber"
+      },
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "tier": "Uber",
+      "sourceTier": "Uber",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Meteor Mash",
+          "id": "meteormash",
+          "type": "Steel",
+          "category": "Physical",
+          "power": 90,
+          "accuracy": 90,
+          "pp": 10,
+          "description": "20% chance to raise the user's Attack by 1."
+        },
+        {
+          "name": "Zen Headbutt",
+          "id": "zenheadbutt",
+          "type": "Psychic",
+          "category": "Physical",
+          "power": 80,
+          "accuracy": 90,
+          "pp": 15,
+          "description": "20% chance to make the target flinch."
+        },
+        {
+          "name": "Earthquake",
+          "id": "earthquake",
+          "type": "Ground",
+          "category": "Physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "Hits adjacent Pokemon. Double damage on Dig."
+        },
+        {
+          "name": "Bullet Punch",
+          "id": "bulletpunch",
+          "type": "Steel",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "description": "Usually goes first."
+        }
+      ]
+    },
+    {
+      "id": "espeon",
+      "name": "Espeon",
+      "number": "196",
+      "zh": "太阳伊布",
+      "aliases": [
+        "太陽伊布"
+      ],
+      "acquisition": "challenge",
+      "set": {
+        "species": "Espeon",
+        "item": "Leftovers",
+        "ability": "Magic Bounce",
+        "nature": "Timid",
+        "level": 50,
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spa": 252,
+          "spd": 0,
+          "spe": 252
+        },
+        "ivs": {
+          "hp": 31,
+          "atk": 0,
+          "def": 31,
+          "spa": 31,
+          "spd": 31,
+          "spe": 31
+        },
+        "moves": [
+          "Calm Mind",
+          "Stored Power",
+          "Dazzling Gleam",
+          "Morning Sun"
+        ],
+        "name": "Espeon"
+      },
+      "plan": "Magic Bounce reflects status moves; Calm Mind powers up Stored Power while Morning Sun restores HP.",
+      "tierMap": {
+        "Espeon": "RU"
+      },
+      "types": [
+        "Psychic"
+      ],
+      "form": "Espeon",
+      "tier": "RU",
+      "sourceTier": "RU",
+      "tierOverride": false,
+      "moves": [
+        {
+          "name": "Calm Mind",
+          "id": "calmmind",
+          "type": "Psychic",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 20,
+          "description": "Raises the user's Sp. Atk and Sp. Def by 1."
+        },
+        {
+          "name": "Stored Power",
+          "id": "storedpower",
+          "type": "Psychic",
+          "category": "Special",
+          "power": 20,
+          "accuracy": 100,
+          "pp": 10,
+          "description": " + 20 power for each of the user's stat boosts."
+        },
+        {
+          "name": "Dazzling Gleam",
+          "id": "dazzlinggleam",
+          "type": "Fairy",
+          "category": "Special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "description": "No additional effect. Hits adjacent foes."
+        },
+        {
+          "name": "Morning Sun",
+          "id": "morningsun",
+          "type": "Normal",
+          "category": "Status",
+          "power": 0,
+          "accuracy": true,
+          "pp": 5,
+          "description": "Heals the user by a weather-dependent amount."
+        }
+      ]
+    }
+  ]
+}
