@@ -7,6 +7,8 @@ def git(*args):
 if git('branch','--show-current')!='master':raise SystemExit('Run from master.')
 if git('status','--porcelain'):raise SystemExit('Commit changes before publishing.')
 subprocess.run(['git','fetch','origin','gh-pages'],cwd=root,check=True)
+ignored=git('ls-files','--others','--ignored','--exclude-standard','dist')
+if ignored:raise SystemExit('Runtime files are ignored by Git; review before publishing: '+ignored)
 tree=git('rev-parse','HEAD:dist');parent=git('rev-parse','origin/gh-pages')
 if git('rev-parse','origin/gh-pages^{tree}')==tree:raise SystemExit('This version is already published.')
 commit=git('commit-tree',tree,'-p',parent,'-m','Publish homepage '+git('rev-parse','--short','HEAD'))
