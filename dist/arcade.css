@@ -331,3 +331,15 @@
 /* Scroll the entire shelf surface, including its horizontal boards. */
 .ps-target-scroll{max-height:310px;overflow:auto;overscroll-behavior:contain}.ps-target-slots{max-height:none;overflow:visible;grid-auto-rows:94px}@media(max-width:600px){.ps-target-scroll{max-height:285px}}
 .ps-target-summary{display:flex;align-items:center;gap:12px;padding:12px;background:#f0f2eb;border:1px solid #d9dfd1;border-radius:6px;margin-bottom:10px}.ps-target-summary img{width:64px;height:64px;object-fit:contain}.ps-target-summary>div{flex:1;font-size:13px}.ps-target-summary small{display:block;font-size:11px;color:#6f7c64;margin-top:4px}.ps-target-summary button{font-size:11px!important}.ps-partner-prompt{font-size:13px;color:#6c785f;margin:16px 0}#ps-target-step>#ps-opponent-preview{margin:0 0 22px;font-size:12px}#ps-target-step>#ps-opponent-preview>img,#ps-target-step>#ps-opponent-preview>div{display:none}.ps-challenge-picker{margin-top:0;border-top:0}
+
+/* Immediate move selection, with a prominent pre-move Mega toggle. */
+.ps-embedded-window .ps-mega-option{display:flex;align-items:center;gap:12px;min-height:58px;box-sizing:border-box;padding:10px 14px;margin:0 0 12px;border:1px solid #9cabc4;border-radius:6px;background:#edf1fa;color:#344461;font:600 13px Verdana,Arial,sans-serif;cursor:pointer;transition:background .15s,border-color .15s}
+.ps-mega-option input{width:22px;height:22px;margin:0;accent-color:#6556a5;cursor:pointer}
+.ps-mega-option small{display:block;font-size:10px;font-weight:400;margin-top:4px;color:#647187}
+.ps-mega-option:has(input:checked){background:#e9e4f6;border-color:#9180b9}
+.ps-mega-option:focus-within{outline:2px solid #627da9;outline-offset:2px}
+.ps-embedded-window .ps-moves button{transition:filter .12s,box-shadow .12s,transform .12s}
+.ps-embedded-window .ps-moves button:focus-visible{outline:2px solid #4e83b1;outline-offset:2px}
+@media(hover:hover){.ps-embedded-window .ps-moves button:not(:disabled):hover{filter:brightness(1.06);border-color:#537c9f;box-shadow:0 2px 6px #243c5b30;transform:translateY(-1px)}.ps-mega-option:hover{border-color:#70609c;background:#ece7f7}}
+.ps-embedded-window .ps-moves button:not(:disabled):active{transform:translateY(0);filter:brightness(.97)}
+.ps-embedded-window .ps-moves button:disabled{cursor:wait;opacity:.65}
