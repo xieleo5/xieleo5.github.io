@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuqi Xie | 谢雨齐</title>
+  <meta name="description" content="Yuqi Xie, Member of Technical Staff at OpenAI. Research in robot learning, dexterous manipulation, and embodied agents.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Yuqi Xie | 谢雨齐">
+  <meta property="og:description" content="Research in robot learning and embodied AI.">
+  <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=20261027-shelf-challenge">
+  <script defer src="pokemon.js?v=20261027-shelf-challenge"></script>
+  <link rel="stylesheet" href="arcade.css?v=20261027-shelf-challenge">
+  <script type="module" src="arcade.js?v=20261027-shelf-challenge"></script>
+</head>
+<body>
+  <a class="skip-link" href="#research">Skip to publications</a>
+  <main class="page">
+    <section class="profile" aria-labelledby="name">
+      <div class="profile-copy">
+        <h1 id="name">Yuqi Xie <span class="name-divider">|</span> <span lang="zh-Hans">谢雨齐</span></h1>
+        <p>I am a Member of Technical Staff at <a href="https://openai.com/">OpenAI</a>. My research focuses on robot learning, dexterous manipulation, and embodied agents.</p>
+        <p>Previously, I was a Research Engineer at <a href="https://research.nvidia.com/labs/gear/">NVIDIA GEAR Lab</a>, working with <a href="https://jimfan.me/">Jim Fan</a> and <a href="https://yukezhu.me/">Yuke Zhu</a>.</p>
+        <p>I received my M.S. in Computer Science from <a href="https://www.cs.utexas.edu/">UT Austin</a>, advised by Yuke Zhu in the <a href="https://rpl.cs.utexas.edu/">Robot Perception and Learning Lab</a>. I hold bachelor’s degrees in Computer Science from the University of Michigan and Electrical and Computer Engineering from Shanghai Jiao Tong University.</p>
+      </div>
+      <aside class="profile-side" aria-label="Photo and contact links">
+        <div class="portrait-frame">
+          <img class="portrait" src="assets/portrait-with-cat.jpg" alt="Yuqi Xie holding his cat" width="314" height="314">
+        </div>
+        <nav class="contact-links" aria-label="Contact links">
+          <a href="https://scholar.google.com/citations?user=bGB6wacAAAAJ&amp;hl=en">Google Scholar</a><span aria-hidden="true">/</span><a href="mailto:xieleo@utexas.edu">Email</a><span aria-hidden="true">/</span><a href="https://github.com/xieleo5">GitHub</a><span aria-hidden="true">/</span><a href="https://www.linkedin.com/in/yuqi-xie-ba87a8223/">LinkedIn</a>
+        </nav>
+      </aside>
+    </section>
+    <nav id="arcade-divider" class="arcade-divider" aria-label="Pokémon mini games">
+      <div class="ball-entries">
+        <button type="button" class="ball-entry" data-arcade-entry="guess" aria-label="Play silhouette quiz" title="Poké Ball · Who’s that Pokémon?"><img src="assets/poke-ball.png" width="48" height="48" alt=""><span>Guess who?</span></button>
+        <button type="button" class="ball-entry" data-arcade-entry="arm" aria-label="Play pick and place" title="Great Ball · Franka pick &amp; place"><img src="assets/great-ball.png" width="48" height="48" alt=""><span>Pick &amp; place</span></button>
+        <button type="button" class="ball-entry" data-arcade-entry="battle" aria-label="Play Pokémon battle" title="Master Ball · Pokémon battle"><img src="assets/master-ball.png" width="48" height="48" alt=""><span>Pokémon battle</span></button>
+      </div>
+    </nav>
+    <section id="inline-shelf" class="inline-shelf" aria-labelledby="inline-shelf-title" hidden>
+      <div class="inline-shelf-heading"><h2 id="inline-shelf-title">My Pokémon shelf <span id="inline-count">0 / 60</span></h2><button type="button" id="inline-shelf-open">View collection ↗</button></div>
+      <div class="inline-cabinet"><div id="inline-collection" aria-label="Collected Pokémon and undiscovered silhouettes"></div><div class="cabinet-plinth"></div></div>
+    </section>
+    <section id="research" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+      <div class="publication-list">
+      <article class="publication" data-paper="T-Rex">
+        <a class="paper-image" href="https://tactile-reactive-dexterous.github.io/" aria-label="T-Rex project"><img src="assets/trex.webp" alt="T-Rex research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://tactile-reactive-dexterous.github.io/">T-Rex: Tactile-Reactive Dexterous Manipulation</a></h3>
+          <p class="authors"><a href="https://dantong88.github.io/">Dantong Niu</a>, <a href="https://zhuoyang-liu.github.io/">Zhuoyang Liu</a>, <a href="https://scholar.google.com/citations?user=Dngm3CYAAAAJ&amp;hl=en">Zekai Wang</a>, <a href="https://boning-shao.github.io/">Boning Shao</a>, <a href="https://zhaohengyin.github.io/">Zhao-Heng Yin</a>, <a href="https://scholar.google.com/citations?user=9Iv9490AAAAJ&amp;hl=en">Anirudh Pai</a>, <a href="https://yuvansharma.github.io/">Yuvan Sharma</a>, <a href="https://scholar.google.com/citations?user=uQxwnnUAAAAJ&amp;hl=en">Stefano Saravalle</a>, <a href="https://ruijiezheng.com/">Ruijie Zheng</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=cdL5PqgAAAAJ">Jing Wang</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=S-y6EGYAAAAJ">Ryan Punamiya</a>, <a href="https://mengdaxu.github.io/">Mengda Xu</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie</a></strong>, <a href="https://yunfanj.com/">Yunfan Jiang</a>, <a href="https://max-fu.github.io/">Letian Fu</a>, <a href="https://scholar.google.com/citations?user=5EuNtbQAAAAJ&amp;hl=en">Konstantinos Kallidromitis</a>, <a href="https://matteogioia.github.io/">Matteo Gioia</a>, <a href="https://www.junyi42.com/">Junyi Zhang</a>, <a href="https://gejiaxin.org/">Jiaxin Ge</a>, <a href="https://havenfeng.github.io/">Haiwen Feng</a>, <a href="https://fgalasso.bitbucket.io/">Fabio Galasso</a>, <a href="https://zhanwei.site/">Wei Zhan</a>, <a href="https://dchan.cc/">David M. Chan</a>, <a href="https://yutongbai.com/">Yutong Bai</a>, <a href="https://roeiherz.github.io/">Roei Herzig</a>, <a href="https://jiahuilei.com/">Jiahui Lei</a>, <a href="https://profiles.stanford.edu/fei-fei-li">Fei-Fei Li</a>, <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>, <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>, <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/abbeel.html">Pieter Abbeel</a>, <a href="https://yukezhu.me/">Yuke Zhu</a>, <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>, <a href="https://jimfan.me/">Linxi Fan</a>, <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a></p>
+          <p class="paper-links"><span class="venue">arXiv 2026</span> <span class="separator" aria-hidden="true">|</span> <a href="https://tactile-reactive-dexterous.github.io/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2606.17055">paper</a></p>
+        </div>
+      </article>
+      <article class="publication" data-paper="HumanoidMimicGen">
+        <a class="paper-image" href="https://humanoidmimicgen.github.io/" aria-label="HumanoidMimicGen project"><img src="assets/humanoidmimicgen.webp" alt="HumanoidMimicGen research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://humanoidmimicgen.github.io/">HumanoidMimicGen: Data Generation for Loco-Manipulation via Whole-Body Planning</a></h3>
+          <p class="authors"><a href="https://kevin-thankyou-lin.github.io/">Kevin Lin</a>, <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a>, <a href="https://web.mit.edu/caelan/www/">Caelan Reed Garrett</a>, <a href="https://chernyadev.github.io/">Nikita Chernyadev</a>, <a href="https://squarefk.com/">Yu Fang</a>, <a href="https://dingry.github.io/">Runyu Ding</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie</a></strong>, <a href="https://www.linkedin.com/in/justin-tran-488872296/">Justin Tran</a>, <a href="https://jimfan.me/">Linxi Fan</a>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">CoRL 2026</span> <span class="separator" aria-hidden="true">|</span> <a href="https://humanoidmimicgen.github.io/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2605.27724">paper</a></p>
+        </div>
+      </article>
+      <article class="publication highlighted" data-paper="EgoScale">
+        <a class="paper-image" href="https://arxiv.org/abs/2602.16710" aria-label="EgoScale project"><img src="assets/egoscale.webp" alt="EgoScale research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://arxiv.org/abs/2602.16710">EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data</a></h3>
+          <p class="authors"><a href="https://ruijiezheng.com/">Ruijie Zheng<sup>*</sup></a>, <a href="https://dantong88.github.io/">Dantong Niu<sup>*</sup></a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie<sup>*</sup></a></strong>, <a href="https://scholar.google.com/citations?hl=en&amp;user=cdL5PqgAAAAJ">Jing Wang</a>, <a href="https://mengdaxu.github.io/">Mengda Xu</a>, <a href="https://yunfanj.com/">Yunfan Jiang</a>, <a href="https://scholar.google.com/citations?user=U9WUBC4AAAAJ&amp;hl=es">Fernando Castañeda</a>, <a href="https://sled.eecs.umich.edu/author/fengyuan-hu/">Fengyuan Hu</a>, <a href="https://youliangtan.github.io/">You Liang Tan</a>, <a href="https://max-fu.github.io/">Letian Fu</a>, <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, <a href="https://furong-huang.com/">Furong Huang</a>, <a href="https://yukezhu.me/">Yuke Zhu</a>, <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>, <a href="https://jimfan.me/">Linxi Fan</a></p>
+          <p class="paper-links"><span class="venue">CoRL 2026</span> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2602.16710">paper</a></p>
+        </div>
+      </article>
+      <article class="publication highlighted" data-paper="DreamZero">
+        <a class="paper-image" href="https://dreamzero0.github.io/" aria-label="DreamZero project"><img src="assets/dreamzero.webp" alt="DreamZero research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://dreamzero0.github.io/">DreamZero: World Action Models are Zero-shot Policies</a></h3>
+          <p class="authors"><a href="https://seonghyeonye.github.io/">Seonghyeon Ye</a>, <a href="https://gyhandy.github.io/">Yunhao Ge</a>, <a href="https://scholar.google.com/citations?user=6kkyR1wAAAAJ&amp;hl=en">Kaiyuan Zheng</a>, <a href="https://scholar.google.com/citations?user=hZtOnecAAAAJ&amp;hl=en">Shenyuan Gao</a>, <a href="https://sihyun.me/">Sihyun Yu</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=40-EBscAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">George Kurian</a>, <a href="https://www.linkedin.com/in/suneel-indupuru-13b787/">Suneel Indupuru</a>, <a href="https://youliangtan.github.io/">You Liang Tan</a>, <a href="https://homes.cs.washington.edu/~zchuning/">Chuning Zhu</a>, <a href="https://szxiangjn.github.io/">Jiannan Xiang</a>, <a href="https://ayaannmalik.github.io/">Ayaan Malik</a>, <a href="https://kyungmnlee.github.io/">Kyungmin Lee</a>, <a href="https://willjhliang.github.io/">William Liang</a>, <a href="https://scholar.google.com/citations?user=lJth6jwAAAAJ&amp;hl=en">Nadun Ranawaka</a>, <a href="https://jiashenggu.github.io/">Jiasheng Gu</a>, <a href="https://scholar.google.com/citations?user=VaFCcJ8AAAAJ&amp;hl=en">Yinzhen Xu</a>, <a href="https://guanzhi.me/">Guanzhi Wang</a>, <a href="https://sled.eecs.umich.edu/author/fengyuan-hu/">Fengyuan Hu</a>, <a href="https://www.linkedin.com/in/avnishn/">Avnish Narayan</a>, <a href="https://scholar.google.com/citations?user=Q_YY6OMAAAAJ&amp;hl=en">Johan Bjorck</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=cdL5PqgAAAAJ">Jing Wang</a>, <a href="https://gwang-kim.github.io/">Gwanghyun Kim</a>, <a href="https://dantong88.github.io/">Dantong Niu</a>, <a href="https://ruijiezheng.com/">Ruijie Zheng</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie</a></strong>, <a href="https://jimmyyhwu.github.io/">Jimmy Wu</a>, <a href="https://scholar.google.com/citations?user=0zjxt5gAAAAJ&amp;hl=en">Qi Wang</a>, <a href="https://ryanjulian.me/">Ryan Julian</a>, <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>, <a href="https://yilundu.github.io/">Yilun Du</a>, <a href="https://scholar.google.com/citations?user=ADkiClQAAAAJ&amp;hl=en">Yevgen Chebotar</a>, <a href="https://reedscot.github.io/">Scott Reed</a>, <a href="https://jankautz.com/">Jan Kautz</a>, <a href="https://yukezhu.me/">Yuke Zhu</a>, <a href="https://jimfan.me/">Linxi &quot;Jim&quot; Fan</a>, <a href="https://joeljang.github.io/">Joel Jang</a></p>
+          <p class="paper-links"><span class="venue">arXiv 2026</span> <span class="separator" aria-hidden="true">|</span> <a href="https://dreamzero0.github.io/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2602.15922">paper</a></p>
+        </div>
+      </article>
+      <article class="publication" data-paper="DreamDojo">
+        <a class="paper-image" href="https://dreamdojo-world.github.io/" aria-label="DreamDojo project"><img src="assets/dreamdojo.webp" alt="DreamDojo research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://dreamdojo-world.github.io/">DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos</a></h3>
+          <p class="authors"><a href="https://scholar.google.com/citations?user=hZtOnecAAAAJ&amp;hl=en">Shenyuan Gao</a>, <a href="https://willjhliang.github.io/">William Liang</a>, <a href="https://scholar.google.com/citations?user=6kkyR1wAAAAJ&amp;hl=en">Kaiyuan Zheng</a>, <a href="https://ayaannmalik.github.io/">Ayaan Malik</a>, <a href="https://seonghyeonye.github.io/">Seonghyeon Ye</a>, <a href="https://sihyun.me/">Sihyun Yu</a>, <a href="https://weichengtseng.github.io/">Wei-Cheng Tseng</a>, <a href="https://www.linkedin.com/in/yuzhudong/">Yuzhu Dong</a>, <a href="https://kaichun-mo.github.io/">Kaichun Mo</a>, <a href="https://chenhsuanlin.bitbucket.io/">Chen-Hsuan Lin</a>, <a href="https://qianlim.github.io/">Qianli Ma</a>, <a href="https://seungjunnah.github.io/">Seungjun Nah</a>, <a href="https://scholar.google.com/citations?user=Ui3eovkAAAAJ&amp;hl=en">Loic Magne</a>, <a href="https://szxiangjn.github.io/">Jiannan Xiang</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie</a></strong>, <a href="https://ruijiezheng.com/">Ruijie Zheng</a>, <a href="https://dantong88.github.io/">Dantong Niu</a>, <a href="https://youliangtan.github.io/">You Liang Tan</a>, <a href="https://zentner.io/">K. R. Zentner</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=40-EBscAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">George Kurian</a>, <a href="https://www.linkedin.com/in/suneel-indupuru-13b787/">Suneel Indupuru</a>, <a href="https://www.linkedin.com/in/pooyaj/">Pooya Jannaty</a>, <a href="https://www.gujinwei.org/">Jinwei Gu</a>, <a href="https://eejzhang.people.ust.hk/">Jun Zhang</a>, <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>, <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/abbeel.html">Pieter Abbeel</a>, <a href="https://mingyuliu.net/">Ming-Yu Liu</a>, <a href="https://yukezhu.me/">Yuke Zhu</a>, <a href="https://joeljang.github.io/">Joel Jang</a>, <a href="https://jimfan.me/">Linxi &quot;Jim&quot; Fan</a></p>
+          <p class="paper-links"><span class="venue">arXiv 2026</span> <span class="separator" aria-hidden="true">|</span> <a href="https://dreamdojo-world.github.io/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2602.06949">paper</a></p>
+        </div>
+      </article>
+      <article class="publication" data-paper="Self-Improving VLA">
+        <a class="paper-image" href="https://openreview.net/forum?id=eUGoqrZ6Ea" aria-label="Self-Improving VLA project"><img src="assets/self-improving-vla.webp" alt="Self-Improving VLA research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://openreview.net/forum?id=eUGoqrZ6Ea">Self-Improving Vision-Language-Action Models with Data Generation via Residual RL</a></h3>
+          <p class="authors"><a href="https://wenlixiao.com/">Wenli Xiao</a>, <a href="https://darthutopian.github.io/">Haotian Lin</a>, <a href="https://andypeng05.github.io/">Andy Peng</a>, <a href="https://haoruxue.github.io/">Haoru Xue</a>, <a href="https://tairanhe.com/">Tairan He</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie</a></strong>, <a href="https://sled.eecs.umich.edu/author/fengyuan-hu/">Fengyuan Hu</a>, <a href="https://jimmyyhwu.github.io/">Jimmy Wu</a>, <a href="https://www.zhengyiluo.com/">Zhengyi Luo</a>, <a href="https://jimfan.me/">Linxi &quot;Jim&quot; Fan</a>, <a href="https://www.gshi.me/">Guanya Shi</a>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">ICLR 2026</span> <span class="separator" aria-hidden="true">|</span> <a href="https://openreview.net/forum?id=eUGoqrZ6Ea">paper</a></p>
+        </div>
+      </article>
+      <article class="publication highlighted" data-paper="SCIZOR">
+        <a class="paper-image" href="https://ut-austin-rpl.github.io/SCIZOR/" aria-label="SCIZOR project"><img src="assets/scizor-research.webp" alt="SCIZOR research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://ut-austin-rpl.github.io/SCIZOR/">SCIZOR: A Self-Supervised Approach to Data Curation for Large-Scale Imitation Learning</a></h3>
+          <p class="authors"><a href="https://franklin-zhang0.github.io/">Yu Zhang<sup>*</sup></a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie<sup>*</sup></a></strong>, <a href="https://huihanl.github.io">Huihan Liu</a>, <a href="https://shahrutav.github.io">Rutav Shah</a>, <a href="https://www.linkedin.com/in/michaelwan1/">Michael Wan</a>, <a href="https://jimfan.me/">Linxi Fan</a>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">ICRA 2026 <span class="award">(Oral)</span></span> <span class="separator" aria-hidden="true">|</span> <a href="https://ut-austin-rpl.github.io/SCIZOR/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2505.22626">paper</a></p>
+        </div>
+      </article>
+      <article class="publication highlighted" data-paper="Metamon">
+        <a class="paper-image" href="https://metamon.tech/" aria-label="Metamon project"><img src="assets/metamon.webp" alt="Metamon research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://metamon.tech/">Human-Level Competitive Pokémon via Scalable Offline Reinforcement Learning with Transformers</a></h3>
+          <p class="authors"><a href="https://jakegrigsby.github.io/">Jake Grigsby</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie<sup>*</sup></a></strong>, <a href="https://www.linkedin.com/in/justinsasek/">Justin Sasek<sup>*</sup></a>, Steven Zheng<sup>*</sup>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">RLC / RLJ 2025</span> <span class="separator" aria-hidden="true">|</span> <a href="https://metamon.tech/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2504.04395">paper</a></p>
+        </div>
+      </article>
+      <article class="publication" data-paper="Sim-and-Real Co-Training">
+        <a class="paper-image" href="https://co-training.github.io/" aria-label="Sim-and-Real Co-Training project"><img src="assets/co-training.webp" alt="Sim-and-Real Co-Training research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://co-training.github.io/">Sim-and-Real Co-Training: A Simple Recipe for Vision-Based Robotic Manipulation</a></h3>
+          <p class="authors"><a href="https://abhiram824.github.io/">Abhiram Maddukuri</a>, <a href="https://zhenyujiang.me/">Zhenyu Jiang</a>, <a href="https://yunliangchen.github.io/">Lawrence Yunliang Chen</a>, <a href="https://snasiriany.me/">Soroush Nasiriany</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie</a></strong>, <a href="https://squarefk.com/">Yu Fang</a>, <a href="https://kevinh.cv">Wenqi Huang</a>, <a href="https://www.zuwang95.com/">Zu Wang</a>, <a href="https://www.zhenjiaxu.com/">Zhenjia Xu</a>, <a href="https://chernyadev.github.io/">Nikita Chernyadev</a>, <a href="https://reedscot.github.io/">Scott Reed</a>, <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>, <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a>, <a href="https://jimfan.me/">Linxi Fan</a>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">RSS 2025</span> <span class="separator" aria-hidden="true">|</span> <a href="https://co-training.github.io/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2503.24361">paper</a></p>
+        </div>
+      </article>
+      <article class="publication highlighted" data-paper="GR00T N1">
+        <a class="paper-image" href="https://arxiv.org/abs/2503.14734" aria-label="GR00T N1 project"><img src="assets/groot.webp" alt="GR00T N1 research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://arxiv.org/abs/2503.14734">GR00T N1: An Open Foundation Model for Generalist Humanoid Robots</a></h3>
+          <p class="authors"><span class="author-group">NVIDIA:</span> <a href="https://scholar.google.com/citations?user=Q_YY6OMAAAAJ&amp;hl=en">Johan Bjorck</a>, <a href="https://scholar.google.com/citations?user=U9WUBC4AAAAJ&amp;hl=es">Fernando Castañeda</a>, <a href="https://chernyadev.github.io/">Nikita Cherniadev</a>, <a href="https://scholar.google.com/citations?user=5lwj5vIAAAAJ">Xingye Da</a>, <a href="https://dingry.github.io/">Runyu Ding</a>, <a href="https://jimfan.me/">Linxi &quot;Jim&quot; Fan</a>, <a href="https://squarefk.com/">Yu Fang</a>, <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>, <a href="https://sled.eecs.umich.edu/author/fengyuan-hu/">Fengyuan Hu</a>, <a href="https://www.linkedin.com/in/spencermhuang/">Spencer Huang</a>, <a href="https://joeljang.github.io/">Joel Jang</a>, <a href="https://zhenyujiang.me/">Zhenyu Jiang</a>, <a href="https://jankautz.com/">Jan Kautz</a>, <a href="https://www.linkedin.com/in/kaushilk/">Kaushil Kundalia</a>, <a href="https://www.linkedin.com/in/laojingyuan/">Lawrence Lao</a>, <a href="https://zhiqi-li.github.io/">Zhiqi Li</a>, <a href="https://rafa-zy.github.io/">Zongyu Lin</a>, <a href="https://kevin-thankyou-lin.github.io/">Kevin Lin</a>, <a href="https://liuguilin1225.github.io/">Guilin Liu</a>, <a href="https://www.linkedin.com/in/edithllontop/">Edith Llontop</a>, <a href="https://scholar.google.com/citations?user=Ui3eovkAAAAJ&amp;hl=en">Loic Magne</a>, <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a>, <a href="https://www.linkedin.com/in/avnishn/">Avnish Narayan</a>, <a href="https://snasiriany.me/">Soroush Nasiriany</a>, <a href="https://reedscot.github.io/">Scott Reed</a>, <a href="https://youliangtan.github.io/">You Liang Tan</a>, <a href="https://guanzhi.me/">Guanzhi Wang</a>, <a href="https://www.zuwang95.com/">Zu Wang</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=cdL5PqgAAAAJ">Jing Wang</a>, <a href="https://scholar.google.com/citations?user=0zjxt5gAAAAJ&amp;hl=en">Qi Wang</a>, <a href="https://szxiangjn.github.io/">Jiannan Xiang</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie</a></strong>, <a href="https://scholar.google.com/citations?user=VaFCcJ8AAAAJ&amp;hl=en">Yinzhen Xu</a>, <a href="https://www.zhenjiaxu.com/">Zhenjia Xu</a>, <a href="https://seonghyeonye.github.io/">Seonghyeon Ye</a>, <a href="https://chrisding.github.io/">Zhiding Yu</a>, <a href="https://waxnkw.github.io/">Ao Zhang</a>, <a href="https://haozhang534.github.io/">Hao Zhang</a>, <a href="https://yizhouzhao.github.io/">Yizhou Zhao</a>, <a href="https://ruijiezheng.com/">Ruijie Zheng</a>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">arXiv 2025</span> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2503.14734">paper</a></p>
+        </div>
+      </article>
+      <article class="publication highlighted" data-paper="DexMimicGen">
+        <a class="paper-image" href="https://dexmimicgen.github.io/" aria-label="DexMimicGen project"><img src="assets/dexmimicgen.jpg" alt="DexMimicGen research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://dexmimicgen.github.io/">DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning</a></h3>
+          <p class="authors"><a href="https://zhenyujiang.me/">Zhenyu Jiang<sup>*</sup></a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie<sup>*</sup></a></strong>, <a href="https://kevin-thankyou-lin.github.io/">Kevin Lin<sup>*</sup></a>, <a href="https://www.zhenjiaxu.com/">Zhenjia Xu</a>, <a href="https://wkwan7.github.io/">Weikang Wan</a>, <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a>, <a href="https://jimfan.me/">Linxi Fan</a>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">ICRA 2025</span> <span class="separator" aria-hidden="true">|</span> <a href="https://dexmimicgen.github.io/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://arxiv.org/abs/2410.24185">paper</a> <span class="separator" aria-hidden="true">|</span> <a href="https://github.com/NVlabs/dexmimicgen">code</a></p>
+        </div>
+      </article>
+      <article class="publication" data-paper="HARMON">
+        <a class="paper-image" href="https://ut-austin-rpl.github.io/Harmon/" aria-label="HARMON project"><img src="assets/harmon.png" alt="HARMON research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://ut-austin-rpl.github.io/Harmon/">Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions</a></h3>
+          <p class="authors"><a href="https://zhenyujiang.me/">Zhenyu Jiang<sup>*</sup></a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie<sup>*</sup></a></strong>, <a href="https://lijinhan21.github.io/">Jinhan Li</a>, <a href="https://ye-yuan.com">Ye Yuan</a>, <a href="https://zhuyifengzju.github.io">Yifeng Zhu</a>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">CoRL 2024</span> <span class="separator" aria-hidden="true">|</span> <a href="https://ut-austin-rpl.github.io/Harmon/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://proceedings.mlr.press/v270/jiang25b.html">paper</a></p>
+        </div>
+      </article>
+      <article class="publication" data-paper="OKAMI">
+        <a class="paper-image" href="https://ut-austin-rpl.github.io/OKAMI/" aria-label="OKAMI project"><img src="assets/okami.png" alt="OKAMI research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://ut-austin-rpl.github.io/OKAMI/">OKAMI: Teaching Humanoid Robots Manipulation Skills through Single Video Imitation</a></h3>
+          <p class="authors"><a href="https://lijinhan21.github.io/">Jinhan Li</a>, <a href="https://zhuyifengzju.github.io">Yifeng Zhu<sup>*</sup></a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie<sup>*</sup></a></strong>, <a href="https://zhenyujiang.me/">Zhenyu Jiang<sup>*</sup></a>, <a href="https://mingyoseo.com/">Mingyo Seo</a>, <a href="https://geopavlakos.github.io/">Georgios Pavlakos</a>, <a href="https://yukezhu.me/">Yuke Zhu</a></p>
+          <p class="paper-links"><span class="venue">CoRL 2024</span> <span class="separator" aria-hidden="true">|</span> <a href="https://ut-austin-rpl.github.io/OKAMI/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://proceedings.mlr.press/v270/li25a.html">paper</a></p>
+        </div>
+      </article>
+      <article class="publication highlighted" data-paper="Voyager">
+        <a class="paper-image" href="https://voyager.minedojo.org/" aria-label="Voyager project"><img src="assets/voyager.png" alt="Voyager research overview" width="380" height="240" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://voyager.minedojo.org/">Voyager: An Open-Ended Embodied Agent with Large Language Models</a></h3>
+          <p class="authors"><a href="https://guanzhi.me/">Guanzhi Wang</a>, <strong><a href="https://xieleo5.github.io/">Yuqi Xie</a></strong>, <a href="https://yunfanj.com/">Yunfan Jiang</a>, <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a>, <a href="https://xiaocw11.github.io/">Chaowei Xiao</a>, <a href="https://yukezhu.me/">Yuke Zhu</a>, <a href="https://jimfan.me/">Linxi Fan</a>, <a href="http://tensorlab.cms.caltech.edu/users/anima/">Anima Anandkumar</a></p>
+          <p class="paper-links"><span class="venue">TMLR 2024</span> <span class="separator" aria-hidden="true">|</span> <a href="https://voyager.minedojo.org/">website</a> <span class="separator" aria-hidden="true">|</span> <a href="https://openreview.net/forum?id=ehfRiF0R3a">paper</a> <span class="separator" aria-hidden="true">|</span> <a href="https://github.com/MineDojo/Voyager">code</a></p>
+        </div>
+      </article>
+      </div>
+      <p class="contribution-note">* Equal contribution.</p>
+    </section>
+  </main>
+  <footer class="page">
+    <span>© 2026 Yuqi Xie</span>
+
+  </footer>
+  <dialog id="field-notes" aria-labelledby="dex-title">
+    <div class="dex-header"><h2 id="dex-title">My Pokémon shelf</h2><button type="button" id="close-dex" aria-label="Close collection cabinet" autofocus>×</button></div>
+    <p class="dex-intro">Win Pokémon in the arcade to fill your collection.</p>
+    <div class="cabinet-layout">
+      <div class="cabinet-frame"><div id="pokemon-collection" aria-label="Pokémon collection cabinet"></div><div class="cabinet-plinth"></div></div>
+      <div class="cabinet-info">
+        
+        <div id="shelf-detail" aria-live="polite"><img hidden src="assets/menu-icons/eevee.png" width="96" height="96" alt=""><h3>Your collection</h3><p>Pick a game and bring a Pokémon home.</p><a hidden target="_blank" rel="noopener noreferrer"></a></div>
+        <p class="shelf-shop-note">Official shop links let you explore available designs.</p>
+      </div>
+    </div>
+    <p id="dex-hint" role="status"></p>
+    <div class="dex-bottom"><span id="collection-count">0 / 60 on the shelf</span><button type="button" id="next-hint">How to collect</button><button type="button" id="cabinet-play" class="game-primary">Play a game →</button></div>
+    <p class="pokemon-credits">Sprites via <a href="https://github.com/PokeAPI/sprites">PokéAPI</a>. Pokémon © Nintendo / Creatures / GAME FREAK.</p>
+  </dialog>
+  <dialog id="arcade-dialog" aria-labelledby="arcade-title">
+    <div class="arcade-header"><div><h2 id="arcade-title">Pokémon arcade</h2><span id="arcade-count">0 / 60 collected</span></div><div class="arcade-header-actions"><button type="button" id="arcade-shelf">My shelf ↗</button><button type="button" id="close-arcade" aria-label="Close arcade" autofocus>×</button></div></div>
+    <nav class="arcade-nav" aria-label="Choose a game"><button type="button" data-game="menu" aria-pressed="true">All games</button><button type="button" data-game="guess" aria-pressed="false">Guess who?</button><button type="button" data-game="arm" aria-pressed="false">Pick &amp; place</button><button type="button" data-game="battle" aria-pressed="false">Pokémon battle</button></nav>
+    <div id="arcade-content"></div>
+  </dialog>
+  <div id="pokemon-toast" hidden>
+    <img src="assets/menu-icons/eevee.png" width="64" height="64" alt="">
+    <div role="status"><span class="encounter-name"></span><small class="encounter-count"></small><button type="button" id="view-shelf">View shelf ↗</button></div>
+    <button type="button" id="dismiss-encounter" aria-label="Dismiss Pokémon encounter">×</button>
+  </div>
+</body>
+</html>

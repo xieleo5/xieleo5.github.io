@@ -1,0 +1,1381 @@
+[
+  {
+    "name": "T-Rex",
+    "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+    "year": 2026,
+    "venue": "Preprint · 2026",
+    "image": "trex.webp",
+    "project": "https://tactile-reactive-dexterous.github.io/",
+    "paper": "https://arxiv.org/abs/2606.17055",
+    "authors": [
+      {
+        "name": "Dantong Niu",
+        "equal": false,
+        "url": "https://dantong88.github.io/"
+      },
+      {
+        "name": "Zhuoyang Liu",
+        "equal": false,
+        "url": "https://zhuoyang-liu.github.io/"
+      },
+      {
+        "name": "Zekai Wang",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=Dngm3CYAAAAJ&hl=en"
+      },
+      {
+        "name": "Boning Shao",
+        "equal": false,
+        "url": "https://boning-shao.github.io/"
+      },
+      {
+        "name": "Zhao-Heng Yin",
+        "equal": false,
+        "url": "https://zhaohengyin.github.io/"
+      },
+      {
+        "name": "Anirudh Pai",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=9Iv9490AAAAJ&hl=en"
+      },
+      {
+        "name": "Yuvan Sharma",
+        "equal": false,
+        "url": "https://yuvansharma.github.io/"
+      },
+      {
+        "name": "Stefano Saravalle",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=uQxwnnUAAAAJ&hl=en"
+      },
+      {
+        "name": "Ruijie Zheng",
+        "equal": false,
+        "url": "https://ruijiezheng.com/"
+      },
+      {
+        "name": "Jing Wang",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?hl=en&user=cdL5PqgAAAAJ"
+      },
+      {
+        "name": "Ryan Punamiya",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?hl=en&user=S-y6EGYAAAAJ"
+      },
+      {
+        "name": "Mengda Xu",
+        "equal": false,
+        "url": "https://mengdaxu.github.io/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": false,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Yunfan Jiang",
+        "equal": false,
+        "url": "https://yunfanj.com/"
+      },
+      {
+        "name": "Letian Fu",
+        "equal": false,
+        "url": "https://max-fu.github.io/"
+      },
+      {
+        "name": "Konstantinos Kallidromitis",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=5EuNtbQAAAAJ&hl=en"
+      },
+      {
+        "name": "Matteo Gioia",
+        "equal": false,
+        "url": "https://matteogioia.github.io/"
+      },
+      {
+        "name": "Junyi Zhang",
+        "equal": false,
+        "url": "https://www.junyi42.com/"
+      },
+      {
+        "name": "Jiaxin Ge",
+        "equal": false,
+        "url": "https://gejiaxin.org/"
+      },
+      {
+        "name": "Haiwen Feng",
+        "equal": false,
+        "url": "https://havenfeng.github.io/"
+      },
+      {
+        "name": "Fabio Galasso",
+        "equal": false,
+        "url": "https://fgalasso.bitbucket.io/"
+      },
+      {
+        "name": "Wei Zhan",
+        "equal": false,
+        "url": "https://zhanwei.site/"
+      },
+      {
+        "name": "David M. Chan",
+        "equal": false,
+        "url": "https://dchan.cc/"
+      },
+      {
+        "name": "Yutong Bai",
+        "equal": false,
+        "url": "https://yutongbai.com/"
+      },
+      {
+        "name": "Roei Herzig",
+        "equal": false,
+        "url": "https://roeiherz.github.io/"
+      },
+      {
+        "name": "Jiahui Lei",
+        "equal": false,
+        "url": "https://jiahuilei.com/"
+      },
+      {
+        "name": "Fei-Fei Li",
+        "equal": false,
+        "url": "https://profiles.stanford.edu/fei-fei-li"
+      },
+      {
+        "name": "Ken Goldberg",
+        "equal": false,
+        "url": "https://goldberg.berkeley.edu/"
+      },
+      {
+        "name": "Jitendra Malik",
+        "equal": false,
+        "url": "https://people.eecs.berkeley.edu/~malik/"
+      },
+      {
+        "name": "Pieter Abbeel",
+        "equal": false,
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/abbeel.html"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      },
+      {
+        "name": "Danfei Xu",
+        "equal": false,
+        "url": "https://faculty.cc.gatech.edu/~danfei/"
+      },
+      {
+        "name": "Linxi Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Trevor Darrell",
+        "equal": false,
+        "url": "https://people.eecs.berkeley.edu/~trevor/"
+      }
+    ],
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2606.17055",
+    "date": "2026-06-15",
+    "highlight": false
+  },
+  {
+    "name": "HumanoidMimicGen",
+    "title": "HumanoidMimicGen: Data Generation for Loco-Manipulation via Whole-Body Planning",
+    "year": 2026,
+    "venue": "CoRL 2026",
+    "image": "humanoidmimicgen.webp",
+    "paper": "https://arxiv.org/abs/2605.27724",
+    "project": "https://humanoidmimicgen.github.io/",
+    "authors": [
+      {
+        "name": "Kevin Lin",
+        "equal": false,
+        "url": "https://kevin-thankyou-lin.github.io/"
+      },
+      {
+        "name": "Ajay Mandlekar",
+        "equal": false,
+        "url": "https://ai.stanford.edu/~amandlek/"
+      },
+      {
+        "name": "Caelan Reed Garrett",
+        "equal": false,
+        "url": "https://web.mit.edu/caelan/www/"
+      },
+      {
+        "name": "Nikita Chernyadev",
+        "equal": false,
+        "url": "https://chernyadev.github.io/"
+      },
+      {
+        "name": "Yu Fang",
+        "equal": false,
+        "url": "https://squarefk.com/"
+      },
+      {
+        "name": "Runyu Ding",
+        "equal": false,
+        "url": "https://dingry.github.io/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": false,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Justin Tran",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/justin-tran-488872296/"
+      },
+      {
+        "name": "Linxi Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2605.27724",
+    "date": "2026-05-26",
+    "highlight": false
+  },
+  {
+    "name": "EgoScale",
+    "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+    "year": 2026,
+    "venue": "CoRL 2026",
+    "image": "egoscale.webp",
+    "authors": [
+      {
+        "name": "Ruijie Zheng",
+        "equal": true,
+        "url": "https://ruijiezheng.com/"
+      },
+      {
+        "name": "Dantong Niu",
+        "equal": true,
+        "url": "https://dantong88.github.io/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": true,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Jing Wang",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?hl=en&user=cdL5PqgAAAAJ"
+      },
+      {
+        "name": "Mengda Xu",
+        "equal": false,
+        "url": "https://mengdaxu.github.io/"
+      },
+      {
+        "name": "Yunfan Jiang",
+        "equal": false,
+        "url": "https://yunfanj.com/"
+      },
+      {
+        "name": "Fernando Castañeda",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=U9WUBC4AAAAJ&hl=es"
+      },
+      {
+        "name": "Fengyuan Hu",
+        "equal": false,
+        "url": "https://sled.eecs.umich.edu/author/fengyuan-hu/"
+      },
+      {
+        "name": "You Liang Tan",
+        "equal": false,
+        "url": "https://youliangtan.github.io/"
+      },
+      {
+        "name": "Letian Fu",
+        "equal": false,
+        "url": "https://max-fu.github.io/"
+      },
+      {
+        "name": "Trevor Darrell",
+        "equal": false,
+        "url": "https://people.eecs.berkeley.edu/~trevor/"
+      },
+      {
+        "name": "Furong Huang",
+        "equal": false,
+        "url": "https://furong-huang.com/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      },
+      {
+        "name": "Danfei Xu",
+        "equal": false,
+        "url": "https://faculty.cc.gatech.edu/~danfei/"
+      },
+      {
+        "name": "Linxi Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      }
+    ],
+    "paper": "https://arxiv.org/abs/2602.16710",
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2602.16710",
+    "date": "2026-02-18",
+    "highlight": true
+  },
+  {
+    "name": "DreamZero",
+    "title": "DreamZero: World Action Models are Zero-shot Policies",
+    "year": 2026,
+    "venue": "Preprint · 2026",
+    "image": "dreamzero.webp",
+    "project": "https://dreamzero0.github.io/",
+    "paper": "https://arxiv.org/abs/2602.15922",
+    "authors": [
+      {
+        "name": "Seonghyeon Ye",
+        "equal": false,
+        "url": "https://seonghyeonye.github.io/"
+      },
+      {
+        "name": "Yunhao Ge",
+        "equal": false,
+        "url": "https://gyhandy.github.io/"
+      },
+      {
+        "name": "Kaiyuan Zheng",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=6kkyR1wAAAAJ&hl=en"
+      },
+      {
+        "name": "Shenyuan Gao",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=hZtOnecAAAAJ&hl=en"
+      },
+      {
+        "name": "Sihyun Yu",
+        "equal": false,
+        "url": "https://sihyun.me/"
+      },
+      {
+        "name": "George Kurian",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?hl=en&user=40-EBscAAAAJ&view_op=list_works&sortby=pubdate"
+      },
+      {
+        "name": "Suneel Indupuru",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/suneel-indupuru-13b787/"
+      },
+      {
+        "name": "You Liang Tan",
+        "equal": false,
+        "url": "https://youliangtan.github.io/"
+      },
+      {
+        "name": "Chuning Zhu",
+        "equal": false,
+        "url": "https://homes.cs.washington.edu/~zchuning/"
+      },
+      {
+        "name": "Jiannan Xiang",
+        "equal": false,
+        "url": "https://szxiangjn.github.io/"
+      },
+      {
+        "name": "Ayaan Malik",
+        "equal": false,
+        "url": "https://ayaannmalik.github.io/"
+      },
+      {
+        "name": "Kyungmin Lee",
+        "equal": false,
+        "url": "https://kyungmnlee.github.io/"
+      },
+      {
+        "name": "William Liang",
+        "equal": false,
+        "url": "https://willjhliang.github.io/"
+      },
+      {
+        "name": "Nadun Ranawaka",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=lJth6jwAAAAJ&hl=en"
+      },
+      {
+        "name": "Jiasheng Gu",
+        "equal": false,
+        "url": "https://jiashenggu.github.io/"
+      },
+      {
+        "name": "Yinzhen Xu",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=VaFCcJ8AAAAJ&hl=en"
+      },
+      {
+        "name": "Guanzhi Wang",
+        "equal": false,
+        "url": "https://guanzhi.me/"
+      },
+      {
+        "name": "Fengyuan Hu",
+        "equal": false,
+        "url": "https://sled.eecs.umich.edu/author/fengyuan-hu/"
+      },
+      {
+        "name": "Avnish Narayan",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/avnishn/"
+      },
+      {
+        "name": "Johan Bjorck",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=Q_YY6OMAAAAJ&hl=en"
+      },
+      {
+        "name": "Jing Wang",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?hl=en&user=cdL5PqgAAAAJ"
+      },
+      {
+        "name": "Gwanghyun Kim",
+        "equal": false,
+        "url": "https://gwang-kim.github.io/"
+      },
+      {
+        "name": "Dantong Niu",
+        "equal": false,
+        "url": "https://dantong88.github.io/"
+      },
+      {
+        "name": "Ruijie Zheng",
+        "equal": false,
+        "url": "https://ruijiezheng.com/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": false,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Jimmy Wu",
+        "equal": false,
+        "url": "https://jimmyyhwu.github.io/"
+      },
+      {
+        "name": "Qi Wang",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=0zjxt5gAAAAJ&hl=en"
+      },
+      {
+        "name": "Ryan Julian",
+        "equal": false,
+        "url": "https://ryanjulian.me/"
+      },
+      {
+        "name": "Danfei Xu",
+        "equal": false,
+        "url": "https://faculty.cc.gatech.edu/~danfei/"
+      },
+      {
+        "name": "Yilun Du",
+        "equal": false,
+        "url": "https://yilundu.github.io/"
+      },
+      {
+        "name": "Yevgen Chebotar",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=ADkiClQAAAAJ&hl=en"
+      },
+      {
+        "name": "Scott Reed",
+        "equal": false,
+        "url": "https://reedscot.github.io/"
+      },
+      {
+        "name": "Jan Kautz",
+        "equal": false,
+        "url": "https://jankautz.com/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      },
+      {
+        "name": "Linxi \"Jim\" Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Joel Jang",
+        "equal": false,
+        "url": "https://joeljang.github.io/"
+      }
+    ],
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2602.15922",
+    "date": "2026-02-17",
+    "highlight": true
+  },
+  {
+    "name": "DreamDojo",
+    "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+    "year": 2026,
+    "venue": "Preprint · 2026",
+    "image": "dreamdojo.webp",
+    "project": "https://dreamdojo-world.github.io/",
+    "paper": "https://arxiv.org/abs/2602.06949",
+    "authors": [
+      {
+        "name": "Shenyuan Gao",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=hZtOnecAAAAJ&hl=en"
+      },
+      {
+        "name": "William Liang",
+        "equal": false,
+        "url": "https://willjhliang.github.io/"
+      },
+      {
+        "name": "Kaiyuan Zheng",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=6kkyR1wAAAAJ&hl=en"
+      },
+      {
+        "name": "Ayaan Malik",
+        "equal": false,
+        "url": "https://ayaannmalik.github.io/"
+      },
+      {
+        "name": "Seonghyeon Ye",
+        "equal": false,
+        "url": "https://seonghyeonye.github.io/"
+      },
+      {
+        "name": "Sihyun Yu",
+        "equal": false,
+        "url": "https://sihyun.me/"
+      },
+      {
+        "name": "Wei-Cheng Tseng",
+        "equal": false,
+        "url": "https://weichengtseng.github.io/"
+      },
+      {
+        "name": "Yuzhu Dong",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/yuzhudong/"
+      },
+      {
+        "name": "Kaichun Mo",
+        "equal": false,
+        "url": "https://kaichun-mo.github.io/"
+      },
+      {
+        "name": "Chen-Hsuan Lin",
+        "equal": false,
+        "url": "https://chenhsuanlin.bitbucket.io/"
+      },
+      {
+        "name": "Qianli Ma",
+        "equal": false,
+        "url": "https://qianlim.github.io/"
+      },
+      {
+        "name": "Seungjun Nah",
+        "equal": false,
+        "url": "https://seungjunnah.github.io/"
+      },
+      {
+        "name": "Loic Magne",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=Ui3eovkAAAAJ&hl=en"
+      },
+      {
+        "name": "Jiannan Xiang",
+        "equal": false,
+        "url": "https://szxiangjn.github.io/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": false,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Ruijie Zheng",
+        "equal": false,
+        "url": "https://ruijiezheng.com/"
+      },
+      {
+        "name": "Dantong Niu",
+        "equal": false,
+        "url": "https://dantong88.github.io/"
+      },
+      {
+        "name": "You Liang Tan",
+        "equal": false,
+        "url": "https://youliangtan.github.io/"
+      },
+      {
+        "name": "K. R. Zentner",
+        "equal": false,
+        "url": "https://zentner.io/"
+      },
+      {
+        "name": "George Kurian",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?hl=en&user=40-EBscAAAAJ&view_op=list_works&sortby=pubdate"
+      },
+      {
+        "name": "Suneel Indupuru",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/suneel-indupuru-13b787/"
+      },
+      {
+        "name": "Pooya Jannaty",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/pooyaj/"
+      },
+      {
+        "name": "Jinwei Gu",
+        "equal": false,
+        "url": "https://www.gujinwei.org/"
+      },
+      {
+        "name": "Jun Zhang",
+        "equal": false,
+        "url": "https://eejzhang.people.ust.hk/"
+      },
+      {
+        "name": "Jitendra Malik",
+        "equal": false,
+        "url": "https://people.eecs.berkeley.edu/~malik/"
+      },
+      {
+        "name": "Pieter Abbeel",
+        "equal": false,
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/abbeel.html"
+      },
+      {
+        "name": "Ming-Yu Liu",
+        "equal": false,
+        "url": "https://mingyuliu.net/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      },
+      {
+        "name": "Joel Jang",
+        "equal": false,
+        "url": "https://joeljang.github.io/"
+      },
+      {
+        "name": "Linxi \"Jim\" Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      }
+    ],
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2602.06949",
+    "date": "2026-02-06",
+    "highlight": false
+  },
+  {
+    "name": "Self-Improving VLA",
+    "title": "Self-Improving Vision-Language-Action Models with Data Generation via Residual RL",
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "image": "self-improving-vla.webp",
+    "paper": "https://openreview.net/forum?id=eUGoqrZ6Ea",
+    "authors": [
+      {
+        "name": "Wenli Xiao",
+        "equal": false,
+        "url": "https://wenlixiao.com/"
+      },
+      {
+        "name": "Haotian Lin",
+        "equal": false,
+        "url": "https://darthutopian.github.io/"
+      },
+      {
+        "name": "Andy Peng",
+        "equal": false,
+        "url": "https://andypeng05.github.io/"
+      },
+      {
+        "name": "Haoru Xue",
+        "equal": false,
+        "url": "https://haoruxue.github.io/"
+      },
+      {
+        "name": "Tairan He",
+        "equal": false,
+        "url": "https://tairanhe.com/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": false,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Fengyuan Hu",
+        "equal": false,
+        "url": "https://sled.eecs.umich.edu/author/fengyuan-hu/"
+      },
+      {
+        "name": "Jimmy Wu",
+        "equal": false,
+        "url": "https://jimmyyhwu.github.io/"
+      },
+      {
+        "name": "Zhengyi Luo",
+        "equal": false,
+        "url": "https://www.zhengyiluo.com/"
+      },
+      {
+        "name": "Linxi \"Jim\" Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Guanya Shi",
+        "equal": false,
+        "url": "https://www.gshi.me/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2511.00091",
+    "date": "2025-10-30",
+    "highlight": false
+  },
+  {
+    "name": "SCIZOR",
+    "title": "SCIZOR: A Self-Supervised Approach to Data Curation for Large-Scale Imitation Learning",
+    "year": 2026,
+    "venue": "ICRA 2026",
+    "award": "Oral",
+    "image": "scizor-research.webp",
+    "authors": [
+      {
+        "name": "Yu Zhang",
+        "equal": true,
+        "url": "https://franklin-zhang0.github.io/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": true,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Huihan Liu",
+        "equal": false,
+        "url": "https://huihanl.github.io"
+      },
+      {
+        "name": "Rutav Shah",
+        "equal": false,
+        "url": "https://shahrutav.github.io"
+      },
+      {
+        "name": "Michael Wan",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/michaelwan1/"
+      },
+      {
+        "name": "Linxi Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "paper": "https://arxiv.org/abs/2505.22626",
+    "project": "https://ut-austin-rpl.github.io/SCIZOR/",
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2505.22626",
+    "date": "2025-05-28",
+    "highlight": true
+  },
+  {
+    "name": "Metamon",
+    "title": "Human-Level Competitive Pokémon via Scalable Offline Reinforcement Learning with Transformers",
+    "year": 2025,
+    "venue": "RLC / RLJ 2025",
+    "image": "metamon.webp",
+    "authors": [
+      {
+        "name": "Jake Grigsby",
+        "equal": false,
+        "url": "https://jakegrigsby.github.io/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": true,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Justin Sasek",
+        "equal": true,
+        "url": "https://www.linkedin.com/in/justinsasek/"
+      },
+      {
+        "name": "Steven Zheng",
+        "equal": true
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "paper": "https://arxiv.org/abs/2504.04395",
+    "project": "https://metamon.tech/",
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2504.04395",
+    "date": "2025-04-06",
+    "highlight": true
+  },
+  {
+    "name": "Sim-and-Real Co-Training",
+    "title": "Sim-and-Real Co-Training: A Simple Recipe for Vision-Based Robotic Manipulation",
+    "year": 2025,
+    "venue": "RSS 2025",
+    "image": "co-training.webp",
+    "project": "https://co-training.github.io/",
+    "paper": "https://arxiv.org/abs/2503.24361",
+    "authors": [
+      {
+        "name": "Abhiram Maddukuri",
+        "equal": false,
+        "url": "https://abhiram824.github.io/"
+      },
+      {
+        "name": "Zhenyu Jiang",
+        "equal": false,
+        "url": "https://zhenyujiang.me/"
+      },
+      {
+        "name": "Lawrence Yunliang Chen",
+        "equal": false,
+        "url": "https://yunliangchen.github.io/"
+      },
+      {
+        "name": "Soroush Nasiriany",
+        "equal": false,
+        "url": "https://snasiriany.me/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": false,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Yu Fang",
+        "equal": false,
+        "url": "https://squarefk.com/"
+      },
+      {
+        "name": "Wenqi Huang",
+        "equal": false,
+        "url": "https://kevinh.cv"
+      },
+      {
+        "name": "Zu Wang",
+        "equal": false,
+        "url": "https://www.zuwang95.com/"
+      },
+      {
+        "name": "Zhenjia Xu",
+        "equal": false,
+        "url": "https://www.zhenjiaxu.com/"
+      },
+      {
+        "name": "Nikita Chernyadev",
+        "equal": false,
+        "url": "https://chernyadev.github.io/"
+      },
+      {
+        "name": "Scott Reed",
+        "equal": false,
+        "url": "https://reedscot.github.io/"
+      },
+      {
+        "name": "Ken Goldberg",
+        "equal": false,
+        "url": "https://goldberg.berkeley.edu/"
+      },
+      {
+        "name": "Ajay Mandlekar",
+        "equal": false,
+        "url": "https://ai.stanford.edu/~amandlek/"
+      },
+      {
+        "name": "Linxi Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2503.24361",
+    "date": "2025-03-31",
+    "highlight": false
+  },
+  {
+    "name": "GR00T N1",
+    "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+    "year": 2025,
+    "venue": "Preprint · 2025",
+    "image": "groot.webp",
+    "authors": [
+      {
+        "name": "Johan Bjorck",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=Q_YY6OMAAAAJ&hl=en"
+      },
+      {
+        "name": "Fernando Castañeda",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=U9WUBC4AAAAJ&hl=es"
+      },
+      {
+        "name": "Nikita Cherniadev",
+        "equal": false,
+        "url": "https://chernyadev.github.io/"
+      },
+      {
+        "name": "Xingye Da",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=5lwj5vIAAAAJ"
+      },
+      {
+        "name": "Runyu Ding",
+        "equal": false,
+        "url": "https://dingry.github.io/"
+      },
+      {
+        "name": "Linxi \"Jim\" Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Yu Fang",
+        "equal": false,
+        "url": "https://squarefk.com/"
+      },
+      {
+        "name": "Dieter Fox",
+        "equal": false,
+        "url": "https://homes.cs.washington.edu/~fox/"
+      },
+      {
+        "name": "Fengyuan Hu",
+        "equal": false,
+        "url": "https://sled.eecs.umich.edu/author/fengyuan-hu/"
+      },
+      {
+        "name": "Spencer Huang",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/spencermhuang/"
+      },
+      {
+        "name": "Joel Jang",
+        "equal": false,
+        "url": "https://joeljang.github.io/"
+      },
+      {
+        "name": "Zhenyu Jiang",
+        "equal": false,
+        "url": "https://zhenyujiang.me/"
+      },
+      {
+        "name": "Jan Kautz",
+        "equal": false,
+        "url": "https://jankautz.com/"
+      },
+      {
+        "name": "Kaushil Kundalia",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/kaushilk/"
+      },
+      {
+        "name": "Lawrence Lao",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/laojingyuan/"
+      },
+      {
+        "name": "Zhiqi Li",
+        "equal": false,
+        "url": "https://zhiqi-li.github.io/"
+      },
+      {
+        "name": "Zongyu Lin",
+        "equal": false,
+        "url": "https://rafa-zy.github.io/"
+      },
+      {
+        "name": "Kevin Lin",
+        "equal": false,
+        "url": "https://kevin-thankyou-lin.github.io/"
+      },
+      {
+        "name": "Guilin Liu",
+        "equal": false,
+        "url": "https://liuguilin1225.github.io/"
+      },
+      {
+        "name": "Edith Llontop",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/edithllontop/"
+      },
+      {
+        "name": "Loic Magne",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=Ui3eovkAAAAJ&hl=en"
+      },
+      {
+        "name": "Ajay Mandlekar",
+        "equal": false,
+        "url": "https://ai.stanford.edu/~amandlek/"
+      },
+      {
+        "name": "Avnish Narayan",
+        "equal": false,
+        "url": "https://www.linkedin.com/in/avnishn/"
+      },
+      {
+        "name": "Soroush Nasiriany",
+        "equal": false,
+        "url": "https://snasiriany.me/"
+      },
+      {
+        "name": "Scott Reed",
+        "equal": false,
+        "url": "https://reedscot.github.io/"
+      },
+      {
+        "name": "You Liang Tan",
+        "equal": false,
+        "url": "https://youliangtan.github.io/"
+      },
+      {
+        "name": "Guanzhi Wang",
+        "equal": false,
+        "url": "https://guanzhi.me/"
+      },
+      {
+        "name": "Zu Wang",
+        "equal": false,
+        "url": "https://www.zuwang95.com/"
+      },
+      {
+        "name": "Jing Wang",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?hl=en&user=cdL5PqgAAAAJ"
+      },
+      {
+        "name": "Qi Wang",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=0zjxt5gAAAAJ&hl=en"
+      },
+      {
+        "name": "Jiannan Xiang",
+        "equal": false,
+        "url": "https://szxiangjn.github.io/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": false,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Yinzhen Xu",
+        "equal": false,
+        "url": "https://scholar.google.com/citations?user=VaFCcJ8AAAAJ&hl=en"
+      },
+      {
+        "name": "Zhenjia Xu",
+        "equal": false,
+        "url": "https://www.zhenjiaxu.com/"
+      },
+      {
+        "name": "Seonghyeon Ye",
+        "equal": false,
+        "url": "https://seonghyeonye.github.io/"
+      },
+      {
+        "name": "Zhiding Yu",
+        "equal": false,
+        "url": "https://chrisding.github.io/"
+      },
+      {
+        "name": "Ao Zhang",
+        "equal": false,
+        "url": "https://waxnkw.github.io/"
+      },
+      {
+        "name": "Hao Zhang",
+        "equal": false,
+        "url": "https://haozhang534.github.io/"
+      },
+      {
+        "name": "Yizhou Zhao",
+        "equal": false,
+        "url": "https://yizhouzhao.github.io/"
+      },
+      {
+        "name": "Ruijie Zheng",
+        "equal": false,
+        "url": "https://ruijiezheng.com/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "paper": "https://arxiv.org/abs/2503.14734",
+    "authorGroup": "NVIDIA",
+    "source": "https://arxiv.org/abs/2503.14734",
+    "date": "2025-03-18",
+    "highlight": true
+  },
+  {
+    "name": "DexMimicGen",
+    "title": "DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning",
+    "year": 2025,
+    "venue": "ICRA 2025",
+    "image": "dexmimicgen.jpg",
+    "authors": [
+      {
+        "name": "Zhenyu Jiang",
+        "equal": true,
+        "url": "https://zhenyujiang.me/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": true,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Kevin Lin",
+        "equal": true,
+        "url": "https://kevin-thankyou-lin.github.io/"
+      },
+      {
+        "name": "Zhenjia Xu",
+        "equal": false,
+        "url": "https://www.zhenjiaxu.com/"
+      },
+      {
+        "name": "Weikang Wan",
+        "equal": false,
+        "url": "https://wkwan7.github.io/"
+      },
+      {
+        "name": "Ajay Mandlekar",
+        "equal": false,
+        "url": "https://ai.stanford.edu/~amandlek/"
+      },
+      {
+        "name": "Linxi Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "paper": "https://arxiv.org/abs/2410.24185",
+    "project": "https://dexmimicgen.github.io/",
+    "code": "https://github.com/NVlabs/dexmimicgen",
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2410.24185",
+    "date": "2024-10-31",
+    "highlight": true
+  },
+  {
+    "name": "HARMON",
+    "title": "Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions",
+    "year": 2024,
+    "venue": "CoRL 2024",
+    "image": "harmon.png",
+    "authors": [
+      {
+        "name": "Zhenyu Jiang",
+        "equal": true,
+        "url": "https://zhenyujiang.me/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": true,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Jinhan Li",
+        "equal": false,
+        "url": "https://lijinhan21.github.io/"
+      },
+      {
+        "name": "Ye Yuan",
+        "equal": false,
+        "url": "https://ye-yuan.com"
+      },
+      {
+        "name": "Yifeng Zhu",
+        "equal": false,
+        "url": "https://zhuyifengzju.github.io"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "paper": "https://proceedings.mlr.press/v270/jiang25b.html",
+    "project": "https://ut-austin-rpl.github.io/Harmon/",
+    "authorGroup": null,
+    "source": "https://proceedings.mlr.press/v270/jiang25b.html",
+    "date": "2024-01-01",
+    "highlight": false
+  },
+  {
+    "name": "OKAMI",
+    "title": "OKAMI: Teaching Humanoid Robots Manipulation Skills through Single Video Imitation",
+    "year": 2024,
+    "venue": "CoRL 2024",
+    "image": "okami.png",
+    "authors": [
+      {
+        "name": "Jinhan Li",
+        "equal": false,
+        "url": "https://lijinhan21.github.io/"
+      },
+      {
+        "name": "Yifeng Zhu",
+        "equal": true,
+        "url": "https://zhuyifengzju.github.io"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": true,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Zhenyu Jiang",
+        "equal": true,
+        "url": "https://zhenyujiang.me/"
+      },
+      {
+        "name": "Mingyo Seo",
+        "equal": false,
+        "url": "https://mingyoseo.com/"
+      },
+      {
+        "name": "Georgios Pavlakos",
+        "equal": false,
+        "url": "https://geopavlakos.github.io/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      }
+    ],
+    "paper": "https://proceedings.mlr.press/v270/li25a.html",
+    "project": "https://ut-austin-rpl.github.io/OKAMI/",
+    "authorGroup": null,
+    "source": "https://proceedings.mlr.press/v270/li25a.html",
+    "date": "2024-01-01",
+    "highlight": false
+  },
+  {
+    "name": "Voyager",
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "year": 2024,
+    "venue": "TMLR 2024",
+    "image": "voyager.png",
+    "authors": [
+      {
+        "name": "Guanzhi Wang",
+        "equal": false,
+        "url": "https://guanzhi.me/"
+      },
+      {
+        "name": "Yuqi Xie",
+        "equal": false,
+        "url": "https://xieleo5.github.io/"
+      },
+      {
+        "name": "Yunfan Jiang",
+        "equal": false,
+        "url": "https://yunfanj.com/"
+      },
+      {
+        "name": "Ajay Mandlekar",
+        "equal": false,
+        "url": "https://ai.stanford.edu/~amandlek/"
+      },
+      {
+        "name": "Chaowei Xiao",
+        "equal": false,
+        "url": "https://xiaocw11.github.io/"
+      },
+      {
+        "name": "Yuke Zhu",
+        "equal": false,
+        "url": "https://yukezhu.me/"
+      },
+      {
+        "name": "Linxi Fan",
+        "equal": false,
+        "url": "https://jimfan.me/"
+      },
+      {
+        "name": "Anima Anandkumar",
+        "equal": false,
+        "url": "http://tensorlab.cms.caltech.edu/users/anima/"
+      }
+    ],
+    "paper": "https://openreview.net/forum?id=ehfRiF0R3a",
+    "project": "https://voyager.minedojo.org/",
+    "code": "https://github.com/MineDojo/Voyager",
+    "authorGroup": null,
+    "source": "https://arxiv.org/abs/2305.16291",
+    "date": "2023-05-25",
+    "highlight": true
+  }
+]

@@ -1,0 +1,744 @@
+{
+  "verifiedLinks": [
+    {
+      "name": "Dantong Niu",
+      "label": "Dantong Niu",
+      "url": "https://dantong88.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Zhuoyang Liu",
+      "label": "Zhuoyang Liu",
+      "url": "https://zhuoyang-liu.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Zekai Wang",
+      "label": "Zekai Wang",
+      "url": "https://scholar.google.com/citations?user=Dngm3CYAAAAJ&hl=en",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Zhao-Heng Yin",
+      "label": "Zhao-Heng Yin",
+      "url": "https://zhaohengyin.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Anirudh Pai",
+      "label": "Anirudh Pai",
+      "url": "https://scholar.google.com/citations?user=9Iv9490AAAAJ&hl=en",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Yuvan Sharma",
+      "label": "Yuvan Sharma",
+      "url": "https://yuvansharma.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Stefano Saravalle",
+      "label": "Stefano Saravalle",
+      "url": "https://scholar.google.com/citations?user=uQxwnnUAAAAJ&hl=en",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Ruijie Zheng",
+      "label": "Ruijie Zheng",
+      "url": "https://ruijiezheng.com/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Jing Wang",
+      "label": "Jing Wang",
+      "url": "https://scholar.google.com/citations?hl=en&user=cdL5PqgAAAAJ",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Ryan Punamiya",
+      "label": "Ryan Punamiya",
+      "url": "https://scholar.google.com/citations?hl=en&user=S-y6EGYAAAAJ",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Mengda Xu",
+      "label": "Mengda Xu",
+      "url": "https://mengdaxu.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Yuqi Xie",
+      "label": "Yuqi Xie",
+      "url": "https://xieleo5.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Yunfan Jiang",
+      "label": "Yunfan Jiang",
+      "url": "https://yunfanj.com/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Letian Fu",
+      "label": "Letian Fu",
+      "url": "https://max-fu.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Konstantinos Kallidromitis",
+      "label": "Konstantinos Kallidromitis",
+      "url": "https://scholar.google.com/citations?user=5EuNtbQAAAAJ&hl=en",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Matteo Gioia",
+      "label": "Matteo Gioia",
+      "url": "https://matteogioia.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Junyi Zhang",
+      "label": "Junyi Zhang",
+      "url": "https://www.junyi42.com/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Jiaxin Ge",
+      "label": "Jiaxin Ge",
+      "url": "https://gejiaxin.org/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Haiwen Feng",
+      "label": "Haiwen Feng",
+      "url": "https://havenfeng.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Fabio Galasso",
+      "label": "Fabio Galasso",
+      "url": "https://fgalasso.bitbucket.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Wei Zhan",
+      "label": "Wei Zhan",
+      "url": "https://zhanwei.site/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "David M. Chan",
+      "label": "David M. Chan",
+      "url": "https://dchan.cc/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Yutong Bai",
+      "label": "Yutong Bai",
+      "url": "https://yutongbai.com/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Roei Herzig",
+      "label": "Roei Herzig",
+      "url": "https://roeiherz.github.io/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Jiahui Lei",
+      "label": "Jiahui Lei",
+      "url": "https://jiahuilei.com/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Fei-Fei Li",
+      "label": "Fei-Fei Li",
+      "url": "https://profiles.stanford.edu/fei-fei-li",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Ken Goldberg",
+      "label": "Ken Goldberg",
+      "url": "https://goldberg.berkeley.edu/",
+      "source": "https://co-training.github.io/"
+    },
+    {
+      "name": "Jitendra Malik",
+      "label": "Jitendra Malik",
+      "url": "https://people.eecs.berkeley.edu/~malik/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Pieter Abbeel",
+      "label": "Pieter Abbeel",
+      "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/abbeel.html",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Yuke Zhu",
+      "label": "Yuke Zhu",
+      "url": "https://yukezhu.me/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Danfei Xu",
+      "label": "Danfei Xu",
+      "url": "https://faculty.cc.gatech.edu/~danfei/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Trevor Darrell",
+      "label": "Trevor Darrell",
+      "url": "https://people.eecs.berkeley.edu/~trevor/",
+      "source": "https://tactile-reactive-dexterous.github.io/"
+    },
+    {
+      "name": "Kevin Lin",
+      "label": "Kevin Lin",
+      "url": "https://kevin-thankyou-lin.github.io/",
+      "source": "https://humanoidmimicgen.github.io/"
+    },
+    {
+      "name": "Ajay Mandlekar",
+      "label": "Ajay Mandlekar",
+      "url": "https://ai.stanford.edu/~amandlek/",
+      "source": "https://humanoidmimicgen.github.io/"
+    },
+    {
+      "name": "Caelan Reed Garrett",
+      "label": "Caelan Reed Garrett",
+      "url": "https://web.mit.edu/caelan/www/",
+      "source": "https://humanoidmimicgen.github.io/"
+    },
+    {
+      "name": "Nikita Chernyadev",
+      "label": "Nikita Chernyadev",
+      "url": "https://chernyadev.github.io/",
+      "source": "https://humanoidmimicgen.github.io/"
+    },
+    {
+      "name": "Yu Fang",
+      "label": "Yu Fang",
+      "url": "https://squarefk.com/",
+      "source": "https://co-training.github.io/"
+    },
+    {
+      "name": "Runyu Ding",
+      "label": "Runyu Ding",
+      "url": "https://dingry.github.io/",
+      "source": "https://humanoidmimicgen.github.io/"
+    },
+    {
+      "name": "Linxi Fan",
+      "label": "Linxi Fan",
+      "url": "https://jimfan.me/",
+      "source": "https://humanoidmimicgen.github.io/"
+    },
+    {
+      "name": "Seonghyeon Ye",
+      "label": "Seonghyeon Ye",
+      "url": "https://seonghyeonye.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Yunhao Ge",
+      "label": "Yunhao Ge",
+      "url": "https://gyhandy.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Kaiyuan Zheng",
+      "label": "Kaiyuan Zheng",
+      "url": "https://scholar.google.com/citations?user=6kkyR1wAAAAJ&hl=en",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Sihyun Yu",
+      "label": "Sihyun Yu",
+      "url": "https://sihyun.me/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "George Kurian",
+      "label": "George Kurian",
+      "url": "https://scholar.google.com/citations?hl=en&user=40-EBscAAAAJ&view_op=list_works&sortby=pubdate",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "You Liang Tan",
+      "label": "You Liang Tan",
+      "url": "https://youliangtan.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Chuning Zhu",
+      "label": "Chuning Zhu",
+      "url": "https://homes.cs.washington.edu/~zchuning/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Jiannan Xiang",
+      "label": "Jiannan Xiang",
+      "url": "https://szxiangjn.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Kyungmin Lee",
+      "label": "Kyungmin Lee",
+      "url": "https://kyungmnlee.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "William Liang",
+      "label": "William Liang",
+      "url": "https://willjhliang.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Nadun Ranawaka",
+      "label": "Nadun Ranawaka",
+      "url": "https://scholar.google.com/citations?user=lJth6jwAAAAJ&hl=en",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Jiasheng Gu",
+      "label": "Jiasheng Gu",
+      "url": "https://jiashenggu.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Yinzhen Xu",
+      "label": "Yinzhen Xu",
+      "url": "https://scholar.google.com/citations?user=VaFCcJ8AAAAJ&hl=en",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Guanzhi Wang",
+      "label": "Guanzhi Wang",
+      "url": "https://guanzhi.me/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Fengyuan Hu",
+      "label": "Fengyuan Hu",
+      "url": "https://sled.eecs.umich.edu/author/fengyuan-hu/",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Johan Bjorck",
+      "label": "Johan Bjorck",
+      "url": "https://scholar.google.com/citations?user=Q_YY6OMAAAAJ&hl=en",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Gwanghyun Kim",
+      "label": "Gwanghyun Kim",
+      "url": "https://gwang-kim.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Jimmy Wu",
+      "label": "Jimmy Wu",
+      "url": "https://jimmyyhwu.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Qi Wang",
+      "label": "Qi Wang",
+      "url": "https://scholar.google.com/citations?user=0zjxt5gAAAAJ&hl=en",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Ryan Julian",
+      "label": "Ryan Julian",
+      "url": "https://ryanjulian.me/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Yilun Du",
+      "label": "Yilun Du",
+      "url": "https://yilundu.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Yevgen Chebotar",
+      "label": "Yevgen Chebotar",
+      "url": "https://scholar.google.com/citations?user=ADkiClQAAAAJ&hl=en",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Scott Reed",
+      "label": "Scott Reed",
+      "url": "https://reedscot.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Jan Kautz",
+      "label": "Jan Kautz",
+      "url": "https://jankautz.com/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Joel Jang",
+      "label": "Joel Jang",
+      "url": "https://joeljang.github.io/",
+      "source": "https://dreamzero0.github.io/"
+    },
+    {
+      "name": "Wei-Cheng Tseng",
+      "label": "Wei-Cheng Tseng",
+      "url": "https://weichengtseng.github.io/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Kaichun Mo",
+      "label": "Kaichun Mo",
+      "url": "https://kaichun-mo.github.io/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Chen-Hsuan Lin",
+      "label": "Chen-Hsuan Lin",
+      "url": "https://chenhsuanlin.bitbucket.io/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Qianli Ma",
+      "label": "Qianli Ma",
+      "url": "https://qianlim.github.io/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Seungjun Nah",
+      "label": "Seungjun Nah",
+      "url": "https://seungjunnah.github.io/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Loic Magne",
+      "label": "Loic Magne",
+      "url": "https://scholar.google.com/citations?user=Ui3eovkAAAAJ&hl=en",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "K. R. Zentner",
+      "label": "KR Zentner",
+      "url": "https://zentner.io/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Jinwei Gu",
+      "label": "Jinwei Gu",
+      "url": "https://www.gujinwei.org/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Jun Zhang",
+      "label": "Jun Zhang",
+      "url": "https://eejzhang.people.ust.hk/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Ming-Yu Liu",
+      "label": "Ming-Yu Liu",
+      "url": "https://mingyuliu.net/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Yu Zhang",
+      "label": "Yu Zhang1*",
+      "url": "https://franklin-zhang0.github.io/",
+      "source": "https://ut-austin-rpl.github.io/SCIZOR/"
+    },
+    {
+      "name": "Huihan Liu",
+      "label": "Huihan Liu1†",
+      "url": "https://huihanl.github.io",
+      "source": "https://ut-austin-rpl.github.io/SCIZOR/"
+    },
+    {
+      "name": "Rutav Shah",
+      "label": "Rutav Shah1†",
+      "url": "https://shahrutav.github.io",
+      "source": "https://ut-austin-rpl.github.io/SCIZOR/"
+    },
+    {
+      "name": "Jake Grigsby",
+      "label": "Jake Grigsby",
+      "url": "https://jakegrigsby.github.io/",
+      "source": "https://metamon.tech/"
+    },
+    {
+      "name": "Abhiram Maddukuri",
+      "label": "Abhiram Maddukuri",
+      "url": "https://abhiram824.github.io/",
+      "source": "https://co-training.github.io/"
+    },
+    {
+      "name": "Zhenyu Jiang",
+      "label": "Zhenyu Jiang",
+      "url": "https://zhenyujiang.me/",
+      "source": "https://co-training.github.io/"
+    },
+    {
+      "name": "Lawrence Yunliang Chen",
+      "label": "Lawrence Yunliang Chen",
+      "url": "https://yunliangchen.github.io/",
+      "source": "https://co-training.github.io/"
+    },
+    {
+      "name": "Soroush Nasiriany",
+      "label": "Soroush Nasiriany",
+      "url": "https://snasiriany.me/",
+      "source": "https://co-training.github.io/"
+    },
+    {
+      "name": "Zu Wang",
+      "label": "Zu Wang",
+      "url": "https://www.zuwang95.com/",
+      "source": "https://co-training.github.io/"
+    },
+    {
+      "name": "Zhenjia Xu",
+      "label": "Zhenjia Xu",
+      "url": "https://www.zhenjiaxu.com/",
+      "source": "https://co-training.github.io/"
+    },
+    {
+      "name": "Weikang Wan",
+      "label": "Weikang Wan",
+      "url": "https://wkwan7.github.io/",
+      "source": "https://dexmimicgen.github.io/"
+    },
+    {
+      "name": "Ye Yuan",
+      "label": "Ye Yuan2",
+      "url": "https://ye-yuan.com",
+      "source": "https://ut-austin-rpl.github.io/Harmon/"
+    },
+    {
+      "name": "Yifeng Zhu",
+      "label": "Yifeng Zhu1",
+      "url": "https://zhuyifengzju.github.io",
+      "source": "https://ut-austin-rpl.github.io/Harmon/"
+    },
+    {
+      "name": "Mingyo Seo",
+      "label": "Mingyo Seo1",
+      "url": "https://mingyoseo.com/",
+      "source": "https://ut-austin-rpl.github.io/OKAMI/"
+    },
+    {
+      "name": "Georgios Pavlakos",
+      "label": "Georgios Pavlakos1",
+      "url": "https://geopavlakos.github.io/",
+      "source": "https://ut-austin-rpl.github.io/OKAMI/"
+    },
+    {
+      "name": "Chaowei Xiao",
+      "label": "Chaowei Xiao",
+      "url": "https://xiaocw11.github.io/",
+      "source": "https://voyager.minedojo.org/"
+    },
+    {
+      "name": "Anima Anandkumar",
+      "label": "Anima Anandkumar",
+      "url": "http://tensorlab.cms.caltech.edu/users/anima/",
+      "source": "https://voyager.minedojo.org/"
+    },
+    {
+      "name": "Guanya Shi",
+      "label": "Guanya Shi",
+      "url": "https://www.gshi.me/",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Wenli Xiao",
+      "label": "Wenli Xiao",
+      "url": "https://wenlixiao.com/",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Haotian Lin",
+      "label": "Haotian Lin",
+      "url": "https://darthutopian.github.io/",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Tairan He",
+      "label": "Tairan He",
+      "url": "https://tairanhe.com/",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Zhengyi Luo",
+      "label": "Zhengyi Luo",
+      "url": "https://www.zhengyiluo.com/",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Fernando Castañeda",
+      "label": "Fernando Castañeda",
+      "url": "https://scholar.google.com/citations?user=U9WUBC4AAAAJ&hl=es",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Andy Peng",
+      "label": "Andy Peng",
+      "url": "https://andypeng05.github.io/",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Xingye Da",
+      "label": "Xingye Da",
+      "url": "https://scholar.google.com/citations?user=5lwj5vIAAAAJ",
+      "source": "https://haoruxue.github.io/"
+    },
+    {
+      "name": "Haoru Xue",
+      "label": "Haoru Xue",
+      "url": "https://haoruxue.github.io/",
+      "source": "https://www.wenlixiao.com/self-improve-VLA-PLD"
+    },
+    {
+      "name": "Furong Huang",
+      "url": "https://furong-huang.com/",
+      "source": "https://furong-huang.com/"
+    },
+    {
+      "name": "Jinhan Li",
+      "url": "https://lijinhan21.github.io/",
+      "source": "https://lijinhan21.github.io/"
+    },
+    {
+      "name": "Boning Shao",
+      "url": "https://boning-shao.github.io/",
+      "source": "https://boning-shao.github.io/"
+    },
+    {
+      "name": "Dieter Fox",
+      "url": "https://homes.cs.washington.edu/~fox/",
+      "source": "https://homes.cs.washington.edu/~fox/"
+    },
+    {
+      "name": "Zhiqi Li",
+      "url": "https://zhiqi-li.github.io/",
+      "source": "https://zhiqi-li.github.io/"
+    },
+    {
+      "name": "Zongyu Lin",
+      "url": "https://rafa-zy.github.io/",
+      "source": "https://rafa-zy.github.io/"
+    },
+    {
+      "name": "Guilin Liu",
+      "url": "https://liuguilin1225.github.io/",
+      "source": "https://liuguilin1225.github.io/"
+    },
+    {
+      "name": "Zhiding Yu",
+      "url": "https://chrisding.github.io/",
+      "source": "https://chrisding.github.io/"
+    },
+    {
+      "name": "Ao Zhang",
+      "url": "https://waxnkw.github.io/",
+      "source": "https://waxnkw.github.io/"
+    },
+    {
+      "name": "Hao Zhang",
+      "url": "https://haozhang534.github.io/",
+      "source": "https://haozhang534.github.io/"
+    },
+    {
+      "name": "Yizhou Zhao",
+      "url": "https://yizhouzhao.github.io/",
+      "source": "https://yizhouzhao.github.io/"
+    },
+    {
+      "name": "Ayaan Malik",
+      "url": "https://ayaannmalik.github.io/",
+      "source": "https://ayaannmalik.github.io/"
+    },
+    {
+      "name": "Wenqi Huang",
+      "url": "https://kevinh.cv",
+      "source": "https://kevinh.cv"
+    },
+    {
+      "name": "Shenyuan Gao",
+      "url": "https://scholar.google.com/citations?user=hZtOnecAAAAJ&hl=en",
+      "source": "https://github.com/Little-Podi",
+      "note": "Profile links bit.ly/sygao_scholar, which redirects to this Scholar ID."
+    },
+    {
+      "name": "Justin Tran",
+      "label": "Justin Tran",
+      "url": "https://www.linkedin.com/in/justin-tran-488872296/",
+      "source": "https://humanoidmimicgen.github.io/"
+    },
+    {
+      "name": "Suneel Indupuru",
+      "label": "Suneel Indupuru",
+      "url": "https://www.linkedin.com/in/suneel-indupuru-13b787/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Avnish Narayan",
+      "label": "Avnish Narayan",
+      "url": "https://www.linkedin.com/in/avnishn/",
+      "source": "https://www.wenlixiao.com/self-improve-VLA-PLD"
+    },
+    {
+      "name": "Yuzhu Dong",
+      "label": "Yuzhu Dong",
+      "url": "https://www.linkedin.com/in/yuzhudong/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Pooya Jannaty",
+      "label": "Pooya Jannaty",
+      "url": "https://www.linkedin.com/in/pooyaj/",
+      "source": "https://dreamdojo-world.github.io/"
+    },
+    {
+      "name": "Michael Wan",
+      "label": "Michael Wan2",
+      "url": "https://www.linkedin.com/in/michaelwan1/",
+      "source": "https://ut-austin-rpl.github.io/SCIZOR/"
+    },
+    {
+      "name": "Justin Sasek",
+      "label": "Justin Sasek",
+      "url": "https://www.linkedin.com/in/justinsasek/",
+      "source": "https://metamon.tech/"
+    },
+    {
+      "name": "Spencer Huang",
+      "url": "https://www.linkedin.com/in/spencermhuang/",
+      "source": "https://www.linkedin.com/in/spencermhuang/",
+      "note": "LinkedIn profile identifies this author at NVIDIA; verified through indexed profile."
+    },
+    {
+      "name": "Kaushil Kundalia",
+      "url": "https://www.linkedin.com/in/kaushilk/",
+      "source": "https://www.linkedin.com/in/kaushilk/",
+      "note": "LinkedIn profile identifies this author at NVIDIA; verified through indexed profile."
+    },
+    {
+      "name": "Lawrence Lao",
+      "url": "https://www.linkedin.com/in/laojingyuan/",
+      "source": "https://www.linkedin.com/in/laojingyuan/",
+      "note": "LinkedIn profile identifies this author at NVIDIA; verified through indexed profile."
+    },
+    {
+      "name": "Edith Llontop",
+      "url": "https://www.linkedin.com/in/edithllontop/",
+      "source": "https://www.linkedin.com/in/edithllontop/",
+      "note": "LinkedIn profile identifies this author at NVIDIA; verified through indexed profile."
+    }
+  ],
+  "unlinkedAuthors": [
+    "Steven Zheng"
+  ]
+}

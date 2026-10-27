@@ -1,26 +1,21 @@
 {
-  "name": "greatest-gastby-academic-template",
+  "name": "yuqi-homepage",
   "private": true,
-  "description": "the most beautiful gatsby template ever designed using antd",
-  "version": "0.2.0",
-  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "build": "yarn workspace example build",
-    "develop": "yarn workspace example develop",
-    "clean": "yarn workspace example clean"
+    "build:battle": "node build-assets/build-battle.mjs",
+    "test:battle": "node battle-checks.mjs && node battle-bundle-checks.mjs && node challenge-checks.mjs",
+    "pokemon:add": "node tools/add-pokemon.mjs",
+    "pokemon:sync": "node tools/sync-pokemon.mjs",
+    "build:ps-window": "node build-assets/build-ps-window.mjs"
   },
-  "workspaces": [
-    "gatsby-theme-academic",
-    "example"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tc-imba/greatest-gatsby-academic-template"
+  "dependencies": {
+    "@pkmn/sim": "0.10.11",
+    "dompurify": "^3.4.17",
+    "jquery": "^3.7.1"
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-plugin",
-    "markdown"
-  ],
-  "dependencies": {}
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "pngjs": "^7.0.0"
+  }
 }

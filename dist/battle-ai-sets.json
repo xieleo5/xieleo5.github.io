@@ -1,0 +1,6321 @@
+{
+  "schemaVersion": 1,
+  "month": "2026-09",
+  "sources": [
+    {
+      "format": "gen9nationaldex",
+      "month": "2026-09",
+      "cutoff": 1500,
+      "url": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+      "battles": 426601
+    },
+    {
+      "format": "gen9nationaldexubers",
+      "month": "2026-09",
+      "cutoff": 1500,
+      "url": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+      "battles": 108337
+    },
+    {
+      "format": "gen9nationaldexuu",
+      "month": "2026-09",
+      "cutoff": 1500,
+      "url": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexuu-1500.json",
+      "battles": 4298
+    },
+    {
+      "format": "gen9nationaldexdoubles",
+      "month": "2026-09",
+      "cutoff": 1500,
+      "url": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexdoubles-1500.json",
+      "battles": 112776
+    },
+    {
+      "format": "gen9anythinggoes",
+      "month": "2026-09",
+      "cutoff": 1500,
+      "url": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+      "battles": 125234
+    }
+  ],
+  "note": "AI randomly chooses a complete fixed preset before battle. Smogon usage data contains marginal moves/items/abilities/spreads, not complete configurations. Sets are curated for this custom level-50 no-switch mode; uncommon species use explicitly labelled fallbacks.",
+  "records": {
+    "zapdos": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Zapdos",
+          "name": "Zapdos",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Static",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Discharge",
+            "Hurricane",
+            "Heat Wave",
+            "Roost"
+          ]
+        },
+        "plan": "Static and Discharge can punish fast physical attackers; Roost sustains its bulk.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Zapdos",
+            "rawCount": 83686,
+            "itemPercent": 2.047,
+            "abilityPercent": 97.665,
+            "movePercent": {
+              "Discharge": 9.137,
+              "Hurricane": 78.007,
+              "Heat Wave": 51.418,
+              "Roost": 85.198
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Offensive coverage",
+        "set": {
+          "species": "Zapdos",
+          "name": "Zapdos",
+          "level": 50,
+          "item": "Choice Specs",
+          "ability": "Static",
+          "nature": "Timid",
+          "evs": {
+            "hp": 0,
+            "atk": 0,
+            "def": 4,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 30,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Thunderbolt",
+            "Hurricane",
+            "Heat Wave",
+            "Hidden Power Ice"
+          ]
+        },
+        "plan": "Choice Specs trades Roost for immediate coverage; avoid switching moves after committing.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Zapdos",
+            "rawCount": 83686,
+            "itemPercent": 5.033,
+            "abilityPercent": 97.665,
+            "movePercent": {
+              "Thunderbolt": 15.614,
+              "Hurricane": 78.007,
+              "Heat Wave": 51.418,
+              "Hidden Power Ice": 7.691
+            }
+          }
+        }
+      }
+    ],
+    "sinistcha": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Sinistcha",
+          "name": "Sinistcha",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Heatproof",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Strength Sap"
+          ]
+        },
+        "plan": "Calm Mind boosts offense; Matcha Gotcha drains HP and can burn, while Strength Sap checks physical threats.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Sinistcha",
+            "rawCount": 6667,
+            "itemPercent": 22.694,
+            "abilityPercent": 95.961,
+            "movePercent": {
+              "Calm Mind": 79.612,
+              "Matcha Gotcha": 96.048,
+              "Shadow Ball": 90.908,
+              "Strength Sap": 92.681
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Substitute recovery",
+        "set": {
+          "species": "Sinistcha",
+          "name": "Sinistcha",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Heatproof",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 4,
+            "spd": 0,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Substitute",
+            "Calm Mind",
+            "Matcha Gotcha",
+            "Shadow Ball"
+          ]
+        },
+        "plan": "Substitute protects the setup turn; Matcha Gotcha restores HP.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Sinistcha",
+            "rawCount": 6667,
+            "itemPercent": 22.694,
+            "abilityPercent": 95.961,
+            "movePercent": {
+              "Substitute": 1.336,
+              "Calm Mind": 79.612,
+              "Matcha Gotcha": 96.048,
+              "Shadow Ball": 90.908
+            }
+          }
+        }
+      }
+    ],
+    "breloom": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Breloom",
+          "name": "Breloom",
+          "level": 50,
+          "item": "Focus Sash",
+          "ability": "Technician",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Spore",
+            "Bullet Seed",
+            "Mach Punch",
+            "Rock Tomb"
+          ]
+        },
+        "plan": "Focus Sash creates a Spore opportunity; Technician powers multi-hit STAB and priority.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Breloom",
+            "rawCount": 7990,
+            "itemPercent": 33.863,
+            "abilityPercent": 87.751,
+            "movePercent": {
+              "Spore": 72.117,
+              "Bullet Seed": 86.031,
+              "Mach Punch": 87.484,
+              "Rock Tomb": 45.525
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Poison Heal setup",
+        "set": {
+          "species": "Breloom",
+          "name": "Breloom",
+          "level": 50,
+          "item": "Toxic Orb",
+          "ability": "Poison Heal",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Spore",
+            "Swords Dance",
+            "Drain Punch",
+            "Seed Bomb"
+          ]
+        },
+        "plan": "Spore creates time for Toxic Orb and Swords Dance; Poison Heal and Drain Punch sustain damage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Breloom",
+            "rawCount": 7990,
+            "itemPercent": 11.226,
+            "abilityPercent": 11.304,
+            "movePercent": {
+              "Spore": 72.117,
+              "Swords Dance": 50.331,
+              "Drain Punch": 1.273,
+              "Seed Bomb": 4.488
+            }
+          }
+        }
+      }
+    ],
+    "metagross": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Metagross",
+          "name": "Metagross",
+          "level": 50,
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Meteor Mash",
+            "Zen Headbutt",
+            "Earthquake",
+            "Bullet Punch"
+          ]
+        },
+        "plan": "Mega Evolve for Tough Claws, then use strong STAB and priority Bullet Punch.",
+        "form": "Metagross-Mega",
+        "mega": true,
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Metagross-Mega",
+            "rawCount": 6125,
+            "itemPercent": 100,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Meteor Mash": 58.671,
+              "Zen Headbutt": 16.165,
+              "Earthquake": 49.944,
+              "Bullet Punch": 62.275
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Mega coverage",
+        "set": {
+          "species": "Metagross",
+          "name": "Metagross",
+          "level": 50,
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 0,
+            "atk": 252,
+            "def": 4,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Meteor Mash",
+            "Zen Headbutt",
+            "Ice Punch",
+            "Thunder Punch"
+          ]
+        },
+        "plan": "Tough Claws boosts punch coverage against Flying, Water and Ground opponents.",
+        "form": "Metagross-Mega",
+        "mega": true,
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Metagross-Mega",
+            "rawCount": 6125,
+            "itemPercent": 100,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Meteor Mash": 58.671,
+              "Zen Headbutt": 16.165,
+              "Ice Punch": 37.446,
+              "Thunder Punch": 12.534
+            }
+          }
+        }
+      }
+    ],
+    "eevee": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Eevee",
+          "name": "Eevee",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Adaptability",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Curse",
+            "Return",
+            "Quick Attack",
+            "Wish"
+          ]
+        },
+        "plan": "Curse boosts bulk and Adaptability-powered Return; Wish sustains longer duels.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Eevee",
+            "rawCount": 583,
+            "itemPercent": 9.196,
+            "abilityPercent": 91.715,
+            "movePercent": {
+              "Curse": 0,
+              "Return": 0,
+              "Quick Attack": 25.488,
+              "Wish": 4.723
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Immediate Adaptability",
+        "set": {
+          "species": "Eevee",
+          "name": "Eevee",
+          "level": 50,
+          "item": "Silk Scarf",
+          "ability": "Adaptability",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Double-Edge",
+            "Quick Attack",
+            "Bite",
+            "Yawn"
+          ]
+        },
+        "plan": "Adaptability and Silk Scarf power immediate Normal damage; Yawn pressures setup.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Eevee",
+            "rawCount": 583,
+            "itemPercent": 0.049,
+            "abilityPercent": 91.715,
+            "movePercent": {
+              "Double-Edge": 1.987,
+              "Quick Attack": 25.488,
+              "Bite": 0,
+              "Yawn": 6.035
+            }
+          }
+        }
+      }
+    ],
+    "rowlet": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Rowlet",
+          "name": "Rowlet",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Long Reach",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Leaf Blade",
+            "Brave Bird",
+            "Synthesis"
+          ]
+        },
+        "plan": "Set up Swords Dance, then use dual STAB; Synthesis offsets Brave Bird recoil.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Rowlet",
+            "rawCount": 233,
+            "itemPercent": 86.757,
+            "abilityPercent": 74.221,
+            "movePercent": {
+              "Swords Dance": 40.046,
+              "Leaf Blade": 50.696,
+              "Brave Bird": 27.224,
+              "Synthesis": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Priority attacker",
+        "set": {
+          "species": "Rowlet",
+          "name": "Rowlet",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Long Reach",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Leaf Blade",
+            "Brave Bird",
+            "Sucker Punch",
+            "Roost"
+          ]
+        },
+        "plan": "Sucker Punch handles faster attacks while Roost offsets recoil.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Rowlet",
+            "rawCount": 233,
+            "itemPercent": 86.757,
+            "abilityPercent": 74.221,
+            "movePercent": {
+              "Leaf Blade": 50.696,
+              "Brave Bird": 27.224,
+              "Sucker Punch": 22.696,
+              "Roost": 37.773
+            }
+          }
+        }
+      }
+    ],
+    "spheal": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Spheal",
+          "name": "Spheal",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Thick Fat",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Surf",
+            "Ice Beam",
+            "Rest",
+            "Sleep Talk"
+          ]
+        },
+        "plan": "A physically bulky RestTalk set with two reliable STAB attacks.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Stockpile recovery",
+        "set": {
+          "species": "Spheal",
+          "name": "Spheal",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Thick Fat",
+          "nature": "Calm",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 4,
+            "spa": 0,
+            "spd": 252,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Stockpile",
+            "Surf",
+            "Ice Beam",
+            "Rest"
+          ]
+        },
+        "plan": "Stack defensive boosts then Rest; dual STAB avoids dependence on passive damage.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "fuecoco": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Fuecoco",
+          "name": "Fuecoco",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Unaware",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Flamethrower",
+            "Will-O-Wisp",
+            "Slack Off",
+            "Snarl"
+          ]
+        },
+        "plan": "Unaware ignores opposing boosts; burn physical attackers and recover.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Bulky special offense",
+        "set": {
+          "species": "Fuecoco",
+          "name": "Fuecoco",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Unaware",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Flamethrower",
+            "Hyper Voice",
+            "Snarl",
+            "Slack Off"
+          ]
+        },
+        "plan": "Unaware and Slack Off buy time for reliable special coverage.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "ditto": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Ditto",
+          "name": "Ditto",
+          "level": 50,
+          "item": "Choice Scarf",
+          "ability": "Imposter",
+          "nature": "Relaxed",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Transform"
+          ]
+        },
+        "plan": "Imposter copies the opponent on entry; Choice Scarf supplies the speed advantage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Ditto",
+            "rawCount": 10806,
+            "itemPercent": 91.404,
+            "abilityPercent": 99.533,
+            "movePercent": {
+              "Transform": 100
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Sash Imposter",
+        "set": {
+          "species": "Ditto",
+          "name": "Ditto",
+          "level": 50,
+          "item": "Focus Sash",
+          "ability": "Imposter",
+          "nature": "Relaxed",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 0
+          },
+          "moves": [
+            "Transform"
+          ]
+        },
+        "plan": "Imposter copies the enemy; Focus Sash can survive a decisive hit instead of locking into a move.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Ditto",
+            "rawCount": 10806,
+            "itemPercent": 2.891,
+            "abilityPercent": 99.533,
+            "movePercent": {
+              "Transform": 100
+            }
+          }
+        }
+      }
+    ],
+    "snorlax": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Snorlax",
+          "name": "Snorlax",
+          "level": 50,
+          "item": "Chesto Berry",
+          "ability": "Thick Fat",
+          "nature": "Careful",
+          "evs": {
+            "hp": 188,
+            "atk": 68,
+            "def": 0,
+            "spa": 0,
+            "spd": 252,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Curse",
+            "Body Slam",
+            "Crunch",
+            "Rest"
+          ]
+        },
+        "plan": "Curse improves physical bulk and damage; Chesto Berry gives one immediate Rest recovery.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Snorlax",
+            "rawCount": 7602,
+            "itemPercent": 5.088,
+            "abilityPercent": 69.915,
+            "movePercent": {
+              "Curse": 38.083,
+              "Body Slam": 57.502,
+              "Crunch": 22.216,
+              "Rest": 38.383
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Assault Vest attacker",
+        "set": {
+          "species": "Snorlax",
+          "name": "Snorlax",
+          "level": 50,
+          "item": "Assault Vest",
+          "ability": "Thick Fat",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Body Slam",
+            "Earthquake",
+            "Crunch",
+            "Heat Crash"
+          ]
+        },
+        "plan": "Four attacks give immediate coverage while Assault Vest bolsters special bulk.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Snorlax",
+            "rawCount": 7602,
+            "itemPercent": 13.9,
+            "abilityPercent": 69.915,
+            "movePercent": {
+              "Body Slam": 57.502,
+              "Earthquake": 65.007,
+              "Crunch": 22.216,
+              "Heat Crash": 28.426
+            }
+          }
+        }
+      }
+    ],
+    "fennekin": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Fennekin",
+          "name": "Fennekin",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Blaze",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Grass Knot",
+            "Will-O-Wisp"
+          ]
+        },
+        "plan": "Coverage for Water and Rock foes; Will-O-Wisp weakens physical attackers.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Scarf coverage",
+        "set": {
+          "species": "Fennekin",
+          "name": "Fennekin",
+          "level": 50,
+          "item": "Choice Scarf",
+          "ability": "Blaze",
+          "nature": "Modest",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Fire Blast",
+            "Psychic",
+            "Grass Knot",
+            "Psyshock"
+          ]
+        },
+        "plan": "Choice Scarf helps a small attacker move first; choose the best coverage move.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "pikachu": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Pikachu",
+          "name": "Pikachu",
+          "level": 50,
+          "item": "Light Ball",
+          "ability": "Lightning Rod",
+          "nature": "Hasty",
+          "evs": {
+            "hp": 0,
+            "atk": 4,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Thunderbolt",
+            "Grass Knot",
+            "Surf",
+            "Fake Out"
+          ]
+        },
+        "plan": "Light Ball doubles both attacking stats; Fake Out gives useful opening chip.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Pikachu",
+            "rawCount": 6035,
+            "itemPercent": 92.382,
+            "abilityPercent": 70.67,
+            "movePercent": {
+              "Thunderbolt": 20.401,
+              "Grass Knot": 12.66,
+              "Surf": 15.976,
+              "Fake Out": 70.476
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Physical Light Ball",
+        "set": {
+          "species": "Pikachu",
+          "name": "Pikachu",
+          "level": 50,
+          "item": "Light Ball",
+          "ability": "Lightning Rod",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Volt Tackle",
+            "Fake Out",
+            "Knock Off",
+            "Brick Break"
+          ]
+        },
+        "plan": "Light Ball powers physical offense; Fake Out chips before Volt Tackle.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Pikachu",
+            "rawCount": 6035,
+            "itemPercent": 92.382,
+            "abilityPercent": 70.67,
+            "movePercent": {
+              "Volt Tackle": 72.629,
+              "Fake Out": 70.476,
+              "Knock Off": 23.5,
+              "Brick Break": 2.72
+            }
+          }
+        }
+      }
+    ],
+    "furret": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Furret",
+          "name": "Furret",
+          "level": 50,
+          "item": "Silk Scarf",
+          "ability": "Keen Eye",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Coil",
+            "Double-Edge",
+            "Knock Off",
+            "Sucker Punch"
+          ]
+        },
+        "plan": "Coil boosts damage and defense; Sucker Punch covers faster attackers.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Furret",
+            "rawCount": 813,
+            "itemPercent": 0.615,
+            "abilityPercent": 4.763,
+            "movePercent": {
+              "Coil": 6.091,
+              "Double-Edge": 15.768,
+              "Knock Off": 83.598,
+              "Sucker Punch": 1.722
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Band coverage",
+        "set": {
+          "species": "Furret",
+          "name": "Furret",
+          "level": 50,
+          "item": "Choice Band",
+          "ability": "Keen Eye",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Double-Edge",
+            "Knock Off",
+            "Sucker Punch",
+            "Brick Break"
+          ]
+        },
+        "plan": "Immediate Choice Band damage and Sucker Punch compensate for modest base stats.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Furret",
+            "rawCount": 813,
+            "itemPercent": 10.599,
+            "abilityPercent": 4.763,
+            "movePercent": {
+              "Double-Edge": 15.768,
+              "Knock Off": 83.598,
+              "Sucker Punch": 1.722,
+              "Brick Break": 2.95
+            }
+          }
+        }
+      }
+    ],
+    "mimikyu": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Mimikyu",
+          "name": "Mimikyu",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Disguise",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Play Rough",
+            "Shadow Claw",
+            "Shadow Sneak"
+          ]
+        },
+        "plan": "Use Disguise to set up, then finish with priority Shadow Sneak.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Mimikyu",
+            "rawCount": 16227,
+            "itemPercent": 41.297,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 59.865,
+              "Play Rough": 87.057,
+              "Shadow Claw": 36.503,
+              "Shadow Sneak": 78.087
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Drain Punch setup",
+        "set": {
+          "species": "Mimikyu",
+          "name": "Mimikyu",
+          "level": 50,
+          "item": "Lum Berry",
+          "ability": "Disguise",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Play Rough",
+            "Shadow Sneak",
+            "Drain Punch"
+          ]
+        },
+        "plan": "Disguise and Lum Berry help establish Swords Dance; Drain Punch covers Steel foes.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Mimikyu",
+            "rawCount": 16227,
+            "itemPercent": 0.268,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 59.865,
+              "Play Rough": 87.057,
+              "Shadow Sneak": 78.087,
+              "Drain Punch": 29.251
+            }
+          }
+        }
+      }
+    ],
+    "dondozo": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Dondozo",
+          "name": "Dondozo",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Unaware",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Order Up",
+            "Wave Crash",
+            "Rest",
+            "Sleep Talk"
+          ]
+        },
+        "plan": "Commander grants +2 to all five stats; Curly Tatsugiri makes Order Up raise Attack.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexdoubles-1500.json",
+            "format": "gen9nationaldexdoubles",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Dondozo",
+            "rawCount": 875,
+            "itemPercent": 71.204,
+            "abilityPercent": 80.199,
+            "movePercent": {
+              "Order Up": 30.751,
+              "Wave Crash": 50.52,
+              "Rest": 31.142,
+              "Sleep Talk": 3.394
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Commander ChestoRest",
+        "set": {
+          "species": "Dondozo",
+          "name": "Dondozo",
+          "level": 50,
+          "item": "Chesto Berry",
+          "ability": "Unaware",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Order Up",
+            "Wave Crash",
+            "Earthquake",
+            "Rest"
+          ]
+        },
+        "plan": "Commander boosts all stats; Chesto Berry enables one immediate Rest recovery and Earthquake adds spread coverage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexdoubles-1500.json",
+            "format": "gen9nationaldexdoubles",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Dondozo",
+            "rawCount": 875,
+            "itemPercent": 1.925,
+            "abilityPercent": 80.199,
+            "movePercent": {
+              "Order Up": 30.751,
+              "Wave Crash": 50.52,
+              "Earthquake": 19.973,
+              "Rest": 31.142
+            }
+          }
+        }
+      }
+    ],
+    "tatsugiri": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Tatsugiri",
+          "name": "Tatsugiri",
+          "level": 50,
+          "item": "Choice Scarf",
+          "ability": "Commander",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Draco Meteor",
+            "Muddy Water",
+            "Dragon Pulse",
+            "Icy Wind"
+          ]
+        },
+        "plan": "Commander enters Dondozo in doubles; Curly form strengthens Order Up.",
+        "battleGroup": "commander",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexdoubles-1500.json",
+            "format": "gen9nationaldexdoubles",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Tatsugiri",
+            "rawCount": 574,
+            "itemPercent": 5.376,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Draco Meteor": 42.528,
+              "Muddy Water": 48.969,
+              "Dragon Pulse": 51.965,
+              "Icy Wind": 73.201
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Commander backup sweeper",
+        "set": {
+          "species": "Tatsugiri",
+          "name": "Tatsugiri",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Commander",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Nasty Plot",
+            "Draco Meteor",
+            "Muddy Water",
+            "Protect"
+          ]
+        },
+        "plan": "Enters Dondozo through Commander; if the host faints, Nasty Plot and Life Orb support a comeback.",
+        "battleGroup": "commander",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexdoubles-1500.json",
+            "format": "gen9nationaldexdoubles",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Tatsugiri",
+            "rawCount": 574,
+            "itemPercent": 10.068,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Nasty Plot": 19.545,
+              "Draco Meteor": 42.528,
+              "Muddy Water": 48.969,
+              "Protect": 34.489
+            }
+          }
+        }
+      }
+    ],
+    "koraidon": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Koraidon",
+          "name": "Koraidon",
+          "level": 50,
+          "item": "Loaded Dice",
+          "ability": "Orichalcum Pulse",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Scale Shot",
+            "Collision Course",
+            "Flare Blitz"
+          ]
+        },
+        "plan": "Sun-boosted physical offense with Loaded Dice Scale Shot for speed control.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Koraidon",
+            "rawCount": 41284,
+            "itemPercent": 42.079,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 44.582,
+              "Scale Shot": 51.998,
+              "Collision Course": 49.296,
+              "Flare Blitz": 74.598
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Choice Scarf breaker",
+        "set": {
+          "species": "Koraidon",
+          "name": "Koraidon",
+          "level": 50,
+          "item": "Choice Scarf",
+          "ability": "Orichalcum Pulse",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 0,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Collision Course",
+            "Flare Blitz",
+            "Outrage",
+            "Iron Head"
+          ]
+        },
+        "plan": "Scarf supplies immediate Speed; sun boosts Flare Blitz and Collision Course breaks resistances.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Koraidon",
+            "rawCount": 41284,
+            "itemPercent": 25.188,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Collision Course": 49.296,
+              "Flare Blitz": 74.598,
+              "Outrage": 23.531,
+              "Iron Head": 9.862
+            }
+          }
+        }
+      }
+    ],
+    "serperior": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Serperior",
+          "name": "Serperior",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Contrary",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Leaf Storm",
+            "Dragon Pulse",
+            "Glare",
+            "Synthesis"
+          ]
+        },
+        "plan": "Contrary turns Leaf Storm into a Special Attack boost; Glare slows faster foes.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Serperior",
+            "rawCount": 25691,
+            "itemPercent": 75.046,
+            "abilityPercent": 99.719,
+            "movePercent": {
+              "Leaf Storm": 99.755,
+              "Dragon Pulse": 28.369,
+              "Glare": 78.837,
+              "Synthesis": 1.831
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "SubSeed Contrary",
+        "set": {
+          "species": "Serperior",
+          "name": "Serperior",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Contrary",
+          "nature": "Timid",
+          "evs": {
+            "hp": 56,
+            "atk": 0,
+            "def": 0,
+            "spa": 200,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Leaf Storm",
+            "Glare",
+            "Substitute",
+            "Leech Seed"
+          ]
+        },
+        "plan": "Glare and Leech Seed create Substitute opportunities while Contrary Leaf Storm builds power.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Serperior",
+            "rawCount": 25691,
+            "itemPercent": 75.046,
+            "abilityPercent": 99.719,
+            "movePercent": {
+              "Leaf Storm": 99.755,
+              "Glare": 78.837,
+              "Substitute": 68.535,
+              "Leech Seed": 34.036
+            }
+          }
+        }
+      }
+    ],
+    "charizard": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Charizard",
+          "name": "Charizard",
+          "level": 50,
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Flamethrower",
+            "Solar Beam",
+            "Air Slash",
+            "Roost"
+          ]
+        },
+        "plan": "Mega Evolve for Drought, then use sun-powered Fire STAB and instant Solar Beam.",
+        "form": "Charizard-Mega-Y",
+        "mega": true,
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Charizard-Mega-Y",
+            "rawCount": 64086,
+            "itemPercent": 100,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Flamethrower": 9.649,
+              "Solar Beam": 93.148,
+              "Air Slash": 23.033,
+              "Roost": 47.265
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Mega sun coverage",
+        "set": {
+          "species": "Charizard",
+          "name": "Charizard",
+          "level": 50,
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "nature": "Timid",
+          "evs": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Weather Ball",
+            "Solar Beam",
+            "Scorching Sands",
+            "Roost"
+          ]
+        },
+        "plan": "Mega Drought strengthens Weather Ball and removes Solar Beam charging; Scorching Sands covers Fire foes.",
+        "form": "Charizard-Mega-Y",
+        "mega": true,
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Charizard-Mega-Y",
+            "rawCount": 64086,
+            "itemPercent": 100,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Weather Ball": 81.301,
+              "Solar Beam": 93.148,
+              "Scorching Sands": 56.776,
+              "Roost": 47.265
+            }
+          }
+        }
+      }
+    ],
+    "comfey": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Comfey",
+          "name": "Comfey",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Triage",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Draining Kiss",
+            "Giga Drain",
+            "Synthesis"
+          ]
+        },
+        "plan": "Triage gives healing moves priority; Calm Mind makes Draining Kiss threatening.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Comfey",
+            "rawCount": 3272,
+            "itemPercent": 15.103,
+            "abilityPercent": 97.598,
+            "movePercent": {
+              "Calm Mind": 49.428,
+              "Draining Kiss": 99.421,
+              "Giga Drain": 32.835,
+              "Synthesis": 48.889
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Triage Stored Power",
+        "set": {
+          "species": "Comfey",
+          "name": "Comfey",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Triage",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 4,
+            "spa": 252,
+            "spd": 0,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Draining Kiss",
+            "Stored Power",
+            "Synthesis"
+          ]
+        },
+        "plan": "Stored Power scales with Calm Mind; Triage recovery offsets Life Orb recoil.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Comfey",
+            "rawCount": 3272,
+            "itemPercent": 50.823,
+            "abilityPercent": 97.598,
+            "movePercent": {
+              "Calm Mind": 49.428,
+              "Draining Kiss": 99.421,
+              "Stored Power": 60.326,
+              "Synthesis": 48.889
+            }
+          }
+        }
+      }
+    ],
+    "swablu": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Swablu",
+          "name": "Swablu",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Natural Cure",
+          "nature": "Careful",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 4,
+            "spa": 0,
+            "spd": 252,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Cotton Guard",
+            "Toxic",
+            "Roost",
+            "Return"
+          ]
+        },
+        "plan": "Cotton Guard and Roost buy time for Toxic; Return avoids complete passivity.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Physical setup",
+        "set": {
+          "species": "Swablu",
+          "name": "Swablu",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Natural Cure",
+          "nature": "Impish",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 4,
+            "spa": 0,
+            "spd": 0,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Cotton Guard",
+            "Return",
+            "Roost",
+            "Toxic"
+          ]
+        },
+        "plan": "Attack investment and Roost support a direct-damage variant of Cotton Guard.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "shiny-rayquaza": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Rayquaza",
+          "name": "Rayquaza",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Air Lock",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Dragon Dance",
+            "Dragon Ascent",
+            "Extreme Speed",
+            "Earthquake"
+          ],
+          "shiny": true
+        },
+        "plan": "Mega Evolve, use Dragon Dance, then attack with Dragon Ascent or priority.",
+        "form": "Rayquaza-Mega",
+        "mega": true,
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Rayquaza",
+            "rawCount": 10350,
+            "itemPercent": 32.297,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Dragon Dance": 50.069,
+              "Dragon Ascent": 86.418,
+              "Extreme Speed": 64.155,
+              "Earthquake": 48.083
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Swords Dance priority",
+        "set": {
+          "species": "Rayquaza",
+          "name": "Rayquaza",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Air Lock",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 0,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Dragon Ascent",
+            "Extreme Speed",
+            "Earthquake"
+          ],
+          "shiny": true
+        },
+        "plan": "Mega Evolution and Swords Dance amplify Extreme Speed; Earthquake covers many Steel targets.",
+        "form": "Rayquaza-Mega",
+        "mega": true,
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Rayquaza",
+            "rawCount": 10350,
+            "itemPercent": 32.297,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 10.828,
+              "Dragon Ascent": 86.418,
+              "Extreme Speed": 64.155,
+              "Earthquake": 48.083
+            }
+          }
+        }
+      }
+    ],
+    "mareep": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Mareep",
+          "name": "Mareep",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Static",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Thunderbolt",
+            "Dazzling Gleam",
+            "Thunder Wave",
+            "Cotton Guard"
+          ]
+        },
+        "plan": "Paralyze foes and use Cotton Guard to compensate for low physical defense.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Screen support offense",
+        "set": {
+          "species": "Mareep",
+          "name": "Mareep",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Static",
+          "nature": "Calm",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 4,
+            "spd": 252,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Thunderbolt",
+            "Dazzling Gleam",
+            "Thunder Wave",
+            "Light Screen"
+          ]
+        },
+        "plan": "Light Screen and Thunder Wave improve special matchups while maintaining two attacks.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "teddiursa": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Teddiursa",
+          "name": "Teddiursa",
+          "level": 50,
+          "item": "Toxic Orb",
+          "ability": "Quick Feet",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Protect",
+            "Facade",
+            "Close Combat",
+            "Crunch"
+          ]
+        },
+        "plan": "Protect activates Toxic Orb; Quick Feet supplies speed and Facade doubles in power.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Swords Dance attacker",
+        "set": {
+          "species": "Teddiursa",
+          "name": "Teddiursa",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Pickup",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Return",
+            "Close Combat",
+            "Crunch"
+          ]
+        },
+        "plan": "Eviolite supports a Swords Dance turn; coverage avoids the Toxic Orb clock.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "kirlia": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Kirlia",
+          "name": "Kirlia",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Trace",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Psychic",
+            "Draining Kiss",
+            "Thunderbolt"
+          ]
+        },
+        "plan": "Calm Mind boosts both sides of a special duel, with Draining Kiss recovery.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Scarf special coverage",
+        "set": {
+          "species": "Kirlia",
+          "name": "Kirlia",
+          "level": 50,
+          "item": "Choice Scarf",
+          "ability": "Trace",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Thunderbolt",
+            "Shadow Ball"
+          ]
+        },
+        "plan": "Choice Scarf supplies Speed with four special coverage attacks.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "pachirisu": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Pachirisu",
+          "name": "Pachirisu",
+          "level": 50,
+          "item": "Sitrus Berry",
+          "ability": "Volt Absorb",
+          "nature": "Impish",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Super Fang",
+            "Nuzzle",
+            "Toxic",
+            "Protect"
+          ]
+        },
+        "plan": "Super Fang halves current HP; Nuzzle and Toxic offer alternative status plans.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Pachirisu",
+            "rawCount": 123,
+            "itemPercent": 1.894,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Super Fang": 90.769,
+              "Nuzzle": 94.865,
+              "Toxic": 25.797,
+              "Protect": 1.905
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Encore disruption",
+        "set": {
+          "species": "Pachirisu",
+          "name": "Pachirisu",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Volt Absorb",
+          "nature": "Impish",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Super Fang",
+            "Nuzzle",
+            "Encore",
+            "Discharge"
+          ]
+        },
+        "plan": "Nuzzle and Encore interfere with setup while Super Fang halves current HP.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Pachirisu",
+            "rawCount": 123,
+            "itemPercent": 27.96,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Super Fang": 90.769,
+              "Nuzzle": 94.865,
+              "Encore": 19.193,
+              "Discharge": 0
+            }
+          }
+        }
+      }
+    ],
+    "azumarill": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Azumarill",
+          "name": "Azumarill",
+          "level": 50,
+          "item": "Sitrus Berry",
+          "ability": "Huge Power",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 244,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 12
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Belly Drum",
+            "Aqua Jet",
+            "Play Rough",
+            "Knock Off"
+          ]
+        },
+        "plan": "Belly Drum plus Sitrus Berry prepares a powerful priority Aqua Jet.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Azumarill",
+            "rawCount": 9144,
+            "itemPercent": 23.327,
+            "abilityPercent": 86.884,
+            "movePercent": {
+              "Belly Drum": 50.866,
+              "Aqua Jet": 87.62,
+              "Play Rough": 84.185,
+              "Knock Off": 39.615
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Choice Band attacker",
+        "set": {
+          "species": "Azumarill",
+          "name": "Azumarill",
+          "level": 50,
+          "item": "Choice Band",
+          "ability": "Huge Power",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Aqua Jet",
+            "Play Rough",
+            "Liquidation",
+            "Knock Off"
+          ]
+        },
+        "plan": "Huge Power plus Choice Band gives immediate damage without sacrificing HP to Belly Drum.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Azumarill",
+            "rawCount": 9144,
+            "itemPercent": 27.437,
+            "abilityPercent": 86.884,
+            "movePercent": {
+              "Aqua Jet": 87.62,
+              "Play Rough": 84.185,
+              "Liquidation": 49.228,
+              "Knock Off": 39.615
+            }
+          }
+        }
+      }
+    ],
+    "scizor": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Scizor",
+          "name": "Scizor",
+          "level": 50,
+          "item": "Scizorite",
+          "ability": "Technician",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Bullet Punch",
+            "Close Combat",
+            "Roost"
+          ]
+        },
+        "plan": "Mega bulk supports Swords Dance, then Technician-boosted Bullet Punch.",
+        "form": "Scizor-Mega",
+        "mega": true,
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Scizor-Mega",
+            "rawCount": 48779,
+            "itemPercent": 100,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 78.286,
+              "Bullet Punch": 99.049,
+              "Close Combat": 29.201,
+              "Roost": 66.819
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Bulky Mega setup",
+        "set": {
+          "species": "Scizor",
+          "name": "Scizor",
+          "level": 50,
+          "item": "Scizorite",
+          "ability": "Technician",
+          "nature": "Impish",
+          "evs": {
+            "hp": 248,
+            "atk": 0,
+            "def": 112,
+            "spa": 0,
+            "spd": 128,
+            "spe": 20
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Bullet Punch",
+            "Knock Off",
+            "Roost"
+          ]
+        },
+        "plan": "A defensive Mega Scizor spread supports repeated setup and Roost; Knock Off removes key items.",
+        "form": "Scizor-Mega",
+        "mega": true,
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Scizor-Mega",
+            "rawCount": 48779,
+            "itemPercent": 100,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 78.286,
+              "Bullet Punch": 99.049,
+              "Knock Off": 47.211,
+              "Roost": 66.819
+            }
+          }
+        }
+      }
+    ],
+    "whimsicott": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Whimsicott",
+          "name": "Whimsicott",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Prankster",
+          "nature": "Timid",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Leech Seed",
+            "Substitute",
+            "Encore",
+            "Moonblast"
+          ]
+        },
+        "plan": "Prankster Encore punishes setup; Leech Seed and Substitute sustain the duel.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Whimsicott",
+            "rawCount": 5108,
+            "itemPercent": 26.999,
+            "abilityPercent": 94.229,
+            "movePercent": {
+              "Leech Seed": 32.588,
+              "Substitute": 22.206,
+              "Encore": 69.627,
+              "Moonblast": 57.535
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Encore special offense",
+        "set": {
+          "species": "Whimsicott",
+          "name": "Whimsicott",
+          "level": 50,
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Moonblast",
+            "Energy Ball",
+            "Encore",
+            "Leech Seed"
+          ]
+        },
+        "plan": "Focus Sash supports an Encore opportunity; dual STAB avoids passive-only play.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Whimsicott",
+            "rawCount": 5108,
+            "itemPercent": 28.494,
+            "abilityPercent": 94.229,
+            "movePercent": {
+              "Moonblast": 57.535,
+              "Energy Ball": 12.364,
+              "Encore": 69.627,
+              "Leech Seed": 32.588
+            }
+          }
+        }
+      }
+    ],
+    "zacian": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Zacian",
+          "name": "Zacian",
+          "level": 50,
+          "item": "Rusted Sword",
+          "ability": "Intrepid Sword",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Iron Head",
+            "Play Rough",
+            "Close Combat"
+          ]
+        },
+        "plan": "Rusted Sword activates Crowned form and turns Iron Head into Behemoth Blade.",
+        "form": "Zacian-Crowned",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Zacian-Crowned",
+            "rawCount": 39824,
+            "itemPercent": 100,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 81.847,
+              "Iron Head": 88.403,
+              "Play Rough": 55.052,
+              "Close Combat": 56.781
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Crowned coverage",
+        "set": {
+          "species": "Zacian",
+          "name": "Zacian",
+          "level": 50,
+          "item": "Rusted Sword",
+          "ability": "Intrepid Sword",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 0,
+            "atk": 252,
+            "def": 4,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Iron Head",
+            "Close Combat",
+            "Wild Charge"
+          ]
+        },
+        "plan": "Wild Charge covers Water and Flying targets while Crowned Steel STAB handles Fairies.",
+        "form": "Zacian-Crowned",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Zacian-Crowned",
+            "rawCount": 39824,
+            "itemPercent": 100,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 81.847,
+              "Iron Head": 88.403,
+              "Close Combat": 56.781,
+              "Wild Charge": 66.451
+            }
+          }
+        }
+      }
+    ],
+    "ponyta": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Ponyta",
+          "name": "Ponyta",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Flame Body",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Flare Blitz",
+            "Wild Charge",
+            "High Horsepower",
+            "Morning Sun"
+          ]
+        },
+        "plan": "Fast physical coverage with Morning Sun to recover recoil damage.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Status and recovery",
+        "set": {
+          "species": "Ponyta",
+          "name": "Ponyta",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Flame Body",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 4,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Flare Blitz",
+            "High Horsepower",
+            "Will-O-Wisp",
+            "Morning Sun"
+          ]
+        },
+        "plan": "Burn and Morning Sun improve physical matchups while Fire/Ground retains coverage.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "jigglypuff": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Jigglypuff",
+          "name": "Jigglypuff",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Competitive",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Hyper Voice",
+            "Dazzling Gleam",
+            "Flamethrower",
+            "Thunder Wave"
+          ]
+        },
+        "plan": "Eviolite supports broad special coverage; Thunder Wave offsets low speed.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Jigglypuff",
+            "rawCount": 307,
+            "itemPercent": 48.834,
+            "abilityPercent": 30.495,
+            "movePercent": {
+              "Hyper Voice": 0,
+              "Dazzling Gleam": 0,
+              "Flamethrower": 0,
+              "Thunder Wave": 8.007
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Calm Mind sustain",
+        "set": {
+          "species": "Jigglypuff",
+          "name": "Jigglypuff",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Competitive",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 4,
+            "spd": 0,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Draining Kiss",
+            "Stored Power",
+            "Flamethrower"
+          ]
+        },
+        "plan": "Calm Mind boosts Stored Power and draining Fairy damage; Flamethrower covers Steel.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Jigglypuff",
+            "rawCount": 307,
+            "itemPercent": 48.834,
+            "abilityPercent": 30.495,
+            "movePercent": {
+              "Calm Mind": 35.191,
+              "Draining Kiss": 48.22,
+              "Stored Power": 22.859,
+              "Flamethrower": 0
+            }
+          }
+        }
+      }
+    ],
+    "machamp": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Machamp",
+          "name": "Machamp",
+          "level": 50,
+          "item": "Assault Vest",
+          "ability": "No Guard",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Dynamic Punch",
+            "Knock Off",
+            "Stone Edge",
+            "Bullet Punch"
+          ]
+        },
+        "plan": "No Guard makes Dynamic Punch and Stone Edge reliable; Assault Vest covers special hits.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Machamp",
+            "rawCount": 3889,
+            "itemPercent": 45.16,
+            "abilityPercent": 83.416,
+            "movePercent": {
+              "Dynamic Punch": 81.972,
+              "Knock Off": 51.201,
+              "Stone Edge": 68.129,
+              "Bullet Punch": 79.181
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Guts Flame Orb",
+        "set": {
+          "species": "Machamp",
+          "name": "Machamp",
+          "level": 50,
+          "item": "Flame Orb",
+          "ability": "Guts",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Protect",
+            "Close Combat",
+            "Facade",
+            "Knock Off"
+          ]
+        },
+        "plan": "Protect activates Guts; burn-boosted Facade and STAB Close Combat threaten neutral matchups.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Machamp",
+            "rawCount": 3889,
+            "itemPercent": 15.082,
+            "abilityPercent": 16.578,
+            "movePercent": {
+              "Protect": 1.821,
+              "Close Combat": 13.539,
+              "Facade": 4.18,
+              "Knock Off": 51.201
+            }
+          }
+        }
+      }
+    ],
+    "umbreon": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Umbreon",
+          "name": "Umbreon",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Synchronize",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Foul Play",
+            "Toxic",
+            "Wish",
+            "Protect"
+          ]
+        },
+        "plan": "Foul Play punishes high Attack while Wish and Protect sustain Toxic damage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Umbreon",
+            "rawCount": 12857,
+            "itemPercent": 85.261,
+            "abilityPercent": 74.944,
+            "movePercent": {
+              "Foul Play": 93.616,
+              "Toxic": 64.271,
+              "Wish": 90.528,
+              "Protect": 74.776
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Specially defensive sustain",
+        "set": {
+          "species": "Umbreon",
+          "name": "Umbreon",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Synchronize",
+          "nature": "Calm",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 4,
+            "spa": 0,
+            "spd": 252,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Foul Play",
+            "Toxic",
+            "Moonlight",
+            "Taunt"
+          ]
+        },
+        "plan": "Special bulk and Moonlight stall poison turns; Taunt prevents opposing recovery or setup.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Umbreon",
+            "rawCount": 12857,
+            "itemPercent": 85.261,
+            "abilityPercent": 74.944,
+            "movePercent": {
+              "Foul Play": 93.616,
+              "Toxic": 64.271,
+              "Moonlight": 17.537,
+              "Taunt": 1.855
+            }
+          }
+        }
+      }
+    ],
+    "squirtle": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Squirtle",
+          "name": "Squirtle",
+          "level": 50,
+          "item": "White Herb",
+          "ability": "Torrent",
+          "nature": "Modest",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Shell Smash",
+            "Surf",
+            "Ice Beam",
+            "Aura Sphere"
+          ]
+        },
+        "plan": "Shell Smash boosts offense and speed; White Herb restores its lowered defenses.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Squirtle",
+            "rawCount": 239,
+            "itemPercent": 0,
+            "abilityPercent": 51.536,
+            "movePercent": {
+              "Shell Smash": 49.688,
+              "Surf": 2.608,
+              "Ice Beam": 16.354,
+              "Aura Sphere": 1.516
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Sash Shell Smash",
+        "set": {
+          "species": "Squirtle",
+          "name": "Squirtle",
+          "level": 50,
+          "item": "Focus Sash",
+          "ability": "Torrent",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Shell Smash",
+            "Hydro Pump",
+            "Ice Beam",
+            "Aura Sphere"
+          ]
+        },
+        "plan": "Sash helps establish Shell Smash; Hydro Pump provides higher burst damage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Squirtle",
+            "rawCount": 239,
+            "itemPercent": 48.408,
+            "abilityPercent": 51.536,
+            "movePercent": {
+              "Shell Smash": 49.688,
+              "Hydro Pump": 23.116,
+              "Ice Beam": 16.354,
+              "Aura Sphere": 1.516
+            }
+          }
+        }
+      }
+    ],
+    "cosmog": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Cosmog",
+          "name": "Cosmog",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Unaware",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Splash",
+            "Teleport"
+          ]
+        },
+        "plan": "Cosmog only legally learns Splash and Teleport. It cannot deal direct damage; this is a novelty challenge.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "froakie": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Froakie",
+          "name": "Froakie",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Protean",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Hydro Pump",
+            "Ice Beam",
+            "Grass Knot",
+            "Substitute"
+          ]
+        },
+        "plan": "Protean and Life Orb boost offensive coverage against higher-tier opponents.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Sash special coverage",
+        "set": {
+          "species": "Froakie",
+          "name": "Froakie",
+          "level": 50,
+          "item": "Focus Sash",
+          "ability": "Protean",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Hydro Pump",
+            "Ice Beam",
+            "Grass Knot",
+            "Taunt"
+          ]
+        },
+        "plan": "Sash and Taunt create one opportunity to attack through setup or status.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "tornadus": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Tornadus",
+          "name": "Tornadus",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Prankster",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Rain Dance",
+            "Hurricane",
+            "Focus Blast",
+            "Taunt"
+          ]
+        },
+        "plan": "Prankster Rain Dance makes Hurricane accurate; Taunt blocks defensive setup.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Tornadus",
+            "rawCount": 1365,
+            "itemPercent": 0.566,
+            "abilityPercent": 97.12,
+            "movePercent": {
+              "Rain Dance": 21.266,
+              "Hurricane": 20.9,
+              "Focus Blast": 32.46,
+              "Taunt": 49.117
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Tailwind special offense",
+        "set": {
+          "species": "Tornadus",
+          "name": "Tornadus",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Prankster",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Tailwind",
+            "Bleakwind Storm",
+            "Heat Wave",
+            "Focus Blast"
+          ]
+        },
+        "plan": "Prankster Tailwind supports doubles and faster duels; three attacks provide broad coverage.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Tornadus",
+            "rawCount": 1365,
+            "itemPercent": 0.566,
+            "abilityPercent": 97.12,
+            "movePercent": {
+              "Tailwind": 69.98,
+              "Bleakwind Storm": 51.163,
+              "Heat Wave": 14.672,
+              "Focus Blast": 32.46
+            }
+          }
+        }
+      }
+    ],
+    "amoonguss": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Amoonguss",
+          "name": "Amoonguss",
+          "level": 50,
+          "item": "Black Sludge",
+          "ability": "Effect Spore",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Spore",
+            "Giga Drain",
+            "Sludge Bomb",
+            "Synthesis"
+          ]
+        },
+        "plan": "Spore creates recovery turns; Giga Drain and Synthesis sustain a bulky duel.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Amoonguss",
+            "rawCount": 7208,
+            "itemPercent": 20.352,
+            "abilityPercent": 1.565,
+            "movePercent": {
+              "Spore": 89.407,
+              "Giga Drain": 75.449,
+              "Sludge Bomb": 72.768,
+              "Synthesis": 39.36
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Anti-setup recovery",
+        "set": {
+          "species": "Amoonguss",
+          "name": "Amoonguss",
+          "level": 50,
+          "item": "Black Sludge",
+          "ability": "Effect Spore",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Spore",
+            "Clear Smog",
+            "Giga Drain",
+            "Synthesis"
+          ]
+        },
+        "plan": "Spore and Clear Smog disrupt boosted opponents; recovery sustains the duel.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Amoonguss",
+            "rawCount": 7208,
+            "itemPercent": 20.352,
+            "abilityPercent": 1.565,
+            "movePercent": {
+              "Spore": 89.407,
+              "Clear Smog": 23.476,
+              "Giga Drain": 75.449,
+              "Synthesis": 39.36
+            }
+          }
+        }
+      }
+    ],
+    "hydreigon": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Hydreigon",
+          "name": "Hydreigon",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Nasty Plot",
+            "Dark Pulse",
+            "Draco Meteor",
+            "Flash Cannon"
+          ]
+        },
+        "plan": "Nasty Plot boosts special offense; Flash Cannon covers Fairy types.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Hydreigon",
+            "rawCount": 16947,
+            "itemPercent": 7.546,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Nasty Plot": 23.035,
+              "Dark Pulse": 92.25,
+              "Draco Meteor": 79.667,
+              "Flash Cannon": 25.328
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Choice Specs coverage",
+        "set": {
+          "species": "Hydreigon",
+          "name": "Hydreigon",
+          "level": 50,
+          "item": "Choice Specs",
+          "ability": "Levitate",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Earth Power",
+            "Flamethrower"
+          ]
+        },
+        "plan": "Choice Specs powers four complementary attacks with no setup turn.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Hydreigon",
+            "rawCount": 16947,
+            "itemPercent": 19.709,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Dark Pulse": 92.25,
+              "Draco Meteor": 79.667,
+              "Earth Power": 30.236,
+              "Flamethrower": 29.273
+            }
+          }
+        }
+      }
+    ],
+    "flutter-mane": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Flutter Mane",
+          "name": "Flutter Mane",
+          "level": 50,
+          "item": "Booster Energy",
+          "ability": "Protosynthesis",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Moonblast",
+            "Shadow Ball",
+            "Mystical Fire"
+          ]
+        },
+        "plan": "Booster Energy activates Protosynthesis; Calm Mind boosts strong dual STAB.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Flutter Mane",
+            "rawCount": 7723,
+            "itemPercent": 55.542,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Calm Mind": 37.1,
+              "Moonblast": 94.27,
+              "Shadow Ball": 91.068,
+              "Mystical Fire": 41.584
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Choice Specs coverage",
+        "set": {
+          "species": "Flutter Mane",
+          "name": "Flutter Mane",
+          "level": 50,
+          "item": "Choice Specs",
+          "ability": "Protosynthesis",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Moonblast",
+            "Shadow Ball",
+            "Mystical Fire",
+            "Thunderbolt"
+          ]
+        },
+        "plan": "Immediate Specs damage combines dual STAB with Steel and Water coverage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Flutter Mane",
+            "rawCount": 7723,
+            "itemPercent": 20.776,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Moonblast": 94.27,
+              "Shadow Ball": 91.068,
+              "Mystical Fire": 41.584,
+              "Thunderbolt": 20.495
+            }
+          }
+        }
+      }
+    ],
+    "oddish": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Oddish",
+          "name": "Oddish",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Chlorophyll",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Sleep Powder",
+            "Giga Drain",
+            "Sludge Bomb",
+            "Moonlight"
+          ]
+        },
+        "plan": "Sleep Powder buys time for recovery and attacks; Giga Drain adds sustain.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Oddish",
+            "rawCount": 78,
+            "itemPercent": 38.948,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Sleep Powder": 35.72,
+              "Giga Drain": 64.194,
+              "Sludge Bomb": 32.617,
+              "Moonlight": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Sunny Day Chlorophyll",
+        "set": {
+          "species": "Oddish",
+          "name": "Oddish",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Chlorophyll",
+          "nature": "Modest",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Sunny Day",
+            "Giga Drain",
+            "Sludge Bomb",
+            "Sleep Powder"
+          ]
+        },
+        "plan": "Sun doubles Chlorophyll Speed and Sleep Powder can create a setup opportunity.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Oddish",
+            "rawCount": 78,
+            "itemPercent": 38.948,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Sunny Day": 1.16,
+              "Giga Drain": 64.194,
+              "Sludge Bomb": 32.617,
+              "Sleep Powder": 35.72
+            }
+          }
+        }
+      }
+    ],
+    "xatu": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Xatu",
+          "name": "Xatu",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Magic Bounce",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Stored Power",
+            "Dazzling Gleam",
+            "Roost"
+          ]
+        },
+        "plan": "Magic Bounce reflects status; Calm Mind raises Stored Power damage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Xatu",
+            "rawCount": 2398,
+            "itemPercent": 7.132,
+            "abilityPercent": 99.016,
+            "movePercent": {
+              "Calm Mind": 3.723,
+              "Stored Power": 2.674,
+              "Dazzling Gleam": 0,
+              "Roost": 20.844
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Rocky Helmet recovery",
+        "set": {
+          "species": "Xatu",
+          "name": "Xatu",
+          "level": 50,
+          "item": "Rocky Helmet",
+          "ability": "Magic Bounce",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Psychic",
+            "Heat Wave",
+            "Roost",
+            "Toxic"
+          ]
+        },
+        "plan": "Magic Bounce prevents many status plans; Helmet, Toxic and Roost wear down physical foes.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Xatu",
+            "rawCount": 2398,
+            "itemPercent": 61.727,
+            "abilityPercent": 99.016,
+            "movePercent": {
+              "Psychic": 14.328,
+              "Heat Wave": 65.538,
+              "Roost": 20.844,
+              "Toxic": 3.636
+            }
+          }
+        }
+      }
+    ],
+    "vanillite": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Vanillite",
+          "name": "Vanillite",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Ice Body",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Ice Beam",
+            "Flash Cannon",
+            "Water Pulse",
+            "Protect"
+          ]
+        },
+        "plan": "Ice STAB with coverage for opposing Ice, Rock and Fire types.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Autotomize special offense",
+        "set": {
+          "species": "Vanillite",
+          "name": "Vanillite",
+          "level": 50,
+          "item": "Focus Sash",
+          "ability": "Ice Body",
+          "nature": "Modest",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Autotomize",
+            "Ice Beam",
+            "Flash Cannon",
+            "Water Pulse"
+          ]
+        },
+        "plan": "Focus Sash helps establish a Speed boost before using coverage.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "ferrothorn": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Ferrothorn",
+          "name": "Ferrothorn",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Iron Barbs",
+          "nature": "Relaxed",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 0,
+            "spd": 31,
+            "spe": 0
+          },
+          "moves": [
+            "Leech Seed",
+            "Protect",
+            "Gyro Ball",
+            "Power Whip"
+          ]
+        },
+        "plan": "Leech Seed and Iron Barbs wear down attackers; minimum speed strengthens Gyro Ball.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Ferrothorn",
+            "rawCount": 91128,
+            "itemPercent": 71.194,
+            "abilityPercent": 99.944,
+            "movePercent": {
+              "Leech Seed": 93.784,
+              "Protect": 16.18,
+              "Gyro Ball": 45.89,
+              "Power Whip": 50.76
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Iron Defense Body Press",
+        "set": {
+          "species": "Ferrothorn",
+          "name": "Ferrothorn",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Iron Barbs",
+          "nature": "Relaxed",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 0
+          },
+          "moves": [
+            "Iron Defense",
+            "Body Press",
+            "Leech Seed",
+            "Gyro Ball"
+          ]
+        },
+        "plan": "Iron Defense powers Body Press while Leech Seed supplies recovery.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Ferrothorn",
+            "rawCount": 91128,
+            "itemPercent": 71.194,
+            "abilityPercent": 99.944,
+            "movePercent": {
+              "Iron Defense": 1.28,
+              "Body Press": 17.721,
+              "Leech Seed": 93.784,
+              "Gyro Ball": 45.89
+            }
+          }
+        }
+      }
+    ],
+    "litwick": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Litwick",
+          "name": "Litwick",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Flash Fire",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Flamethrower",
+            "Shadow Ball",
+            "Energy Ball"
+          ]
+        },
+        "plan": "Flash Fire gives a Fire immunity; Calm Mind and coverage support slow special offense.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexuu-1500.json",
+            "format": "gen9nationaldexuu",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Litwick",
+            "rawCount": 5,
+            "itemPercent": 84.84,
+            "abilityPercent": 58.308,
+            "movePercent": {
+              "Calm Mind": 0,
+              "Flamethrower": 0,
+              "Shadow Ball": 0,
+              "Energy Ball": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Scarf special coverage",
+        "set": {
+          "species": "Litwick",
+          "name": "Litwick",
+          "level": 50,
+          "item": "Choice Scarf",
+          "ability": "Flash Fire",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Fire Blast",
+            "Shadow Ball",
+            "Energy Ball",
+            "Psychic"
+          ]
+        },
+        "plan": "Scarf helps the slow candle move first; four special attacks cover common weaknesses.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexuu-1500.json",
+            "format": "gen9nationaldexuu",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Litwick",
+            "rawCount": 5,
+            "itemPercent": 0,
+            "abilityPercent": 58.308,
+            "movePercent": {
+              "Fire Blast": 0,
+              "Shadow Ball": 0,
+              "Energy Ball": 0,
+              "Psychic": 0
+            }
+          }
+        }
+      }
+    ],
+    "gastly": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Gastly",
+          "name": "Gastly",
+          "level": 50,
+          "item": "Focus Sash",
+          "ability": "Levitate",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Thunderbolt",
+            "Destiny Bond"
+          ]
+        },
+        "plan": "Focus Sash preserves one action against strong opponents; Destiny Bond can force a trade.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Gastly",
+            "rawCount": 125,
+            "itemPercent": 78.515,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Shadow Ball": 0,
+              "Sludge Bomb": 0,
+              "Thunderbolt": 0,
+              "Destiny Bond": 68.98
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Substitute coverage",
+        "set": {
+          "species": "Gastly",
+          "name": "Gastly",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Substitute",
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Dazzling Gleam"
+          ]
+        },
+        "plan": "Substitute protects against status while Life Orb amplifies Ghost and Poison STAB.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9anythinggoes-1500.json",
+            "format": "gen9anythinggoes",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Gastly",
+            "rawCount": 125,
+            "itemPercent": 0,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Substitute": 23.498,
+              "Shadow Ball": 0,
+              "Sludge Bomb": 0,
+              "Dazzling Gleam": 22.14
+            }
+          }
+        }
+      }
+    ],
+    "elekid": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Elekid",
+          "name": "Elekid",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Vital Spirit",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 30,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Psychic",
+            "Hidden Power Ice"
+          ]
+        },
+        "plan": "Fast special coverage; Hidden Power Ice handles Ground and Dragon targets.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Mixed Life Orb",
+        "set": {
+          "species": "Elekid",
+          "name": "Elekid",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Vital Spirit",
+          "nature": "Hasty",
+          "evs": {
+            "hp": 0,
+            "atk": 4,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Thunderbolt",
+            "Ice Punch",
+            "Cross Chop",
+            "Quick Attack"
+          ]
+        },
+        "plan": "Mixed coverage pressures special walls; Quick Attack finishes weakened targets.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "jirachi": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Jirachi",
+          "name": "Jirachi",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Serene Grace",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Iron Head",
+            "Body Slam",
+            "Fire Punch",
+            "Wish"
+          ]
+        },
+        "plan": "Body Slam spreads paralysis; Serene Grace boosts Iron Head’s flinch chance.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Jirachi",
+            "rawCount": 9948,
+            "itemPercent": 18.809,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Iron Head": 71.666,
+              "Body Slam": 9.437,
+              "Fire Punch": 13.3,
+              "Wish": 11.807
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Choice Scarf flinches",
+        "set": {
+          "species": "Jirachi",
+          "name": "Jirachi",
+          "level": 50,
+          "item": "Choice Scarf",
+          "ability": "Serene Grace",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Iron Head",
+            "Fire Punch",
+            "Ice Punch",
+            "Zen Headbutt"
+          ]
+        },
+        "plan": "Scarf and Serene Grace support fast flinches alongside complementary punch coverage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Jirachi",
+            "rawCount": 9948,
+            "itemPercent": 21.717,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Iron Head": 71.666,
+              "Fire Punch": 13.3,
+              "Ice Punch": 3.754,
+              "Zen Headbutt": 12.149
+            }
+          }
+        }
+      }
+    ],
+    "incineroar": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Incineroar",
+          "name": "Incineroar",
+          "level": 50,
+          "item": "Assault Vest",
+          "ability": "Intimidate",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Knock Off",
+            "Drain Punch"
+          ]
+        },
+        "plan": "Intimidate and Assault Vest provide bulk, while Drain Punch restores HP.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Incineroar",
+            "rawCount": 8323,
+            "itemPercent": 4.265,
+            "abilityPercent": 98.37,
+            "movePercent": {
+              "Fake Out": 50.299,
+              "Flare Blitz": 72.856,
+              "Knock Off": 74.299,
+              "Drain Punch": 6.076
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Sitrus utility attacker",
+        "set": {
+          "species": "Incineroar",
+          "name": "Incineroar",
+          "level": 50,
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "nature": "Careful",
+          "evs": {
+            "hp": 252,
+            "atk": 4,
+            "def": 0,
+            "spa": 0,
+            "spd": 252,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Knock Off",
+            "Will-O-Wisp"
+          ]
+        },
+        "plan": "Intimidate, burn and Sitrus Berry create staying power while Fake Out provides tempo.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Incineroar",
+            "rawCount": 8323,
+            "itemPercent": 15.339,
+            "abilityPercent": 98.37,
+            "movePercent": {
+              "Fake Out": 50.299,
+              "Flare Blitz": 72.856,
+              "Knock Off": 74.299,
+              "Will-O-Wisp": 36.026
+            }
+          }
+        }
+      }
+    ],
+    "chikorita": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Chikorita",
+          "name": "Chikorita",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Overgrow",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Giga Drain",
+            "Leech Seed",
+            "Toxic",
+            "Synthesis"
+          ]
+        },
+        "plan": "A defensive set using Leech Seed and Synthesis to outlast vulnerable opponents.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Reflect stall",
+        "set": {
+          "species": "Chikorita",
+          "name": "Chikorita",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Overgrow",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 4,
+            "spd": 0,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Reflect",
+            "Giga Drain",
+            "Toxic",
+            "Synthesis"
+          ]
+        },
+        "plan": "Reflect and Synthesis buy poison turns while Giga Drain keeps direct damage available.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration."
+        }
+      }
+    ],
+    "morpeko": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Morpeko",
+          "name": "Morpeko",
+          "level": 50,
+          "item": "Focus Sash",
+          "ability": "Hunger Switch",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Aura Wheel",
+            "Crunch",
+            "Seed Bomb",
+            "Fake Out"
+          ]
+        },
+        "plan": "Aura Wheel boosts speed and alternates type; Focus Sash helps it get started.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Morpeko",
+            "rawCount": 1372,
+            "itemPercent": 54.93,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Aura Wheel": 97.203,
+              "Crunch": 5.191,
+              "Seed Bomb": 5.526,
+              "Fake Out": 19.55
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Life Orb Aura Wheel",
+        "set": {
+          "species": "Morpeko",
+          "name": "Morpeko",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Hunger Switch",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Aura Wheel",
+            "Crunch",
+            "Seed Bomb",
+            "Protect"
+          ]
+        },
+        "plan": "Protect selects the next Hunger Switch form and Aura Wheel builds Speed.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Morpeko",
+            "rawCount": 1372,
+            "itemPercent": 12.341,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Aura Wheel": 97.203,
+              "Crunch": 5.191,
+              "Seed Bomb": 5.526,
+              "Protect": 66.83
+            }
+          }
+        }
+      }
+    ],
+    "ogerpon-teal": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Ogerpon",
+          "name": "Ogerpon",
+          "level": 50,
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Ivy Cudgel",
+            "Knock Off",
+            "Play Rough"
+          ]
+        },
+        "plan": "Teal Mask Ogerpon keeps its Grass form; Swords Dance boosts Ivy Cudgel and coverage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Ogerpon",
+            "rawCount": 2072,
+            "itemPercent": 1.966,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Swords Dance": 22.841,
+              "Ivy Cudgel": 91.065,
+              "Knock Off": 53.578,
+              "Play Rough": 20.89
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Choice Band breaker",
+        "set": {
+          "species": "Ogerpon",
+          "name": "Ogerpon",
+          "level": 50,
+          "item": "Choice Band",
+          "ability": "Defiant",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Ivy Cudgel",
+            "Knock Off",
+            "Superpower",
+            "Play Rough"
+          ]
+        },
+        "plan": "Choice Band gives immediate damage and Superpower threatens Steel types.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Ogerpon",
+            "rawCount": 2072,
+            "itemPercent": 33.961,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Ivy Cudgel": 91.065,
+              "Knock Off": 53.578,
+              "Superpower": 38.512,
+              "Play Rough": 20.89
+            }
+          }
+        }
+      }
+    ],
+    "dragonair": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Dragonair",
+          "name": "Dragonair",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Shed Skin",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Dragon Dance",
+            "Outrage",
+            "Waterfall",
+            "Rest"
+          ]
+        },
+        "plan": "Eviolite supports Dragon Dance; Shed Skin can wake it early from Rest.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexuu-1500.json",
+            "format": "gen9nationaldexuu",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Dragonair",
+            "rawCount": 4,
+            "itemPercent": 100,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Dragon Dance": 100,
+              "Outrage": 0,
+              "Waterfall": 100,
+              "Rest": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "RestTalk Shed Skin",
+        "set": {
+          "species": "Dragonair",
+          "name": "Dragonair",
+          "level": 50,
+          "item": "Eviolite",
+          "ability": "Shed Skin",
+          "nature": "Careful",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 4,
+            "spa": 0,
+            "spd": 252,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Dragon Dance",
+            "Outrage",
+            "Rest",
+            "Sleep Talk"
+          ]
+        },
+        "plan": "RestTalk and Shed Skin provide durability while Dragon Dance scales Outrage.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexuu-1500.json",
+            "format": "gen9nationaldexuu",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Dragonair",
+            "rawCount": 4,
+            "itemPercent": 100,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Dragon Dance": 100,
+              "Outrage": 0,
+              "Rest": 0,
+              "Sleep Talk": 0
+            }
+          }
+        }
+      }
+    ],
+    "exeggutor-alola": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Exeggutor-Alola",
+          "name": "Exeggutor-Alola",
+          "level": 50,
+          "item": "Sitrus Berry",
+          "ability": "Frisk",
+          "nature": "Quiet",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 0
+          },
+          "moves": [
+            "Trick Room",
+            "Draco Meteor",
+            "Giga Drain",
+            "Flamethrower"
+          ]
+        },
+        "plan": "Trick Room turns its low speed into an advantage; Giga Drain restores HP.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Exeggutor-Alola",
+            "rawCount": 1365,
+            "itemPercent": 28.273,
+            "abilityPercent": 26.446,
+            "movePercent": {
+              "Trick Room": 26.242,
+              "Draco Meteor": 34.746,
+              "Giga Drain": 50.953,
+              "Flamethrower": 38.476
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Leech Seed recovery",
+        "set": {
+          "species": "Exeggutor-Alola",
+          "name": "Exeggutor-Alola",
+          "level": 50,
+          "item": "Sitrus Berry",
+          "ability": "Frisk",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 0
+          },
+          "moves": [
+            "Leech Seed",
+            "Protect",
+            "Giga Drain",
+            "Flamethrower"
+          ]
+        },
+        "plan": "Leech Seed and Protect generate recovery while Giga Drain and Flamethrower provide coverage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Exeggutor-Alola",
+            "rawCount": 1365,
+            "itemPercent": 28.273,
+            "abilityPercent": 26.446,
+            "movePercent": {
+              "Leech Seed": 32.273,
+              "Protect": 28.902,
+              "Giga Drain": 50.953,
+              "Flamethrower": 38.476
+            }
+          }
+        }
+      }
+    ],
+    "pelipper": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Pelipper",
+          "name": "Pelipper",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Drizzle",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Hurricane",
+            "Surf",
+            "Ice Beam",
+            "Roost"
+          ]
+        },
+        "plan": "Drizzle powers Surf and makes Hurricane accurate, with Roost for longevity.",
+        "provenance": {
+          "kind": "curated-fallback",
+          "note": "Curated legal duel set; insufficient matching usage data to call this a common competitive configuration.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Pelipper",
+            "rawCount": 41766,
+            "itemPercent": 0.523,
+            "abilityPercent": 99.768,
+            "movePercent": {
+              "Hurricane": 72.161,
+              "Surf": 8.544,
+              "Ice Beam": 11.084,
+              "Roost": 71.425
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Choice Specs rain",
+        "set": {
+          "species": "Pelipper",
+          "name": "Pelipper",
+          "level": 50,
+          "item": "Choice Specs",
+          "ability": "Drizzle",
+          "nature": "Modest",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Weather Ball",
+            "Hurricane",
+            "Ice Beam",
+            "Hydro Pump"
+          ]
+        },
+        "plan": "Drizzle strengthens Water attacks and makes Hurricane accurate; Specs adds immediate damage.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Pelipper",
+            "rawCount": 41766,
+            "itemPercent": 2.771,
+            "abilityPercent": 99.768,
+            "movePercent": {
+              "Weather Ball": 25.164,
+              "Hurricane": 72.161,
+              "Ice Beam": 11.084,
+              "Hydro Pump": 3.202
+            }
+          }
+        }
+      }
+    ],
+    "rotom-wash": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Rotom-Wash",
+          "name": "Rotom-Wash",
+          "level": 50,
+          "item": "Leftovers",
+          "ability": "Levitate",
+          "nature": "Bold",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 252,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp",
+            "Pain Split"
+          ]
+        },
+        "plan": "Burn physical attackers; Pain Split and dual STAB handle longer duels.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Rotom-Wash",
+            "rawCount": 23900,
+            "itemPercent": 57.762,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Hydro Pump": 94.384,
+              "Thunderbolt": 7.113,
+              "Will-O-Wisp": 71.322,
+              "Pain Split": 40.695
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Scarf Trick",
+        "set": {
+          "species": "Rotom-Wash",
+          "name": "Rotom-Wash",
+          "level": 50,
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Trick",
+            "Will-O-Wisp"
+          ]
+        },
+        "plan": "Scarf offers Speed, while Trick can lock a defensive opponent and free Rotom to switch moves.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Rotom-Wash",
+            "rawCount": 23900,
+            "itemPercent": 14.591,
+            "abilityPercent": 100,
+            "movePercent": {
+              "Hydro Pump": 94.384,
+              "Thunderbolt": 7.113,
+              "Trick": 15.836,
+              "Will-O-Wisp": 71.322
+            }
+          }
+        }
+      }
+    ],
+    "groudon": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Groudon",
+          "name": "Groudon",
+          "level": 50,
+          "item": "Red Orb",
+          "ability": "Drought",
+          "nature": "Adamant",
+          "evs": {
+            "hp": 252,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Swords Dance",
+            "Precipice Blades",
+            "Fire Punch",
+            "Stone Edge"
+          ]
+        },
+        "plan": "Primal Reversion provides Desolate Land and strong Ground/Fire offense.",
+        "form": "Groudon-Primal",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Groudon-Primal",
+            "rawCount": 57669,
+            "itemPercent": 100,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Swords Dance": 26.635,
+              "Precipice Blades": 75.001,
+              "Fire Punch": 7.165,
+              "Stone Edge": 22.697
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Primal Rock Polish",
+        "set": {
+          "species": "Groudon",
+          "name": "Groudon",
+          "level": 50,
+          "item": "Red Orb",
+          "ability": "Drought",
+          "nature": "Jolly",
+          "evs": {
+            "hp": 4,
+            "atk": 252,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 31,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Rock Polish",
+            "Precipice Blades",
+            "Heat Crash",
+            "Stone Edge"
+          ]
+        },
+        "plan": "Rock Polish supplies Speed and Primal sun strengthens Heat Crash.",
+        "form": "Groudon-Primal",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Groudon-Primal",
+            "rawCount": 57669,
+            "itemPercent": 100,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Rock Polish": 29.685,
+              "Precipice Blades": 75.001,
+              "Heat Crash": 47.194,
+              "Stone Edge": 22.697
+            }
+          }
+        }
+      }
+    ],
+    "kyogre": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Kyogre",
+          "name": "Kyogre",
+          "level": 50,
+          "item": "Blue Orb",
+          "ability": "Drizzle",
+          "nature": "Modest",
+          "evs": {
+            "hp": 252,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 0
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Origin Pulse",
+            "Thunder",
+            "Ice Beam"
+          ]
+        },
+        "plan": "Primal rain boosts Origin Pulse and makes Thunder accurate.",
+        "form": "Kyogre-Primal",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Kyogre-Primal",
+            "rawCount": 28265,
+            "itemPercent": 100,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Calm Mind": 44.09,
+              "Origin Pulse": 68.856,
+              "Thunder": 85.519,
+              "Ice Beam": 90.862
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Primal immediate offense",
+        "set": {
+          "species": "Kyogre",
+          "name": "Kyogre",
+          "level": 50,
+          "item": "Blue Orb",
+          "ability": "Drizzle",
+          "nature": "Timid",
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Water Spout",
+            "Origin Pulse",
+            "Thunder",
+            "Ice Beam"
+          ]
+        },
+        "plan": "Water Spout pressures from full HP; Origin Pulse remains strong after damage.",
+        "form": "Kyogre-Primal",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldexubers-1500.json",
+            "format": "gen9nationaldexubers",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Kyogre-Primal",
+            "rawCount": 28265,
+            "itemPercent": 100,
+            "abilityPercent": 0,
+            "movePercent": {
+              "Water Spout": 44.171,
+              "Origin Pulse": 68.856,
+              "Thunder": 85.519,
+              "Ice Beam": 90.862
+            }
+          }
+        }
+      }
+    ],
+    "espeon": [
+      {
+        "id": "balanced",
+        "label": "Shelf standard",
+        "set": {
+          "species": "Espeon",
+          "item": "Leftovers",
+          "ability": "Magic Bounce",
+          "nature": "Timid",
+          "level": 50,
+          "evs": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 0,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Calm Mind",
+            "Stored Power",
+            "Dazzling Gleam",
+            "Morning Sun"
+          ],
+          "name": "Espeon"
+        },
+        "plan": "Magic Bounce reflects status moves; Calm Mind powers up Stored Power while Morning Sun restores HP.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Espeon",
+            "rawCount": 10456,
+            "itemPercent": 9.352,
+            "abilityPercent": 97.541,
+            "movePercent": {
+              "Calm Mind": 17.071,
+              "Stored Power": 19.182,
+              "Dazzling Gleam": 15.594,
+              "Morning Sun": 23.623
+            }
+          }
+        }
+      },
+      {
+        "id": "alternative",
+        "label": "Sash special coverage",
+        "set": {
+          "species": "Espeon",
+          "item": "Focus Sash",
+          "ability": "Magic Bounce",
+          "nature": "Timid",
+          "level": 50,
+          "evs": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 252,
+            "spd": 4,
+            "spe": 252
+          },
+          "ivs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 31,
+            "spa": 31,
+            "spd": 31,
+            "spe": 31
+          },
+          "moves": [
+            "Psychic",
+            "Shadow Ball",
+            "Dazzling Gleam",
+            "Morning Sun"
+          ],
+          "name": "Espeon"
+        },
+        "plan": "Sash supplies a fallback against strong hits; Magic Bounce discourages status.",
+        "provenance": {
+          "kind": "usage-informed",
+          "note": "A complete curated duel set informed by marginal Showdown usage; not an observed joint set or exact usage ranking.",
+          "evidence": {
+            "source": "https://www.smogon.com/stats/2026-09/chaos/gen9nationaldex-1500.json",
+            "format": "gen9nationaldex",
+            "month": "2026-09",
+            "cutoff": 1500,
+            "species": "Espeon",
+            "rawCount": 10456,
+            "itemPercent": 10.101,
+            "abilityPercent": 97.541,
+            "movePercent": {
+              "Psychic": 38.208,
+              "Shadow Ball": 37.388,
+              "Dazzling Gleam": 15.594,
+              "Morning Sun": 23.623
+            }
+          }
+        }
+      }
+    ]
+  }
+}

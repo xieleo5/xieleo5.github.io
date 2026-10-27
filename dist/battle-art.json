@@ -1,0 +1,982 @@
+{
+  "eevee": {
+    "front": {
+      "url": "../assets/battle/eevee.gif",
+      "w": 64,
+      "h": 55,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/133.gif"
+    },
+    "back": {
+      "url": "../assets/battle/eevee-back.gif",
+      "w": 72,
+      "h": 54,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/133.gif"
+    }
+  },
+  "rowlet": {
+    "front": {
+      "url": "../assets/battle/rowlet.gif",
+      "w": 43,
+      "h": 50,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/722.gif"
+    },
+    "back": {
+      "url": "../assets/battle/rowlet-back.gif",
+      "w": 43,
+      "h": 50,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/722.gif"
+    }
+  },
+  "spheal": {
+    "front": {
+      "url": "../assets/battle/spheal.gif",
+      "w": 45,
+      "h": 42,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/363.gif"
+    },
+    "back": {
+      "url": "../assets/battle/spheal-back.gif",
+      "w": 53,
+      "h": 42,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/363.gif"
+    }
+  },
+  "fuecoco": {
+    "front": {
+      "url": "../assets/battle/fuecoco.gif",
+      "w": 39,
+      "h": 56,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/909.gif"
+    },
+    "back": {
+      "url": "../assets/battle/fuecoco-back.gif",
+      "w": 47,
+      "h": 55,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/909.gif"
+    }
+  },
+  "ditto": {
+    "front": {
+      "url": "../assets/battle/ditto.gif",
+      "w": 43,
+      "h": 35,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/132.gif"
+    },
+    "back": {
+      "url": "../assets/battle/ditto-back.gif",
+      "w": 36,
+      "h": 35,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/132.gif"
+    }
+  },
+  "snorlax": {
+    "front": {
+      "url": "../assets/battle/snorlax.gif",
+      "w": 87,
+      "h": 79,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/143.gif"
+    },
+    "back": {
+      "url": "../assets/battle/snorlax-back.gif",
+      "w": 74,
+      "h": 78,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/143.gif"
+    }
+  },
+  "fennekin": {
+    "front": {
+      "url": "../assets/battle/fennekin.gif",
+      "w": 51,
+      "h": 59,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/653.gif"
+    },
+    "back": {
+      "url": "../assets/battle/fennekin-back.gif",
+      "w": 48,
+      "h": 59,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/653.gif"
+    }
+  },
+  "pikachu": {
+    "front": {
+      "url": "../assets/battle/pikachu.gif",
+      "w": 60,
+      "h": 60,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/25.gif"
+    },
+    "back": {
+      "url": "../assets/battle/pikachu-back.gif",
+      "w": 65,
+      "h": 61,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/25.gif"
+    }
+  },
+  "furret": {
+    "front": {
+      "url": "../assets/battle/furret.gif",
+      "w": 85,
+      "h": 73,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/162.gif"
+    },
+    "back": {
+      "url": "../assets/battle/furret-back.gif",
+      "w": 103,
+      "h": 69,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/162.gif"
+    }
+  },
+  "mimikyu": {
+    "front": {
+      "url": "../assets/battle/mimikyu.gif",
+      "w": 57,
+      "h": 67,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/778.gif"
+    },
+    "back": {
+      "url": "../assets/battle/mimikyu-back.gif",
+      "w": 54,
+      "h": 67,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/778.gif"
+    }
+  },
+  "dondozo": {
+    "front": {
+      "url": "../assets/battle/dondozo.gif",
+      "w": 152,
+      "h": 69,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/977.gif"
+    },
+    "back": {
+      "url": "../assets/battle/dondozo-back.gif",
+      "w": 179,
+      "h": 68,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/977.gif"
+    }
+  },
+  "tatsugiri": {
+    "front": {
+      "url": "../assets/battle/tatsugiri.gif",
+      "w": 60,
+      "h": 44,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/978.gif"
+    },
+    "back": {
+      "url": "../assets/battle/tatsugiri-back.gif",
+      "w": 63,
+      "h": 46,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/978.gif"
+    }
+  },
+  "koraidon": {
+    "front": {
+      "url": "../assets/battle/koraidon.gif",
+      "w": 147,
+      "h": 111,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/1007.gif"
+    },
+    "back": {
+      "url": "../assets/battle/koraidon-back.gif",
+      "w": 209,
+      "h": 111,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/1007.gif"
+    }
+  },
+  "serperior": {
+    "front": {
+      "url": "../assets/battle/serperior.gif",
+      "w": 90,
+      "h": 108,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/497.gif"
+    },
+    "back": {
+      "url": "../assets/battle/serperior-back.gif",
+      "w": 86,
+      "h": 105,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/497.gif"
+    }
+  },
+  "charizardmegay": {
+    "front": {
+      "url": "../assets/battle/charizardmegay.gif",
+      "w": 201,
+      "h": 166,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10035.gif"
+    },
+    "back": {
+      "url": "../assets/battle/charizardmegay-back.gif",
+      "w": 256,
+      "h": 184,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10035.gif"
+    }
+  },
+  "charizard": {
+    "front": {
+      "url": "../assets/battle/charizard.gif",
+      "w": 133,
+      "h": 140,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/6.gif"
+    },
+    "back": {
+      "url": "../assets/battle/charizard-back.gif",
+      "w": 172,
+      "h": 166,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/6.gif"
+    }
+  },
+  "comfey": {
+    "front": {
+      "url": "../assets/battle/comfey.gif",
+      "w": 72,
+      "h": 94,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/764.gif"
+    },
+    "back": {
+      "url": "../assets/battle/comfey-back.gif",
+      "w": 96,
+      "h": 95,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/764.gif"
+    }
+  },
+  "swablu": {
+    "front": {
+      "url": "../assets/battle/swablu.gif",
+      "w": 93,
+      "h": 53,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/333.gif"
+    },
+    "back": {
+      "url": "../assets/battle/swablu-back.gif",
+      "w": 70,
+      "h": 56,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/333.gif"
+    }
+  },
+  "rayquaza": {
+    "front": {
+      "url": "../assets/battle/rayquaza.gif",
+      "w": 142,
+      "h": 153,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/384.gif"
+    },
+    "back": {
+      "url": "../assets/battle/rayquaza-back.gif",
+      "w": 162,
+      "h": 165,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/shiny/384.gif"
+    }
+  },
+  "rayquazamega": {
+    "front": {
+      "url": "../assets/battle/rayquazamega.gif",
+      "w": 137,
+      "h": 146,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/10079.gif"
+    },
+    "back": {
+      "url": "../assets/battle/rayquazamega-back.gif",
+      "w": 244,
+      "h": 173,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/shiny/10079.gif"
+    }
+  },
+  "mareep": {
+    "front": {
+      "url": "../assets/battle/mareep.gif",
+      "w": 52,
+      "h": 54,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/179.gif"
+    },
+    "back": {
+      "url": "../assets/battle/mareep-back.gif",
+      "w": 69,
+      "h": 56,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/179.gif"
+    }
+  },
+  "teddiursa": {
+    "front": {
+      "url": "../assets/battle/teddiursa.gif",
+      "w": 47,
+      "h": 57,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/216.gif"
+    },
+    "back": {
+      "url": "../assets/battle/teddiursa-back.gif",
+      "w": 36,
+      "h": 58,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/216.gif"
+    }
+  },
+  "kirlia": {
+    "front": {
+      "url": "../assets/battle/kirlia.gif",
+      "w": 44,
+      "h": 68,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/281.gif"
+    },
+    "back": {
+      "url": "../assets/battle/kirlia-back.gif",
+      "w": 41,
+      "h": 68,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/281.gif"
+    }
+  },
+  "pachirisu": {
+    "front": {
+      "url": "../assets/battle/pachirisu.gif",
+      "w": 57,
+      "h": 75,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/417.gif"
+    },
+    "back": {
+      "url": "../assets/battle/pachirisu-back.gif",
+      "w": 86,
+      "h": 80,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/417.gif"
+    }
+  },
+  "azumarill": {
+    "front": {
+      "url": "../assets/battle/azumarill.gif",
+      "w": 89,
+      "h": 90,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/184.gif"
+    },
+    "back": {
+      "url": "../assets/battle/azumarill-back.gif",
+      "w": 107,
+      "h": 91,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/184.gif"
+    }
+  },
+  "scizormega": {
+    "front": {
+      "url": "../assets/battle/scizormega.gif",
+      "w": 79,
+      "h": 103,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10046.gif"
+    },
+    "back": {
+      "url": "../assets/battle/scizormega-back.gif",
+      "w": 70,
+      "h": 104,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10046.gif"
+    }
+  },
+  "scizor": {
+    "front": {
+      "url": "../assets/battle/scizor.gif",
+      "w": 67,
+      "h": 93,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/212.gif"
+    },
+    "back": {
+      "url": "../assets/battle/scizor-back.gif",
+      "w": 59,
+      "h": 95,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/212.gif"
+    }
+  },
+  "whimsicott": {
+    "front": {
+      "url": "../assets/battle/whimsicott.gif",
+      "w": 75,
+      "h": 67,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/547.gif"
+    },
+    "back": {
+      "url": "../assets/battle/whimsicott-back.gif",
+      "w": 75,
+      "h": 72,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/547.gif"
+    }
+  },
+  "zacian": {
+    "front": {
+      "url": "../assets/battle/zacian.gif",
+      "w": 92,
+      "h": 95,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/888.gif"
+    },
+    "back": {
+      "url": "../assets/battle/zacian-back.gif",
+      "w": 113,
+      "h": 78,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/888.gif"
+    }
+  },
+  "zaciancrowned": {
+    "front": {
+      "url": "../assets/battle/zaciancrowned.gif",
+      "w": 137,
+      "h": 111,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10188.gif"
+    },
+    "back": {
+      "url": "../assets/battle/zaciancrowned-back.gif",
+      "w": 156,
+      "h": 120,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10188.gif"
+    }
+  },
+  "ponyta": {
+    "front": {
+      "url": "../assets/battle/ponyta.gif",
+      "w": 51,
+      "h": 68,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/77.gif"
+    },
+    "back": {
+      "url": "../assets/battle/ponyta-back.gif",
+      "w": 60,
+      "h": 69,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/77.gif"
+    }
+  },
+  "jigglypuff": {
+    "front": {
+      "url": "../assets/battle/jigglypuff.gif",
+      "w": 46,
+      "h": 46,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/39.gif"
+    },
+    "back": {
+      "url": "../assets/battle/jigglypuff-back.gif",
+      "w": 44,
+      "h": 45,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/39.gif"
+    }
+  },
+  "machamp": {
+    "front": {
+      "url": "../assets/battle/machamp.gif",
+      "w": 84,
+      "h": 100,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/68.gif"
+    },
+    "back": {
+      "url": "../assets/battle/machamp-back.gif",
+      "w": 73,
+      "h": 97,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/68.gif"
+    }
+  },
+  "umbreon": {
+    "front": {
+      "url": "../assets/battle/umbreon.gif",
+      "w": 46,
+      "h": 70,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/197.gif"
+    },
+    "back": {
+      "url": "../assets/battle/umbreon-back.gif",
+      "w": 73,
+      "h": 74,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/197.gif"
+    }
+  },
+  "squirtle": {
+    "front": {
+      "url": "../assets/battle/squirtle.gif",
+      "w": 53,
+      "h": 54,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/7.gif"
+    },
+    "back": {
+      "url": "../assets/battle/squirtle-back.gif",
+      "w": 62,
+      "h": 53,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/7.gif"
+    }
+  },
+  "cosmog": {
+    "front": {
+      "url": "../assets/battle/cosmog.gif",
+      "w": 81,
+      "h": 59,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/789.gif"
+    },
+    "back": {
+      "url": "../assets/battle/cosmog-back.gif",
+      "w": 63,
+      "h": 61,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/789.gif"
+    }
+  },
+  "froakie": {
+    "front": {
+      "url": "../assets/battle/froakie.gif",
+      "w": 45,
+      "h": 52,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/656.gif"
+    },
+    "back": {
+      "url": "../assets/battle/froakie-back.gif",
+      "w": 46,
+      "h": 52,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/656.gif"
+    }
+  },
+  "tornadus": {
+    "front": {
+      "url": "../assets/battle/tornadus.gif",
+      "w": 82,
+      "h": 100,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/641.gif"
+    },
+    "back": {
+      "url": "../assets/battle/tornadus-back.gif",
+      "w": 89,
+      "h": 107,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/641.gif"
+    }
+  },
+  "amoonguss": {
+    "front": {
+      "url": "../assets/battle/amoonguss.gif",
+      "w": 78,
+      "h": 75,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/591.gif"
+    },
+    "back": {
+      "url": "../assets/battle/amoonguss-back.gif",
+      "w": 74,
+      "h": 75,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/591.gif"
+    }
+  },
+  "hydreigon": {
+    "front": {
+      "url": "../assets/battle/hydreigon.gif",
+      "w": 137,
+      "h": 130,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/635.gif"
+    },
+    "back": {
+      "url": "../assets/battle/hydreigon-back.gif",
+      "w": 123,
+      "h": 134,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/635.gif"
+    }
+  },
+  "fluttermane": {
+    "front": {
+      "url": "../assets/battle/fluttermane.gif",
+      "w": 112,
+      "h": 87,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/987.gif"
+    },
+    "back": {
+      "url": "../assets/battle/fluttermane-back.gif",
+      "w": 106,
+      "h": 92,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/987.gif"
+    }
+  },
+  "oddish": {
+    "front": {
+      "url": "../assets/battle/oddish.gif",
+      "w": 52,
+      "h": 48,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/43.gif"
+    },
+    "back": {
+      "url": "../assets/battle/oddish-back.gif",
+      "w": 42,
+      "h": 48,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/43.gif"
+    }
+  },
+  "xatu": {
+    "front": {
+      "url": "../assets/battle/xatu.gif",
+      "w": 103,
+      "h": 58,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/178.gif"
+    },
+    "back": {
+      "url": "../assets/battle/xatu-back.gif",
+      "w": 98,
+      "h": 60,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/178.gif"
+    }
+  },
+  "vanillite": {
+    "front": {
+      "url": "../assets/battle/vanillite.gif",
+      "w": 49,
+      "h": 63,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/582.gif"
+    },
+    "back": {
+      "url": "../assets/battle/vanillite-back.gif",
+      "w": 46,
+      "h": 62,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/582.gif"
+    }
+  },
+  "ferrothorn": {
+    "front": {
+      "url": "../assets/battle/ferrothorn.gif",
+      "w": 128,
+      "h": 70,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/598.gif"
+    },
+    "back": {
+      "url": "../assets/battle/ferrothorn-back.gif",
+      "w": 138,
+      "h": 70,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/598.gif"
+    }
+  },
+  "litwick": {
+    "front": {
+      "url": "../assets/battle/litwick.gif",
+      "w": 43,
+      "h": 68,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/607.gif"
+    },
+    "back": {
+      "url": "../assets/battle/litwick-back.gif",
+      "w": 42,
+      "h": 67,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/607.gif"
+    }
+  },
+  "gastly": {
+    "front": {
+      "url": "../assets/battle/gastly.gif",
+      "w": 52,
+      "h": 61,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/92.gif"
+    },
+    "back": {
+      "url": "../assets/battle/gastly-back.gif",
+      "w": 53,
+      "h": 60,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/92.gif"
+    }
+  },
+  "elekid": {
+    "front": {
+      "url": "../assets/battle/elekid.gif",
+      "w": 73,
+      "h": 63,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/239.gif"
+    },
+    "back": {
+      "url": "../assets/battle/elekid-back.gif",
+      "w": 64,
+      "h": 63,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/239.gif"
+    }
+  },
+  "jirachi": {
+    "front": {
+      "url": "../assets/battle/jirachi.gif",
+      "w": 92,
+      "h": 68,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/385.gif"
+    },
+    "back": {
+      "url": "../assets/battle/jirachi-back.gif",
+      "w": 78,
+      "h": 66,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/385.gif"
+    }
+  },
+  "incineroar": {
+    "front": {
+      "url": "../assets/battle/incineroar.gif",
+      "w": 131,
+      "h": 96,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/727.gif"
+    },
+    "back": {
+      "url": "../assets/battle/incineroar-back.gif",
+      "w": 117,
+      "h": 93,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/727.gif"
+    }
+  },
+  "chikorita": {
+    "front": {
+      "url": "../assets/battle/chikorita.gif",
+      "w": 32,
+      "h": 63,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/152.gif"
+    },
+    "back": {
+      "url": "../assets/battle/chikorita-back.gif",
+      "w": 48,
+      "h": 64,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/152.gif"
+    }
+  },
+  "morpeko": {
+    "front": {
+      "url": "../assets/battle/morpeko.gif",
+      "w": 34,
+      "h": 58,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/877.gif"
+    },
+    "back": {
+      "url": "../assets/battle/morpeko-back.gif",
+      "w": 32,
+      "h": 56,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/877.gif"
+    }
+  },
+  "ogerpon": {
+    "front": {
+      "url": "../assets/battle/ogerpon.png",
+      "w": 96,
+      "h": 96,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1017.png"
+    },
+    "back": {
+      "url": "../assets/battle/ogerpon.png",
+      "w": 96,
+      "h": 96,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1017.png"
+    }
+  },
+  "dragonair": {
+    "front": {
+      "url": "../assets/battle/dragonair.gif",
+      "w": 67,
+      "h": 93,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/148.gif"
+    },
+    "back": {
+      "url": "../assets/battle/dragonair-back.gif",
+      "w": 63,
+      "h": 91,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/148.gif"
+    }
+  },
+  "exeggutoralola": {
+    "front": {
+      "url": "../assets/battle/exeggutoralola.gif",
+      "w": 111,
+      "h": 180,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10114.gif"
+    },
+    "back": {
+      "url": "../assets/battle/exeggutoralola-back.gif",
+      "w": 117,
+      "h": 181,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10114.gif"
+    }
+  },
+  "pelipper": {
+    "front": {
+      "url": "../assets/battle/pelipper.gif",
+      "w": 101,
+      "h": 92,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/279.gif"
+    },
+    "back": {
+      "url": "../assets/battle/pelipper-back.gif",
+      "w": 96,
+      "h": 92,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/279.gif"
+    }
+  },
+  "rotomwash": {
+    "front": {
+      "url": "../assets/battle/rotomwash.gif",
+      "w": 110,
+      "h": 64,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10009.gif"
+    },
+    "back": {
+      "url": "../assets/battle/rotomwash-back.gif",
+      "w": 100,
+      "h": 64,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10009.gif"
+    }
+  },
+  "groudonprimal": {
+    "front": {
+      "url": "../assets/battle/groudonprimal.gif",
+      "w": 117,
+      "h": 99,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10078.gif"
+    },
+    "back": {
+      "url": "../assets/battle/groudonprimal-back.gif",
+      "w": 157,
+      "h": 96,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10078.gif"
+    }
+  },
+  "groudon": {
+    "front": {
+      "url": "../assets/battle/groudon.gif",
+      "w": 107,
+      "h": 94,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/383.gif"
+    },
+    "back": {
+      "url": "../assets/battle/groudon-back.gif",
+      "w": 141,
+      "h": 89,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/383.gif"
+    }
+  },
+  "kyogre": {
+    "front": {
+      "url": "../assets/battle/kyogre.gif",
+      "w": 234,
+      "h": 55,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/382.gif"
+    },
+    "back": {
+      "url": "../assets/battle/kyogre-back.gif",
+      "w": 228,
+      "h": 54,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/382.gif"
+    }
+  },
+  "kyogreprimal": {
+    "front": {
+      "url": "../assets/battle/kyogreprimal.gif",
+      "w": 230,
+      "h": 64,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10077.gif"
+    },
+    "back": {
+      "url": "../assets/battle/kyogreprimal-back.gif",
+      "w": 262,
+      "h": 58,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10077.gif"
+    }
+  },
+  "zapdos": {
+    "front": {
+      "url": "../assets/battle/zapdos.gif",
+      "w": 145,
+      "h": 106,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/145.gif"
+    },
+    "back": {
+      "url": "../assets/battle/zapdos-back.gif",
+      "w": 138,
+      "h": 111,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/145.gif"
+    }
+  },
+  "sinistcha": {
+    "front": {
+      "url": "../assets/battle/sinistcha.gif",
+      "w": 73,
+      "h": 100,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/1013.gif"
+    },
+    "back": {
+      "url": "../assets/battle/sinistcha-back.gif",
+      "w": 73,
+      "h": 97,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/1013.gif"
+    }
+  },
+  "breloom": {
+    "front": {
+      "url": "../assets/battle/breloom.gif",
+      "w": 66,
+      "h": 73,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/286.gif"
+    },
+    "back": {
+      "url": "../assets/battle/breloom-back.gif",
+      "w": 92,
+      "h": 71,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/286.gif"
+    }
+  },
+  "metagrossmega": {
+    "front": {
+      "url": "../assets/battle/metagrossmega.gif",
+      "w": 146,
+      "h": 118,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10076.gif"
+    },
+    "back": {
+      "url": "../assets/battle/metagrossmega-back.gif",
+      "w": 158,
+      "h": 101,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10076.gif"
+    }
+  },
+  "metagross": {
+    "front": {
+      "url": "../assets/battle/metagross.gif",
+      "w": 142,
+      "h": 73,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/376.gif"
+    },
+    "back": {
+      "url": "../assets/battle/metagross-back.gif",
+      "w": 147,
+      "h": 73,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/376.gif"
+    }
+  },
+  "espeon": {
+    "front": {
+      "url": "../assets/battle/espeon.gif",
+      "w": 67,
+      "h": 73,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/196.gif"
+    },
+    "back": {
+      "url": "../assets/battle/espeon-back.gif",
+      "w": 86,
+      "h": 80,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/196.gif"
+    }
+  },
+  "tatsugiridroopy": {
+    "front": {
+      "url": "../assets/battle/tatsugiridroopy.gif",
+      "w": 60,
+      "h": 44,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10258.gif"
+    },
+    "back": {
+      "url": "../assets/battle/tatsugiridroopy-back.gif",
+      "w": 63,
+      "h": 46,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10258.gif"
+    }
+  },
+  "tatsugiristretchy": {
+    "front": {
+      "url": "../assets/battle/tatsugiristretchy.gif",
+      "w": 60,
+      "h": 44,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10259.gif"
+    },
+    "back": {
+      "url": "../assets/battle/tatsugiristretchy-back.gif",
+      "w": 63,
+      "h": 46,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10259.gif"
+    }
+  },
+  "charizardmegax": {
+    "front": {
+      "url": "../assets/battle/charizardmegax.gif",
+      "w": 161,
+      "h": 107,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10034.gif"
+    },
+    "back": {
+      "url": "../assets/battle/charizardmegax-back.gif",
+      "w": 186,
+      "h": 100,
+      "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/10034.gif"
+    }
+  }
+}

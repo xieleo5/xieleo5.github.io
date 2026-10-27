@@ -1,0 +1,7 @@
+{
+ "id":"espeon","name":"Espeon","zh":"太阳伊布","aliases":["太陽伊布"],
+ "preset":{
+  "set":{"species":"Espeon","item":"Leftovers","ability":"Magic Bounce","nature":"Timid","level":50,"evs":{"hp":4,"atk":0,"def":0,"spa":252,"spd":0,"spe":252},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"moves":["Calm Mind","Stored Power","Dazzling Gleam","Morning Sun"]},
+  "plan":"Magic Bounce reflects status moves; Calm Mind powers up Stored Power while Morning Sun restores HP."
+ }
+}

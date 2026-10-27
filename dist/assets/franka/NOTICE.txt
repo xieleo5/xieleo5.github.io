@@ -1,0 +1,1 @@
+Franka Emika Panda visual meshes and kinematic description. Source: google-deepmind/mujoco_menagerie/franka_emika_panda, derived from Franka Emika franka_ros. Apache-2.0. OBJ positions, normals, and indices packed without geometric modification for this browser game. See LICENSE.

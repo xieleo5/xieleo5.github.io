@@ -1,0 +1,186 @@
+@font-face{font-family:Inter;src:url("assets/fonts/inter.woff2") format("woff2");font-style:normal;font-weight:300 900;font-display:swap}
+@font-face{font-family:Lato;src:url("assets/fonts/lato-regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Lato;src:url("assets/fonts/lato-bold.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+:root{color-scheme:light;--text:#111;--link:#3670c9;--muted:#666}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:32px}
+body{margin:0;color:var(--text);background:#fff;font:400 17.6px/1.55 Lato,Arial,sans-serif}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--link);outline-offset:4px}
+p,h1,h2,h3{margin:0}
+.page{width:min(1000px,calc(100% - 64px));margin-inline:auto}
+.profile{display:grid;grid-template-columns:minmax(0,1fr) 314px;gap:24px;align-items:start;padding:72px 0 60px}
+h1,h2{font-family:Inter,Arial,"PingFang SC",sans-serif;font-weight:400}
+h1{font-size:40px;line-height:1.2;letter-spacing:-.8px;margin-bottom:25px}
+h1 [lang]{font-weight:400;letter-spacing:0;white-space:nowrap}
+.name-divider{font-weight:300;color:#444;margin-inline:3px}
+.profile-copy p{margin-bottom:20px;line-height:1.5}
+.profile-copy p:last-child{margin-bottom:0}
+.profile-side{padding-top:6px}
+.portrait{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 60%;border-radius:16px}
+.contact-links{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:3px 8px;margin-top:17px;font-size:15px;line-height:1.6}
+.contact-links span{color:#aaa}
+h2{font-size:29.6px;line-height:1.2;margin-bottom:32px;letter-spacing:-.3px}
+.publication-list{display:grid;gap:38px}
+.publication{display:grid;grid-template-columns:38% minmax(0,1fr);column-gap:28px;align-items:center}
+.publication.highlighted{position:relative;isolation:isolate}
+.publication.highlighted::before{content:"";position:absolute;inset:-14px -16px;z-index:-1;background:#fff8e5;border-radius:3px}
+.paper-image{display:block;line-height:0}
+.paper-image img{display:block;width:100%;height:auto;max-height:260px;object-fit:contain;mix-blend-mode:multiply}
+.paper-text{min-width:0}
+.paper-text h3{font:700 17.6px/1.3 Lato,Arial,sans-serif;margin:0 0 8px}
+.paper-text h3 a{color:inherit}
+.paper-text h3 a:hover{color:var(--link)}
+.authors{font-size:17.6px;line-height:1.3;margin:0 0 8px;overflow-wrap:break-word}
+.authors strong{font-weight:700}
+.authors strong a{color:inherit}
+sup{font-size:.7em;line-height:0;vertical-align:super}
+.author-group{font-weight:700}
+.paper-links{font-size:17.6px;line-height:1.5;margin:0}
+.paper-links a{white-space:nowrap}
+.separator{color:#777;margin-inline:4px}
+.award{color:#a43725}
+.contribution-note{font-size:15px;margin-top:35px;color:var(--muted)}
+footer.page{font-size:13px;color:#777;padding:50px 0 30px}
+.skip-link{position:absolute;top:-60px;left:20px;background:#fff;padding:8px;z-index:10}
+.skip-link:focus{top:10px}
+@media(max-width:900px){
+ .profile{grid-template-columns:minmax(0,1fr) 28%;gap:28px;padding-top:52px}
+ h1{font-size:36px}
+ .contact-links{font-size:14px;column-gap:6px}
+ .publication{grid-template-columns:34% minmax(0,1fr);column-gap:24px}
+}
+@media(max-width:700px){
+ .page{width:calc(100% - 40px)}
+ .profile{grid-template-columns:minmax(0,1fr) 150px;gap:22px;padding:36px 0 44px}
+ .profile-copy{display:contents}
+ h1{grid-column:1;grid-row:1;font-size:32px;line-height:1.35;align-self:center;margin:0}
+ h1 [lang]{display:block;font-size:29px;margin-top:5px}
+ .name-divider{display:none}
+ .profile-side{grid-column:2;grid-row:1;padding:0}
+ .portrait{border-radius:10px}
+ .contact-links{font-size:13px;margin-top:12px;gap:2px 5px}
+ .contact-links span{display:none}
+ .profile-copy p{grid-column:1/-1;font-size:17.6px;line-height:1.5;margin:0}
+ h2{font-size:29px;margin-bottom:27px}
+ .publication-list{gap:36px}
+ .publication{grid-template-columns:1fr;gap:19px}
+ .publication.highlighted::before{inset:-12px -10px}
+ .paper-image{width:100%;max-width:380px}
+ .paper-image img{max-height:235px;object-position:left center}
+ .paper-text h3,.authors,.paper-links{font-size:17px}
+ .authors{line-height:1.4}
+ footer.page{padding-top:40px}
+}
+@media(max-width:380px){
+ .profile{grid-template-columns:minmax(0,1fr) 120px;column-gap:16px}
+ h1{font-size:29px}h1 [lang]{font-size:26px}
+ .contact-links{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Optional Pokémon details: no change to the publication layout. */
+.pokemon-egg{display:none}
+.pokemon-ready .pokemon-egg{display:inline-flex;align-items:center;justify-content:center}
+.pokemon-egg{font:inherit;color:#8c9788;background:none;border:0;padding:0;cursor:pointer;min-width:32px;min-height:32px;vertical-align:middle;border-radius:4px}
+.pokemon-egg:hover{color:#416442;background:#edf2e980}
+button:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+.pokemon-egg img{display:block;width:100%;height:100%;object-fit:contain;image-rendering:auto}
+.portrait-frame{position:relative}
+.portrait-eevee{position:absolute;bottom:-7px;right:-12px;width:48px;height:48px}
+.portrait-shy{position:absolute;bottom:5px;left:4px;width:32px;height:32px;font-size:14px;color:#eff1e7;text-shadow:0 1px 3px #333}
+.portrait-flower{position:absolute;left:4px;top:4px;width:32px;height:32px;font-size:18px;color:#eff1e7;text-shadow:0 1px 3px #333}
+.portrait-star{position:absolute;right:-7px;top:-34px;font-size:19px;color:#b0b9aa}
+.perched{width:40px;height:40px;margin-left:10px;vertical-align:middle}
+.paper-egg{font-size:17px;margin-left:5px;line-height:1;min-height:24px;min-width:28px}
+footer.page{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.footer-eggs{display:none;align-items:center;gap:8px}
+.pokemon-ready .footer-eggs{display:flex}
+.footer-eggs .pokemon-egg{font-size:14px}
+.footer-eggs .sleepy{font-size:11px;font-style:italic;letter-spacing:1px}
+.footer-eggs .dex-button{gap:7px;margin-left:8px;font-size:11px;padding:4px}
+.pokeball{display:block;width:16px;height:16px;border:1.5px solid #8c9788;border-radius:50%;background:linear-gradient(#8c9788 46%,#fff 46%);position:relative}
+.pokeball::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:4px;height:4px;border:1px solid #8c9788;border-radius:50%;background:#fff}
+#field-notes{width:min(740px,calc(100% - 32px));max-height:85vh;max-height:85dvh;overflow:auto;overscroll-behavior:contain;padding:24px;border:1px solid #ddd;border-radius:8px;color:var(--text);background:#fff;font:400 15px/1.5 Lato,Arial,sans-serif}
+#field-notes::backdrop{background:#0005}
+.dex-header{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.dex-header h2{font-size:26px;margin:0}
+#close-dex,#dismiss-encounter{font:400 25px/1 Arial,sans-serif;background:none;border:0;color:#777;cursor:pointer;min-width:36px;min-height:36px}
+.dex-intro{color:#666;font-size:13px;margin:12px 0 18px}
+#dex-hint{font-size:13px;color:#4c6946;min-height:40px;margin:18px 0 12px}
+.dex-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;color:#666}
+#next-hint{font:inherit;color:var(--link);background:none;border:0;cursor:pointer;min-height:36px}
+.pokemon-credits{font-size:10px;color:#888;margin-top:16px;padding-top:12px;border-top:1px solid #eee}
+#pokemon-toast{position:fixed;bottom:20px;left:20px;z-index:20;display:flex;align-items:center;gap:9px;max-width:calc(100% - 32px);padding:5px 5px 5px 7px;border:1px solid #ddd;border-radius:8px;background:#fff;box-shadow:0 3px 18px #0001;font-size:14px}
+#pokemon-toast[hidden]{display:none}
+#pokemon-toast img{display:block;flex:none;width:64px;height:64px;object-fit:contain;image-rendering:auto}
+.encounter-count{display:block;font-size:11px;color:#777;margin-top:3px}
+@media(max-width:700px){
+ .portrait-eevee{width:40px;height:40px;right:-10px;bottom:-6px}
+ .portrait-star{top:-29px;right:-7px}
+ .perched{width:34px;height:34px;margin-left:8px}
+ #field-notes{padding:18px}
+ #pokemon-toast{top:12px;bottom:auto;left:12px;font-size:13px}
+ .footer-eggs{gap:5px}
+ .footer-eggs .dex-button{margin-left:3px}
+}
+
+/* White open shelving, inspired by the real collection cabinet. */
+.cabinet-layout{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:24px;align-items:start}
+.cabinet-frame{background:#f2f1eb;border:10px solid #f7f6f1;border-bottom:0;border-top-width:12px;box-shadow:2px 4px 12px #353b3520,inset 1px 0 #fff;position:relative}
+.cabinet-shelf{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:end;height:88px;padding:4px 4px 0;background:linear-gradient(180deg,#cecec5 0,#e2e1d8 13px,#eeede5 78%);border-bottom:9px solid #f9f8f3;box-shadow:0 2px 2px #5553;position:relative}
+.shelf-slot{display:flex;align-items:flex-end;justify-content:center;width:100%;height:100%;min-width:0;border:0;background:none;padding:0;cursor:pointer;border-radius:3px;position:relative}
+.shelf-slot img{display:block;width:80px;height:72px;max-width:100%;object-fit:contain;image-rendering:auto;filter:drop-shadow(0 3px 1px #0002)}
+.shelf-slot:hover,.shelf-slot[aria-pressed="true"]{background:#fff5}
+.shelf-slot:focus-visible{outline-offset:-3px}
+.empty-mark{font:20px/1 Lato,sans-serif;color:#a7a79b;margin-bottom:10px}
+.shelf-slot.empty:hover .empty-mark{font-size:0}
+.shelf-slot.empty:hover .empty-mark::after{content:'?';font-size:13px}
+.cabinet-plinth{height:16px;background:linear-gradient(#e4e3da,#f9f8f3);border-bottom:5px solid #dcdbd1}
+.cabinet-info{font-size:13px;line-height:1.6;min-width:0}
+.shelf-label{color:#8a8c80;font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:17px}
+#shelf-detail img{display:block;width:96px;height:96px;object-fit:contain;image-rendering:auto;margin:0 0 8px}
+#shelf-detail img[hidden],#shelf-detail a[hidden]{display:none}
+#shelf-detail h3{font-size:19px;font-weight:400;line-height:1.3;margin-bottom:10px}
+#shelf-detail p{color:#666;margin-bottom:14px}
+#shelf-detail a{display:inline-block;font-size:13px}
+.shelf-shop-note{font-size:11px;color:#8a8a82;margin-top:24px}
+.mini-cabinet{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;width:26px;height:35px;padding:2px;border:2px solid #aaa99b;background:repeating-linear-gradient(to bottom,#e6e5dd 0,#e6e5dd 3px,#bab9aa 3px,#bab9aa 4px);box-shadow:1px 1px 2px #0001}
+.mini-cabinet span{display:block;width:3px;height:3px;border-radius:1px;align-self:end}
+.mini-cabinet .occupied{background:#81946b}
+.cabinet-link-label{font-size:11px;text-align:left;color:#7b8175;line-height:1.5}
+.cabinet-link-label #dex-count{display:block;font-size:10px}
+#view-shelf{font:inherit;font-size:11px;padding:3px 0;background:none;border:0;color:var(--link);cursor:pointer}
+@media(max-width:600px){
+ .cabinet-layout{grid-template-columns:minmax(0,1fr);gap:20px}
+ .cabinet-frame{width:100%;max-width:380px;margin-inline:auto;border-width:8px;border-bottom:0}
+ .cabinet-shelf{height:78px;border-bottom-width:8px;padding-inline:0}
+ .shelf-slot img{width:70px;height:64px}
+ .cabinet-info{padding-inline:4px}
+ .shelf-label{margin-bottom:8px}
+ #shelf-detail img{float:left;width:72px;height:72px;margin:0 12px 0 0}
+ #shelf-detail{display:flow-root}
+ #shelf-detail h3{font-size:18px;margin-bottom:6px}
+ #shelf-detail p{margin-bottom:8px}
+ .shelf-shop-note{margin-top:12px}
+}
+.shelf-form-picker{display:block;font-size:11px;color:#7c8473;margin:13px 0}.shelf-form-picker select{display:block;width:100%;margin-top:7px;padding:8px;border:1px solid #dce0d3;border-radius:4px;background:#fff;color:#67745b;font:inherit}
+.shelf-challenge{display:block;margin:12px auto;padding:8px 12px;border:1px solid #9eae95;border-radius:5px;background:#edf1e8;color:#42543a;font:inherit;font-size:13px;cursor:pointer}
+
+/* Keep the selected Pokémon visible while the cabinet scrolls independently. */
+.cabinet-info{align-self:start;position:sticky;top:0;z-index:2;background:#fff;padding-top:4px}
+.cabinet-frame{max-height:min(56dvh,560px);overflow:auto;overscroll-behavior:contain}
+@media(max-width:600px){
+ .cabinet-layout{grid-template-columns:minmax(0,1fr) 124px;gap:12px;align-items:start}
+ .cabinet-info{padding-inline:0;max-height:60dvh;overflow:auto}
+ .cabinet-shelf{grid-template-columns:repeat(2,minmax(0,1fr));height:auto;grid-auto-rows:70px;background:repeating-linear-gradient(to bottom,#cecec5 0,#eeede5 62px,#f9f8f3 62px,#f9f8f3 70px);border-bottom:0}
+ #shelf-detail img{float:none;width:76px;height:76px;margin:0 0 8px}
+ #shelf-detail h3{font-size:16px;overflow-wrap:anywhere}
+ .shelf-shop-note{margin-top:14px;font-size:10px}
+ .shelf-challenge{font-size:12px;padding:7px}
+}
+#field-notes[open]{display:grid;grid-template-rows:auto auto minmax(0,1fr) auto auto auto;height:min(780px,85dvh);overflow:hidden}
+#field-notes .cabinet-layout{min-height:0;height:100%}
+#field-notes .cabinet-frame{height:100%;max-height:100%;min-height:0}
+#field-notes .cabinet-info{max-height:100%;overflow:auto;overscroll-behavior:contain}

@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {Dex,TeamValidator} from '@pkmn/sim';
+import {FORMATS,TIER_ORDER} from '../battle-src/rules.mjs';
+if(!process.argv[2]){console.log('Usage: npm run pokemon:add -- pokemon-additions/espeon.json\nOne JSON file: id, name, zh, aliases, optional assetId, preset {set, plan, optional form/mega}.');process.exit(0);}
+const entry=JSON.parse(fs.readFileSync(process.argv[2]));
+const {id,name,zh,aliases=[],preset}=entry;
+if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)||!name||!zh||!preset?.set||!preset.plan)throw new Error('Missing/invalid id, name, zh or preset.');
+Dex.formats.extend(FORMATS);preset.set.level=50;preset.set.name??=preset.set.species;
+const errors=new TeamValidator('shelfnationaldexsingles').validateTeam([structuredClone(preset.set)]);if(errors)throw new Error(errors.join('\n'));
+const species=Dex.species.get(preset.set.species),form=Dex.species.get(preset.form||species.name);
+if(!species.exists||!form.exists||!TIER_ORDER.includes(form.natDexTier.replace(/[()]/g,'')))throw new Error('Unknown species/form/tier; verify the National Dex snapshot.');
+const roster=JSON.parse(fs.readFileSync('pokemon-roster.json')),presets=JSON.parse(fs.readFileSync('battle-presets.json'));
+const sources=JSON.parse(fs.readFileSync('asset-sources.json'));
+const assetId=entry.assetId||species.num;
+const base='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
+const candidates=['generation-ix/champions','generation-ix/scarlet-violet','generation-viii/brilliant-diamond-shining-pearl'].map(game=>base+'versions/'+game+'/icons/'+assetId+'.png').concat(base+'other/home/'+assetId+'.png');
+let art,source;
+for(const url of candidates){try{const r=await fetch(url,{signal:AbortSignal.timeout(15000)});if(!r.ok)continue;const bytes=Buffer.from(await r.arrayBuffer());if(bytes.subarray(0,8).toString('hex')!=='89504e470d0a1a0a')continue;art=bytes;source=url;break;}catch{}}
+if(!art)throw new Error('No image found. Nothing was changed; specify the correct PokéAPI assetId.');
+const record={id,name,acquisition:entry.acquisition||roster.find(p=>p.id===id)?.acquisition||'challenge',number:String(species.num).padStart(3,'0'),zh,aliases};
+const index=roster.findIndex(p=>p.id===id);if(index>=0)roster[index]=record;else roster.push(record);
+presets[id]=preset;sources['menu-icons/'+id+'.png']=source;
+fs.writeFileSync('dist/assets/menu-icons/'+id+'.png',art);
+fs.writeFileSync('pokemon-roster.json',JSON.stringify(roster,null,2)+'\n');
+fs.writeFileSync('battle-presets.json',JSON.stringify(presets,null,2)+'\n');
+fs.writeFileSync('asset-sources.json',JSON.stringify(sources,null,2)+'\n');
+for(const args of [['tools/sync-pokemon.mjs'],['build-assets/build-battle.mjs'],['build-assets/build-ps-window.mjs'],['arcade-checks.mjs'],['battle-checks.mjs'],['battle-bundle-checks.mjs'],['challenge-checks.mjs']])execFileSync(process.execPath,args,{stdio:'inherit'});
+execFileSync('python3',['build-assets/prepare-battle-art.py'],{stdio:'inherit'});
+console.log('Added/updated '+name+' · '+zh+'. Refresh localhost:4173. No deployment was performed.');

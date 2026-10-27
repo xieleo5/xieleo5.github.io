@@ -1,0 +1,101 @@
+{
+  "sha": "cbdc8519ef95661201aff116d6b6e4c338e086cd",
+  "node_id": "C_kwDOAC5c7toAKGNiZGM4NTE5ZWY5NTY2MTIwMWFmZjExNmQ2YjZlNGMzMzhlMDg2Y2Q",
+  "commit": {
+    "author": {
+      "name": "Kris Johnson",
+      "email": "11083252+KrisXV@users.noreply.github.com",
+      "date": "2026-10-27T00:55:22Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-10-27T00:55:22Z"
+    },
+    "message": "Champions: Move Sneasler to Ubers",
+    "tree": {
+      "sha": "c2b1b2e5e73b6c8f06459ef92fe71327b52a0499",
+      "url": "https://api.github.com/repos/smogon/pokemon-showdown/git/trees/c2b1b2e5e73b6c8f06459ef92fe71327b52a0499"
+    },
+    "url": "https://api.github.com/repos/smogon/pokemon-showdown/git/commits/cbdc8519ef95661201aff116d6b6e4c338e086cd",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq3/Z7CRC1aQ7uu5UhlAAAS6AQAIOz0Ih28WcgWR2cBkAkybbB\na6toszMwI9GhrIuIzqW2gJLTHZ7OHBltS7UxW6wsZkQDO3IENryMyMRN7S74Z+S/\nfGO5V7MtHDad7nW34jCRX0ed1KL6NRNx72ae4tdWtc5ptsrexxRBoHl9IHj3BK+1\n5MrLKt/9YAtomBIajvCMZ0yjMan5CXaNshRNOMCHTCgjTZgp+nXhEUDTqAp8ziUl\nYUs3M3PAjIatpJmPrMKqsPA4oSdb3U3Gbx3pur4/rkuoie9AFUJTb1UV3Yv5VgXG\nQrB8u1c6clxXjmhMVa9V+U7guGFHYRc4HIZS1CQnUoKmi48I6Z5w0tA9xgy+wlCQ\nAw/afxV/we+z4JAQYTHWnGr7TAcwLxN4xlhxjKW0sOnuzcRNefeT/bOVaUvcDNTZ\nTvqop5mccnU/dY7oD2TLEedBqdrUsPR5plMJyVZMAnICt2K3OoWRn4+Ed9VMwrZL\n4vGf9NO4s1TH5AU2S5qBljoVpYwd629DxfuTbgl2IG+vPlve168XAyxrv4q0q0ug\n8owDwoy02zVjYYbsqn0FWNk2QCSUTvdVUUYD9lgjzpNdmLQxl+AMaR4ATFn9Ublx\ncFj7xyfieFIoMwy+EbhlfCILCUgqIpjKqCNOCZ384EkxZ8v6Tlf9so6yPJMYXGke\nUTa9eOxq6kwti4XWyvnD\n=Deyz\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree c2b1b2e5e73b6c8f06459ef92fe71327b52a0499\nparent 8f9ab4949d0bf64d5a5ac985a298d1313f2b9a29\nauthor Kris Johnson <11083252+KrisXV@users.noreply.github.com> 1793062522 -0600\ncommitter GitHub <noreply@github.com> 1793062522 -0600\n\nChampions: Move Sneasler to Ubers",
+      "verified_at": "2026-10-27T00:55:23Z"
+    }
+  },
+  "url": "https://api.github.com/repos/smogon/pokemon-showdown/commits/cbdc8519ef95661201aff116d6b6e4c338e086cd",
+  "html_url": "https://github.com/smogon/pokemon-showdown/commit/cbdc8519ef95661201aff116d6b6e4c338e086cd",
+  "comments_url": "https://api.github.com/repos/smogon/pokemon-showdown/commits/cbdc8519ef95661201aff116d6b6e4c338e086cd/comments",
+  "author": {
+    "login": "KrisXV",
+    "id": 11083252,
+    "node_id": "MDQ6VXNlcjExMDgzMjUy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11083252?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/KrisXV",
+    "html_url": "https://github.com/KrisXV",
+    "followers_url": "https://api.github.com/users/KrisXV/followers",
+    "following_url": "https://api.github.com/users/KrisXV/following{/other_user}",
+    "gists_url": "https://api.github.com/users/KrisXV/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/KrisXV/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/KrisXV/subscriptions",
+    "organizations_url": "https://api.github.com/users/KrisXV/orgs",
+    "repos_url": "https://api.github.com/users/KrisXV/repos",
+    "events_url": "https://api.github.com/users/KrisXV/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/KrisXV/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8f9ab4949d0bf64d5a5ac985a298d1313f2b9a29",
+      "url": "https://api.github.com/repos/smogon/pokemon-showdown/commits/8f9ab4949d0bf64d5a5ac985a298d1313f2b9a29",
+      "html_url": "https://github.com/smogon/pokemon-showdown/commit/8f9ab4949d0bf64d5a5ac985a298d1313f2b9a29"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "af67e15167463bf0fd43b7496f884d2d4ea3010d",
+      "filename": "data/mods/champions/formats-data.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/smogon/pokemon-showdown/blob/cbdc8519ef95661201aff116d6b6e4c338e086cd/data%2Fmods%2Fchampions%2Fformats-data.ts",
+      "raw_url": "https://github.com/smogon/pokemon-showdown/raw/cbdc8519ef95661201aff116d6b6e4c338e086cd/data%2Fmods%2Fchampions%2Fformats-data.ts",
+      "contents_url": "https://api.github.com/repos/smogon/pokemon-showdown/contents/data%2Fmods%2Fchampions%2Fformats-data.ts?ref=cbdc8519ef95661201aff116d6b6e4c338e086cd",
+      "patch": "@@ -1410,7 +1410,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat\n \t\tdoublesTier: \"DOU\",\n \t},\n \tsneasler: {\n-\t\ttier: \"OU\",\n+\t\ttier: \"Uber\",\n \t\tdoublesTier: \"DOU\",\n \t},\n \tteddiursa: {"
+    }
+  ]
+}
