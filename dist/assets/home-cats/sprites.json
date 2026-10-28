@@ -1,0 +1,150 @@
+{
+ "elu": {
+  "walk-contact": {
+   "src": "elu-walk-contact.webp",
+   "w": 187,
+   "h": 138,
+   "ax": 169.3
+  },
+  "walk-passing": {
+   "src": "elu-walk-passing.webp",
+   "w": 184,
+   "h": 138,
+   "ax": 169.3
+  },
+  "walk-opposite-contact": {
+   "src": "elu-walk-opposite-contact.webp",
+   "w": 185,
+   "h": 134,
+   "ax": 170.9
+  },
+  "walk-opposite-passing": {
+   "src": "elu-walk-opposite-passing.webp",
+   "w": 185,
+   "h": 134,
+   "ax": 170.8
+  },
+  "run": {
+   "src": "elu-run.webp",
+   "w": 188,
+   "h": 137,
+   "ax": 174.0
+  },
+  "pounce": {
+   "src": "elu-pounce.webp",
+   "w": 183,
+   "h": 138,
+   "ax": 169.7
+  },
+  "sit": {
+   "src": "elu-sit.webp",
+   "w": 186,
+   "h": 136,
+   "ax": 148.2
+  },
+  "groom": {
+   "src": "elu-groom.webp",
+   "w": 153,
+   "h": 117,
+   "ax": 132.5
+  },
+  "loaf": {
+   "src": "elu-loaf.webp",
+   "w": 146,
+   "h": 106,
+   "ax": 130.1
+  },
+  "sleep": {
+   "src": "elu-sleep.webp",
+   "w": 145,
+   "h": 108,
+   "ax": 124.7
+  },
+  "stretch": {
+   "src": "elu-stretch.webp",
+   "w": 180,
+   "h": 129,
+   "ax": 150.7
+  },
+  "play": {
+   "src": "elu-play.webp",
+   "w": 186,
+   "h": 138,
+   "ax": 164.0
+  }
+ },
+ "eevee": {
+  "walk-contact": {
+   "src": "eevee-walk-contact.webp",
+   "w": 186,
+   "h": 136,
+   "ax": 171.0
+  },
+  "walk-passing": {
+   "src": "eevee-walk-passing.webp",
+   "w": 186,
+   "h": 139,
+   "ax": 170.2
+  },
+  "walk-opposite-contact": {
+   "src": "eevee-walk-opposite-contact.webp",
+   "w": 188,
+   "h": 129,
+   "ax": 172.1
+  },
+  "walk-opposite-passing": {
+   "src": "eevee-walk-opposite-passing.webp",
+   "w": 180,
+   "h": 130,
+   "ax": 164.7
+  },
+  "run": {
+   "src": "eevee-run.webp",
+   "w": 188,
+   "h": 135,
+   "ax": 174.1
+  },
+  "pounce": {
+   "src": "eevee-pounce.webp",
+   "w": 188,
+   "h": 135,
+   "ax": 172.4
+  },
+  "sit": {
+   "src": "eevee-sit.webp",
+   "w": 180,
+   "h": 127,
+   "ax": 148.9
+  },
+  "groom": {
+   "src": "eevee-groom.webp",
+   "w": 155,
+   "h": 113,
+   "ax": 134.7
+  },
+  "loaf": {
+   "src": "eevee-loaf.webp",
+   "w": 151,
+   "h": 111,
+   "ax": 133.5
+  },
+  "sleep": {
+   "src": "eevee-sleep.webp",
+   "w": 143,
+   "h": 100,
+   "ax": 123.0
+  },
+  "stretch": {
+   "src": "eevee-stretch.webp",
+   "w": 186,
+   "h": 132,
+   "ax": 161.6
+  },
+  "play": {
+   "src": "eevee-play.webp",
+   "w": 182,
+   "h": 139,
+   "ax": 162.3
+  }
+ }
+}

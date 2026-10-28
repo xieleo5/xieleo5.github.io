@@ -70,3 +70,13 @@ The arcade menu and tabs follow Guess who? → Pick & place → Battle. Both the
 ## Publish to GitHub Pages
 
 After validating and committing your changes on `master`, run `git push origin master` and `python3 tools/publish-pages.py`. The publisher makes a fast-forward commit on `gh-pages` containing exactly the committed `dist/` tree. It never force-pushes. GitHub Pages builds automatically from the existing `gh-pages` source. Collection progress stays in each visitor’s browser and is separate from localhost progress.
+
+
+## Home cats
+
+Yuqi's real cats live beside the Pokémon, not inside the roster: `homeCats` in `dist/pokemon.js` keeps them out of battle presets, the 60-Pokémon count and `tools/sync-pokemon.mjs`. Each cat has `acquisition: "home"`, which `dist/collection-rules.mjs` only rewards in Guess who?. They share the `yuqi-field-notes-v2` progress key, appear on their own "Home cats" shelf row, and have their own count: Eevee (blue golden shaded) and Elu (chocolate golden point).
+
+`dist/home-cats.js` draws the cats walking along the bottom of the viewport. Each cat picks weighted activities from its personality: wander, sit, groom, loaf, sleep, play with a yarn ball. Elu is quick and fearless: zoomies, chasing Eevee (sometimes ending in a short scuffle), and walking over when the pointer lingers near the bottom of the page. Eevee is slower, sleeps more, backs away from a nearby pointer and often curls up next to a sleeping Elu. Clicking a cat wakes it up or makes it hop with a heart; Eevee sometimes startles and runs off instead. On touch screens the cats ignore taps so they never block content. With reduced motion they stay loafing in place. The footer's "Hide my cats" toggle is saved as `yuqi-home-cats-hidden`.
+
+Generated source art lives in `output/imagegen/` and is not published. Run `python3 build-assets/prepare-home-cats.py` (requires Pillow) to rebuild `dist/assets/menu-icons/cat-*.png` and `dist/assets/home-cats/`. Poses are scaled to a common head size, anchored at the eye, and baseline-aligned.
+

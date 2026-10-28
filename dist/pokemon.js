@@ -584,8 +584,33 @@ const companions=[
   "acquisition": "challenge"
  }
 ];
+// Yuqi's real cats live on their own shelf: they are not Pokémon, never battle, and only appear in Guess who?.
+const homeCats=[
+ {
+  "id": "cat-eevee",
+  "name": "Eevee",
+  "number": "Home cat",
+  "zh": "伊布",
+  "aliases": ["伊布猫","伊布貓","Eevee cat"],
+  "acquisition": "home",
+  "bio": "Blue golden shaded British Shorthair, named after the Pokémon. Gentle, a little clumsy, a little shy, and always wearing a slightly aggrieved face.",
+  "clue": "The gentle, slightly shy one with the aggrieved face — named after a Pokémon."
+ },
+ {
+  "id": "cat-elu",
+  "name": "Elu",
+  "number": "Home cat",
+  "zh": "艾露",
+  "aliases": ["艾露猫","艾露貓","Felyne","Palico","Elu cat"],
+  "acquisition": "home",
+  "bio": "Chocolate golden point, named after Monster Hunter’s Felyne. Playful, fast and not afraid of anyone.",
+  "clue": "The playful, fearless one — named after Monster Hunter’s cat companion."
+ }
+];
+homeCats.forEach(c=>{c.kind='cat';c.hint='One of my real cats is hiding here. Find this cat in Guess who?';});
+const entries=[...companions,...homeCats],entry=id=>entries.find(p=>p.id===id),isCat=id=>!!homeCats.find(c=>c.id===id);
 companions.forEach(p=>{p.hint=p.acquisition==='starter'?'Collect this Pokémon in Guess who? or Pick & place, or win it in battle.':'Challenge this silhouette in Pokémon battle and win to collect it.';});
-const floorOffsets={"eevee":1.364,"rowlet":0,"spheal":0,"fuecoco":0,"ditto":1.563,"snorlax":0,"fennekin":0,"pikachu":0,"furret":0,"mimikyu":0,"dondozo":19.348,"tatsugiri":5.455,"koraidon":0,"serperior":0,"charizard":0,"comfey":0,"swablu":20.139,"shiny-rayquaza":0,"mareep":0,"teddiursa":0,"kirlia":0,"pachirisu":0,"azumarill":0,"scizor":0,"whimsicott":1.563,"zacian":0,"ponyta":0,"jigglypuff":0,"machamp":0,"umbreon":0,"squirtle":0,"cosmog":11.927,"froakie":0,"tornadus":0,"amoonguss":3.793,"hydreigon":1.563,"flutter-mane":4.392,"oddish":0,"xatu":0,"vanillite":11.719,"ferrothorn":15.625,"litwick":0,"gastly":0,"elekid":0,"jirachi":10.69,"incineroar":0,"chikorita":0,"morpeko":0,"ogerpon-teal":0,"dragonair":0,"exeggutor-alola":0,"pelipper":0,"rotom-wash":28.125,"groudon":8.852,"kyogre":27.126,"zapdos":2.073,"sinistcha":0,"breloom":0,"metagross":0,"espeon":0,"tatsugiri-droopy":5.455,"tatsugiri-stretchy":5.455};
+const floorOffsets={"cat-eevee":0,"cat-elu":0,"eevee":1.364,"rowlet":0,"spheal":0,"fuecoco":0,"ditto":1.563,"snorlax":0,"fennekin":0,"pikachu":0,"furret":0,"mimikyu":0,"dondozo":19.348,"tatsugiri":5.455,"koraidon":0,"serperior":0,"charizard":0,"comfey":0,"swablu":20.139,"shiny-rayquaza":0,"mareep":0,"teddiursa":0,"kirlia":0,"pachirisu":0,"azumarill":0,"scizor":0,"whimsicott":1.563,"zacian":0,"ponyta":0,"jigglypuff":0,"machamp":0,"umbreon":0,"squirtle":0,"cosmog":11.927,"froakie":0,"tornadus":0,"amoonguss":3.793,"hydreigon":1.563,"flutter-mane":4.392,"oddish":0,"xatu":0,"vanillite":11.719,"ferrothorn":15.625,"litwick":0,"gastly":0,"elekid":0,"jirachi":10.69,"incineroar":0,"chikorita":0,"morpeko":0,"ogerpon-teal":0,"dragonair":0,"exeggutor-alola":0,"pelipper":0,"rotom-wash":28.125,"groudon":8.852,"kyogre":27.126,"zapdos":2.073,"sinistcha":0,"breloom":0,"metagross":0,"espeon":0,"tatsugiri-droopy":5.455,"tatsugiri-stretchy":5.455};
 const tatsugiriForms=[{name:'Curly · 上弓姿态',art:'tatsugiri'},{name:'Droopy · 下垂姿态',art:'tatsugiri-droopy'},{name:'Stretchy · 平挺姿态',art:'tatsugiri-stretchy'}];
 let displayedTatsugiri=0;
 try{const form=Number(localStorage.getItem('yuqi-tatsugiri-form'));if(Number.isInteger(form)&&form>=0&&form<3)displayedTatsugiri=form;}catch{}
@@ -594,23 +619,28 @@ const storageKey='yuqi-field-notes-v2';
 let discovered=new Set();
 try {
  const saved=JSON.parse(localStorage.getItem(storageKey)||'[]');
- if(Array.isArray(saved)) discovered=new Set(saved.filter(id=>companions.some(p=>p.id===id)));
+ if(Array.isArray(saved)) discovered=new Set(saved.filter(id=>entries.some(p=>p.id===id)));
 } catch {}
 const modal=document.querySelector('#field-notes');
 const toast=document.querySelector('#pokemon-toast');
 const hint=document.querySelector('#dex-hint');
 let toastTimer, selectedId=[...discovered].at(-1)||null;
+const pokemonCount=()=>companions.filter(p=>discovered.has(p.id)).length,catCount=()=>homeCats.filter(c=>discovered.has(c.id)).length;
+const countLabel=()=>pokemonCount()+' / '+companions.length+(catCount()?' · '+catCount()+' / '+homeCats.length+' cats':'');
 function showDetail(id, reveal=false){
- const p=companions.find(p=>p.id===id);if(!p)return;
+ const p=entry(id);if(!p)return;
  const found=discovered.has(id), detail=document.querySelector('#shelf-detail');
  const image=detail.querySelector('img'), link=detail.querySelector('a');
  selectedId=id;
  document.querySelectorAll('.shelf-slot').forEach(slot=>slot.setAttribute('aria-pressed',String(slot.dataset.pokemon===id)));
  image.hidden=false;image.classList.toggle('undiscovered-art',!found);
  image.src='assets/menu-icons/'+artId(p.id)+'.png';
- detail.querySelector('h3').textContent=found?p.name+' · '+p.zh:'An undiscovered Pokémon';
- detail.querySelector('p').textContent=found?'No. '+p.number:p.hint;
+ detail.querySelector('h3').textContent=found?p.name+' · '+p.zh:p.kind==='cat'?'A hidden home cat':'An undiscovered Pokémon';
+ detail.querySelector('p').textContent=found?(p.kind==='cat'?p.bio:'No. '+p.number):p.hint;
  detail.querySelector('.shelf-challenge')?.remove();
+ detail.querySelector('.shelf-form-picker')?.remove();
+ document.querySelector('.shelf-shop-note').hidden=p.kind==='cat';
+ if(p.kind==='cat'){link.hidden=true;return;}
  const challenge=document.createElement('button');challenge.type='button';challenge.className='shelf-challenge';challenge.textContent='Challenge this Pokémon →';
  challenge.onclick=()=>{modal.close();window.dispatchEvent(new CustomEvent('open-pokemon-arcade',{detail:{mode:'battle',opponentId:id}}));};
  detail.querySelector('p').after(challenge);
@@ -632,8 +662,8 @@ function showDetail(id, reveal=false){
 function makeSlot(p,inline=false){
  const found=discovered.has(p.id),slot=document.createElement('button');
  slot.type='button';slot.className='shelf-slot'+(found?' found':' empty');slot.dataset.pokemon=p.id;
- slot.setAttribute('aria-label',found?'View '+p.name:'Undiscovered Pokémon '+p.number);
- slot.setAttribute('aria-pressed',String(selectedId===p.id));slot.title=found?p.name+' · '+p.zh:'An undiscovered Pokémon';
+ slot.setAttribute('aria-label',found?'View '+p.name:p.kind==='cat'?'Hidden home cat':'Undiscovered Pokémon '+p.number);
+ slot.setAttribute('aria-pressed',String(selectedId===p.id));slot.title=found?p.name+' · '+p.zh:p.kind==='cat'?'A hidden home cat':'An undiscovered Pokémon';if(p.kind==='cat')slot.classList.add('home-cat-slot');
  const image=document.createElement('img');image.src='assets/menu-icons/'+artId(p.id)+'.png';image.alt='';image.width=96;image.height=96;
  image.style.transform='translateY('+(floorOffsets[artId(p.id)]??floorOffsets[p.id])+'%)';if(!found)image.classList.add('undiscovered-art');slot.append(image);
  slot.addEventListener('click',()=>{if(inline)openCabinet();showDetail(p.id,true);});return slot;
@@ -643,10 +673,12 @@ function renderCollection(){
  for(let i=0;i<companions.length;i+=4){
   const shelf=document.createElement('div');shelf.className='cabinet-shelf';companions.slice(i,i+4).forEach(p=>shelf.append(makeSlot(p)));shelves.push(shelf);
  }
- cabinet.replaceChildren(...shelves);
- document.querySelector('#inline-collection').replaceChildren(...companions.map(p=>makeSlot(p,true)));
- document.querySelector('#inline-count').textContent=discovered.size+' / '+companions.length;
- document.querySelector('#collection-count').textContent=discovered.size+' / '+companions.length+' on the shelf';
+ const catLabel=document.createElement('p');catLabel.className='home-cat-label';catLabel.textContent='Home cats · 家里的猫';
+ const catShelf=document.createElement('div');catShelf.className='cabinet-shelf home-cat-shelf';homeCats.forEach(c=>catShelf.append(makeSlot(c)));
+ cabinet.replaceChildren(...shelves,catLabel,catShelf);
+ document.querySelector('#inline-collection').replaceChildren(...entries.map(p=>makeSlot(p,true)));
+ document.querySelector('#inline-count').textContent=countLabel();
+ document.querySelector('#collection-count').textContent=countLabel()+' on the shelf';
  if(selectedId)showDetail(selectedId);
 }
 function revealInlineShelf(){
@@ -662,15 +694,15 @@ function openCabinet(){
 }
 
 function discover(id, quiet=false){
- const p=companions.find(p=>p.id===id);if(!p)return;
+ const p=entry(id);if(!p)return;
  const fresh=!discovered.has(id);discovered.add(id);
  try{localStorage.setItem(storageKey,JSON.stringify([...discovered]));}catch{}
  renderCollection();showDetail(id);
  window.dispatchEvent(new Event('pokemon-collection-change'));
  if(quiet)return;
  toast.querySelector('img').src='assets/menu-icons/'+id+'.png';
- toast.querySelector('.encounter-name').textContent=(fresh?'Added to your shelf: ':'Hello again, ')+p.name+(fresh?'!':'');
- toast.querySelector('.encounter-count').textContent=discovered.size+' / '+companions.length+' discovered';
+ toast.querySelector('.encounter-name').textContent=(fresh?'Added to your shelf: ':'Hello again, ')+p.name+(p.kind==='cat'?', my cat':'')+(fresh?'!':'');
+ toast.querySelector('.encounter-count').textContent=countLabel()+' discovered';
  toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;},4500);
 }
 document.querySelector('#view-shelf').addEventListener('click',()=>{toast.hidden=true;clearTimeout(toastTimer);openCabinet();});
@@ -681,7 +713,7 @@ modal.addEventListener('click',e=>{
  if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)modal.close();
 });
 document.querySelector('#next-hint').addEventListener('click',()=>{
- const next=companions.find(p=>!discovered.has(p.id));
+ const next=entries.find(p=>!discovered.has(p.id));
  hint.textContent=next?next.hint:'You found everyone. Thanks for exploring!';
 });
 document.querySelector('#dismiss-encounter').addEventListener('click',()=>{toast.hidden=true;clearTimeout(toastTimer);});
@@ -693,7 +725,7 @@ document.addEventListener('keydown',e=>{
  secretPosition=k===secret[secretPosition]?secretPosition+1:k===secret[0]?1:0;
  if(secretPosition===secret.length){window.dispatchEvent(new CustomEvent('open-pokemon-arcade'));secretPosition=0;}
 });
-window.PokemonCollection=Object.freeze({tatsugiriForm:()=>displayedTatsugiri,list:()=>companions.map(p=>({...p})),has:id=>discovered.has(id),count:()=>discovered.size,award:id=>discover(id,true),openShelf:openCabinet,revealShelf:revealInlineShelf});
+window.PokemonCollection=Object.freeze({tatsugiriForm:()=>displayedTatsugiri,list:()=>companions.map(p=>({...p})),cats:()=>homeCats.map(c=>({...c})),has:id=>discovered.has(id),count:pokemonCount,award:id=>discover(id,true),openShelf:openCabinet,revealShelf:revealInlineShelf});
 renderCollection();
 window.dispatchEvent(new Event('pokemon-ready'));
 document.documentElement.classList.add('pokemon-ready');

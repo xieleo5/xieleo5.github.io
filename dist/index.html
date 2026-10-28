@@ -16,9 +16,11 @@
   <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css?v=20261027-stat-editor">
-  <script defer src="pokemon.js?v=20261027-stat-editor"></script>
-  <link rel="stylesheet" href="arcade.css?v=20261027-stat-editor">
-  <script type="module" src="arcade.js?v=20261027-stat-editor"></script>
+  <script defer src="pokemon.js?v=20261028-cats"></script>
+  <link rel="stylesheet" href="arcade.css?v=20261028-cats">
+  <link rel="stylesheet" href="home-cats.css?v=20261028-cats">
+  <script defer src="home-cats.js?v=20261028-cats"></script>
+  <script type="module" src="arcade.js?v=20261028-cats"></script>
 </head>
 <body>
   <a class="skip-link" href="#research">Skip to publications</a>
@@ -173,8 +175,7 @@
   </main>
   <footer class="page">
     <span>© 2026 Yuqi Xie</span>
-    <button type="button" class="bug-report-trigger" data-report-bug>Report a bug</button>
-
+    <span class="footer-actions"><button type="button" class="cats-toggle" data-cats-toggle aria-pressed="true" hidden>Hide my cats</button><button type="button" class="bug-report-trigger" data-report-bug>Report a bug</button></span>
   </footer>
   <dialog id="field-notes" aria-labelledby="dex-title">
     <div class="dex-header"><h2 id="dex-title">My Pokémon shelf</h2><button type="button" id="close-dex" aria-label="Close collection cabinet" autofocus>×</button></div>
