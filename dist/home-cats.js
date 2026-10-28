@@ -45,7 +45,7 @@ function set(cat,state,opts={}){
 }
 function bubble(cat,text,cls=''){
  const b=document.createElement('span');b.className='cat-bubble '+cls;b.textContent=text;
- b.style.left=cat.x+'px';b.style.bottom=(70*k()+6)+'px';
+ b.style.left=cat.x+'px';b.style.bottom=(70*k()+16)+'px';
  layer.append(b);b.addEventListener('animationend',()=>b.remove());
 }
 function clampX(x){return Math.max(50,Math.min(width()-50,x));}
@@ -154,7 +154,7 @@ function start(){
  last=performance.now();raf=requestAnimationFrame(loop);
 }
 function setHidden(hidden,button){
- layer.hidden=hidden;button.textContent=hidden?'Show my cats':'Hide my cats';button.setAttribute('aria-pressed',String(!hidden));
+ layer.hidden=hidden;document.body.classList.toggle('cat-floor',!hidden);button.textContent=hidden?'Show my cats':'Hide my cats';button.setAttribute('aria-pressed',String(!hidden));
  try{localStorage.setItem(hiddenKey,String(hidden));}catch{}
  if(hidden)cancelAnimationFrame(raf);else start();
 }
@@ -174,7 +174,7 @@ async function init(){
  const button=document.querySelector('[data-cats-toggle]');
  let hidden=false;try{hidden=localStorage.getItem(hiddenKey)==='true';}catch{}
  if(button){button.hidden=false;button.addEventListener('click',()=>setHidden(!layer.hidden,button));setHidden(hidden,button);}
- else start();
+ else{document.body.classList.add('cat-floor');start();}
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();

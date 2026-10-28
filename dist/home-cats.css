@@ -1,6 +1,12 @@
-.home-cats{position:fixed;left:0;right:0;bottom:0;height:0;z-index:4;pointer-events:none}
+/* The cats get their own floor: a fixed strip at the bottom that page content never scrolls into view under. */
+:root{--cat-floor:88px}
+@media(max-width:600px){:root{--cat-floor:64px}}
+body.cat-floor{padding-bottom:var(--cat-floor)}
+body.cat-floor #pokemon-toast{bottom:calc(var(--cat-floor) + 12px)}
+.home-cats{position:fixed;left:0;right:0;bottom:0;height:var(--cat-floor);z-index:4;background:#faf8f3;border-top:1px solid #ece7dc}
+.home-cats::before{content:'';position:absolute;left:0;right:0;bottom:100%;height:18px;background:linear-gradient(#fff0,#fff);pointer-events:none}
 .home-cats[hidden]{display:none}
-.home-cat{position:absolute;left:0;bottom:2px;width:0;height:0;transform-origin:0 0}
+.home-cat{position:absolute;left:0;bottom:10px;width:0;height:0;transform-origin:0 0}
 .home-cat img{position:absolute;bottom:0;max-width:none;pointer-events:auto;cursor:pointer;user-select:none;-webkit-user-drag:none;filter:drop-shadow(0 2px 1px #0002)}
 .home-cat img[hidden]{display:none}
 .home-cat[data-state="pounce"] img{animation:cat-hop .55s ease-out}
@@ -8,7 +14,7 @@
 .home-cat[data-state="sleep"] img{animation-duration:4.2s}
 @keyframes cat-hop{0%,100%{transform:translateY(0)}45%{transform:translateY(-34px)}}
 @keyframes cat-breathe{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.025)}}
-.cat-toy{position:absolute;left:-9px;bottom:3px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f6a6b2,#d9667c 70%);box-shadow:inset 0 0 0 1.5px #8c3a4d;pointer-events:none}
+.cat-toy{position:absolute;left:-9px;bottom:11px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f6a6b2,#d9667c 70%);box-shadow:inset 0 0 0 1.5px #8c3a4d;pointer-events:none}
 .cat-toy::before,.cat-toy::after{content:'';position:absolute;inset:3px;border-radius:50%;border:1.5px solid #fbd3da;border-left-color:transparent;border-bottom-color:transparent}
 .cat-toy::after{inset:6px;transform:rotate(140deg)}
 .cat-bubble{position:absolute;transform:translateX(-50%);font:700 15px/1 Lato,Arial,sans-serif;color:#8a7362;pointer-events:none;animation:cat-bubble 1.4s ease-out forwards}
