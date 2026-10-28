@@ -86,7 +86,7 @@ function initArcade(){
  async function renderBattle(){
   content.innerHTML='<p class="game-status">Loading Pokémon battle…</p>';
   battleAbort=new AbortController();const signal=battleAbort.signal,token=generation;
-  try{const {mountShowdown}=await import('./showdown-game.js?v=20261027-battle-feedback');if(token!==generation)return;
+  try{const {mountShowdown}=await import('./showdown-game.js?v=20261027-stat-editor');if(token!==generation)return;
    await mountShowdown(content,{collection,signal,initialOpponent:requestedOpponent,onAward:award,onShelf:()=>{modal.close();collection.openShelf();}});
   }catch(error){if(signal.aborted)return;content.innerHTML='<p class="game-status">The battle could not load. Please switch games and try again.</p>';window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{message:error.stack||error.message}}));console.error(error);}
  }
