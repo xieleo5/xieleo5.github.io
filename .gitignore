@@ -5,3 +5,4 @@ qa-*
 build-assets/qa-*
 *.tar.gz
 .openai/
+/output/
