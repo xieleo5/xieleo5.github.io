@@ -681,6 +681,21 @@ function renderCollection(){
  document.querySelector('#collection-count').textContent=countLabel()+' on the shelf';
  if(selectedId)showDetail(selectedId);
 }
+const shelfContent=document.querySelector('#inline-shelf-content');
+const shelfToggle=document.querySelector('#inline-shelf-toggle');
+const shelfOpen=document.querySelector('#inline-shelf-open');
+function setShelfCollapsed(collapsed){
+ shelfContent.hidden=collapsed;
+ shelfOpen.hidden=collapsed;
+ shelfToggle.setAttribute('aria-expanded',String(!collapsed));
+ shelfToggle.textContent=collapsed?'Expand ▾':'Collapse ▴';
+}
+try{setShelfCollapsed(localStorage.getItem('yuqi-arcade-shelf-collapsed')==='true');}catch{}
+shelfToggle.addEventListener('click',()=>{
+ const collapsed=!shelfContent.hidden;
+ setShelfCollapsed(collapsed);
+ try{localStorage.setItem('yuqi-arcade-shelf-collapsed',String(collapsed));}catch{}
+});
 function revealInlineShelf(){
  document.querySelector('#inline-shelf').hidden=false;
  try{localStorage.setItem('yuqi-arcade-shelf-visible','true');}catch{}

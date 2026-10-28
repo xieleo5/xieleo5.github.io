@@ -16,8 +16,8 @@
   <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css?v=20261027-stat-editor">
-  <script defer src="pokemon.js?v=20261028-cats"></script>
-  <link rel="stylesheet" href="arcade.css?v=20261028-cats">
+  <script defer src="pokemon.js?v=20261028-shelf-collapse"></script>
+  <link rel="stylesheet" href="arcade.css?v=20261028-shelf-collapse">
   <link rel="stylesheet" href="home-cats.css?v=20261028-cats">
   <script defer src="home-cats.js?v=20261028-cats"></script>
   <script type="module" src="arcade.js?v=20261028-cats"></script>
@@ -50,9 +50,14 @@
       </div>
     </nav>
     <section id="inline-shelf" class="inline-shelf" aria-labelledby="inline-shelf-title" hidden>
-      <div class="inline-shelf-heading"><h2 id="inline-shelf-title">My Pokémon shelf <span id="inline-count">0 / 60</span></h2><button type="button" id="inline-shelf-open">View collection ↗</button></div>
-      <p class="shelf-story">Every Pokémon here is part of my collection at home. Play the games to fill your own virtual shelf. Want me to add a new Pokémon? Gift me one in real life XD</p>
-      <div class="inline-cabinet"><div id="inline-collection" aria-label="Collected Pokémon and undiscovered silhouettes"></div><div class="cabinet-plinth"></div></div>
+      <div class="inline-shelf-heading">
+        <h2 id="inline-shelf-title">My Pokémon shelf <span id="inline-count">0 / 60</span></h2>
+        <div class="inline-shelf-actions"><button type="button" id="inline-shelf-open">View collection ↗</button><button type="button" id="inline-shelf-toggle" aria-expanded="true" aria-controls="inline-shelf-content">Collapse ▴</button></div>
+      </div>
+      <div id="inline-shelf-content">
+        <p class="shelf-story">Every Pokémon here is part of my collection at home. Play the games to fill your own virtual shelf. Want me to add a new Pokémon? Gift me one in real life XD</p>
+        <div class="inline-cabinet"><div id="inline-collection" aria-label="Collected Pokémon and undiscovered silhouettes"></div><div class="cabinet-plinth"></div></div>
+      </div>
     </section>
     <section id="research" aria-labelledby="publications-title">
       <h2 id="publications-title">Publications</h2>
