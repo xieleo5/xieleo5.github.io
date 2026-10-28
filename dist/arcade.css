@@ -345,3 +345,8 @@
 .ps-embedded-window .ps-moves button:disabled{cursor:wait;opacity:.65}
 
 .shelf-story,.game-collection-intro{font:400 13px/1.65 Lato,Arial,sans-serif;color:#727b6c;margin:0 0 18px}.shelf-story{max-width:690px}
+
+.ps-stat-preview-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-top:18px;font-size:12px;color:#52645b}
+.ps-stat-preview-heading label{display:flex;align-items:center;gap:7px}.ps-stat-preview-heading select{max-width:175px;padding:4px;border:1px solid #bac5c0;border-radius:4px;background:white;font-size:12px!important}
+.ps-stats-editor{grid-template-columns:48px minmax(100px,1fr) 50px 56px;gap:9px;max-width:none;margin:10px 0}.ps-stats-editor input{box-sizing:border-box;padding:5px;min-height:30px}.ps-ev-control{display:grid;grid-template-columns:minmax(40px,1fr) 52px;gap:8px;align-items:center}.ps-stats-editor input[type=range]{width:100%;height:28px;padding:0;border:0;accent-color:#66835b;cursor:ew-resize}.ps-stats-editor output{font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;text-align:right}.ps-stats-editor [data-nature=up]{color:#277447}.ps-stats-editor [data-nature=down]{color:#ad493e}.ps-stat-note{font-size:11px;color:#7a8578;margin:0 0 12px}
+@media(max-width:500px){.ps-stats-editor{grid-template-columns:35px minmax(95px,1fr) 42px 42px;gap:5px}.ps-ev-control{grid-template-columns:minmax(35px,1fr) 44px;gap:4px}.ps-stats-editor input{font-size:12px}.ps-stats-editor output{font-size:13px}.ps-stat-preview-heading{font-size:11px}}

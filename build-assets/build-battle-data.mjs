@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import {transform} from 'esbuild';
 import {Dex,TeamValidator} from '@pkmn/sim';
+import {effectiveSpecies} from '../battle-src/sets.mjs';
 import {PRESETS} from '../battle-src/presets.mjs';
 import {FORMATS,TIER_ORDER,isCommander} from '../battle-src/rules.mjs';
 if(!Dex.formats.get('shelfnationaldexsingles').exists)Dex.formats.extend(FORMATS);
@@ -26,6 +27,11 @@ fs.writeFileSync('dist/battle-roster.json',JSON.stringify({engine:'@pkmn/sim',ve
 console.log(records.map(p=>p.name+': '+p.tier+(p.tierOverride?' (Commander override; species '+p.sourceTier+')':'')).join('\n'));
 
 const legalItem=i=>i.gen<=9&&!['Custom','CAP','Unobtainable'].includes(i.isNonstandard)&&!i.isPokeball&&!i.zMove&&!i.zMoveType;
-const editor={items:Dex.items.all().filter(legalItem).map(i=>({name:i.name,description:i.shortDesc})),natures:Dex.natures.all().map(n=>n.name),species:{}};
+const editor={items:Dex.items.all().filter(legalItem).map(i=>({name:i.name,description:i.shortDesc})),natures:Dex.natures.all().map(n=>n.name),natureEffects:Object.fromEntries(Dex.natures.all().map(n=>[n.name,{plus:n.plus||null,minus:n.minus||null}])),species:{}};
 for(const p of records){const sp=Dex.species.get(p.set.species);editor.species[p.id]={abilities:[...new Set(Object.values(sp.abilities))],moves:[...new Set([...Dex.species.getMovePool(sp.id,true),...(Dex.species.getMovePool(sp.id,true).has('hiddenpower')?Dex.types.all().filter(t=>!['Normal','Fairy','Stellar','???'].includes(t.name)).map(t=>'hiddenpower'+t.id):[])])].map(m=>Dex.moves.get(m)).filter(m=>!m.isZ&&!m.isMax&&m.gen<=9).sort((a,b)=>a.name.localeCompare(b.name)).map(m=>({name:m.name,type:m.type,description:m.shortDesc||m.desc}))};}
+for(const p of records){
+ const entry=editor.species[p.id],base=Dex.species.get(p.set.species);entry.baseForm=base.name;entry.statForms={[base.name]:base.baseStats};entry.itemForms={};
+ for(const item of editor.items){const form=effectiveSpecies({...p.set,item:item.name,moves:[]});if(form!==base.name){entry.itemForms[item.name.toLowerCase().replace(/[^a-z0-9]/g,'')]=form;entry.statForms[form]=Dex.species.get(form).baseStats;}}
+ const dragonForm=effectiveSpecies({...p.set,item:'',moves:['Dragon Ascent']});if(dragonForm!==base.name){entry.dragonAscentForm=dragonForm;entry.statForms[dragonForm]=Dex.species.get(dragonForm).baseStats;}
+}
 fs.writeFileSync('dist/battle-editor.json',JSON.stringify(editor)+'\n');

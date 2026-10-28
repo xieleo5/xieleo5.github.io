@@ -19,5 +19,6 @@ jobs:
       - run: npm run test:battle
       - run: node arcade-checks.mjs
       - run: node bug-report-checks.mjs
+      - run: node stat-preview-checks.mjs
       - run: node physics-checks.mjs
       - run: node control-stability-checks.mjs

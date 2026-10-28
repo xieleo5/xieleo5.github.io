@@ -1,10 +1,11 @@
+import {STAT_KEYS,natureLabel,effectiveStatForm,level50Stats,cappedEV} from './stat-preview.mjs';
 import {availablePartners,eligibleOpponents,makeMatchup,TATSUGIRI_FORMS,isCommander} from './battle-rules.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon=(id,alt,cls='')=>`<img src="assets/menu-icons/${id}.png" alt="${esc(alt)}" class="game-sprite ${cls}" draggable="false">`;
 const statNames={hp:'HP',atk:'Atk',def:'Def',spa:'SpA',spd:'SpD',spe:'Spe',accuracy:'Accuracy',evasion:'Evasion'};
 const weatherNames={raindance:'Rain',sunnyday:'Sun',sandstorm:'Sandstorm',snow:'Snow',hail:'Hail',primordialsea:'Heavy rain',desolateland:'Harsh sunlight',deltastream:'Strong winds'};
 export async function mountShowdown(host,{collection,signal,onAward,onShelf,initialOpponent=null}){
- const loaded=await Promise.all(['battle-roster.json','battle-editor.json','battle-ai-sets.json'].map(async path=>{const r=await fetch('./'+path);if(!r.ok)throw new Error('Could not load '+path);return r.json();}));
+ const loaded=await Promise.all(['battle-roster.json','battle-editor.json','battle-ai-sets.json'].map(async path=>{const r=await fetch('./'+path+'?v=20261027-stat-editor');if(!r.ok)throw new Error('Could not load '+path);return r.json();}));
  const [data,editor,aiData]=loaded;if(signal.aborted)return;
  const diagnose=(kind,message)=>window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{kind,message}}));
  const records=data.records,byId=id=>records.find(p=>p.id===id);
@@ -58,7 +59,7 @@ export async function mountShowdown(host,{collection,signal,onAward,onShelf,init
   const p=current(selected),canBattle=available().some(q=>q.id===selected);
   const evs=Object.entries(p.set.evs).filter(([,v])=>v).map(([k,v])=>v+' '+statNames[k]).join(' / ');
   host.querySelector('#ps-preset').innerHTML=`<div class="ps-preset"><div class="ps-preset-title">${icon(p.id,p.name)}<div><h4>${esc(p.name)}${isCommander(p.id)?' + '+esc(byId(p.id==='dondozo'?'tatsugiri':'dondozo').name):''}</h4><span class="ps-tier">${p.tier}${p.tierOverride?' · Commander duo':''}</span> <span>Lv. 50${p.form!==p.set.species?' · '+esc(p.form):''}${p.custom?' · Custom set':''}</span></div></div>
-   <div class="ps-build-meta"><span><b>Item</b> ${esc(p.set.item||'None')}</span><span><b>Ability</b> ${esc(p.set.ability)}</span><span><b>Nature</b> ${esc(p.set.nature)}</span></div>
+   <div class="ps-build-meta"><span><b>Item</b> ${esc(p.set.item||'None')}</span><span><b>Ability</b> ${esc(p.set.ability)}</span><span><b>Nature</b> ${esc(natureLabel(p.set.nature,editor.natureEffects))}</span></div>
    <div class="ps-preset-moves">${p.moves.map(m=>`<span data-type="${m.type}" title="${esc(m.description)}">${esc(m.name)}</span>`).join('')}</div><small class="ps-evs">EVs: ${evs||'None'}</small>
    <details class="ps-set-editor"><summary>Edit moves & build</summary><div id="ps-editor-fields"></div></details>
    ${isCommander(p.id)?`<label class="ps-form-label">Your Tatsugiri form <select id="ps-form">${TATSUGIRI_FORMS.map((f,i)=>`<option value="${i}" ${i===playerForm?'selected':''}>${f.name} · Order Up → ${f.boost}</option>`).join('')}</select></label>`:''}
@@ -80,12 +81,28 @@ export async function mountShowdown(host,{collection,signal,onAward,onShelf,init
   host.querySelector('#ps-editor-fields').innerHTML=`<form id="ps-set-form"><p class="ps-editor-note">Level 50 · Legal National Dex sets only. Challenge uses the current form. Valid builds stay in this browser.</p>
   <div class="ps-editor-grid">${[0,1,2,3].map(i=>`<label>Move ${i+1}<select name="move${i}" aria-label="Move ${i+1}">${selectOptions(catalog.moves.map(m=>m.name),set.moves[i],true)}</select></label>`).join('')}
   <label>Item<input name="item" list="ps-item-options" value="${esc(set.item||'')}" autocomplete="off" placeholder="None"><datalist id="ps-item-options">${editor.items.map(i=>`<option value="${esc(i.name)}">${esc(i.description)}</option>`).join('')}</datalist></label>
-  <label>Ability<select name="ability">${selectOptions(catalog.abilities,set.ability)}</select></label><label>Nature<select name="nature">${selectOptions(editor.natures,set.nature)}</select></label></div>
-  <div class="ps-stats-editor"><span>Stat</span><span>EVs · 510 total</span><span>IVs</span>${['hp','atk','def','spa','spd','spe'].map(k=>`<span>${statNames[k]}</span><input type="number" name="ev-${k}" aria-label="${statNames[k]} EVs" min="0" max="252" step="1" value="${set.evs?.[k]??0}"><input type="number" name="iv-${k}" aria-label="${statNames[k]} IVs" min="0" max="31" step="1" value="${set.ivs?.[k]??31}">`).join('')}</div>
+  <label>Ability<select name="ability">${selectOptions(catalog.abilities,set.ability)}</select></label><label>Nature<select name="nature">${editor.natures.map(n=>`<option value="${esc(n)}" ${n===set.nature?'selected':''}>${esc(natureLabel(n,editor.natureEffects))}</option>`).join('')}</select></label></div>
+  <div class="ps-stat-preview-heading"><label>Lv. 50 stats <select id="ps-stat-form" aria-label="Stat preview form"></select></label><span id="ps-ev-total" role="status"></span></div>
+  <div class="ps-stats-editor"><span>Stat</span><span>EVs</span><span>IVs</span><span>Value</span>${STAT_KEYS.map(k=>`<span class="ps-stat-name" data-stat-name="${k}">${statNames[k]}</span><div class="ps-ev-control"><input type="range" min="0" max="252" step="1" value="${set.evs?.[k]??0}" data-ev-slider="${k}" aria-label="${statNames[k]} EV slider"><input type="number" name="ev-${k}" aria-label="${statNames[k]} EVs" min="0" max="252" step="1" value="${set.evs?.[k]??0}"></div><input type="number" name="iv-${k}" aria-label="${statNames[k]} IVs" min="0" max="31" step="1" value="${set.ivs?.[k]??31}"><output data-stat-value="${k}" aria-label="${statNames[k]} final stat"></output>`).join('')}</div>
+  <p class="ps-stat-note">Before battle boosts, abilities and item multipliers. + / − marks the nature’s 10% effect.</p>
   <div class="ps-editor-actions"><button class="game-secondary" type="button" id="ps-reset-set">Reset to preset</button></div><p id="ps-set-status" role="status"></p></form>`;
   const form=host.querySelector('#ps-set-form');
   form.onsubmit=e=>{e.preventDefault();start();};
-  form.oninput=()=>{host.querySelector('#ps-lobby-status').textContent='Your current form will be checked and used when you challenge.';};
+  let previewForm=null;
+  function updateStats(event){
+   const build=readBuild(form),target=event?.target,key=target?.dataset.evSlider||target?.name?.match(/^ev-(.+)$/)?.[1];
+   if(key&&target.value!==''){build.evs[key]=cappedEV(build.evs,key,target.value);form.elements['ev-'+key].value=build.evs[key];}
+   for(const k of STAT_KEYS)form.querySelector(`[data-ev-slider="${k}"]`).value=build.evs[k];
+   const effective=effectiveStatForm(catalog,build.item,build.moves),forms=[...new Set([catalog.baseForm,effective])],select=form.querySelector('#ps-stat-form');
+   if(target===select)previewForm=select.value;
+   else if(!previewForm||target?.name==='item'||target?.name?.startsWith('move')||!forms.includes(previewForm))previewForm=effective;
+   select.innerHTML=forms.map(name=>`<option value="${esc(name)}" ${name===previewForm?'selected':''}>${esc(name)}</option>`).join('');select.hidden=forms.length===1;
+   const nature=editor.natureEffects[build.nature]||{},stats=level50Stats(catalog.statForms[previewForm],build.evs,build.ivs,nature);
+   for(const k of STAT_KEYS){const sign=nature.plus===k?'+':nature.minus===k?'−':'',kind=sign==='+'?'up':sign?'down':'neutral',label=form.querySelector(`[data-stat-name="${k}"]`),output=form.querySelector(`[data-stat-value="${k}"]`);label.textContent=statNames[k]+sign;label.dataset.nature=output.dataset.nature=kind;output.textContent=stats[k]+sign;output.title=sign?`${natureLabel(build.nature,editor.natureEffects)} · ${sign==='+'?'+10%':'−10%'}`:'No nature modifier';}
+   const total=Object.values(build.evs).reduce((sum,n)=>sum+n,0);form.querySelector('#ps-ev-total').textContent=`${total} / 510 EVs · ${510-total} left`;
+  }
+  form.oninput=e=>{updateStats(e);host.querySelector('#ps-lobby-status').textContent='Your current form will be checked and used when you challenge.';};
+  form.querySelector('#ps-stat-form').onchange=updateStats;updateStats();
   host.querySelector('#ps-reset-set').onclick=()=>{if(busy)return;delete custom[selected];delete saved[selected];try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{}renderPreset();updatePartnerTiers();};
  }
  function updatePartnerTiers(){const status=host.querySelector('#ps-lobby-status')?.textContent;renderPartnerStep();if(status&&host.querySelector('#ps-lobby-status'))host.querySelector('#ps-lobby-status').textContent=status;}
@@ -159,7 +176,7 @@ export async function mountShowdown(host,{collection,signal,onAward,onShelf,init
  function renderBattle(){
   const logs=state.log.map(logText).filter(Boolean);
   diagnose('battle-state',JSON.stringify({turn:state.turn,ended:state.ended,won:state.won,player:state.player.map(p=>({name:p.name,hp:p.hp,maxhp:p.maxhp,status:p.status,commanding:p.commanding})),events:logs.slice(-8)}));
-  if(!host.querySelector('#ps-window')){frameReady=false;host.innerHTML=`<div class="ps-battle-top"></div><div class="ps-embedded-window"><div class="ps-window-title"><span>Pokémon Showdown</span><small>LOCAL BATTLE</small></div><iframe id="ps-window" title="Pokémon Showdown battle window" src="ps-window/index.html" loading="eager"></iframe><div id="ps-controls"></div></div><p id="ps-render-status" class="ps-render-status" role="status"></p><details class="ps-full-log"><summary>Battle log</summary><div></div></details>`;}
+  if(!host.querySelector('#ps-window')){frameReady=false;host.innerHTML=`<div class="ps-battle-top"></div><div class="ps-embedded-window"><div class="ps-window-title"><span>Pokémon Showdown</span><small>LOCAL BATTLE</small></div><iframe id="ps-window" title="Pokémon Showdown battle window" src="ps-window/index.html?v=20261027-stable-identifiers" loading="eager"></iframe><div id="ps-controls"></div></div><p id="ps-render-status" class="ps-render-status" role="status"></p><details class="ps-full-log"><summary>Battle log</summary><div></div></details>`;}
   host.querySelector('.ps-battle-top').innerHTML=`<button type="button" class="ps-back" id="ps-back">← Partners</button><span>${state.doubles?'Doubles · Commander encounter':'Singles · 1v1'} <b>${state.ended?'Finished':'Turn '+state.turn}</b></span>`;
   host.querySelector('.ps-full-log>div').innerHTML=logs.map(l=>`<p>${esc(l)}</p>`).join('');
   host.querySelector('#ps-render-status').textContent=state.player.map(p=>p.name+': '+p.hp+'/'+p.maxhp+' HP'+(p.status?' · '+p.status.toUpperCase():'')+(p.commanding?' · Inside Dondozo':'')).join(' · ');

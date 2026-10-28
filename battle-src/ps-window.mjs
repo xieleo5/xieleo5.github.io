@@ -23,6 +23,14 @@ Dex.getSpriteData=(pokemon,isFront,options={})=>{
  const chosen=entry?.[isFront?'front':'back']||{url:fallback,w:96,h:96};
  return {gen:9,w:chosen.w,h:chosen.h,y:0,url:chosen.url,pixelated:false,isFrontSprite:!!isFront,cryurl:'',shiny:!!options.shiny};
 };
+// Protocol nicknames must stay stable across Mega Evolution and the victory reveal.
+// Translate names only in the text layer, never in the simulator event stream.
+const originalName=BattleTextParser.prototype.pokemonName;
+BattleTextParser.prototype.pokemonName=function(pokemon){
+ const match=/^p([12])[ab]: (?:Partner|Challenger) ([12])$/.exec(pokemon);
+ if(match){const side=match[1]==='1'?'player':'enemy',index=Number(match[2])-1;return side==='enemy'&&!revealed?'Mystery Pokémon':latest?.[side]?.[index]?.name||originalName.call(this,pokemon);}
+ return originalName.call(this,pokemon);
+};
 const originalFull=BattleTextParser.prototype.pokemonFull;
 BattleTextParser.prototype.pokemonFull=function(pokemon,details){if(pokemon.startsWith('p2')&&!revealed)return ['p2','Mystery Pokémon'];return originalFull.call(this,pokemon,details);};
 const originalStatbar=PokemonSprite.prototype.getStatbarHTML;
@@ -49,8 +57,8 @@ function conceal(){
 }
 function render(message){
  latest=message;revealed=!!message.won;document.body.classList.toggle('revealed',revealed);
- const log=message.log.map(line=>line.replace(/p1([ab]): Partner ([12])/g,(_,pos,num)=>'p1'+pos+': '+(message.player[Number(num)-1]?.name||'Partner')).replace(/p2([ab]): Challenger ([12])/g,(_,pos,num)=>'p2'+pos+': '+(revealed?message.enemy[Number(num)-1]?.name||'Challenger':'Mystery '+num)));
- if(!battle||log.length<logLength||message.reset){battle?.destroy();battle=new Battle({$frame:$('#battle'),$logFrame:$('#battle-log'),id:'battle-shelf-1',log,paused:true,isReplay:false});logLength=log.length;}
+ const log=message.log;
+ if(!battle||log.length<logLength||message.reset){battle?.destroy();battle=new Battle({$frame:$('#battle'),$logFrame:$('#battle-log'),id:'battle-shelf-1',log,paused:true,isReplay:false,subscription:kind=>{if(kind==='error')parent.postMessage({type:'ps-window-error',message:document.querySelector('#battle-log').innerText.slice(-1600)},location.origin);}});logLength=log.length;}
  else{for(const line of log.slice(logLength))battle.add(line);logLength=log.length;}
  battle.seekTurn(Infinity);conceal();
  // Keep the final state readable; the Pokémon GIFs themselves remain animated.
