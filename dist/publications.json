@@ -336,13 +336,15 @@
     "authorGroup": null,
     "source": "https://arxiv.org/abs/2602.16710",
     "date": "2026-02-18",
-    "highlight": true
+    "highlight": true,
+    "award": "Oral",
+    "project": "https://research.nvidia.com/labs/gear/egoscale/"
   },
   {
     "name": "DreamZero",
     "title": "DreamZero: World Action Models are Zero-shot Policies",
     "year": 2026,
-    "venue": "Preprint · 2026",
+    "venue": "CoRL 2026",
     "image": "dreamzero.webp",
     "project": "https://dreamzero0.github.io/",
     "paper": "https://arxiv.org/abs/2602.15922",
@@ -531,13 +533,14 @@
     "authorGroup": null,
     "source": "https://arxiv.org/abs/2602.15922",
     "date": "2026-02-17",
-    "highlight": true
+    "highlight": true,
+    "award": "Oral"
   },
   {
     "name": "DreamDojo",
     "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
     "year": 2026,
-    "venue": "Preprint · 2026",
+    "venue": "ICML 2026",
     "image": "dreamdojo.webp",
     "project": "https://dreamdojo-world.github.io/",
     "paper": "https://arxiv.org/abs/2602.06949",
@@ -696,7 +699,8 @@
     "authorGroup": null,
     "source": "https://arxiv.org/abs/2602.06949",
     "date": "2026-02-06",
-    "highlight": false
+    "highlight": false,
+    "award": "Spotlight"
   },
   {
     "name": "Self-Improving VLA",
@@ -1320,7 +1324,8 @@
     "authorGroup": null,
     "source": "https://proceedings.mlr.press/v270/li25a.html",
     "date": "2024-01-01",
-    "highlight": false
+    "highlight": false,
+    "award": "Oral"
   },
   {
     "name": "Voyager",
