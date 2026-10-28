@@ -1,10 +1,9 @@
-/* The cats get their own floor: a fixed strip at the bottom that page content never scrolls into view under. */
+/* The cats get their own floor: a strip at the bottom that fades into the page, so text softly disappears behind them. */
 :root{--cat-floor:88px}
 @media(max-width:600px){:root{--cat-floor:64px}}
 body.cat-floor{padding-bottom:var(--cat-floor)}
 body.cat-floor #pokemon-toast{bottom:calc(var(--cat-floor) + 12px)}
-.home-cats{position:fixed;left:0;right:0;bottom:0;height:var(--cat-floor);z-index:4;background:#faf8f3;border-top:1px solid #ece7dc}
-.home-cats::before{content:'';position:absolute;left:0;right:0;bottom:100%;height:18px;background:linear-gradient(#fff0,#fff);pointer-events:none}
+.home-cats{position:fixed;left:0;right:0;bottom:0;height:var(--cat-floor);z-index:4;background:linear-gradient(#fff0,#fff 55%)}
 .home-cats[hidden]{display:none}
 .home-cat{position:absolute;left:0;bottom:10px;width:0;height:0;transform-origin:0 0}
 .home-cat img{position:absolute;bottom:0;max-width:none;pointer-events:auto;cursor:pointer;user-select:none;-webkit-user-drag:none;filter:drop-shadow(0 2px 1px #0002)}
