@@ -1,10 +1,10 @@
-import {starterPool,canAcquire} from './collection-rules.mjs';
+import {starterPool,canAcquire} from './collection-rules.mjs?v=20261028-cats';
 import {matchesPokemonAnswer} from './arcade-model.mjs';
 
 function initArcade(){
  const collection=window.PokemonCollection, modal=document.querySelector('#arcade-dialog'), content=document.querySelector('#arcade-content');
- const roster=collection.list(), byId=id=>roster.find(p=>p.id===id), name=id=>byId(id)?.name||id;
- const starters=starterPool(roster);
+ const roster=collection.list(), cats=collection.cats?.()||[], entries=[...roster,...cats], byId=id=>entries.find(p=>p.id===id), name=id=>byId(id)?.name||id;
+ const starters=starterPool(roster), guessPool=[...starters,...cats];
  const diagnose=(kind,message)=>window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{kind,message}}));
  const sprite=(id,cls='')=>`<img class="game-sprite ${cls}" src="assets/menu-icons/${id}.png" alt="${name(id)}" draggable="false">`;
  let requestedOpponent=null;
@@ -31,7 +31,7 @@ function initArcade(){
    <button type="button" data-start="guess"><div class="choice-art guess-choice"><img class="game-sprite" src="assets/menu-icons/jigglypuff.png" alt="Pokémon silhouette"><span>?</span></div><span class="choice-number">01 · RECOGNITION</span><h3>Guess who?</h3><p>Ten seconds. One silhouette. Name it in English or 中文 before time runs out.</p><span class="choice-play">Play →</span></button>
    <button type="button" data-start="arm"><div class="choice-art arm-choice"><svg class="choice-arm" viewBox="0 0 100 120" aria-hidden="true"><path d="M15 110L25 40L70 20L86 65"/><circle cx="25" cy="40" r="8"/><circle cx="70" cy="20" r="8"/><path d="M77 67v16h8M95 67v16h-8"/></svg>${sprite('teddiursa')}</div><span class="choice-number">02 · ROBOTICS</span><h3>Pick & place</h3><p>A Franka arm, a cluttered box, and an empty bin. Pick any Pokémon and place it safely.</p><span class="choice-play">Play →</span></button>
    <button type="button" data-start="battle"><div class="choice-art battle-choice">${sprite('scizor')}<span>vs.</span>${sprite('fuecoco')}</div><span class="choice-number">03 · STRATEGY</span><h3>Pokémon battle</h3><p>Choose a silhouette, then pick an available shelf partner and edit its build. Win to collect new Pokémon.</p><span class="choice-play">Play →</span></button>
-  </div><p class="arcade-footnote">Guess who? and Pick & place unlock the original 24. All other Pokémon are earned in battle.</p>`;
+  </div><p class="arcade-footnote">Guess who? and Pick & place unlock the original 24. All other Pokémon are earned in battle. Guess who? also hides my two real cats.</p>`;
   content.querySelectorAll('[data-start]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.start)));
  }
  async function renderPhysics(){
@@ -47,14 +47,15 @@ function initArcade(){
   const list=[...items];for(let i=list.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[list[i],list[j]]=[list[j],list[i]];}return list;
  }
  function renderGuess(){
-  if(!guessBag.length)guessBag=[...shuffle(starters.filter(p=>!collection.has(p.id))),...shuffle(starters.filter(p=>collection.has(p.id)))];
+  if(!guessBag.length)guessBag=[...shuffle(guessPool.filter(p=>!collection.has(p.id))),...shuffle(guessPool.filter(p=>collection.has(p.id)))];
   guess=guessBag.shift();diagnose('quiz-start','New silhouette · 10 seconds');guessResolved=false;let composing=false;
-  shell('Who’s that Pokémon?','Collect the original 24 Pokémon. 10 seconds each; 中文 or English, any capitalization.',`
+  const cat=guess.kind==='cat';
+  shell(cat?'Who’s that cat?':'Who’s that Pokémon?',cat?'Surprise — one of my real cats is hiding in the deck. 10 seconds; 中文 or English.':'Collect the original 24 Pokémon (and find my two cats). 10 seconds each; 中文 or English, any capitalization.',`
    <div class="guess-timer"><div class="guess-time-track"><span id="guess-time-fill"></span></div><span id="guess-seconds" role="timer" aria-label="Seconds remaining">10.0s</span></div>
-   <div class="guess-stage"><span class="guess-question" aria-hidden="true">?</span><img class="game-sprite guess-silhouette" src="assets/menu-icons/${guess.id}.png" alt="Unknown Pokémon silhouette" width="192" height="192"><div class="guess-reveal-name" aria-live="polite"></div></div>
+   <div class="guess-stage"><span class="guess-question" aria-hidden="true">?</span><img class="game-sprite guess-silhouette" src="assets/menu-icons/${guess.id}.png" alt="${cat?'Unknown cat':'Unknown Pokémon'} silhouette" width="192" height="192"><div class="guess-reveal-name" aria-live="polite"></div></div>
    <form id="guess-form" class="guess-form"><label for="guess-answer">Your answer / 你的答案</label><div class="guess-input-row"><input id="guess-answer" name="answer" type="text" maxlength="80" placeholder="中文 or English" autocomplete="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" required><button type="submit" class="game-primary">Check answer</button></div></form>
    <div class="game-actions guess-actions"><button type="button" id="guess-hint" class="game-secondary">Hint / 提示</button><button type="button" id="guess-reveal" class="game-secondary">Reveal & skip</button><button type="button" id="guess-next" class="game-primary" hidden>Next silhouette →</button></div>
-   <p class="game-status" role="status">Recognize the shape? A correct answer adds this Pokémon to your shelf.</p>`);
+   <p class="game-status" role="status">Recognize the shape? A correct answer adds ${cat?'this cat':'this Pokémon'} to your shelf.</p>`);
   const input=content.querySelector('#guess-answer');
   const token=generation;guessDeadline=performance.now()+10000;
   if(timeoutNotice){setStatus(timeoutNotice);timeoutNotice='';}
@@ -65,19 +66,19 @@ function initArcade(){
   input.addEventListener('compositionstart',()=>{composing=true;});input.addEventListener('compositionend',()=>{composing=false;});
   content.querySelector('#guess-form').addEventListener('submit',e=>{
    e.preventDefault();if(composing||guessResolved)return;if(performance.now()>=guessDeadline){timeOut();return;}
-   if(!input.value.trim()){setStatus('Enter a Pokémon name / 请输入宝可梦名字。');return;}
+   if(!input.value.trim()){setStatus(cat?'Enter a name / 请输入名字。':'Enter a Pokémon name / 请输入宝可梦名字。');return;}
    if(matchesPokemonAnswer(guess,input.value)){revealGuess(true);}
    else{diagnose('quiz-answer','Incorrect answer');setStatus('Not quite — try again! / 还不对，再试试看。');input.setAttribute('aria-invalid','true');input.focus();}
   });
   input.addEventListener('input',()=>input.removeAttribute('aria-invalid'));
-  content.querySelector('#guess-hint').addEventListener('click',()=>setStatus(`English starts with “${guess.name[0]}”. 中文名字有 ${guess.zh.length} 个字。`));
+  content.querySelector('#guess-hint').addEventListener('click',()=>setStatus((cat?guess.clue+' ':'')+`English starts with “${guess.name[0]}”. 中文名字有 ${guess.zh.length} 个字。`));
   content.querySelector('#guess-reveal').addEventListener('click',()=>revealGuess(false));
   content.querySelector('#guess-next').addEventListener('click',()=>select('guess'));
  }
  function revealGuess(correct){
   if(guessResolved)return;diagnose('quiz-result',guess.id+': '+(correct?'correct':'revealed'));guessResolved=true;clearTimeout(timer);cancelAnimationFrame(raf);
   const image=content.querySelector('.guess-stage img');image.classList.remove('guess-silhouette');image.alt=guess.name+' · '+guess.zh;
-  content.querySelector('.guess-reveal-name').textContent=guess.name+' · '+guess.zh;
+  content.querySelector('.guess-reveal-name').textContent=guess.name+' · '+guess.zh+(guess.kind==='cat'?' · Yuqi’s cat':'');
   content.querySelector('.guess-question').hidden=true;
   content.querySelectorAll('#guess-form input,#guess-form button,#guess-hint,#guess-reveal').forEach(e=>e.disabled=true);
   if(correct){award(guess.id);setStatus('Correct! / 答对了！ '+guess.name+' · '+guess.zh);winPanel(guess.id,'Next silhouette',()=>select('guess'));}
