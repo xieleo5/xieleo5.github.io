@@ -1,3 +1,4 @@
+import {downloadBuffer} from './game-download.mjs';
 import loadMujoco from './vendor/mujoco/mujoco.js';
 import {Vector3,Quaternion} from './vendor/three.core.js';
 import {HOME,forward,solveIK} from './panda-kinematics.mjs';
@@ -16,8 +17,10 @@ async function assets(){
 }
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const vec=a=>new Vector3(...a);
-export async function createPhysics(){
- enginePromise??=loadMujoco().catch(e=>{enginePromise=null;throw e;});
+export async function createPhysics({onProgress=()=>{}}={}){
+ const binary=await downloadBuffer(new URL('./vendor/mujoco/mujoco.wasm',import.meta.url),p=>onProgress({stage:'download',...p}));
+ onProgress({stage:'initialize'});
+ enginePromise??=loadMujoco({wasmBinary:binary}).catch(e=>{enginePromise=null;throw e;});
  assetsPromise??=assets().catch(e=>{assetsPromise=null;throw e;});
  const [mj,source]=await Promise.all([enginePromise,assetsPromise]);
  const statics=[],toys=[];

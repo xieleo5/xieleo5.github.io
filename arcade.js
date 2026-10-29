@@ -35,9 +35,9 @@ function initArcade(){
   content.querySelectorAll('[data-start]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.start)));
  }
  async function renderPhysics(){
-  shell('Pick & place','Move a Franka Panda arm. Collect the original 24 Pokémon. Move a block from the cluttered box into the green bin.', '<div id="physics-host"><p class="game-status">Loading the 3D workspace…</p></div>');
+  shell('Pick & place','Move a Franka Panda arm. Collect the original 24 Pokémon. Move a block from the cluttered box into the green bin.', '<div id="physics-host"><div class="physics-loading-intro"><p class="game-status" role="status">Opening the 3D workspace…</p><progress aria-label="Opening game" max="1"></progress></div></div>');
   const token=generation;physicsAbort=new AbortController();const signal=physicsAbort.signal;
-  try{const {mountPickPlace}=await import('./pick-place.js?v=20261029-mujoco');if(token!==generation)return;
+  try{const {mountPickPlace}=await import('./pick-place.js?v=20261029-loading');if(token!==generation)return;
    const picks=shuffle(starters.filter(p=>!collection.has(p.id))).concat(shuffle(starters.filter(p=>collection.has(p.id))));
    const host=content.querySelector('#physics-host');host.addEventListener('new-physics-bin',()=>select('arm'));
    await mountPickPlace(host,picks,{signal,onAward:id=>{award(id);}});
