@@ -1,0 +1,1 @@
+MuJoCo 3.17.0 official single-threaded WebAssembly build. Google DeepMind. Apache-2.0. https://github.com/google-deepmind/mujoco

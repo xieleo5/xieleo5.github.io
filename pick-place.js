@@ -1,5 +1,5 @@
 import * as THREE from './vendor/three.module.js';
-import {createPhysics,SOURCE,DEST,RADIUS} from './pick-place-world.mjs';
+import {createPhysics,SOURCE,DEST,RADIUS,BLOCK_SPACING} from './pick-place-world.mjs?v=20261029-mujoco';
 import {createArmController} from './panda-kinematics.mjs';
 let modelPromise;
 function loadModel(){return modelPromise??=Promise.all([fetch('assets/franka/panda.json').then(r=>{if(!r.ok)throw Error('Franka model unavailable');return r.json();}),fetch('assets/franka/panda.bin').then(r=>{if(!r.ok)throw Error('Franka mesh unavailable');return r.arrayBuffer();})]);}
@@ -18,7 +18,10 @@ export async function mountPickPlace(host,roster,{onAward,signal}){
  const wristCamera=new THREE.PerspectiveCamera(82,1,.006,3);const panels=[host.querySelector('#side-panel'),host.querySelector('#wrist-panel')];let viewports=[];
  scene.add(new THREE.HemisphereLight(0xffffff,0xaab4ac,2.1));const sun=new THREE.DirectionalLight(0xffffff,3.2);sun.position.set(-.6,-.5,2.5);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);sun.shadow.camera.left=-1;sun.shadow.camera.right=1;sun.shadow.camera.top=1;sun.shadow.camera.bottom=-1;sun.shadow.normalBias=.002;scene.add(sun);
  const fill=new THREE.DirectionalLight(0xb9d9ff,1);fill.position.set(1,1,1);scene.add(fill);
- const physics=createPhysics(),robotGroups={},allTextures=[],controller=createArmController();let raf=0,last=0,disposed=false,gripWas=false,placed=0,currentHeld=null;
+ let physics;
+ try{physics=await createPhysics();}catch(err){diagnose('game-error',err.stack||err.message);loading.textContent='Physics failed to load. Close and reopen to retry.';renderer.dispose();renderer.forceContextLoss();return ()=>{};}
+ if(signal.aborted){physics.dispose();renderer.dispose();renderer.forceContextLoss();return ()=>{};}
+ const robotGroups={},allTextures=[],controller=createArmController();let raf=0,last=0,disposed=false,gripWas=false,placed=0,currentHeld=null;
  const keys=new Set(),heldControls=new Map();
  function material(color){return new THREE.MeshStandardMaterial({color,roughness:.62,metalness:.1});}
  for(const s of physics.statics){const m=new THREE.Mesh(new THREE.BoxGeometry(...s.size.map(n=>n*2)),material(s.color));m.position.set(...s.pos);m.receiveShadow=true;m.castShadow=true;scene.add(m);}
@@ -30,7 +33,7 @@ export async function mountPickPlace(host,roster,{onAward,signal}){
  const ghost=new THREE.Mesh(new THREE.SphereGeometry(.006,12,8),new THREE.MeshBasicMaterial({color:0xd89737}));ghost.layers.set(1);scene.add(ghost);
  const tcpLineGeom=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(),new THREE.Vector3(0,0,.3)]);const tcpLine=new THREE.Line(tcpLineGeom,new THREE.LineDashedMaterial({color:0xa2aaa8,dashSize:.012,gapSize:.01,transparent:true,opacity:.55}));tcpLine.layers.set(1);scene.add(tcpLine);
  const resize=new ResizeObserver(()=>{const w=stage.clientWidth,h=stage.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);const r=canvas.getBoundingClientRect();viewports=panels.map(p=>{const b=p.getBoundingClientRect();return {x:b.left-r.left,y:h-(b.bottom-r.top),w:b.width,h:b.height};});[camera,wristCamera].forEach((c,i)=>{c.aspect=viewports[i].w/viewports[i].h;c.updateProjectionMatrix();});});resize.observe(stage);
- function dispose(){if(disposed)return;disposed=true;cancelAnimationFrame(raf);resize.disconnect();keys.clear();window.removeEventListener('blur',clearKeys);window.removeEventListener('keydown',keyDown);window.removeEventListener('keyup',keyUp);document.removeEventListener('visibilitychange',visibility);physics.release();scene.traverse(o=>{o.geometry?.dispose();if(o.material){for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose();}});allTextures.forEach(t=>t.dispose());renderer.dispose();renderer.forceContextLoss();}
+ function dispose(){if(disposed)return;disposed=true;cancelAnimationFrame(raf);resize.disconnect();keys.clear();window.removeEventListener('blur',clearKeys);window.removeEventListener('keydown',keyDown);window.removeEventListener('keyup',keyUp);document.removeEventListener('visibilitychange',visibility);physics.dispose();scene.traverse(o=>{o.geometry?.dispose();if(o.material){for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose();}});allTextures.forEach(t=>t.dispose());renderer.dispose();renderer.forceContextLoss();}
  signal.addEventListener('abort',dispose,{once:true});
  try{
   const [desc,buffer]=await loadModel();if(signal.aborted){dispose();return dispose;}
@@ -39,18 +42,22 @@ export async function mountPickPlace(host,roster,{onAward,signal}){
   }build(desc.body);
  }catch(err){if(!signal.aborted){diagnose('game-error',err.stack||err.message);loading.textContent='Model failed to load. Close and reopen to retry.';status.textContent=err.message;modelPromise=null;}dispose();return dispose;}
  const toyMeshes=[];const colors=[0xe9c27c,0x9fb8b3,0xc8adc6,0xa3bdd4,0xd9b29e,0xb3c69b];
- async function tokenTexture(id){const image=await new Promise((resolve,reject)=>{const i=new Image();i.onload=()=>resolve(i);i.onerror=reject;i.src='assets/menu-icons/'+id+'.png';});if(signal.aborted)return null;
+ async function tokenTexture(id){const image=await new Promise((resolve,reject)=>{const i=new Image();i.onload=()=>resolve(i);i.onerror=reject;i.src='assets/menu-icons/'+id+'.png';});if(signal.aborted||disposed)return null;
   const c=document.createElement('canvas');c.width=c.height=256;const ctx=c.getContext('2d');ctx.fillStyle='#fffdf8';ctx.fillRect(0,0,256,256);ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';
   const probe=document.createElement('canvas');probe.width=image.width;probe.height=image.height;const pc=probe.getContext('2d');pc.drawImage(image,0,0);const data=pc.getImageData(0,0,image.width,image.height).data;let x0=image.width,y0=image.height,x1=0,y1=0;for(let y=0;y<image.height;y++)for(let x=0;x<image.width;x++)if(data[(y*image.width+x)*4+3]>20){x0=Math.min(x0,x);y0=Math.min(y0,y);x1=Math.max(x1,x);y1=Math.max(y1,y);}
   const w=x1-x0+1,h=y1-y0+1,s=210/Math.max(w,h);ctx.drawImage(image,x0,y0,w,h,(256-w*s)/2,(256-h*s)/2,w*s,h*s);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.magFilter=THREE.LinearFilter;allTextures.push(t);return t;
  }
  // Eighteen free bodies spawn above one another and settle into a genuinely cluttered bin.
- const chosen=roster.slice(0,18);await Promise.all(chosen.map(async(p,i)=>{
-  const map=await tokenTexture(p.id);if(!map||signal.aborted)return;
-  const col=i%3,row=Math.floor(i/3)%3,layer=Math.floor(i/9);const toy=physics.addToy(p.id,[SOURCE.x+(col-1)*.077,SOURCE.y+(row-1)*.077,.065+layer*.105+(i%2)*.012],i);
+ const chosen=roster.slice(0,18);let maps;
+ try{maps=await Promise.all(chosen.map(p=>tokenTexture(p.id)));}catch(err){if(!signal.aborted){diagnose('game-error','Block image failed to load');loading.textContent='Block images failed to load. Close and reopen to retry.';}dispose();return dispose;}
+ if(signal.aborted){dispose();return dispose;}
+ chosen.forEach((p,i)=>{
+  const map=maps[i];
+  const col=i%3,row=Math.floor(i/3)%3,layer=Math.floor(i/9);const toy=physics.addToy(p.id,[SOURCE.x+(col-1)*BLOCK_SPACING,SOURCE.y+(row-1)*BLOCK_SPACING,.065+layer*.105+(i%2)*.012],i);
   const side=material(colors[i%colors.length]),face=new THREE.MeshStandardMaterial({map,roughness:.7});const mesh=new THREE.Mesh(new THREE.BoxGeometry(RADIUS*2,RADIUS*2,RADIUS*2),[side,side,face,face,face,face]);mesh.castShadow=true;mesh.receiveShadow=true;mesh.userData.toy=toy;scene.add(mesh);toyMeshes.push({mesh,toy,p});
- }));if(signal.aborted){dispose();return dispose;}
- loading.textContent='';loading.hidden=true;diagnose('robot-ready','Bin: '+chosen.map(p=>p.id).join(', '));
+ });
+ try{physics.step(0);}catch(err){diagnose('game-error',err.stack||err.message);loading.textContent='Simulation failed to start. Close and reopen to retry.';dispose();return dispose;}
+ loading.textContent='';loading.hidden=true;diagnose('robot-ready',physics.diagnostics.engine+' · Bin: '+chosen.map(p=>p.id).join(', '));
  function toggle(){physics.toggle();diagnose('robot-gripper',physics.closed?'closed':'open');gripButton.innerHTML=(physics.closed?'Open gripper':'Close gripper')+' <kbd>Space</kbd>';}
  gripButton.addEventListener('click',toggle);
  host.querySelector('#physics-reset').addEventListener('click',()=>host.dispatchEvent(new CustomEvent('new-physics-bin')));
@@ -68,17 +75,19 @@ export async function mountPickPlace(host,roster,{onAward,signal}){
  window.addEventListener('keydown',keyDown);window.addEventListener('keyup',keyUp);window.addEventListener('blur',clearKeys);document.addEventListener('visibilitychange',visibility);
  function active(action,key){return keys.has(key)||[...heldControls.values()].includes(action);}
  function drawRobot(f){for(let i=0;i<8;i++){robotGroups['link'+i].position.copy(f.frames[i].p);robotGroups['link'+i].quaternion.copy(f.frames[i].r);}robotGroups.hand.position.copy(f.hand.p);robotGroups.hand.quaternion.copy(f.hand.r);
-  for(const [name,sign] of [['left_finger',1],['right_finger',-1]]){const g=robotGroups[name];g.position.copy(new THREE.Vector3(0,sign*physics.aperture,.0584).applyQuaternion(f.hand.r).add(f.hand.p));g.quaternion.copy(f.hand.r);if(sign<0)g.quaternion.multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,0,1),Math.PI));}}
+  ['left_finger','right_finger'].forEach((name,i)=>{robotGroups[name].position.copy(f.fingers[i].p);robotGroups[name].quaternion.copy(f.fingers[i].r);});}
+
  let lastInput='',inputSince=0;
  function tick(now){if(disposed)return;raf=requestAnimationFrame(tick);if(document.hidden){last=0;return;}const dt=last?Math.min((now-last)/1000,.04):1/60;last=now;
   const input={x:Number(active('back','arrowdown'))-Number(active('forward','arrowup')),y:Number(active('right','arrowright'))-Number(active('left','arrowleft')),z:Number(active('up','w'))-Number(active('down','s')),turn:Number(active('ccw','a'))-Number(active('cw','d'))};
   const inputKey=JSON.stringify(input);
-  const f=controller.step(input,dt);
-  if(inputKey!==lastInput){diagnose('robot-motion',JSON.stringify({input,previousDurationMs:inputSince?Math.round(now-inputSince):0,tcp:{x:+f.tcp.x.toFixed(3),y:+f.tcp.y.toFixed(3),z:+f.tcp.z.toFixed(3)},limited:controller.limited}));lastInput=inputKey;inputSince=now;}drawRobot(f);const toolX=new THREE.Vector3(1,0,0).applyQuaternion(f.r),actualYaw=Math.atan2(toolX.y,toolX.x);physics.setGripper(f.tcp,actualYaw);
+  controller.step(input,dt);physics.setArmTarget(controller.q);
+  const awards=physics.step(dt),f=physics.frame;
+  if(inputKey!==lastInput){diagnose('robot-motion',JSON.stringify({input,previousDurationMs:inputSince?Math.round(now-inputSince):0,tcp:{x:+f.tcp.x.toFixed(3),y:+f.tcp.y.toFixed(3),z:+f.tcp.z.toFixed(3)},limited:controller.limited}));lastInput=inputKey;inputSince=now;}drawRobot(f);const toolX=new THREE.Vector3(1,0,0).applyQuaternion(f.r),actualYaw=Math.atan2(toolX.y,toolX.x);
   host.querySelector('#robot-height').textContent=(f.tcp.z*100).toFixed(1)+' cm';host.querySelector('#robot-angle').textContent=Math.round(actualYaw*180/Math.PI)+'°';
-  for(const id of physics.step(dt)){placed++;onAward(id);const p=roster.find(p=>p.id===id);const reward=document.createElement('span');reward.innerHTML=`<img src="assets/menu-icons/${id}.png" alt="">${p.name} collected`;host.querySelector('.physics-rewards').append(reward);status.textContent=p.name+' is safely in the bin and on your shelf. Keep going!';host.querySelector('#physics-count').textContent=placed+' placed';}
+  for(const id of awards){placed++;onAward(id);const p=roster.find(p=>p.id===id);const reward=document.createElement('span');reward.innerHTML=`<img src="assets/menu-icons/${id}.png" alt="">${p.name} collected`;host.querySelector('.physics-rewards').append(reward);status.textContent=p.name+' is safely in the bin and on your shelf. Keep going!';host.querySelector('#physics-count').textContent=placed+' placed';}
   for(const {mesh,toy} of toyMeshes){mesh.position.copy(toy.body.position);mesh.quaternion.copy(toy.body.quaternion);}
-  if(physics.held?.id!==currentHeld){currentHeld=physics.held?.id;diagnose('robot-held',currentHeld||'released');phase.textContent=currentHeld?'Holding '+roster.find(p=>p.id===currentHeld).name:'Gripper '+(physics.closed?'closed · reopen to retry':'open');if(currentHeld)status.textContent='Got it. Lift above the rim, move over the green bin, then open the gripper.';}
+  if(physics.held?.id!==currentHeld){currentHeld=physics.held?.id;diagnose('robot-held',currentHeld||'released');phase.textContent=currentHeld?'Holding '+roster.find(p=>p.id===currentHeld).name:'Gripper '+(physics.closed?'closed · reopen to retry':'open');if(currentHeld)status.textContent='Got it. Lift above the rim, move over the green bin, then open the gripper.';else if(physics.closed)status.textContent='No secure grip. Reopen, align the fingers with two sides of a block, and try again.';}
   if(physics.closed!==gripWas){gripWas=physics.closed;gripButton.innerHTML=(gripWas?'Open gripper':'Close gripper')+' <kbd>Space</kbd>';}
   if(!currentHeld)phase.textContent='Gripper '+(physics.closed?'closed · reopen to retry':'open');
   if(controller.limited&&(input.turn||input.x||input.y||input.z))phase.textContent='Reach / rotation limit — move back';
