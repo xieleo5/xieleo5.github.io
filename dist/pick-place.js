@@ -1,16 +1,29 @@
 import * as THREE from './vendor/three.module.js';
-import {createPhysics,SOURCE,DEST,RADIUS,BLOCK_SPACING} from './pick-place-world.mjs?v=20261029-mujoco';
+import {createPhysics,SOURCE,DEST,RADIUS,BLOCK_SPACING} from './pick-place-world.mjs?v=20261029-loading';
 import {createArmController} from './panda-kinematics.mjs';
-let modelPromise;
-function loadModel(){return modelPromise??=Promise.all([fetch('assets/franka/panda.json').then(r=>{if(!r.ok)throw Error('Franka model unavailable');return r.json();}),fetch('assets/franka/panda.bin').then(r=>{if(!r.ok)throw Error('Franka mesh unavailable');return r.arrayBuffer();})]);}
+import {downloadBuffer} from './game-download.mjs';
+async function loadModel(onProgress){
+ const [json,buffer]=await Promise.all([
+  downloadBuffer(new URL('assets/franka/panda.json',import.meta.url)),
+  downloadBuffer(new URL('assets/franka/panda.bin',import.meta.url),onProgress)
+ ]);
+ return [JSON.parse(new TextDecoder().decode(json)),buffer];
+}
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 export async function mountPickPlace(host,roster,{onAward,signal}){
  const diagnose=(kind,message)=>window.dispatchEvent(new CustomEvent('homepage-diagnostic',{detail:{kind,message}}));
- host.innerHTML=`<div class="physics-stage dual-camera"><canvas aria-label="Franka side view and wrist camera. Use arrow keys to move, W and S for height, A and D to rotate, Space for the gripper." tabindex="0"></canvas><div class="camera-panels"><div class="camera-panel" id="side-panel"><span class="camera-label">SIDE VIEW</span></div><div class="camera-panel" id="wrist-panel"><span class="camera-label">WRIST CAM</span><span class="wrist-crosshair" aria-hidden="true"></span></div></div><span class="physics-loading" role="status">Loading robot…</span></div>
+ host.innerHTML=`<div class="physics-stage dual-camera"><canvas aria-label="Franka side view and wrist camera. Use arrow keys to move, W and S for height, A and D to rotate, Space for the gripper." tabindex="0"></canvas><div class="camera-panels"><div class="camera-panel" id="side-panel"><span class="camera-label">SIDE VIEW</span></div><div class="camera-panel" id="wrist-panel"><span class="camera-label">WRIST CAM</span><span class="wrist-crosshair" aria-hidden="true"></span></div></div><div class="physics-loading"><div class="physics-loading-card"><div class="physics-loading-heading"><span class="physics-loading-label" role="status">Downloading game engine…</span><span class="physics-loading-value" aria-hidden="true"></span></div><progress max="1" aria-label="Game loading progress"></progress><span class="physics-loading-detail">First load may take a moment. Downloaded files are cached for next time.</span></div></div></div>
  <div class="physics-readout"><span id="physics-phase">Gripper open</span><span>Height <output id="robot-height">32 cm</output></span><span>Rotation <output id="robot-angle">0°</output></span><span id="physics-count">0 placed</span></div>
  <div class="robot-console"><div class="robot-dpad" role="group" aria-label="Move in the horizontal plane"><button type="button" data-hold="forward" class="pad-up" aria-label="Move forward">↑</button><button type="button" data-hold="left" class="pad-left" aria-label="Move left">←</button><span class="pad-center" aria-hidden="true">MOVE</span><button type="button" data-hold="right" class="pad-right" aria-label="Move right">→</button><button type="button" data-hold="back" class="pad-down" aria-label="Move backward">↓</button></div><div class="robot-tool-controls"><div class="robot-button-pair"><button type="button" data-hold="up" aria-label="Raise arm">↑ Up <kbd>W</kbd></button><button type="button" data-hold="down" aria-label="Lower arm">↓ Down <kbd>S</kbd></button></div><div class="robot-button-pair"><button type="button" data-hold="ccw" aria-label="Rotate left">↶ <span>Rotate</span> <kbd>A</kbd></button><button type="button" data-hold="cw" aria-label="Rotate right">↷ <span>Rotate</span> <kbd>D</kbd></button></div><button type="button" class="game-primary" id="physics-grip">Close gripper <kbd>Space</kbd></button></div></div>
  <div class="physics-footer"><p class="physics-help">Hold the controls to move. Arrow keys: plane · W / S: height · A / D: rotate · Space: gripper.</p><button type="button" id="physics-reset" class="game-secondary">New bin</button></div><p class="game-status" role="status">Pick a block from the clutter box, lift above the rim, then release it into the green bin.</p><div class="physics-rewards" aria-live="polite"></div>`;
  const canvas=host.querySelector('canvas'),stage=host.querySelector('.physics-stage'),status=host.querySelector('.game-status'),phase=host.querySelector('#physics-phase'),gripButton=host.querySelector('#physics-grip'),loading=host.querySelector('.physics-loading');
+ const progress=loading.querySelector('progress'),loadLabel=loading.querySelector('.physics-loading-label'),loadValue=loading.querySelector('.physics-loading-value'),loadDetail=loading.querySelector('.physics-loading-detail');
+ function showProgress(label,value=null,detail='First load may take a moment. Downloaded files are cached for next time.'){
+  if(signal.aborted)return;if(loadLabel.textContent!==label)loadLabel.textContent=label;loadDetail.textContent=detail;
+  if(value===null){progress.removeAttribute('value');loadValue.textContent='';}else{progress.value=Math.min(1,Math.max(0,value));loadValue.textContent=Math.round(progress.value*100)+'%';}
+ }
+ function downloadProgress(label,{loaded,total}){const mb=n=>(n/1e6).toFixed(1)+' MB';showProgress(label,total?loaded/total:null,loaded?mb(loaded)+(total?' / '+mb(total):''):'Waiting for download…');}
+ host.querySelectorAll('button').forEach(button=>button.disabled=true);
  let renderer;try{renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false});}catch{diagnose('game-error','WebGL renderer unavailable');host.innerHTML='<p class="game-status">This game needs WebGL. Try a browser with hardware acceleration enabled. The other games are still available.</p>';return ()=>{};}
  renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.setClearColor(0xeef0f1);renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;
  const scene=new THREE.Scene();scene.background=new THREE.Color(0xeef0f1);
@@ -19,7 +32,7 @@ export async function mountPickPlace(host,roster,{onAward,signal}){
  scene.add(new THREE.HemisphereLight(0xffffff,0xaab4ac,2.1));const sun=new THREE.DirectionalLight(0xffffff,3.2);sun.position.set(-.6,-.5,2.5);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);sun.shadow.camera.left=-1;sun.shadow.camera.right=1;sun.shadow.camera.top=1;sun.shadow.camera.bottom=-1;sun.shadow.normalBias=.002;scene.add(sun);
  const fill=new THREE.DirectionalLight(0xb9d9ff,1);fill.position.set(1,1,1);scene.add(fill);
  let physics;
- try{physics=await createPhysics();}catch(err){diagnose('game-error',err.stack||err.message);loading.textContent='Physics failed to load. Close and reopen to retry.';renderer.dispose();renderer.forceContextLoss();return ()=>{};}
+ try{physics=await createPhysics({onProgress:p=>p.stage==='download'?downloadProgress('1 / 4 · Downloading game engine',p):showProgress('1 / 4 · Starting game engine…')});}catch(err){diagnose('game-error',err.stack||err.message);loading.textContent='Physics failed to load. Close and reopen to retry.';renderer.dispose();renderer.forceContextLoss();return ()=>{};}
  if(signal.aborted){physics.dispose();renderer.dispose();renderer.forceContextLoss();return ()=>{};}
  const robotGroups={},allTextures=[],controller=createArmController();let raf=0,last=0,disposed=false,gripWas=false,placed=0,currentHeld=null;
  const keys=new Set(),heldControls=new Map();
@@ -36,11 +49,11 @@ export async function mountPickPlace(host,roster,{onAward,signal}){
  function dispose(){if(disposed)return;disposed=true;cancelAnimationFrame(raf);resize.disconnect();keys.clear();window.removeEventListener('blur',clearKeys);window.removeEventListener('keydown',keyDown);window.removeEventListener('keyup',keyUp);document.removeEventListener('visibilitychange',visibility);physics.dispose();scene.traverse(o=>{o.geometry?.dispose();if(o.material){for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose();}});allTextures.forEach(t=>t.dispose());renderer.dispose();renderer.forceContextLoss();}
  signal.addEventListener('abort',dispose,{once:true});
  try{
-  const [desc,buffer]=await loadModel();if(signal.aborted){dispose();return dispose;}
+  const [desc,buffer]=await loadModel(p=>downloadProgress('2 / 4 · Loading robot model',p));if(signal.aborted){dispose();return dispose;}
   function build(body){const group=new THREE.Group();scene.add(group);robotGroups[body.name]=group;
    for(const visual of body.visuals){const spec=desc.meshes[visual.mesh],g=new THREE.BufferGeometry(),interleaved=new THREE.InterleavedBuffer(new Float32Array(buffer,spec.offset,spec.vertices*6),6);g.setAttribute('position',new THREE.InterleavedBufferAttribute(interleaved,3,0));g.setAttribute('normal',new THREE.InterleavedBufferAttribute(interleaved,3,3));g.setIndex(new THREE.BufferAttribute(new Uint32Array(buffer,spec.indexOffset,spec.indices),1));const m=new THREE.Mesh(g,material(new THREE.Color(...visual.color)));m.castShadow=true;m.receiveShadow=true;m.layers.set(body.name.includes('finger')?0:1);group.add(m);}body.children.forEach(build);
   }build(desc.body);
- }catch(err){if(!signal.aborted){diagnose('game-error',err.stack||err.message);loading.textContent='Model failed to load. Close and reopen to retry.';status.textContent=err.message;modelPromise=null;}dispose();return dispose;}
+ }catch(err){if(!signal.aborted){diagnose('game-error',err.stack||err.message);loading.textContent='Model failed to load. Close and reopen to retry.';status.textContent=err.message;}dispose();return dispose;}
  const toyMeshes=[];const colors=[0xe9c27c,0x9fb8b3,0xc8adc6,0xa3bdd4,0xd9b29e,0xb3c69b];
  async function tokenTexture(id){const image=await new Promise((resolve,reject)=>{const i=new Image();i.onload=()=>resolve(i);i.onerror=reject;i.src='assets/menu-icons/'+id+'.png';});if(signal.aborted||disposed)return null;
   const c=document.createElement('canvas');c.width=c.height=256;const ctx=c.getContext('2d');ctx.fillStyle='#fffdf8';ctx.fillRect(0,0,256,256);ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';
@@ -49,15 +62,19 @@ export async function mountPickPlace(host,roster,{onAward,signal}){
  }
  // Eighteen free bodies spawn above one another and settle into a genuinely cluttered bin.
  const chosen=roster.slice(0,18);let maps;
- try{maps=await Promise.all(chosen.map(p=>tokenTexture(p.id)));}catch(err){if(!signal.aborted){diagnose('game-error','Block image failed to load');loading.textContent='Block images failed to load. Close and reopen to retry.';}dispose();return dispose;}
+ let imagesReady=0;showProgress('3 / 4 · Loading Pokémon',0,'0 / '+chosen.length+' ready');
+ try{maps=await Promise.all(chosen.map(async p=>{const map=await tokenTexture(p.id);imagesReady++;showProgress('3 / 4 · Loading Pokémon',imagesReady/chosen.length,imagesReady+' / '+chosen.length+' ready');return map;}));}catch(err){if(!signal.aborted){diagnose('game-error','Block image failed to load');loading.textContent='Block images failed to load. Close and reopen to retry.';}dispose();return dispose;}
  if(signal.aborted){dispose();return dispose;}
  chosen.forEach((p,i)=>{
   const map=maps[i];
   const col=i%3,row=Math.floor(i/3)%3,layer=Math.floor(i/9);const toy=physics.addToy(p.id,[SOURCE.x+(col-1)*BLOCK_SPACING,SOURCE.y+(row-1)*BLOCK_SPACING,.065+layer*.105+(i%2)*.012],i);
   const side=material(colors[i%colors.length]),face=new THREE.MeshStandardMaterial({map,roughness:.7});const mesh=new THREE.Mesh(new THREE.BoxGeometry(RADIUS*2,RADIUS*2,RADIUS*2),[side,side,face,face,face,face]);mesh.castShadow=true;mesh.receiveShadow=true;mesh.userData.toy=toy;scene.add(mesh);toyMeshes.push({mesh,toy,p});
  });
+ showProgress('4 / 4 · Preparing the scene…');
+ await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+ if(signal.aborted){dispose();return dispose;}
  try{physics.step(0);}catch(err){diagnose('game-error',err.stack||err.message);loading.textContent='Simulation failed to start. Close and reopen to retry.';dispose();return dispose;}
- loading.textContent='';loading.hidden=true;diagnose('robot-ready',physics.diagnostics.engine+' · Bin: '+chosen.map(p=>p.id).join(', '));
+ showProgress('Ready',1,'');loading.hidden=true;host.querySelectorAll('button').forEach(button=>button.disabled=false);diagnose('robot-ready',physics.diagnostics.engine+' · Bin: '+chosen.map(p=>p.id).join(', '));
  function toggle(){physics.toggle();diagnose('robot-gripper',physics.closed?'closed':'open');gripButton.innerHTML=(physics.closed?'Open gripper':'Close gripper')+' <kbd>Space</kbd>';}
  gripButton.addEventListener('click',toggle);
  host.querySelector('#physics-reset').addEventListener('click',()=>host.dispatchEvent(new CustomEvent('new-physics-bin')));
