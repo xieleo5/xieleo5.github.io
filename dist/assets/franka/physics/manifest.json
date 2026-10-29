@@ -1,0 +1,18 @@
+{
+  "source": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/71f066ad0be9cd271f7ed58c030243ef157af9f4/franka_emika_panda/",
+  "commit": "71f066ad0be9cd271f7ed58c030243ef157af9f4",
+  "meshes": [
+    "link0.stl",
+    "link1.stl",
+    "link2.stl",
+    "link3.stl",
+    "link4.stl",
+    "link5_collision_0.obj",
+    "link5_collision_1.obj",
+    "link5_collision_2.obj",
+    "link6.stl",
+    "link7.stl",
+    "hand.stl",
+    "finger_0.obj"
+  ]
+}

@@ -7,9 +7,11 @@
     "test:battle": "node battle-checks.mjs && node battle-bundle-checks.mjs && node challenge-checks.mjs",
     "pokemon:add": "node tools/add-pokemon.mjs",
     "pokemon:sync": "node tools/sync-pokemon.mjs",
-    "build:ps-window": "node build-assets/build-ps-window.mjs"
+    "build:ps-window": "node build-assets/build-ps-window.mjs",
+    "test:physics": "node physics-checks.mjs && node control-stability-checks.mjs"
   },
   "dependencies": {
+    "@mujoco/mujoco": "3.17.0",
     "@pkmn/sim": "0.10.11",
     "dompurify": "^3.4.17",
     "jquery": "^3.7.1"

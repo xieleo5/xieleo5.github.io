@@ -40,7 +40,6 @@
  "master-ball.png": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png",
  "franka/panda.bin": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/franka_emika_panda",
  "vendor/three.module.js": "https://www.npmjs.com/package/three/v/0.180.0",
- "vendor/cannon-es.js": "https://www.npmjs.com/package/cannon-es/v/0.20.0",
  "menu-icons/eevee.png": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ix/scarlet-violet/icons/133.png",
  "menu-icons/rowlet.png": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ix/scarlet-violet/icons/722.png",
  "menu-icons/spheal.png": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/legends-arceus/icons/363.png",
@@ -107,5 +106,7 @@
  "menu-icons/cat-elu.png": "Original illustration of Yuqi's cat Elu, generated from the owner's photos (output/imagegen/elu-shelf-v3-playful.png, not published); cropped and resized to 256px by build-assets/prepare-home-cats.py.",
  "home-cats/elu-*.webp": "Twelve generated side-view poses of Elu (output/imagegen/elu-12-poses-v1, not published); head-size normalised, cropped and anchored by build-assets/prepare-home-cats.py, which also writes home-cats/sprites.json.",
  "menu-icons/cat-eevee.png": "Original illustration of Yuqi's cat Eevee, generated from the owner's photos (output/imagegen/eevee-shelf-v2.png, not published); cropped and resized to 256px by build-assets/prepare-home-cats.py.",
- "home-cats/eevee-*.webp": "Twelve generated side-view poses of Eevee (output/imagegen/eevee-12-poses-v1, not published); head-size normalised, cropped and anchored by build-assets/prepare-home-cats.py."
+ "home-cats/eevee-*.webp": "Twelve generated side-view poses of Eevee (output/imagegen/eevee-12-poses-v1, not published); head-size normalised, cropped and anchored by build-assets/prepare-home-cats.py.",
+ "vendor/mujoco/": "https://www.npmjs.com/package/@mujoco/mujoco/v/3.17.0",
+ "franka/physics/": "https://github.com/google-deepmind/mujoco_menagerie/tree/71f066ad0be9cd271f7ed58c030243ef157af9f4/franka_emika_panda"
 }

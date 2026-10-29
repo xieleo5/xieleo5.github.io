@@ -1,8 +1,9 @@
 from pathlib import Path
 import urllib.request, json, xml.etree.ElementTree as ET, concurrent.futures, struct
 root=Path(__file__).resolve().parent.parent
-base='https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/main/franka_emika_panda/'
+base='https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/71f066ad0be9cd271f7ed58c030243ef157af9f4/franka_emika_panda/'
 def fetch(url): return urllib.request.urlopen(url,timeout=60).read()
+(root/'build-assets/franka').mkdir(parents=True,exist_ok=True)
 xml=fetch(base+'panda.xml'); (root/'build-assets/franka/panda.xml').write_bytes(xml)
 tree=ET.fromstring(xml)
 materials={e.attrib['name']:list(map(float,e.attrib['rgba'].split())) for e in tree.findall('./asset/material')}
@@ -40,6 +41,6 @@ out=root/'dist/assets/franka'
 (out/'panda.json').write_text(json.dumps({'meshes':meshes,'body':body(tree.find('./worldbody/body'))},separators=(',',':')))
 (out/'LICENSE').write_bytes(fetch(base+'LICENSE'))
 (out/'NOTICE.txt').write_text('Franka Emika Panda visual meshes and kinematic description. Source: google-deepmind/mujoco_menagerie/franka_emika_panda, derived from Franka Emika franka_ros. Apache-2.0. OBJ positions, normals, and indices packed without geometric modification for this browser game. See LICENSE.\n')
-for name,url in {'three.module.js':'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js','three.core.js':'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.core.js','cannon-es.js':'https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js','THREE-LICENSE.txt':'https://cdn.jsdelivr.net/npm/three@0.180.0/LICENSE','CANNON-LICENSE.txt':'https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/LICENSE'}.items():
+for name,url in {'three.module.js':'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js','three.core.js':'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.core.js','THREE-LICENSE.txt':'https://cdn.jsdelivr.net/npm/three@0.180.0/LICENSE'}.items():
  (root/'dist/vendor'/name).write_bytes(fetch(url))
-print(f'Packed {len(meshes)} Franka meshes: {len(blob):,} bytes. Local Three.js 0.180.0 and cannon-es 0.20.0 ready.')
+print(f'Packed {len(meshes)} Franka meshes: {len(blob):,} bytes. Local Three.js 0.180.0 ready.')
