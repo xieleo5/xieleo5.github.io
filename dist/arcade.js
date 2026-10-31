@@ -11,7 +11,7 @@ function initArcade(){
  let mode='menu', generation=0, raf=0, timer=0, guessBag=[], guess=null, guessResolved=false, guessDeadline=0, timeoutNotice='', physicsAbort=null, battleAbort=null;
  const setStatus=text=>{content.querySelector('.game-status').textContent=text;};
  function cancel(){generation++;cancelAnimationFrame(raf);clearTimeout(timer);raf=0;timer=0;physicsAbort?.abort();physicsAbort=null;battleAbort?.abort();battleAbort=null;}
- function award(id){if(!canAcquire(byId(id),mode))return '';collection.award(id);diagnose('collected',mode+': '+id);updateCount();return `${name(id)} ${collection.has(id)?'is on your shelf':'joined your shelf'}!`;}
+ function award(id){if(!canAcquire(byId(id),mode))return '';collection.award(id,mode);diagnose('collected',mode+': '+id);updateCount();return `${name(id)} ${collection.has(id)?'is on your shelf':'joined your shelf'}!`;}
  function updateCount(){document.querySelector('#arcade-count').textContent=collection.count()+' / '+roster.length+' collected';}
  function winPanel(id,againLabel,again){
   const panel=content.querySelector('.game-result');panel.hidden=false;

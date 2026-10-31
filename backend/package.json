@@ -1,0 +1,13 @@
+{
+  "name": "yuqi-homepage-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "stats": "node stats.mjs",
+    "test": "node --test test.mjs"
+  },
+  "dependencies": {
+    "pg": "8.23.1"
+  }
+}

@@ -17,5 +17,6 @@ for(const id of [...roster.map(p=>p.id),'tatsugiri-droopy','tatsugiri-stretchy']
 }
 runtime=runtime.replace(/const floorOffsets=\{[^;]+\};/,'const floorOffsets='+JSON.stringify(offsets)+';');fs.writeFileSync('dist/pokemon.js',runtime);
 const template=fs.readFileSync('homepage.template.html','utf8').replace(/0 \/ \d+/g,'0 / '+roster.length);fs.writeFileSync('homepage.template.html',template);
+execFileSync('node',['tools/sync-backend-catalog.mjs'],{stdio:'inherit'});
 execFileSync('python3',['render-homepage.py'],{stdio:'inherit'});
 console.log('Synced',roster.length,'Pokémon; preserved all existing IDs and progress keys.');

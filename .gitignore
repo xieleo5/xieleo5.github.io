@@ -6,3 +6,5 @@ build-assets/qa-*
 *.tar.gz
 .openai/
 /output/
+/backend/.env
+/backend/*.dump

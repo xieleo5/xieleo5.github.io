@@ -1,0 +1,250 @@
+[
+  {
+    "id": "eevee",
+    "acquisition": "starter"
+  },
+  {
+    "id": "rowlet",
+    "acquisition": "starter"
+  },
+  {
+    "id": "spheal",
+    "acquisition": "starter"
+  },
+  {
+    "id": "fuecoco",
+    "acquisition": "starter"
+  },
+  {
+    "id": "ditto",
+    "acquisition": "starter"
+  },
+  {
+    "id": "snorlax",
+    "acquisition": "starter"
+  },
+  {
+    "id": "fennekin",
+    "acquisition": "starter"
+  },
+  {
+    "id": "pikachu",
+    "acquisition": "starter"
+  },
+  {
+    "id": "furret",
+    "acquisition": "starter"
+  },
+  {
+    "id": "mimikyu",
+    "acquisition": "starter"
+  },
+  {
+    "id": "dondozo",
+    "acquisition": "starter"
+  },
+  {
+    "id": "tatsugiri",
+    "acquisition": "starter"
+  },
+  {
+    "id": "koraidon",
+    "acquisition": "starter"
+  },
+  {
+    "id": "serperior",
+    "acquisition": "starter"
+  },
+  {
+    "id": "charizard",
+    "acquisition": "starter"
+  },
+  {
+    "id": "comfey",
+    "acquisition": "starter"
+  },
+  {
+    "id": "swablu",
+    "acquisition": "starter"
+  },
+  {
+    "id": "shiny-rayquaza",
+    "acquisition": "starter"
+  },
+  {
+    "id": "mareep",
+    "acquisition": "starter"
+  },
+  {
+    "id": "teddiursa",
+    "acquisition": "starter"
+  },
+  {
+    "id": "kirlia",
+    "acquisition": "starter"
+  },
+  {
+    "id": "pachirisu",
+    "acquisition": "starter"
+  },
+  {
+    "id": "azumarill",
+    "acquisition": "starter"
+  },
+  {
+    "id": "scizor",
+    "acquisition": "starter"
+  },
+  {
+    "id": "whimsicott",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "zacian",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "ponyta",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "jigglypuff",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "machamp",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "umbreon",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "squirtle",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "cosmog",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "froakie",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "tornadus",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "amoonguss",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "hydreigon",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "flutter-mane",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "oddish",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "xatu",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "vanillite",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "ferrothorn",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "litwick",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "gastly",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "elekid",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "jirachi",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "incineroar",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "chikorita",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "morpeko",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "ogerpon-teal",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "dragonair",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "exeggutor-alola",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "pelipper",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "rotom-wash",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "groudon",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "kyogre",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "zapdos",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "sinistcha",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "breloom",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "metagross",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "espeon",
+    "acquisition": "challenge"
+  },
+  {
+    "id": "cat-eevee",
+    "acquisition": "home"
+  },
+  {
+    "id": "cat-elu",
+    "acquisition": "home"
+  }
+]

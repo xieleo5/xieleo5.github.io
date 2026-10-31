@@ -708,12 +708,12 @@ function openCabinet(){
  if(!modal.open)modal.showModal();
 }
 
-function discover(id, quiet=false){
+function discover(id, quiet=false, source="unknown"){
  const p=entry(id);if(!p)return;
  const fresh=!discovered.has(id);discovered.add(id);
  try{localStorage.setItem(storageKey,JSON.stringify([...discovered]));}catch{}
  renderCollection();showDetail(id);
- window.dispatchEvent(new Event('pokemon-collection-change'));
+ window.dispatchEvent(new CustomEvent('pokemon-collection-change',{detail:{id,source,fresh}}));
  if(quiet)return;
  toast.querySelector('img').src='assets/menu-icons/'+id+'.png';
  toast.querySelector('.encounter-name').textContent=(fresh?'Added to your shelf: ':'Hello again, ')+p.name+(p.kind==='cat'?', my cat':'')+(fresh?'!':'');
@@ -740,7 +740,15 @@ document.addEventListener('keydown',e=>{
  secretPosition=k===secret[secretPosition]?secretPosition+1:k===secret[0]?1:0;
  if(secretPosition===secret.length){window.dispatchEvent(new CustomEvent('open-pokemon-arcade'));secretPosition=0;}
 });
-window.PokemonCollection=Object.freeze({tatsugiriForm:()=>displayedTatsugiri,list:()=>companions.map(p=>({...p})),cats:()=>homeCats.map(c=>({...c})),has:id=>discovered.has(id),count:pokemonCount,award:id=>discover(id,true),openShelf:openCabinet,revealShelf:revealInlineShelf});
+function mergeCollection(ids){
+ let changed=false;
+ for(const id of ids)if(entry(id)&&!discovered.has(id)){discovered.add(id);changed=true;}
+ if(!changed)return;
+ try{localStorage.setItem(storageKey,JSON.stringify([...discovered]));}catch{}
+ renderCollection();
+ window.dispatchEvent(new CustomEvent('pokemon-collection-change',{detail:{source:'cloud'}}));
+}
+window.PokemonCollection=Object.freeze({tatsugiriForm:()=>displayedTatsugiri,list:()=>companions.map(p=>({...p})),cats:()=>homeCats.map(c=>({...c})),has:id=>discovered.has(id),count:pokemonCount,award:(id,source)=>discover(id,true,source),merge:mergeCollection,openShelf:openCabinet,revealShelf:revealInlineShelf});
 renderCollection();
 window.dispatchEvent(new Event('pokemon-ready'));
 document.documentElement.classList.add('pokemon-ready');

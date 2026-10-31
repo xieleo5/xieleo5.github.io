@@ -184,3 +184,5 @@ footer.page{display:flex;justify-content:space-between;align-items:center;gap:12
 #field-notes .cabinet-layout{min-height:0;height:100%}
 #field-notes .cabinet-frame{height:100%;max-height:100%;min-height:0}
 #field-notes .cabinet-info{max-height:100%;overflow:auto;overscroll-behavior:contain}
+
+.collection-privacy{flex-basis:100%;font-size:11px;line-height:1.6;color:#777}
